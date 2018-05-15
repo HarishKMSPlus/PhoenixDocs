@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?enunciate-assumed-base-uri ./?>
+<wadl:application xmlns:wadl="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <wadl:doc xmlns:enunciate="http://enunciate.webcohesion.com/" enunciate:generatedBy="Enunciate-2.0"/>
+  
+  <wadl:grammars>
+  </wadl:grammars>
+
+  <wadl:resources base="./">
+
+    <wadl:resource path="lot">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="basicsearch/getsearchbean">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="businessRule/callBusinessRule">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="documents/get_email_template">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="documents/search">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="documents/send">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:param name="customer" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="edi/populateBooking">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[To Populate Booking bean]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="edi/saveBooking">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[Save Booking from external resource]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="execute_report/execute_perl_report">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[Execute Perl Report]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="file/autogenerate">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="login/authenticateUser">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[This is done For PHX-22414
+Customer search service validation
+based on user authentication]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="login/getLoginBean">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="loginbean/fetch">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="office/office_settings">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="officeCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="perlResource/portal">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="search/edocs">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/fetchShipmentStatus">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[Api ShipmentStatus information]]></wadl:doc>
+        <wadl:request>
+          <wadl:doc><![CDATA[request param]]></wadl:doc>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/getStatus">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[API for get Status of Object]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/populatebooking">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/savebooking">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:param name="schema" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="schemaId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="transFlag" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="userId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/status_update">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[ResultJson]]></wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="shipment/transfer">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="transshipment/shipentReceived">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[ResultJson]]></wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="fetch/orgdata/json">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="fetch/orgdata/xml">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+  </wadl:resources>
+</wadl:application>

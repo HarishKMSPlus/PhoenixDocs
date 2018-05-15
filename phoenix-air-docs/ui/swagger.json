@@ -1,0 +1,2392 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "<h1>phoenix-air<\/h1>",
+    "version" : "1.0",
+    "title" : "phoenix-air"
+  },
+  "schemes" : [],
+  "tags" : [
+    {
+      "name" : "BookingClassificationResource"
+      ,
+      "description" : "Booking Classification Web Service."
+    }
+    ,
+    {
+      "name" : "BusinessRuleResource"
+    }
+    ,
+    {
+      "name" : "CommonSendDocumentsResource"
+    }
+    ,
+    {
+      "name" : "ExecuteReportWebResource"
+      ,
+      "description" : "Execute Report Web Resource."
+    }
+    ,
+    {
+      "name" : "FileNumberAutoGenerateResource"
+    }
+    ,
+    {
+      "name" : "LoginResource"
+      ,
+      "description" : "Added for PHX-20326 - Web service to get loginbean."
+    }
+    ,
+    {
+      "name" : "LoginResource"
+    }
+    ,
+    {
+      "name" : "OfficeSettingResource"
+      ,
+      "description" : "Added by smahajan:PHX-19299\r\nAs Phoenix user, Third Party events must show correct time format as per office setting."
+    }
+    ,
+    {
+      "name" : "OrganizationContactResource"
+      ,
+      "description" : "This Rest Service is designed for Organization Contact Maintenance page."
+    }
+    ,
+    {
+      "name" : "OrganizationSearchResource"
+      ,
+      "description" : "This class is web service implementation for organization search."
+    }
+    ,
+    {
+      "name" : "WarehouseInventoryResource"
+      ,
+      "description" : "Web service for warehouse inventory report."
+    }
+  ],
+  "definitions" : {
+    "json_BookingClassificationParamBean" : {
+      "type" : "object",
+      "title" : "BookingClassificationParamBean",
+          "properties" : {
+            "monthly" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "customerDetailMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "emailTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "accumulatedYear" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "monthlyComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "yearComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "mode" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOutputType" : {
+"description" : "",
+"type" : "string"
+            },
+            "jobType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BusinessRuleRequestBean" : {
+      "type" : "object",
+      "title" : "BusinessRuleRequestBean",
+          "properties" : {
+            "shipmentStatusUpdateBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
+            },
+            "objectMap" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ExecuteReportRequestBean" : {
+      "type" : "object",
+      "title" : "ExecuteReportRequestBean",
+          "properties" : {
+            "perlReportBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PerlReportBean"
+}
+}
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userOfficeID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userID" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_GenDefinesBean" : {
+      "type" : "object",
+      "title" : "GenDefinesBean",
+          "properties" : {
+            "perlBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "formBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "tempDirPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "definesID" : {
+"description" : "",
+"type" : "number"
+            },
+            "oracleEnv" : {
+"description" : "",
+"type" : "string"
+            },
+            "configuration" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommercePassword" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "biBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseurl" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dataSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "jspBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpShellPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "globalUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "formHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "urlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseUrl" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactBean",
+          "properties" : {
+            "contactReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactDetailBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactDetailBean"
+}
+}
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerId" : {
+"description" : "",
+"type" : "number"
+            },
+            "contactDocumentBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactDocumentBean"
+}
+}
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactDetailBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactDetailBean",
+          "properties" : {
+            "userCreate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerContactId" : {
+"description" : "",
+"type" : "number"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "contactType" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "boolean"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactDocumentBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactDocumentBean",
+          "properties" : {
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentContactId" : {
+"description" : "",
+"type" : "number"
+            },
+            "documentID" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactSearchBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactSearchBean",
+          "properties" : {
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PerlReportBean" : {
+      "type" : "object",
+      "title" : "PerlReportBean",
+          "properties" : {
+            "passkey18" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey13" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey20" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey12" : {
+"description" : "",
+"type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
+            "printerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey9" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey8" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
+            "passkey7" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey5" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey3" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey1" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey2" : {
+"description" : "",
+"type" : "string"
+            },
+            "tag" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey4" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey15" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey17" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlscriptName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey11" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey6" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey19" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey23" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey21" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "key" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey10" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PhoenixSystemUserBean" : {
+      "type" : "object",
+      "title" : "PhoenixSystemUserBean",
+          "properties" : {
+            "companyCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "userName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userFullName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userPassword" : {
+"description" : "",
+"type" : "string"
+            },
+            "ldapUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userId" : {
+"description" : "",
+"type" : "number"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyGroupName" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "result" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson_beans" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "result" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusEventBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusEventBean",
+          "properties" : {
+            "comment" : {
+"description" : "",
+"type" : "string"
+            },
+            "eventName" : {
+"description" : "",
+"type" : "string"
+            },
+            "commentParams" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusUpdateBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusUpdateBean",
+          "properties" : {
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "eventList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
+}
+}
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "deletedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseInventoryBean" : {
+      "type" : "object",
+      "title" : "WarehouseInventoryBean",
+          "properties" : {
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOptionString" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            },
+            "consigneeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "warehouseCode" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "toEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "toActivityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "currentSchema" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "ccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "subject" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "bccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailBody" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "number"
+            },
+            "mesurement" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOption" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromActivityDate" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BookingClassificationParamBean" : {
+      "type" : "object",
+      "title" : "BookingClassificationParamBean",
+          "properties" : {
+            "customerDetailMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "reportOutputType" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "yearComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "monthlyComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "jobType" : {
+"description" : "",
+"type" : "string"
+            },
+            "mode" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "monthly" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "accumulatedYear" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "weight" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BusinessRuleRequestBean" : {
+      "type" : "object",
+      "title" : "BusinessRuleRequestBean",
+          "properties" : {
+            "shipmentStatusUpdateBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
+            },
+            "objectMap" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ExecuteReportRequestBean" : {
+      "type" : "object",
+      "title" : "ExecuteReportRequestBean",
+          "properties" : {
+            "userID" : {
+"description" : "",
+"type" : "number"
+            },
+            "perlReportBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PerlReportBean"
+}
+}
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userOfficeID" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_GenDefinesBean" : {
+      "type" : "object",
+      "title" : "GenDefinesBean",
+          "properties" : {
+            "perlHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "urlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpShellPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "dataSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "jspBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "formHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "formBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "configuration" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseurl" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommercePassword" : {
+"description" : "",
+"type" : "string"
+            },
+            "definesID" : {
+"description" : "",
+"type" : "number"
+            },
+            "globalUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "oracleEnv" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "tempDirPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "biBaseUrl" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactBean",
+          "properties" : {
+            "contactDocumentBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactDocumentBean"
+}
+}
+            },
+            "contactReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerId" : {
+"description" : "",
+"type" : "number"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactDetailBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactDetailBean"
+}
+}
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactDetailBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactDetailBean",
+          "properties" : {
+            "contactValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactType" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userCreate" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "customerContactId" : {
+"description" : "",
+"type" : "number"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactDocumentBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactDocumentBean",
+          "properties" : {
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentContactId" : {
+"description" : "",
+"type" : "number"
+            },
+            "documentID" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationContactSearchBean" : {
+      "type" : "object",
+      "title" : "OrganizationContactSearchBean",
+          "properties" : {
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PerlReportBean" : {
+      "type" : "object",
+      "title" : "PerlReportBean",
+          "properties" : {
+            "passkey5" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey23" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "tag" : {
+"description" : "",
+"type" : "string"
+            },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey18" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey3" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey4" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey7" : {
+"description" : "",
+"type" : "string"
+            },
+            "printerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey12" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey20" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey1" : {
+"description" : "",
+"type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
+            "passkey11" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey9" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
+            "argumentMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey19" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey2" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey13" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey15" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey21" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey8" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlscriptName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "key" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey6" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey10" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey17" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PhoenixSystemUserBean" : {
+      "type" : "object",
+      "title" : "PhoenixSystemUserBean",
+          "properties" : {
+            "companyGroupName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
+            },
+            "userPassword" : {
+"description" : "",
+"type" : "string"
+            },
+            "userName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "ldapUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userFullName" : {
+"description" : "",
+"type" : "string"
+            },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "userEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "number"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson_beans" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusEventBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusEventBean",
+          "properties" : {
+            "eventName" : {
+"description" : "",
+"type" : "string"
+            },
+            "comment" : {
+"description" : "",
+"type" : "string"
+            },
+            "commentParams" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusUpdateBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusUpdateBean",
+          "properties" : {
+            "eventList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
+}
+}
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "deletedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseInventoryBean" : {
+      "type" : "object",
+      "title" : "WarehouseInventoryBean",
+          "properties" : {
+            "emailBody" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOption" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "currentSchema" : {
+"description" : "",
+"type" : "string"
+            },
+            "toActivityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromActivityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "mesurement" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "number"
+            },
+            "fromEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "toEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "bccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOptionString" : {
+"description" : "",
+"type" : "string"
+            },
+            "ccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "warehouseCode" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "subject" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+  },
+  "paths": {
+    "\/bookingclassification/mail" : {
+      "post" : {
+        "tags" : [ "BookingClassificationResource" ],
+        "description" : "",
+        "operationId" : "resource_BookingClassificationResource_sendMail_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_BookingClassificationParamBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/businessRule/callBusinessRule" : {
+      "post" : {
+        "tags" : [ "BusinessRuleResource" ],
+        "description" : "",
+        "operationId" : "resource_BusinessRuleResource_callBusinessRules_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_BusinessRuleRequestBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/documents/get_email_template" : {
+      "post" : {
+        "tags" : [ "CommonSendDocumentsResource" ],
+        "description" : "",
+        "operationId" : "resource_CommonSendDocumentsResource_getEmailTemplate_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/documents/send" : {
+      "post" : {
+        "tags" : [ "CommonSendDocumentsResource" ],
+        "description" : "",
+        "operationId" : "resource_CommonSendDocumentsResource_sendDocuments_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "customer",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/execute_report/execute_perl_report" : {
+      "post" : {
+        "tags" : [ "ExecuteReportWebResource" ],
+        "summary" : "Execute Perl Report.",
+        "description" : "Execute Perl Report",
+        "operationId" : "resource_ExecuteReportWebResource_executePerlReport_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ExecuteReportRequestBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/file/autogenerate" : {
+      "post" : {
+        "tags" : [ "FileNumberAutoGenerateResource" ],
+        "description" : "",
+        "operationId" : "resource_FileNumberAutoGenerateResource_autogenerateImportFileNumber_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/loginbean/fetch" : {
+      "post" : {
+        "tags" : [ "LoginResource" ],
+        "description" : "",
+        "operationId" : "resource_LoginResource_fetchLoginBean_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/login/authenticateUser" : {
+      "post" : {
+        "tags" : [ "LoginResource" ],
+        "summary" : "This is done For PHX-22414\r\nCustomer search service validation\r\nbased on user authentication.",
+        "description" : "This is done For PHX-22414\r\nCustomer search service validation\r\nbased on user authentication",
+        "operationId" : "resource_LoginResource_webservice_authenticateUser_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/login/getLoginBean" : {
+      "post" : {
+        "tags" : [ "LoginResource" ],
+        "description" : "",
+        "operationId" : "resource_LoginResource_webservice_getLoginBean_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/office/office_settings" : {
+      "get" : {
+        "tags" : [ "OfficeSettingResource" ],
+        "description" : "",
+        "operationId" : "resource_OfficeSettingResource_callBusinessRules_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "officeCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/organizationContact/remove" : {
+      "post" : {
+        "tags" : [ "OrganizationContactResource" ],
+        "summary" : "Rest Service path /organizationContact/remove.",
+        "description" : "Rest Service path /organizationContact/remove",
+        "operationId" : "resource_OrganizationContactResource_removeData_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_OrganizationContactBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson_beans"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/organizationContact/save" : {
+      "post" : {
+        "tags" : [ "OrganizationContactResource" ],
+        "summary" : "Rest Service path /organizationContact/save.",
+        "description" : "Rest Service path /organizationContact/save",
+        "operationId" : "resource_OrganizationContactResource_saveData_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactBean"
+}
+}
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson_beans"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/organizationContact/search" : {
+      "post" : {
+        "tags" : [ "OrganizationContactResource" ],
+        "summary" : "Rest Service path /organizationContact/search.",
+        "description" : "Rest Service path /organizationContact/search",
+        "operationId" : "resource_OrganizationContactResource_searchData_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_OrganizationContactSearchBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson_beans"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/organizationContact/update" : {
+      "post" : {
+        "tags" : [ "OrganizationContactResource" ],
+        "summary" : "Rest Service path /organizationContact/update.",
+        "description" : "Rest Service path /organizationContact/update",
+        "operationId" : "resource_OrganizationContactResource_updateData_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactBean"
+}
+}
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson_beans"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/fetch/orgdata/json" : {
+      "post" : {
+        "tags" : [ "OrganizationSearchResource" ],
+        "description" : "",
+        "operationId" : "resource_OrganizationSearchResource_fetchOrgDataJson_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/fetch/orgdata/xml" : {
+      "post" : {
+        "tags" : [ "OrganizationSearchResource" ],
+        "description" : "",
+        "operationId" : "resource_OrganizationSearchResource_fetchOrgDataxml_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/warehouseinventory/cargoData" : {
+      "post" : {
+        "tags" : [ "WarehouseInventoryResource" ],
+        "description" : "",
+        "operationId" : "resource_WarehouseInventoryResource_getWarehouseInventory_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/warehouseinventory/mail" : {
+      "post" : {
+        "tags" : [ "WarehouseInventoryResource" ],
+        "description" : "",
+        "operationId" : "resource_WarehouseInventoryResource_sendWarehouseInventoryReport_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_WarehouseInventoryBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+  }
+}

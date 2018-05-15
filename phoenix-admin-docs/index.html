@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-admin</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-admin</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#syntax_json">JSON</a></li>
+          <li><a href="#syntax_json">JSON</a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="dropdown"><a href="index.html">Home</a></li>
+        </ol>
+
+  <div class="page-header">
+    <h1>phoenix-admin</h1>
+  </div>
+
+  <h1 class="page-header" id="resources">Resources</h1>
+
+  <p>
+    There is a <a href="application.wadl">WADL document</a> available that describes the resources API.
+  </p>
+
+  <p>
+    You may also enjoy the <a href="ui/index.html">Swagger UI</a> provided for this API.
+  </p>
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th align="center">name</th>
+      <th align="center">path</th>
+      <th align="center">methods</th>
+      <th align="center">description</th>
+    </tr>
+    </thead>
+    <tbody data-link="row" class="rowlink">
+    <tr class="clickable-row" data-href="resource_BookingClassificationResource.html">
+      <td>  BookingClassificationResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/bookingclassification/mail</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">Booking Classification Web Service</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_BusinessRuleResource.html">
+      <td>  BusinessRuleResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/businessRule/callBusinessRule</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_CommonSendDocumentsResource.html">
+      <td>  CommonSendDocumentsResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/documents/get_email_template</span>
+</samp></li><li><samp>  <span class="resource-path">/documents/send</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_ExecuteReportWebResource.html">
+      <td>  ExecuteReportWebResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/execute_report/execute_perl_report</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">Execute Report Web Resource</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_FileNumberAutoGenerateResource.html">
+      <td>  FileNumberAutoGenerateResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/file/autogenerate</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_LoginResource.html">
+      <td>  LoginResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/loginbean/fetch</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">Added for PHX-20326 - Web service to get loginbean</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_LoginResource_webservice.html">
+      <td>  LoginResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/login/authenticateUser</span>
+</samp></li><li><samp>  <span class="resource-path">/login/getLoginBean</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_OfficeSettingResource.html">
+      <td>  OfficeSettingResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/office/office_settings</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">GET</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">Added by smahajan:PHX-19299
+As Phoenix user, Third Party events must show correct time format as per office setting.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_OrganizationContactResource.html">
+      <td>  OrganizationContactResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/organizationContact/remove</span>
+</samp></li><li><samp>  <span class="resource-path">/organizationContact/save</span>
+</samp></li><li><samp>  <span class="resource-path">/organizationContact/search</span>
+</samp></li><li><samp>  <span class="resource-path">/organizationContact/update</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">This Rest Service is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_OrganizationSearchResource.html">
+      <td>  OrganizationSearchResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/fetch/orgdata/json</span>
+</samp></li><li><samp>  <span class="resource-path">/fetch/orgdata/xml</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">This class is web service implementation for organization search</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="resource_WarehouseInventoryResource.html">
+      <td>  WarehouseInventoryResource
+</td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="resource-path">/warehouseinventory/cargoData</span>
+</samp></li><li><samp>  <span class="resource-path">/warehouseinventory/mail</span>
+</samp></li></ul></td>
+      <td class="text-nowrap"><ul class="list-unstyled"><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li><li><samp>  <span class="label label-default resource-method">POST</span> 
+</samp></li></ul></td>
+      <td>  <span class="resource-description">Web service for warehouse inventory report</span>
+</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h1 class="page-header" id="data">Data Types</h1>
+
+  <h3 id="syntax_json"><span class="syntax-name">JSON</span></h3>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th align="center">type</th>
+        <th align="center">description</th>
+      </tr>
+    </thead>
+    <tbody data-link="row" class="rowlink">
+    <tr class="clickable-row" data-href="json_BookingClassificationParamBean.html">
+      <td>  <span class="datatype-name">BookingClassificationParamBean</span>
+</td>
+      <td>  <span class="datatype-description">Booking Classification Param Bean</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_BusinessRuleRequestBean.html">
+      <td>  <span class="datatype-name">BusinessRuleRequestBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ExecuteReportRequestBean.html">
+      <td>  <span class="datatype-name">ExecuteReportRequestBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_GenDefinesBean.html">
+      <td>  <span class="datatype-name">GenDefinesBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactBean.html">
+      <td>  <span class="datatype-name">OrganizationContactBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactDetailBean.html">
+      <td>  <span class="datatype-name">OrganizationContactDetailBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactDocumentBean.html">
+      <td>  <span class="datatype-name">OrganizationContactDocumentBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactSearchBean.html">
+      <td>  <span class="datatype-name">OrganizationContactSearchBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_PerlReportBean.html">
+      <td>  <span class="datatype-name">PerlReportBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_PhoenixSystemUserBean.html">
+      <td>  <span class="datatype-name">PhoenixSystemUserBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ResultJson.html">
+      <td>  <span class="datatype-name">ResultJson</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ResultJson_beans.html">
+      <td>  <span class="datatype-name">ResultJson</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ShipmentStatusEventBean.html">
+      <td>  <span class="datatype-name">ShipmentStatusEventBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ShipmentStatusUpdateBean.html">
+      <td>  <span class="datatype-name">ShipmentStatusUpdateBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_WarehouseInventoryBean.html">
+      <td>  <span class="datatype-name">WarehouseInventoryBean</span>
+</td>
+      <td>  <span class="datatype-description">Web service input bean for Warehouse Inventory report</span>
+</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 id="syntax_json"><span class="syntax-name">JSON</span></h3>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th align="center">type</th>
+        <th align="center">description</th>
+      </tr>
+    </thead>
+    <tbody data-link="row" class="rowlink">
+    <tr class="clickable-row" data-href="json_BookingClassificationParamBean.html">
+      <td>  <span class="datatype-name">BookingClassificationParamBean</span>
+</td>
+      <td>  <span class="datatype-description">Booking Classification Param Bean</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_BusinessRuleRequestBean.html">
+      <td>  <span class="datatype-name">BusinessRuleRequestBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ExecuteReportRequestBean.html">
+      <td>  <span class="datatype-name">ExecuteReportRequestBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_GenDefinesBean.html">
+      <td>  <span class="datatype-name">GenDefinesBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactBean.html">
+      <td>  <span class="datatype-name">OrganizationContactBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactDetailBean.html">
+      <td>  <span class="datatype-name">OrganizationContactDetailBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactDocumentBean.html">
+      <td>  <span class="datatype-name">OrganizationContactDocumentBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_OrganizationContactSearchBean.html">
+      <td>  <span class="datatype-name">OrganizationContactSearchBean</span>
+</td>
+      <td>  <span class="datatype-description">This bean is designed for Organization Contact Maintenance page.</span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_PerlReportBean.html">
+      <td>  <span class="datatype-name">PerlReportBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_PhoenixSystemUserBean.html">
+      <td>  <span class="datatype-name">PhoenixSystemUserBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ResultJson.html">
+      <td>  <span class="datatype-name">ResultJson</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ResultJson_beans.html">
+      <td>  <span class="datatype-name">ResultJson</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ShipmentStatusEventBean.html">
+      <td>  <span class="datatype-name">ShipmentStatusEventBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_ShipmentStatusUpdateBean.html">
+      <td>  <span class="datatype-name">ShipmentStatusUpdateBean</span>
+</td>
+      <td>  <span class="datatype-description"></span>
+</td>
+    </tr>
+    <tr class="clickable-row" data-href="json_WarehouseInventoryBean.html">
+      <td>  <span class="datatype-name">WarehouseInventoryBean</span>
+</td>
+      <td>  <span class="datatype-description">Web service input bean for Warehouse Inventory report</span>
+</td>
+    </tr>
+    </tbody>
+  </table>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

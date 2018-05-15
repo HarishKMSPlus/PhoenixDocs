@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-ocean: ShipmentTransferResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-ocean: ShipmentTransferResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_ShipmentTransferResource_saveShipment_POST">POST /shipment/transfer</a></li>
+          <li><a href="#resource_ShipmentTransferResource_getBookingMainBean_POST">POST /shipment/populatebooking</a></li>
+          <li><a href="#resource_ShipmentTransferResource_saveBooking_POST">POST /shipment/savebooking</a></li>
+          <li><a href="#resource_ShipmentTransferResource_getShipmentStatusDetails_POST"><abbr title="POST /shipment/fetchShipmentStatus">POST /shipment/fetchShipmentSt...</abbr></a></li>
+          <li><a href="#resource_ShipmentTransferResource_getStatusDetail_POST">POST /shipment/getStatus</a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_ShipmentTransferResource.html">ShipmentTransferResource</a></li>
+        </ol>
+
+      <h1 class="page-header">ShipmentTransferResource <small>Resource</small></h1>
+
+      <p>Webservice resource class for Shipment Transfer to be used as webservice</p>
+
+      <div id="resource_ShipmentTransferResource_saveShipment_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/shipment/transfer <a href="./shipment/transfer" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">string
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">string
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /shipment/transfer
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_ShipmentTransferResource_getBookingMainBean_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/shipment/populatebooking <a href="./shipment/populatebooking" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">string
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">string
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /shipment/populatebooking
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_ShipmentTransferResource_saveBooking_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/shipment/savebooking <a href="./shipment/savebooking" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Parameters</caption>
+          <thead>
+          <tr>
+            <th>name</th>
+            <th>type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><span class="parameter-name">schema</span></td>
+            <td>query</td>
+            <td><span class="parameter-description"></span></td>
+          </tr>
+          <tr>
+            <td><span class="parameter-name">schemaId</span></td>
+            <td>query</td>
+            <td><span class="parameter-description"></span></td>
+          </tr>
+          <tr>
+            <td><span class="parameter-name">transFlag</span></td>
+            <td>query</td>
+            <td><span class="parameter-description"></span></td>
+          </tr>
+          <tr>
+            <td><span class="parameter-name">userId</span></td>
+            <td>query</td>
+            <td><span class="parameter-description"></span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ShipmentBookingMainBean.html">ShipmentBookingMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ShipmentBookingMainBean.html">ShipmentBookingMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /shipment/savebooking
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;bookingBean&quot; : {
+    &quot;bookingPrefix&quot; : &quot;...&quot;,
+    &quot;bookingNo&quot; : 12345,
+    &quot;bookingDate&quot; : &quot;...&quot;,
+    &quot;lineBooking&quot; : &quot;...&quot;,
+    &quot;lineCode&quot; : &quot;...&quot;,
+    &quot;fclLcl&quot; : &quot;...&quot;,
+    &quot;takenBy&quot; : &quot;...&quot;,
+    &quot;quoteNo&quot; : 12345,
+    &quot;vesselNo&quot; : &quot;...&quot;,
+    &quot;vesselName&quot; : &quot;...&quot;,
+    &quot;voyageNo&quot; : &quot;...&quot;,
+    &quot;bookingStation&quot; : &quot;...&quot;,
+    &quot;originCode&quot; : &quot;...&quot;,
+    &quot;originName&quot; : &quot;...&quot;,
+    &quot;loadCode&quot; : &quot;...&quot;,
+    &quot;loadName&quot; : &quot;...&quot;,
+    &quot;dischargeCode&quot; : &quot;...&quot;,
+    &quot;dischargeName&quot; : &quot;...&quot;,
+    &quot;destinationCode&quot; : &quot;...&quot;,
+    &quot;destinationName&quot; : &quot;...&quot;,
+    &quot;sailDate&quot; : &quot;...&quot;,
+    &quot;etaDate&quot; : &quot;...&quot;,
+    &quot;shipperCode&quot; : &quot;...&quot;,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;shipperAddr&quot; : &quot;...&quot;,
+    &quot;shipperAddr2&quot; : &quot;...&quot;,
+    &quot;shipperAddr3&quot; : &quot;...&quot;,
+    &quot;shipperCont&quot; : &quot;...&quot;,
+    &quot;shipperPhone&quot; : &quot;...&quot;,
+    &quot;shipperFax&quot; : &quot;...&quot;,
+    &quot;shipperRef&quot; : &quot;...&quot;,
+    &quot;faxYn&quot; : &quot;...&quot;,
+    &quot;consName&quot; : &quot;...&quot;,
+    &quot;poNo&quot; : &quot;...&quot;,
+    &quot;puDate&quot; : &quot;...&quot;,
+    &quot;warehouseCode&quot; : &quot;...&quot;,
+    &quot;warehouseName&quot; : &quot;...&quot;,
+    &quot;warehouseAddr&quot; : &quot;...&quot;,
+    &quot;warehouseAddr2&quot; : &quot;...&quot;,
+    &quot;warehouseAddr3&quot; : &quot;...&quot;,
+    &quot;warehouseCont&quot; : &quot;...&quot;,
+    &quot;warehousePhone&quot; : &quot;...&quot;,
+    &quot;supplyCode&quot; : &quot;...&quot;,
+    &quot;supplyName&quot; : &quot;...&quot;,
+    &quot;supplyAddr&quot; : &quot;...&quot;,
+    &quot;supplyAddr2&quot; : &quot;...&quot;,
+    &quot;supplyAddr3&quot; : &quot;...&quot;,
+    &quot;supplyCont&quot; : &quot;...&quot;,
+    &quot;supplyPhone&quot; : &quot;...&quot;,
+    &quot;truckCode&quot; : &quot;...&quot;,
+    &quot;truckName&quot; : &quot;...&quot;,
+    &quot;truckCont&quot; : &quot;...&quot;,
+    &quot;truckFax&quot; : &quot;...&quot;,
+    &quot;instr1&quot; : &quot;...&quot;,
+    &quot;instr2&quot; : &quot;...&quot;,
+    &quot;instr3&quot; : &quot;...&quot;,
+    &quot;instr4&quot; : &quot;...&quot;,
+    &quot;pickYn&quot; : &quot;...&quot;,
+    &quot;pickDate&quot; : &quot;...&quot;,
+    &quot;pickAtCode&quot; : &quot;...&quot;,
+    &quot;pickAtName&quot; : &quot;...&quot;,
+    &quot;pickAtAddr&quot; : &quot;...&quot;,
+    &quot;pickAtAddr2&quot; : &quot;...&quot;,
+    &quot;pickAtAddr3&quot; : &quot;...&quot;,
+    &quot;forwarderYn&quot; : &quot;...&quot;,
+    &quot;forwarderName&quot; : &quot;...&quot;,
+    &quot;forwarderCont&quot; : &quot;...&quot;,
+    &quot;forwarderPhone&quot; : &quot;...&quot;,
+    &quot;noCont&quot; : &quot;...&quot;,
+    &quot;noPieces&quot; : &quot;...&quot;,
+    &quot;contSize&quot; : &quot;...&quot;,
+    &quot;contType&quot; : &quot;...&quot;,
+    &quot;c_t&quot; : &quot;...&quot;,
+    &quot;e_m&quot; : &quot;...&quot;,
+    &quot;weight&quot; : 12345.0,
+    &quot;cube&quot; : 12345.0,
+    &quot;hazard_code&quot; : &quot;...&quot;,
+    &quot;postDate&quot; : &quot;...&quot;,
+    &quot;postTime&quot; : &quot;...&quot;,
+    &quot;commodity1&quot; : &quot;...&quot;,
+    &quot;commodity2&quot; : &quot;...&quot;,
+    &quot;commodity3&quot; : &quot;...&quot;,
+    &quot;commodity4&quot; : &quot;...&quot;,
+    &quot;commodity5&quot; : &quot;...&quot;,
+    &quot;remark&quot; : &quot;...&quot;,
+    &quot;remark2&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;transmit&quot; : &quot;...&quot;,
+    &quot;transmitLoc1&quot; : &quot;...&quot;,
+    &quot;transmitLoc2&quot; : &quot;...&quot;,
+    &quot;transmitLoc3&quot; : &quot;...&quot;,
+    &quot;etdOrigin&quot; : &quot;...&quot;,
+    &quot;ud&quot; : &quot;...&quot;,
+    &quot;forwarderFax&quot; : &quot;...&quot;,
+    &quot;service&quot; : &quot;...&quot;,
+    &quot;portInfo&quot; : &quot;...&quot;,
+    &quot;lotNo&quot; : 12345,
+    &quot;blNo&quot; : &quot;...&quot;,
+    &quot;clause1&quot; : &quot;...&quot;,
+    &quot;clause2&quot; : &quot;...&quot;,
+    &quot;proNo&quot; : &quot;...&quot;,
+    &quot;crnNo&quot; : &quot;...&quot;,
+    &quot;consYn&quot; : &quot;...&quot;,
+    &quot;consCode&quot; : &quot;...&quot;,
+    &quot;consAddr1&quot; : &quot;...&quot;,
+    &quot;consAddr2&quot; : &quot;...&quot;,
+    &quot;consAddr3&quot; : &quot;...&quot;,
+    &quot;warehouseZip&quot; : &quot;...&quot;,
+    &quot;pickAtZip&quot; : &quot;...&quot;,
+    &quot;nmfc&quot; : &quot;...&quot;,
+    &quot;discount&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;cont1&quot; : &quot;...&quot;,
+    &quot;size1&quot; : &quot;...&quot;,
+    &quot;type1&quot; : &quot;...&quot;,
+    &quot;cont2&quot; : &quot;...&quot;,
+    &quot;size2&quot; : &quot;...&quot;,
+    &quot;type2&quot; : &quot;...&quot;,
+    &quot;payor_code&quot; : &quot;...&quot;,
+    &quot;pc&quot; : &quot;...&quot;,
+    &quot;sed&quot; : &quot;...&quot;,
+    &quot;serviceContract&quot; : &quot;...&quot;,
+    &quot;shipperEmail&quot; : &quot;...&quot;,
+    &quot;truckerEmail&quot; : &quot;...&quot;,
+    &quot;terms&quot; : &quot;...&quot;,
+    &quot;salesRep&quot; : &quot;...&quot;,
+    &quot;pfm&quot; : &quot;...&quot;,
+    &quot;shipperType&quot; : &quot;...&quot;,
+    &quot;inetUpd&quot; : &quot;...&quot;,
+    &quot;amsScac&quot; : &quot;...&quot;,
+    &quot;amsReference&quot; : &quot;...&quot;,
+    &quot;amsRefQuality&quot; : &quot;...&quot;,
+    &quot;agentCode&quot; : &quot;...&quot;,
+    &quot;receivedVia&quot; : &quot;...&quot;,
+    &quot;trackingCustomer1&quot; : &quot;...&quot;,
+    &quot;trackingCustomer2&quot; : &quot;...&quot;,
+    &quot;cForwarderReference&quot; : &quot;...&quot;,
+    &quot;cConsigneeReference&quot; : &quot;...&quot;,
+    &quot;cCustomerEmail&quot; : &quot;...&quot;,
+    &quot;cTransmissionType&quot; : &quot;...&quot;,
+    &quot;tDocumentCutoffDate&quot; : &quot;...&quot;,
+    &quot;cDocumentCutoffTime&quot; : &quot;...&quot;,
+    &quot;iVesselVoyageId&quot; : 12345,
+    &quot;cPickupTime&quot; : &quot;...&quot;,
+    &quot;cWwaReference&quot; : &quot;...&quot;,
+    &quot;iShipmentId&quot; : &quot;...&quot;,
+    &quot;cLoadUncode&quot; : &quot;...&quot;,
+    &quot;cOriginUncode&quot; : &quot;...&quot;,
+    &quot;cDischargeUncode&quot; : &quot;...&quot;,
+    &quot;cDestinationUncode&quot; : &quot;...&quot;,
+    &quot;cContainer1&quot; : &quot;...&quot;,
+    &quot;cReturnChasisCode&quot; : &quot;...&quot;,
+    &quot;tPickupDeliveryDate&quot; : &quot;...&quot;,
+    &quot;cPickupDeliveryTime&quot; : &quot;...&quot;,
+    &quot;cForwarderAddr1&quot; : &quot;...&quot;,
+    &quot;cForwarderAddr2&quot; : &quot;...&quot;,
+    &quot;cForwarderAddr3&quot; : &quot;...&quot;,
+    &quot;cPosTimeFormat&quot; : &quot;...&quot;,
+    &quot;cShipperZipcode&quot; : &quot;...&quot;,
+    &quot;cTruckerAddr&quot; : &quot;...&quot;,
+    &quot;cTruckerCity&quot; : &quot;...&quot;,
+    &quot;cTruckerZipcode&quot; : &quot;...&quot;,
+    &quot;cPickerContact&quot; : &quot;...&quot;,
+    &quot;tEtaDestination&quot; : &quot;...&quot;,
+    &quot;cConsigneeContact&quot; : &quot;...&quot;,
+    &quot;cConsigneePhone&quot; : &quot;...&quot;,
+    &quot;cConsigneeFax&quot; : &quot;...&quot;,
+    &quot;cPickupAtContact&quot; : &quot;...&quot;,
+    &quot;cPickupAtPhone&quot; : &quot;...&quot;,
+    &quot;cPickupAtFax&quot; : &quot;...&quot;,
+    &quot;cPickupContainerCode&quot; : &quot;...&quot;,
+    &quot;cPickupContainerName&quot; : &quot;...&quot;,
+    &quot;cPickupContainerDate&quot; : &quot;...&quot;,
+    &quot;cPickupContainerTime&quot; : &quot;...&quot;,
+    &quot;cPickupChassisCode&quot; : &quot;...&quot;,
+    &quot;cPickupChassisName&quot; : &quot;...&quot;,
+    &quot;cPickupChassisDate&quot; : &quot;...&quot;,
+    &quot;cPickupChassisTime&quot; : &quot;...&quot;,
+    &quot;cReturnChassisName&quot; : &quot;...&quot;,
+    &quot;cReturnChassisDate&quot; : &quot;...&quot;,
+    &quot;cReturnChassisTime&quot; : &quot;...&quot;,
+    &quot;cReturnContainerCode&quot; : &quot;...&quot;,
+    &quot;cReturnContainerName&quot; : &quot;...&quot;,
+    &quot;cReturnContainerDate&quot; : &quot;...&quot;,
+    &quot;cPickupContainerAddr1&quot; : &quot;...&quot;,
+    &quot;cPickupContainerAddr2&quot; : &quot;...&quot;,
+    &quot;cPickupContainerAddr3&quot; : &quot;...&quot;,
+    &quot;cPickupContainerState&quot; : &quot;...&quot;,
+    &quot;cPickupContainerZipcode&quot; : &quot;...&quot;,
+    &quot;cPickupContainerPhone&quot; : &quot;...&quot;,
+    &quot;cPickupChassisAddr1&quot; : &quot;...&quot;,
+    &quot;cPickupChassisAddr2&quot; : &quot;...&quot;,
+    &quot;cPickupChassisAddr3&quot; : &quot;...&quot;,
+    &quot;cPickupChassisState&quot; : &quot;...&quot;,
+    &quot;cPickupChassisPhone&quot; : &quot;...&quot;,
+    &quot;cReturnChassisAddr1&quot; : &quot;...&quot;,
+    &quot;cReturnChassisAddr2&quot; : &quot;...&quot;,
+    &quot;cReturnChassisAddr3&quot; : &quot;...&quot;,
+    &quot;cReturnChassisState&quot; : &quot;...&quot;,
+    &quot;cReturnChassisZipcode&quot; : &quot;...&quot;,
+    &quot;cWarehouseState&quot; : &quot;...&quot;,
+    &quot;cTermName&quot; : &quot;...&quot;,
+    &quot;cDestinationLocationInfo&quot; : &quot;...&quot;,
+    &quot;iWeightLbs&quot; : &quot;...&quot;,
+    &quot;cMarksNumbers&quot; : &quot;...&quot;,
+    &quot;cPickupTimeto&quot; : &quot;...&quot;,
+    &quot;cUPdateUser&quot; : &quot;...&quot;,
+    &quot;tUpdateDate&quot; : &quot;...&quot;,
+    &quot;cPickupContainerToTime&quot; : &quot;...&quot;,
+    &quot;cPickupChassisToTime&quot; : &quot;...&quot;,
+    &quot;cReturnContainerToTime&quot; : &quot;...&quot;,
+    &quot;cReturnChassisToTime&quot; : &quot;...&quot;,
+    &quot;cPrecarriage&quot; : &quot;...&quot;,
+    &quot;cPrecarriageType&quot; : &quot;...&quot;,
+    &quot;cNomination&quot; : &quot;...&quot;,
+    &quot;cInputUser&quot; : &quot;...&quot;,
+    &quot;tInputDate&quot; : &quot;...&quot;,
+    &quot;cPrivateLocationInfo&quot; : &quot;...&quot;,
+    &quot;deconsolidationCode&quot; : &quot;...&quot;,
+    &quot;deconsolidationName&quot; : &quot;...&quot;,
+    &quot;deconsolidationDate&quot; : &quot;...&quot;,
+    &quot;finalCfsCode&quot; : &quot;...&quot;,
+    &quot;finalCfsName&quot; : &quot;...&quot;,
+    &quot;finalCfsDate&quot; : &quot;...&quot;,
+    &quot;warehouseDeliveryReference&quot; : &quot;...&quot;,
+    &quot;cPackaging&quot; : &quot;...&quot;,
+    &quot;actualyPieces&quot; : &quot;...&quot;,
+    &quot;cActualForwarderCode&quot; : &quot;...&quot;,
+    &quot;cActualForwarderName&quot; : &quot;...&quot;,
+    &quot;cActualForwarderAddr1&quot; : &quot;...&quot;,
+    &quot;cActualForwarderAddr2&quot; : &quot;...&quot;,
+    &quot;cActualForwarderAddr3&quot; : &quot;...&quot;,
+    &quot;cActualForwarderPhone&quot; : &quot;...&quot;,
+    &quot;cActualForwarderContact&quot; : &quot;...&quot;,
+    &quot;cActualForwarderReference&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliveryCode&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliverName&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliveryAddr1&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliveryAddr2&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliveryAddr3&quot; : &quot;...&quot;,
+    &quot;cDocumentDeliverContact&quot; : &quot;...&quot;,
+    &quot;cCommissionClass&quot; : &quot;...&quot;,
+    &quot;forwarderCode&quot; : &quot;...&quot;,
+    &quot;cCommunicationReference&quot; : &quot;...&quot;,
+    &quot;payorCode&quot; : &quot;...&quot;,
+    &quot;cReturnContainerTime&quot; : &quot;...&quot;,
+    &quot;cReturnChassisPhone&quot; : &quot;...&quot;,
+    &quot;iWeightCbf&quot; : &quot;...&quot;,
+    &quot;truckPhone&quot; : &quot;...&quot;,
+    &quot;c_transmit_location_name&quot; : &quot;...&quot;,
+    &quot;consolidationCode&quot; : &quot;...&quot;,
+    &quot;consolidationName&quot; : &quot;...&quot;,
+    &quot;consolidationDate&quot; : &quot;...&quot;
+  },
+  &quot;bookingHazardBeanList&quot; : [ [ {
+    &quot;bookingNo&quot; : 12345,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;shipperName2&quot; : &quot;...&quot;,
+    &quot;techName1&quot; : &quot;...&quot;,
+    &quot;techName2&quot; : &quot;...&quot;,
+    &quot;noPcs&quot; : &quot;...&quot;,
+    &quot;packaging&quot; : &quot;...&quot;,
+    &quot;weight&quot; : 12345.0,
+    &quot;imcoClass&quot; : &quot;...&quot;,
+    &quot;unNo&quot; : 12345,
+    &quot;imcoPage&quot; : &quot;...&quot;,
+    &quot;flashPoint&quot; : 12345,
+    &quot;fc&quot; : &quot;...&quot;,
+    &quot;packageGroup&quot; : &quot;...&quot;,
+    &quot;plackard1&quot; : &quot;...&quot;,
+    &quot;plackard2&quot; : &quot;...&quot;,
+    &quot;emergencyPhone&quot; : &quot;...&quot;,
+    &quot;emergencyCont&quot; : &quot;...&quot;,
+    &quot;harzardCode&quot; : &quot;...&quot;,
+    &quot;cImoSubclass&quot; : &quot;...&quot;,
+    &quot;iFlashpointFahrenheit&quot; : &quot;...&quot;
+  }, {
+    &quot;bookingNo&quot; : 12345,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;shipperName2&quot; : &quot;...&quot;,
+    &quot;techName1&quot; : &quot;...&quot;,
+    &quot;techName2&quot; : &quot;...&quot;,
+    &quot;noPcs&quot; : &quot;...&quot;,
+    &quot;packaging&quot; : &quot;...&quot;,
+    &quot;weight&quot; : 12345.0,
+    &quot;imcoClass&quot; : &quot;...&quot;,
+    &quot;unNo&quot; : 12345,
+    &quot;imcoPage&quot; : &quot;...&quot;,
+    &quot;flashPoint&quot; : 12345,
+    &quot;fc&quot; : &quot;...&quot;,
+    &quot;packageGroup&quot; : &quot;...&quot;,
+    &quot;plackard1&quot; : &quot;...&quot;,
+    &quot;plackard2&quot; : &quot;...&quot;,
+    &quot;emergencyPhone&quot; : &quot;...&quot;,
+    &quot;emergencyCont&quot; : &quot;...&quot;,
+    &quot;harzardCode&quot; : &quot;...&quot;,
+    &quot;cImoSubclass&quot; : &quot;...&quot;,
+    &quot;iFlashpointFahrenheit&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;bookingNo&quot; : 12345,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;shipperName2&quot; : &quot;...&quot;,
+    &quot;techName1&quot; : &quot;...&quot;,
+    &quot;techName2&quot; : &quot;...&quot;,
+    &quot;noPcs&quot; : &quot;...&quot;,
+    &quot;packaging&quot; : &quot;...&quot;,
+    &quot;weight&quot; : 12345.0,
+    &quot;imcoClass&quot; : &quot;...&quot;,
+    &quot;unNo&quot; : 12345,
+    &quot;imcoPage&quot; : &quot;...&quot;,
+    &quot;flashPoint&quot; : 12345,
+    &quot;fc&quot; : &quot;...&quot;,
+    &quot;packageGroup&quot; : &quot;...&quot;,
+    &quot;plackard1&quot; : &quot;...&quot;,
+    &quot;plackard2&quot; : &quot;...&quot;,
+    &quot;emergencyPhone&quot; : &quot;...&quot;,
+    &quot;emergencyCont&quot; : &quot;...&quot;,
+    &quot;harzardCode&quot; : &quot;...&quot;,
+    &quot;cImoSubclass&quot; : &quot;...&quot;,
+    &quot;iFlashpointFahrenheit&quot; : &quot;...&quot;
+  }, {
+    &quot;bookingNo&quot; : 12345,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;shipperName2&quot; : &quot;...&quot;,
+    &quot;techName1&quot; : &quot;...&quot;,
+    &quot;techName2&quot; : &quot;...&quot;,
+    &quot;noPcs&quot; : &quot;...&quot;,
+    &quot;packaging&quot; : &quot;...&quot;,
+    &quot;weight&quot; : 12345.0,
+    &quot;imcoClass&quot; : &quot;...&quot;,
+    &quot;unNo&quot; : 12345,
+    &quot;imcoPage&quot; : &quot;...&quot;,
+    &quot;flashPoint&quot; : 12345,
+    &quot;fc&quot; : &quot;...&quot;,
+    &quot;packageGroup&quot; : &quot;...&quot;,
+    &quot;plackard1&quot; : &quot;...&quot;,
+    &quot;plackard2&quot; : &quot;...&quot;,
+    &quot;emergencyPhone&quot; : &quot;...&quot;,
+    &quot;emergencyCont&quot; : &quot;...&quot;,
+    &quot;harzardCode&quot; : &quot;...&quot;,
+    &quot;cImoSubclass&quot; : &quot;...&quot;,
+    &quot;iFlashpointFahrenheit&quot; : &quot;...&quot;
+  } ] ],
+  &quot;bookingRateBeanList&quot; : [ [ {
+    &quot;bookingNo&quot; : 12345,
+    &quot;recordNo&quot; : 12345,
+    &quot;chargeCode&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;tariffNo&quot; : 12345,
+    &quot;commodityNo&quot; : &quot;...&quot;,
+    &quot;tliNo&quot; : 12345,
+    &quot;e_m&quot; : &quot;...&quot;,
+    &quot;sellRate&quot; : 12345.0,
+    &quot;sellBasis&quot; : &quot;...&quot;,
+    &quot;sellAmount&quot; : 12345.0,
+    &quot;buyRate&quot; : 12345.0,
+    &quot;buyAmount&quot; : 12345.0,
+    &quot;comment&quot; : &quot;...&quot;,
+    &quot;sellCurrency&quot; : &quot;...&quot;,
+    &quot;rateExchange&quot; : 12345.0,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;minimum&quot; : 12345.0,
+    &quot;maximum&quot; : 12345.0,
+    &quot;vendor&quot; : &quot;...&quot;,
+    &quot;vendorInvc&quot; : &quot;...&quot;,
+    &quot;relayFlag&quot; : &quot;...&quot;,
+    &quot;co&quot; : &quot;...&quot;,
+    &quot;iOriginalRate&quot; : 12345.0,
+    &quot;iOriginalAmount&quot; : 12345.0,
+    &quot;cOriginalAmountBasis&quot; : &quot;...&quot;,
+    &quot;iTruckingChargeId&quot; : 12345,
+    &quot;cChargeDescription&quot; : &quot;...&quot;,
+    &quot;cEquipmentDetails&quot; : &quot;...&quot;,
+    &quot;cPreColl&quot; : &quot;...&quot;,
+    &quot;tVendorInvoice&quot; : &quot;...&quot;,
+    &quot;cApplyVat&quot; : &quot;...&quot;,
+    &quot;cOriginDest&quot; : &quot;...&quot;,
+    &quot;iBrkRateId&quot; : &quot;...&quot;,
+    &quot;cLocaleChargeDesc&quot; : &quot;...&quot;,
+    &quot;buyBasis&quot; : &quot;...&quot;
+  }, {
+    &quot;bookingNo&quot; : 12345,
+    &quot;recordNo&quot; : 12345,
+    &quot;chargeCode&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;tariffNo&quot; : 12345,
+    &quot;commodityNo&quot; : &quot;...&quot;,
+    &quot;tliNo&quot; : 12345,
+    &quot;e_m&quot; : &quot;...&quot;,
+    &quot;sellRate&quot; : 12345.0,
+    &quot;sellBasis&quot; : &quot;...&quot;,
+    &quot;sellAmount&quot; : 12345.0,
+    &quot;buyRate&quot; : 12345.0,
+    &quot;buyAmount&quot; : 12345.0,
+    &quot;comment&quot; : &quot;...&quot;,
+    &quot;sellCurrency&quot; : &quot;...&quot;,
+    &quot;rateExchange&quot; : 12345.0,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;minimum&quot; : 12345.0,
+    &quot;maximum&quot; : 12345.0,
+    &quot;vendor&quot; : &quot;...&quot;,
+    &quot;vendorInvc&quot; : &quot;...&quot;,
+    &quot;relayFlag&quot; : &quot;...&quot;,
+    &quot;co&quot; : &quot;...&quot;,
+    &quot;iOriginalRate&quot; : 12345.0,
+    &quot;iOriginalAmount&quot; : 12345.0,
+    &quot;cOriginalAmountBasis&quot; : &quot;...&quot;,
+    &quot;iTruckingChargeId&quot; : 12345,
+    &quot;cChargeDescription&quot; : &quot;...&quot;,
+    &quot;cEquipmentDetails&quot; : &quot;...&quot;,
+    &quot;cPreColl&quot; : &quot;...&quot;,
+    &quot;tVendorInvoice&quot; : &quot;...&quot;,
+    &quot;cApplyVat&quot; : &quot;...&quot;,
+    &quot;cOriginDest&quot; : &quot;...&quot;,
+    &quot;iBrkRateId&quot; : &quot;...&quot;,
+    &quot;cLocaleChargeDesc&quot; : &quot;...&quot;,
+    &quot;buyBasis&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;bookingNo&quot; : 12345,
+    &quot;recordNo&quot; : 12345,
+    &quot;chargeCode&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;tariffNo&quot; : 12345,
+    &quot;commodityNo&quot; : &quot;...&quot;,
+    &quot;tliNo&quot; : 12345,
+    &quot;e_m&quot; : &quot;...&quot;,
+    &quot;sellRate&quot; : 12345.0,
+    &quot;sellBasis&quot; : &quot;...&quot;,
+    &quot;sellAmount&quot; : 12345.0,
+    &quot;buyRate&quot; : 12345.0,
+    &quot;buyAmount&quot; : 12345.0,
+    &quot;comment&quot; : &quot;...&quot;,
+    &quot;sellCurrency&quot; : &quot;...&quot;,
+    &quot;rateExchange&quot; : 12345.0,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;minimum&quot; : 12345.0,
+    &quot;maximum&quot; : 12345.0,
+    &quot;vendor&quot; : &quot;...&quot;,
+    &quot;vendorInvc&quot; : &quot;...&quot;,
+    &quot;relayFlag&quot; : &quot;...&quot;,
+    &quot;co&quot; : &quot;...&quot;,
+    &quot;iOriginalRate&quot; : 12345.0,
+    &quot;iOriginalAmount&quot; : 12345.0,
+    &quot;cOriginalAmountBasis&quot; : &quot;...&quot;,
+    &quot;iTruckingChargeId&quot; : 12345,
+    &quot;cChargeDescription&quot; : &quot;...&quot;,
+    &quot;cEquipmentDetails&quot; : &quot;...&quot;,
+    &quot;cPreColl&quot; : &quot;...&quot;,
+    &quot;tVendorInvoice&quot; : &quot;...&quot;,
+    &quot;cApplyVat&quot; : &quot;...&quot;,
+    &quot;cOriginDest&quot; : &quot;...&quot;,
+    &quot;iBrkRateId&quot; : &quot;...&quot;,
+    &quot;cLocaleChargeDesc&quot; : &quot;...&quot;,
+    &quot;buyBasis&quot; : &quot;...&quot;
+  }, {
+    &quot;bookingNo&quot; : 12345,
+    &quot;recordNo&quot; : 12345,
+    &quot;chargeCode&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;tariffNo&quot; : 12345,
+    &quot;commodityNo&quot; : &quot;...&quot;,
+    &quot;tliNo&quot; : 12345,
+    &quot;e_m&quot; : &quot;...&quot;,
+    &quot;sellRate&quot; : 12345.0,
+    &quot;sellBasis&quot; : &quot;...&quot;,
+    &quot;sellAmount&quot; : 12345.0,
+    &quot;buyRate&quot; : 12345.0,
+    &quot;buyAmount&quot; : 12345.0,
+    &quot;comment&quot; : &quot;...&quot;,
+    &quot;sellCurrency&quot; : &quot;...&quot;,
+    &quot;rateExchange&quot; : 12345.0,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;minimum&quot; : 12345.0,
+    &quot;maximum&quot; : 12345.0,
+    &quot;vendor&quot; : &quot;...&quot;,
+    &quot;vendorInvc&quot; : &quot;...&quot;,
+    &quot;relayFlag&quot; : &quot;...&quot;,
+    &quot;co&quot; : &quot;...&quot;,
+    &quot;iOriginalRate&quot; : 12345.0,
+    &quot;iOriginalAmount&quot; : 12345.0,
+    &quot;cOriginalAmountBasis&quot; : &quot;...&quot;,
+    &quot;iTruckingChargeId&quot; : 12345,
+    &quot;cChargeDescription&quot; : &quot;...&quot;,
+    &quot;cEquipmentDetails&quot; : &quot;...&quot;,
+    &quot;cPreColl&quot; : &quot;...&quot;,
+    &quot;tVendorInvoice&quot; : &quot;...&quot;,
+    &quot;cApplyVat&quot; : &quot;...&quot;,
+    &quot;cOriginDest&quot; : &quot;...&quot;,
+    &quot;iBrkRateId&quot; : &quot;...&quot;,
+    &quot;cLocaleChargeDesc&quot; : &quot;...&quot;,
+    &quot;buyBasis&quot; : &quot;...&quot;
+  } ] ],
+  &quot;bookingClauseBeanList&quot; : [ [ {
+    &quot;clauseCode&quot; : &quot;...&quot;,
+    &quot;clauseName&quot; : &quot;...&quot;,
+    &quot;clauseNameLocale&quot; : &quot;...&quot;,
+    &quot;clause&quot; : &quot;...&quot;,
+    &quot;clauseLocale&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;recordSeq&quot; : 12345
+  }, {
+    &quot;clauseCode&quot; : &quot;...&quot;,
+    &quot;clauseName&quot; : &quot;...&quot;,
+    &quot;clauseNameLocale&quot; : &quot;...&quot;,
+    &quot;clause&quot; : &quot;...&quot;,
+    &quot;clauseLocale&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;recordSeq&quot; : 12345
+  } ], [ {
+    &quot;clauseCode&quot; : &quot;...&quot;,
+    &quot;clauseName&quot; : &quot;...&quot;,
+    &quot;clauseNameLocale&quot; : &quot;...&quot;,
+    &quot;clause&quot; : &quot;...&quot;,
+    &quot;clauseLocale&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;recordSeq&quot; : 12345
+  }, {
+    &quot;clauseCode&quot; : &quot;...&quot;,
+    &quot;clauseName&quot; : &quot;...&quot;,
+    &quot;clauseNameLocale&quot; : &quot;...&quot;,
+    &quot;clause&quot; : &quot;...&quot;,
+    &quot;clauseLocale&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;recordSeq&quot; : 12345
+  } ] ],
+  &quot;bookingTrankingExpenseBeanList&quot; : [ [ {
+    &quot;imoduleid&quot; : 12345,
+    &quot;creference&quot; : &quot;...&quot;,
+    &quot;ccharge&quot; : &quot;...&quot;,
+    &quot;ccurrency&quot; : &quot;...&quot;,
+    &quot;c_charge_description&quot; : &quot;...&quot;,
+    &quot;nincome&quot; : 12345.0,
+    &quot;nexpense&quot; : 12345.0,
+    &quot;i_rate_of_exchange&quot; : 12345.0,
+    &quot;i_income_local_amount&quot; : 12345.0,
+    &quot;i_expense_local_amount&quot; : 12345.0,
+    &quot;i_status&quot; : 12345
+  }, {
+    &quot;imoduleid&quot; : 12345,
+    &quot;creference&quot; : &quot;...&quot;,
+    &quot;ccharge&quot; : &quot;...&quot;,
+    &quot;ccurrency&quot; : &quot;...&quot;,
+    &quot;c_charge_description&quot; : &quot;...&quot;,
+    &quot;nincome&quot; : 12345.0,
+    &quot;nexpense&quot; : 12345.0,
+    &quot;i_rate_of_exchange&quot; : 12345.0,
+    &quot;i_income_local_amount&quot; : 12345.0,
+    &quot;i_expense_local_amount&quot; : 12345.0,
+    &quot;i_status&quot; : 12345
+  } ], [ {
+    &quot;imoduleid&quot; : 12345,
+    &quot;creference&quot; : &quot;...&quot;,
+    &quot;ccharge&quot; : &quot;...&quot;,
+    &quot;ccurrency&quot; : &quot;...&quot;,
+    &quot;c_charge_description&quot; : &quot;...&quot;,
+    &quot;nincome&quot; : 12345.0,
+    &quot;nexpense&quot; : 12345.0,
+    &quot;i_rate_of_exchange&quot; : 12345.0,
+    &quot;i_income_local_amount&quot; : 12345.0,
+    &quot;i_expense_local_amount&quot; : 12345.0,
+    &quot;i_status&quot; : 12345
+  }, {
+    &quot;imoduleid&quot; : 12345,
+    &quot;creference&quot; : &quot;...&quot;,
+    &quot;ccharge&quot; : &quot;...&quot;,
+    &quot;ccurrency&quot; : &quot;...&quot;,
+    &quot;c_charge_description&quot; : &quot;...&quot;,
+    &quot;nincome&quot; : 12345.0,
+    &quot;nexpense&quot; : 12345.0,
+    &quot;i_rate_of_exchange&quot; : 12345.0,
+    &quot;i_income_local_amount&quot; : 12345.0,
+    &quot;i_expense_local_amount&quot; : 12345.0,
+    &quot;i_status&quot; : 12345
+  } ] ],
+  &quot;transshipmentRoutingBeanList&quot; : [ [ {
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;transshipmentPortCode&quot; : &quot;...&quot;,
+    &quot;moduleCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortRegionCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortName&quot; : &quot;...&quot;,
+    &quot;transshipmentPortSeq&quot; : 12345,
+    &quot;transshipmentPortDate&quot; : &quot;...&quot;
+  }, {
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;transshipmentPortCode&quot; : &quot;...&quot;,
+    &quot;moduleCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortRegionCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortName&quot; : &quot;...&quot;,
+    &quot;transshipmentPortSeq&quot; : 12345,
+    &quot;transshipmentPortDate&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;transshipmentPortCode&quot; : &quot;...&quot;,
+    &quot;moduleCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortRegionCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortName&quot; : &quot;...&quot;,
+    &quot;transshipmentPortSeq&quot; : 12345,
+    &quot;transshipmentPortDate&quot; : &quot;...&quot;
+  }, {
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;transshipmentPortCode&quot; : &quot;...&quot;,
+    &quot;moduleCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortRegionCode&quot; : &quot;...&quot;,
+    &quot;transshipmentPortName&quot; : &quot;...&quot;,
+    &quot;transshipmentPortSeq&quot; : 12345,
+    &quot;transshipmentPortDate&quot; : &quot;...&quot;
+  } ] ]
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_ShipmentTransferResource_getShipmentStatusDetails_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/shipment/fetchShipmentStatus <a href="./shipment/fetchShipmentStatus" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Api ShipmentStatus information</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_EnquiryShipmentStatusReq.html">EnquiryShipmentStatusReq</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="request-description">request param</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_EnquiryShipmentStatusReq.html">EnquiryShipmentStatusReq</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /shipment/fetchShipmentStatus
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;noteTypes&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;referenceNumberList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ]
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_ShipmentTransferResource_getStatusDetail_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/shipment/getStatus <a href="./shipment/getStatus" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>API for get Status of Object</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_EnquiryStatusReq.html">EnquiryStatusReq</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_EnquiryStatusReq.html">EnquiryStatusReq</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /shipment/getStatus
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;shipmentObjectId&quot; : 12345,
+  &quot;eventName&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

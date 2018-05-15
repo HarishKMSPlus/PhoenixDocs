@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?enunciate-assumed-base-uri ./?>
+<wadl:application xmlns:wadl="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <wadl:doc xmlns:enunciate="http://enunciate.webcohesion.com/" enunciate:generatedBy="Enunciate-2.0"/>
+  
+  <wadl:grammars>
+    <wadl:include href="ns0.xsd"/>
+  </wadl:grammars>
+
+  <wadl:resources base="./">
+
+    <wadl:resource path="webservice/authentication/login">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="apikey" style="header">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="password" style="header">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="username" style="header">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/bookingdetails/bookingInfo">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="bkgNumber" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="officeType" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="schemaName" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="siteId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="userId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/crm/getData">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/customer/searchAllOffice">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="custId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/xml" element="CustomerInformation"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/customer/searchOffice">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="custId" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="officeCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/xml" element="CustomerInformation"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/shipment/search">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/warehousemanifest/receive">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/wwaagentdetails/getShipmentDetails">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="HBLReference" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="WWAReference" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="agentAlias" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="apiKey" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="fromLocation" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="toLocation" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/xml"/>
+          <wadl:representation mediaType="text/plain"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/billoflading/send/json">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="bolNumber" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="schemaName" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/customer/json">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="customerCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="officeCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/customer/orgjson">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[PHX-22414 For Customer Search
+this method called when the user hits
+url only with customer params]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[json resp]]></wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/customer/orgxml">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[PHX-22414 For Customer Search
+this method called when the user hits
+url only with customer params]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[xml resp]]></wadl:doc>
+          <wadl:representation mediaType="application/xml"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/customer/xml">
+      <wadl:method name="GET">
+        <wadl:doc><![CDATA[]]></wadl:doc>
+        <wadl:request>
+          <wadl:param name="customerCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+          <wadl:param name="officeCode" style="query">
+            <wadl:doc><![CDATA[]]></wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:representation mediaType="application/xml" element="CustomerInformation"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/api/customer/apiorgjson">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[PHX-22414 For Customer Search this method called when the user hits url
+only with customer params]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[json resp]]></wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+
+    <wadl:resource path="webservice/search/api/customer/apiorgxml">
+      <wadl:method name="POST">
+        <wadl:doc><![CDATA[PHX-22414 For Customer Search this method called when the user hits url
+only with customer params]]></wadl:doc>
+        <wadl:request>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/json">
+          </wadl:representation>
+          <wadl:representation mediaType="application/xml">
+          </wadl:representation>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc><![CDATA[xml resp]]></wadl:doc>
+          <wadl:representation mediaType="application/xml"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+  </wadl:resources>
+</wadl:application>

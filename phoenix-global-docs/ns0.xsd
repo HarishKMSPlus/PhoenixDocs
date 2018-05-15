@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="CustomerInformation" type="customerInformationBean"/>
+<xs:complexType name="customerInformationBean">
+       <xs:sequence>
+              <xs:element name="CustomerName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Address2" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Address3" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="CustomerCode" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="ContactName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Fax" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="OfficeCollect" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="State" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Telephone" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Type" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="ZipCountry" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Email" type="xs:string" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

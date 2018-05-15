@@ -1,0 +1,531 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "<h1>phoenix-common<\/h1>",
+    "version" : "1.0",
+    "title" : "phoenix-common"
+  },
+  "schemes" : [],
+  "tags" : [
+    {
+      "name" : "BusinessRuleResource"
+    }
+    ,
+    {
+      "name" : "FileNumberAutoGenerateResource"
+    }
+    ,
+    {
+      "name" : "OfficeSettingResource"
+      ,
+      "description" : "Added by smahajan:PHX-19299\r\nAs Phoenix user, Third Party events must show correct time format as per office setting."
+    }
+    ,
+    {
+      "name" : "OrganizationSearchResource"
+      ,
+      "description" : "This class is web service implementation for organization search."
+    }
+  ],
+  "definitions" : {
+    "json_BusinessRuleRequestBean" : {
+      "type" : "object",
+      "title" : "BusinessRuleRequestBean",
+          "properties" : {
+            "shipmentStatusUpdateBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
+            },
+            "objectMap" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : "class to send the result json"
+    }
+    ,
+    "json_ShipmentStatusEventBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusEventBean",
+          "properties" : {
+            "eventName" : {
+"description" : "",
+"type" : "string"
+            },
+            "comment" : {
+"description" : "",
+"type" : "string"
+            },
+            "commentParams" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusUpdateBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusUpdateBean",
+          "properties" : {
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "relatedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "deletedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "eventList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
+}
+}
+            },
+            "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : "Shipment Status update bean. This bean will be used to update the shipment\r\nstatus."
+    }
+    ,
+    "json_BusinessRuleRequestBean" : {
+      "type" : "object",
+      "title" : "BusinessRuleRequestBean",
+          "properties" : {
+            "shipmentStatusUpdateBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
+            },
+            "objectMap" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : "class to send the result json"
+    }
+    ,
+    "json_ShipmentStatusEventBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusEventBean",
+          "properties" : {
+            "eventName" : {
+"description" : "",
+"type" : "string"
+            },
+            "comment" : {
+"description" : "",
+"type" : "string"
+            },
+            "commentParams" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatusUpdateBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatusUpdateBean",
+          "properties" : {
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "relatedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "deletedType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "eventList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
+}
+}
+            },
+            "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : "Shipment Status update bean. This bean will be used to update the shipment\r\nstatus."
+    }
+  },
+  "paths": {
+    "\/businessRule/callBusinessRule" : {
+      "post" : {
+        "tags" : [ "BusinessRuleResource" ],
+        "description" : "",
+        "operationId" : "resource_BusinessRuleResource_callBusinessRules_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_BusinessRuleRequestBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/file/autogenerate" : {
+      "post" : {
+        "tags" : [ "FileNumberAutoGenerateResource" ],
+        "description" : "",
+        "operationId" : "resource_FileNumberAutoGenerateResource_autogenerateImportFileNumber_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/office/office_settings" : {
+      "get" : {
+        "tags" : [ "OfficeSettingResource" ],
+        "description" : "",
+        "operationId" : "resource_OfficeSettingResource_callBusinessRules_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "officeCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/fetch/orgdata/json" : {
+      "post" : {
+        "tags" : [ "OrganizationSearchResource" ],
+        "description" : "",
+        "operationId" : "resource_OrganizationSearchResource_fetchOrgDataJson_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/fetch/orgdata/xml" : {
+      "post" : {
+        "tags" : [ "OrganizationSearchResource" ],
+        "description" : "",
+        "operationId" : "resource_OrganizationSearchResource_fetchOrgDataxml_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+  }
+}

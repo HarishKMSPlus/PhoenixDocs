@@ -1,0 +1,8665 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "<h1>phoenix-global Maven Webapp<\/h1>",
+    "version" : "1.0",
+    "title" : "phoenix-global Maven Webapp"
+  },
+  "schemes" : [],
+  "tags" : [
+    {
+      "name" : "BillOfLadingDataWebService"
+    }
+    ,
+    {
+      "name" : "BookingInfoResource"
+    }
+    ,
+    {
+      "name" : "CustomerDataWebService"
+    }
+    ,
+    {
+      "name" : "CustomerSearchApiWebService"
+    }
+    ,
+    {
+      "name" : "CustomerSearchWebService"
+    }
+    ,
+    {
+      "name" : "GlobalLoginService"
+    }
+    ,
+    {
+      "name" : "ShipmentDetailsThirdPartyResource"
+    }
+    ,
+    {
+      "name" : "ShipmentObjectResource"
+    }
+    ,
+    {
+      "name" : "ShipmentSearchGlobalResource"
+      ,
+      "description" : "This is the web service resource for fetching shipment details based on\r\nreference type provided."
+    }
+    ,
+    {
+      "name" : "WarehouseManifestGlobalWebService"
+    }
+  ],
+  "definitions" : {
+    "json_AgingMainBean" : {
+      "type" : "object",
+      "title" : "AgingMainBean",
+          "properties" : {
+            "agingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "unappliedAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "agingWidgetBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_AgingWidgetBean"
+}
+}
+            },
+            "totalAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_AgingWidgetBean" : {
+      "type" : "object",
+      "title" : "AgingWidgetBean",
+          "properties" : {
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "unPaidamount" : {
+"description" : "",
+"type" : "number"
+            },
+            "intervalRange" : {
+"description" : "",
+"type" : "string"
+            },
+            "target" : {
+"description" : "",
+"type" : "number"
+            },
+            "intervalCount" : {
+"description" : "",
+"type" : "string"
+            },
+            "statusPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "targetType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ApplyToHistoryBean" : {
+      "type" : "object",
+      "title" : "ApplyToHistoryBean",
+          "properties" : {
+            "arBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ArrivalNoticeBean" : {
+      "type" : "object",
+      "title" : "ArrivalNoticeBean",
+          "properties" : {
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "iStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatInvoice" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "availDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arnNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "blLoadCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "blDischargeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalRec" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalReq" : {
+"description" : "",
+"type" : "string"
+            },
+            "hblNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatCreditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "hblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "blLoadName" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "mblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "etaDestination" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "charges" : {
+"description" : "",
+"type" : "number"
+            },
+            "blDischargeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "houseITNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "activityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BolBean" : {
+      "type" : "object",
+      "title" : "BolBean",
+          "properties" : {
+            "shipperDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot7" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot1" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot11" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "charges" : {
+"description" : "",
+"type" : "number"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "clauses" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatInvoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "notifyPartyDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot5" : {
+"description" : "",
+"type" : "string"
+            },
+            "iStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot12" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot3" : {
+"description" : "",
+"type" : "string"
+            },
+            "availableLots" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot2" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopBkgNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot4" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot13" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot14" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot15" : {
+"description" : "",
+"type" : "string"
+            },
+            "bolNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "vatCreditNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "blStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "deliveryPartyDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot6" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot8" : {
+"description" : "",
+"type" : "string"
+            },
+            "lineHouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot10" : {
+"description" : "",
+"type" : "string"
+            },
+            "noOfOriginals" : {
+"description" : "",
+"type" : "number"
+            },
+            "blTopLot9" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blType" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BookingBean" : {
+      "type" : "object",
+      "title" : "BookingBean",
+          "properties" : {
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "pickup" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName2" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType1" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "receivedVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType2" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails2" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize1" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails1" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName1" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "latestDeliveryDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize2" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingSqlDate" : {
+"description" : "",
+"$ref" : "#/definitions/json_Date"
+            },
+            "inetUPD" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "container2" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDestination" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "quoteNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "container1" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CommonBean" : {
+      "type" : "object",
+      "title" : "CommonBean",
+          "properties" : {
+            "userFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userLoginId" : {
+"description" : "",
+"type" : "number"
+            },
+            "updateUserFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "username" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugModeFlag" : {
+"description" : "",
+"type" : "number"
+            },
+            "userCompanyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUserFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "locale" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userDefaultWarehouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "ldapUsername" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "config" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userCompany" : {
+"description" : "",
+"type" : "string"
+            },
+            "password" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userRoleID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userOfficeID" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ContactDetailBean" : {
+      "type" : "object",
+      "title" : "ContactDetailBean",
+          "properties" : {
+            "designation" : {
+"description" : "",
+"type" : "string"
+            },
+            "mobile" : {
+"description" : "",
+"type" : "string"
+            },
+            "email" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeContact" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "telephone" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CustomerBean" : {
+      "type" : "object",
+      "title" : "CustomerBean",
+          "properties" : {
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CustomerInformationBean" : {
+      "type" : "object",
+      "title" : "CustomerInformationBean",
+          "properties" : {
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerAddress1" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerAddress2" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerAddress3" : {
+"description" : "",
+"type" : "string"
+            },
+            "telephone" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerContactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCollect" : {
+"description" : "",
+"type" : "string"
+            },
+            "type" : {
+"description" : "",
+"type" : "string"
+            },
+            "state" : {
+"description" : "",
+"type" : "string"
+            },
+            "zipCountry" : {
+"description" : "",
+"type" : "string"
+            },
+            "faxNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "email" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_Date" : {
+      "type" : "object",
+      "title" : "Date",
+      "allOf" : [
+        {
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "json_DocumentAttachedBean" : {
+      "type" : "object",
+      "title" : "DocumentAttachedBean",
+          "properties" : {
+            "transmit" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "generateInvoiceBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenerateInvoiceBean"
+            },
+            "documentAttached" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "fitToPage" : {
+"description" : "",
+"type" : "string"
+            },
+            "xlsType" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "recCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "pendingApproval" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "stopCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "printWithoutLogo" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmitType" : {
+"description" : "",
+"type" : "string"
+            },
+            "comments" : {
+"description" : "",
+"type" : "string"
+            },
+            "holdDocFlag" : {
+"description" : "",
+"type" : "number"
+            },
+            "emailEnabled" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "doCustomerValidation" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "jasperServiceName" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "manifestCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "emailWithoutLogo" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "previewUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "defaultSelected" : {
+"description" : "",
+"type" : "string"
+            },
+            "localDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "generate" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "staticArgs" : {
+"description" : "",
+"type" : "string"
+            },
+            "validationMessage" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentSequence" : {
+"description" : "",
+"type" : "number"
+            },
+            "noTransmit" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "parentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "onHold" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "contentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "printEnabled" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "wareHouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "printCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmitTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "docFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitCoutShowZero" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "showPDFWithWatermark" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmitSelect" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "schemaid" : {
+"description" : "",
+"type" : "number"
+            },
+            "documentSettingBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_DocumentSettingBean"
+            },
+            "sailConfirmed" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "document_ref" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeId" : {
+"description" : "",
+"type" : "string"
+            },
+            "stopName" : {
+"description" : "",
+"type" : "string"
+            },
+            "isRequestIncomplete" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "upload" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "faxCheckboxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "ediInvoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "invoicePostingDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "transactionalType" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "holdType" : {
+"description" : "",
+"type" : "string"
+            },
+            "dynamicArguments" : {
+"description" : "",
+"type" : "object"
+            },
+            "transmitToSuggestion" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "tsscomment" : {
+"description" : "",
+"type" : "string"
+            },
+            "docVersion" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentExecutionType" : {
+"description" : "",
+"type" : "string"
+            },
+            "ediCMMI30Count" : {
+"description" : "",
+"type" : "number"
+            },
+            "blTransmissionCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "default" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmissionDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitEnable" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "userTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "payorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "courierCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "faxNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "version" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmissionCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "userFullName" : {
+"description" : "",
+"type" : "string"
+            },
+            "previewable" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "voided" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "blMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "objectType" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentSubject" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportContentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "serviceName" : {
+"description" : "",
+"type" : "string"
+            },
+            "status_name" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "governmentReferenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "isCancel" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "cfsflag" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "previewPopupHeader" : {
+"description" : "",
+"type" : "string"
+            },
+            "forcedPrint" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "documenthistoryid" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentProgramCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "staticArguments" : {
+"description" : "",
+"type" : "object"
+            },
+            "fileId" : {
+"description" : "",
+"type" : "number"
+            },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitToList" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "docSelected" : {
+"description" : "",
+"type" : "number"
+            },
+            "docCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "procCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "index" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_DocumentSettingBean" : {
+      "type" : "object",
+      "title" : "DocumentSettingBean",
+          "properties" : {
+            "shipmentObjectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_FileSearchBean" : {
+      "type" : "object",
+      "title" : "FileSearchBean",
+          "properties" : {
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadplans" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "departureDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "stopOff" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "mblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "carrierBooking" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "carrier" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_GenerateInvoiceBean" : {
+      "type" : "object",
+      "title" : "GenerateInvoiceBean",
+          "properties" : {
+            "invoiceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "openAR" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "unpostedWorkAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "unpostedInvAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "creditUsed" : {
+"description" : "",
+"type" : "number"
+            },
+            "creditLimit" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditHold" : {
+"description" : "",
+"type" : "string"
+            },
+            "errorMessage" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCdoe" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_HoldBean" : {
+      "type" : "object",
+      "title" : "HoldBean",
+          "properties" : {
+            "code" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_InvoiceBean" : {
+      "type" : "object",
+      "title" : "InvoiceBean",
+          "properties" : {
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSubType" : {
+"description" : "",
+"type" : "string"
+            },
+            "countAirDocument" : {
+"description" : "",
+"type" : "number"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "arBatch" : {
+"description" : "",
+"type" : "number"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            },
+            "payerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "closeDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "amountPaid" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "airInvoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "company" : {
+"description" : "",
+"type" : "string"
+            },
+            "glNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "sale" : {
+"description" : "",
+"type" : "string"
+            },
+            "recstatcode" : {
+"description" : "",
+"type" : "string"
+            },
+            "houseReferNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyVat" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoicestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "additionalType" : {
+"description" : "",
+"type" : "string"
+            },
+            "dualInvoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "blNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "name" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceForeignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "localCurr" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalRecord" : {
+"description" : "",
+"type" : "number"
+            },
+            "paid" : {
+"description" : "",
+"type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "arPostingDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByAt" : {
+"description" : "",
+"type" : "string"
+            },
+            "SQLTypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "siiNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "groupInvoiceFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "payerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "localAmt" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_InvoiceDetailBean" : {
+      "type" : "object",
+      "title" : "InvoiceDetailBean",
+          "properties" : {
+            "paidAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "recstatcode" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyToHistoryDetailList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ApplyToHistoryBean"
+}
+}
+            },
+            "chargeCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "note1" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentDetailBean"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceIssuedBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByAt" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "paymentDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PaymentDetailBean"
+            },
+            "custRef" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSubType" : {
+"description" : "",
+"type" : "string"
+            },
+            "glNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckBookingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "docType" : {
+"description" : "",
+"type" : "string"
+            },
+            "dualInvoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputed" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "invoiceDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeStampBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_TimeStampBean"
+            },
+            "invoiceDueDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "closeDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "transmissionDocType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "countAirDocument" : {
+"description" : "",
+"type" : "number"
+            },
+            "issuedByUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "postingDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "cancelAdditionalInvoice" : {
+"description" : "",
+"type" : "string"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationResultDetailBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationResultDetailBean"
+}
+}
+            },
+            "foreignCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyVat" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "routingDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_RoutingDetailBean"
+            },
+            "govRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDueDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "balanceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "closeDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "airInvoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "applyTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "postingDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "documentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "glDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "sale" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDetailList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PaymentDetailBean"
+}
+}
+            },
+            "intercoExpFile" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCustomer" : {
+"description" : "",
+"type" : "string"
+            },
+            "ratingDetailBeansList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_RatingDetailBean"
+}
+}
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "note2" : {
+"description" : "",
+"type" : "string"
+            },
+            "houseReferNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "ediInvoiceStatusDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "ediInvoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoicestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentAttachedBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_DocumentAttachedBean"
+}
+}
+            },
+            "referenceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceForeignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceUserSchema" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_LoadPlanQuickSearchBean" : {
+      "type" : "object",
+      "title" : "LoadPlanQuickSearchBean",
+          "properties" : {
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "destination" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPlanReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_LotBean" : {
+      "type" : "object",
+      "title" : "LotBean",
+          "properties" : {
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrNoticeNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "inTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "sel" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "warehouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "inSqlDate" : {
+"description" : "",
+"$ref" : "#/definitions/json_Date"
+            },
+            "exceptions" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "proNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperAdress1" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "holdDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "trucker" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "commonBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_CommonBean"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "inDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "hold" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationResultDetailBean" : {
+      "type" : "object",
+      "title" : "OrganizationResultDetailBean",
+          "properties" : {
+            "fax" : {
+"description" : "",
+"type" : "string"
+            },
+            "country" : {
+"description" : "",
+"type" : "string"
+            },
+            "einType" : {
+"description" : "",
+"type" : "string"
+            },
+            "inTransitShipment" : {
+"description" : "",
+"type" : "number"
+            },
+            "creditTerm" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipmentStatisticBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatisticBean"
+}
+}
+            },
+            "agent" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentIndicator" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "accuRateProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "name1" : {
+"description" : "",
+"type" : "string"
+            },
+            "state" : {
+"description" : "",
+"type" : "string"
+            },
+            "broker" : {
+"description" : "",
+"type" : "string"
+            },
+            "region" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateAssigned" : {
+"description" : "",
+"type" : "number"
+            },
+            "postalCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "arStatement" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "additionalProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "city" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAddress" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoneNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "onHoldStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "billToCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "saleRepresentativeType" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "contactDetailBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ContactDetailBean"
+}
+}
+            },
+            "accountClass" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselSchedule" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactPerson" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateAssignedLabel" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationTypeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "countryCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAddress3" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxId" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "email" : {
+"description" : "",
+"type" : "string"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "nvoccBond" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "fmcNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "rateProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAddress2" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingMainBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_AgingMainBean"
+            },
+            "totalImportCredit" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaCustomer" : {
+"description" : "",
+"type" : "string"
+            },
+            "collectionOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditLimit" : {
+"description" : "",
+"type" : "number"
+            },
+            "cellPhone" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditOverAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "uninvoicedShipment" : {
+"description" : "",
+"type" : "number"
+            },
+            "callCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "custCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PaymentDetailBean" : {
+      "type" : "object",
+      "title" : "PaymentDetailBean",
+          "properties" : {
+            "paymentBatchNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDescription1" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDescription2" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PurchaseOrderSearchResultBean" : {
+      "type" : "object",
+      "title" : "PurchaseOrderSearchResultBean",
+          "properties" : {
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "outerPieces" : {
+"description" : "",
+"type" : "string"
+            },
+            "venderDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "venderName" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "origin" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "volumeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "innerPieces" : {
+"description" : "",
+"type" : "string"
+            },
+            "localDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "purchaseOrderNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightKg" : {
+"description" : "",
+"type" : "string"
+            },
+            "handlingOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipEarliest" : {
+"description" : "",
+"type" : "string"
+            },
+            "actualDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "voulmeCbm" : {
+"description" : "",
+"type" : "string"
+            },
+            "transportMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "destination" : {
+"description" : "",
+"type" : "string"
+            },
+            "arriveEarliest" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_QuoteBean" : {
+      "type" : "object",
+      "title" : "QuoteBean",
+          "properties" : {
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "quoteNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "quoteDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_RatingDetailBean" : {
+      "type" : "object",
+      "title" : "RatingDetailBean",
+          "properties" : {
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "basisDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "chargeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "rate" : {
+"description" : "",
+"type" : "number"
+            },
+            "localAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "basis" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "exchangeRate" : {
+"description" : "",
+"type" : "number"
+            },
+            "chargeCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_RoutingDetailBean" : {
+      "type" : "object",
+      "title" : "RoutingDetailBean",
+          "properties" : {
+            "etapDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePort" : {
+"description" : "",
+"type" : "string"
+            },
+            "destAirportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etadDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "etapDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "placeOfReceipt" : {
+"description" : "",
+"type" : "string"
+            },
+            "destLocationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "placeOfDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "loadPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "etsDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "airETA" : {
+"description" : "",
+"type" : "string"
+            },
+            "originLocationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "etsDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "originAirportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "airETD" : {
+"description" : "",
+"type" : "string"
+            },
+            "etadDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipcoSearchHistInetBean" : {
+      "type" : "object",
+      "title" : "ShipcoSearchHistInetBean",
+          "properties" : {
+            "senderCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "subSystem" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "recordType" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "serialversionuid" : {
+"description" : "",
+"type" : "number"
+            },
+            "transactionType" : {
+"description" : "",
+"type" : "string"
+            },
+            "recSeq" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipcoSearchIntertrackBean" : {
+      "type" : "object",
+      "title" : "ShipcoSearchIntertrackBean",
+          "properties" : {
+            "transactionTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionType" : {
+"description" : "",
+"type" : "string"
+            },
+            "subSystem" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "recordType" : {
+"description" : "",
+"type" : "string"
+            },
+            "recSeq" : {
+"description" : "",
+"type" : "string"
+            },
+            "serialversionuid" : {
+"description" : "",
+"type" : "number"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "senderCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentDetailBean" : {
+      "type" : "object",
+      "title" : "ShipmentDetailBean",
+          "properties" : {
+            "containerSize" : {
+"description" : "",
+"type" : "string"
+            },
+            "arnSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType" : {
+"description" : "",
+"type" : "string"
+            },
+            "airBookingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "mawbNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipper" : {
+"description" : "",
+"type" : "string"
+            },
+            "bolSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDesc" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSizeList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "containerTypeList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "containerNumberList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "containerDescList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "consignee" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "airRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatisticBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatisticBean",
+          "properties" : {
+            "countPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "volumePercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "pastCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "docCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "countIndicator" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "pastWeight" : {
+"description" : "",
+"type" : "number"
+            },
+            "volumeIndicator" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "docType" : {
+"description" : "",
+"type" : "string"
+            },
+            "pastVolume" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentVolume" : {
+"description" : "",
+"type" : "number"
+            },
+            "weightIndicator" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentWeight" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_TimeStampBean" : {
+      "type" : "object",
+      "title" : "TimeStampBean",
+          "properties" : {
+            "timeCountDao" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeStart" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountTranfer" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountRender" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountService" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_TrackingResultBean" : {
+      "type" : "object",
+      "title" : "TrackingResultBean",
+          "properties" : {
+            "lotBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_LotBean"
+}
+}
+            },
+            "invoiceBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_InvoiceBean"
+}
+}
+            },
+            "type" : {
+"description" : "",
+"type" : "string"
+            },
+            "countItemForm" : {
+"description" : "",
+"type" : "object"
+            },
+            "bolBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_BolBean"
+}
+}
+            },
+            "loadPlanBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_LoadPlanQuickSearchBean"
+}
+}
+            },
+            "customerBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_CustomerBean"
+}
+}
+            },
+            "totalCubeCbf" : {
+"description" : "",
+"type" : "object"
+            },
+            "invoiceDetailBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_InvoiceDetailBean"
+}
+}
+            },
+            "totalWeightKg" : {
+"description" : "",
+"type" : "object"
+            },
+            "bookingBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_BookingBean"
+}
+}
+            },
+            "shipcoSearchHistInetBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipcoSearchHistInetBean"
+}
+}
+            },
+            "quoteBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_QuoteBean"
+}
+}
+            },
+            "shipcoSearchIntertrackBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipcoSearchIntertrackBean"
+}
+}
+            },
+            "totalWeightLbs" : {
+"description" : "",
+"type" : "object"
+            },
+            "arnBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ArrivalNoticeBean"
+}
+}
+            },
+            "totalCubeCbm" : {
+"description" : "",
+"type" : "object"
+            },
+            "purchaseOrderSearchResultBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PurchaseOrderSearchResultBean"
+}
+}
+            },
+            "fileSearchBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_FileSearchBean"
+}
+}
+            },
+            "holdBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_HoldBean"
+}
+}
+            },
+            "totalPieces" : {
+"description" : "",
+"type" : "object"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseManifestBean" : {
+      "type" : "object",
+      "title" : "WarehouseManifestBean",
+          "properties" : {
+            "filename" : {
+"description" : "",
+"type" : "string"
+            },
+            "xml" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseManifestResultBean" : {
+      "type" : "object",
+      "title" : "WarehouseManifestResultBean",
+          "properties" : {
+            "resultCode" : {
+"description" : "",
+"type" : "number"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_AgingMainBean" : {
+      "type" : "object",
+      "title" : "AgingMainBean",
+          "properties" : {
+            "agingWidgetBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_AgingWidgetBean"
+}
+}
+            },
+            "unappliedAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalAmount" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_AgingWidgetBean" : {
+      "type" : "object",
+      "title" : "AgingWidgetBean",
+          "properties" : {
+            "unPaidamount" : {
+"description" : "",
+"type" : "number"
+            },
+            "intervalCount" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "targetType" : {
+"description" : "",
+"type" : "string"
+            },
+            "target" : {
+"description" : "",
+"type" : "number"
+            },
+            "statusPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "intervalRange" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ApplyToHistoryBean" : {
+      "type" : "object",
+      "title" : "ApplyToHistoryBean",
+          "properties" : {
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "arBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ArrivalNoticeBean" : {
+      "type" : "object",
+      "title" : "ArrivalNoticeBean",
+          "properties" : {
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalRec" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "activityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "iStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "blLoadCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "arnNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDestination" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatInvoice" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "availDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "hblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "blLoadName" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "charges" : {
+"description" : "",
+"type" : "number"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blDischargeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatCreditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalReq" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "hblNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blDischargeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "mblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "houseITNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdBy" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BolBean" : {
+      "type" : "object",
+      "title" : "BolBean",
+          "properties" : {
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot7" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot3" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatCreditNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "availableLots" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "bolNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryPartyDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot13" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot6" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "iStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "blType" : {
+"description" : "",
+"type" : "string"
+            },
+            "lineHouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "vatInvoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot10" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "blTopLot2" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot14" : {
+"description" : "",
+"type" : "string"
+            },
+            "charges" : {
+"description" : "",
+"type" : "number"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot11" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopBkgNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot12" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot15" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "blStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "notifyPartyDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "number"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "createdBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "clauses" : {
+"description" : "",
+"type" : "string"
+            },
+            "noOfOriginals" : {
+"description" : "",
+"type" : "number"
+            },
+            "blTopLot4" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "blTopLot9" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot1" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot8" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "blTopLot5" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_BookingBean" : {
+      "type" : "object",
+      "title" : "BookingBean",
+          "properties" : {
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "quoteNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "receivedVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType2" : {
+"description" : "",
+"type" : "string"
+            },
+            "container1" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "bookingSqlDate" : {
+"description" : "",
+"$ref" : "#/definitions/json_Date"
+            },
+            "bookingNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "container2" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails2" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName2" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDetails1" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerName1" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize2" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "pickup" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType1" : {
+"description" : "",
+"type" : "string"
+            },
+            "inetUPD" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDestination" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "latestDeliveryDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize1" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CommonBean" : {
+      "type" : "object",
+      "title" : "CommonBean",
+          "properties" : {
+            "username" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugModeFlag" : {
+"description" : "",
+"type" : "number"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "userDefaultWarehouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCompanyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "config" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaID" : {
+"description" : "",
+"type" : "number"
+            },
+            "officeTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "userLoginId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userOfficeID" : {
+"description" : "",
+"type" : "number"
+            },
+            "inputLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "locale" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userRoleID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateUserFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "ldapUsername" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUserFullname" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCompany" : {
+"description" : "",
+"type" : "string"
+            },
+            "password" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ContactDetailBean" : {
+      "type" : "object",
+      "title" : "ContactDetailBean",
+          "properties" : {
+            "mobile" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "telephone" : {
+"description" : "",
+"type" : "string"
+            },
+            "email" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeContact" : {
+"description" : "",
+"type" : "string"
+            },
+            "designation" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CustomerBean" : {
+      "type" : "object",
+      "title" : "CustomerBean",
+          "properties" : {
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_CustomerInformationBean" : {
+      "type" : "object",
+      "title" : "CustomerInformationBean",
+          "properties" : {
+            "CustomerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "CompanyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "Address2" : {
+"description" : "",
+"type" : "string"
+            },
+            "Address3" : {
+"description" : "",
+"type" : "string"
+            },
+            "CustomerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "ContactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "Fax" : {
+"description" : "",
+"type" : "string"
+            },
+            "OfficeCollect" : {
+"description" : "",
+"type" : "string"
+            },
+            "State" : {
+"description" : "",
+"type" : "string"
+            },
+            "Telephone" : {
+"description" : "",
+"type" : "string"
+            },
+            "Type" : {
+"description" : "",
+"type" : "string"
+            },
+            "ZipCountry" : {
+"description" : "",
+"type" : "string"
+            },
+            "Email" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_Date" : {
+      "type" : "object",
+      "title" : "Date",
+      "allOf" : [
+        {
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "json_DocumentAttachedBean" : {
+      "type" : "object",
+      "title" : "DocumentAttachedBean",
+          "properties" : {
+            "documenthistoryid" : {
+"description" : "",
+"type" : "string"
+            },
+            "procCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileId" : {
+"description" : "",
+"type" : "number"
+            },
+            "staticArgs" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeId" : {
+"description" : "",
+"type" : "string"
+            },
+            "doCustomerValidation" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "showPDFWithWatermark" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "payorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "docCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "validationMessage" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaid" : {
+"description" : "",
+"type" : "number"
+            },
+            "cfsflag" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "isRequestIncomplete" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "fitToPage" : {
+"description" : "",
+"type" : "string"
+            },
+            "docVersion" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionalType" : {
+"description" : "",
+"type" : "string"
+            },
+            "previewable" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "onHold" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "blTransmissionCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "generate" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "objectType" : {
+"description" : "",
+"type" : "string"
+            },
+            "contentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "parentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "stopName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentExecutionType" : {
+"description" : "",
+"type" : "string"
+            },
+            "faxCheckboxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "ediCMMI30Count" : {
+"description" : "",
+"type" : "number"
+            },
+            "holdDocFlag" : {
+"description" : "",
+"type" : "number"
+            },
+            "tsscomment" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "manifestCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "documentSettingBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_DocumentSettingBean"
+            },
+            "stopCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "holdType" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoicePostingDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "transmitCoutShowZero" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "default" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "faxNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportContentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "serviceName" : {
+"description" : "",
+"type" : "string"
+            },
+            "localeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "printWithoutLogo" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "dynamicArguments" : {
+"description" : "",
+"type" : "object"
+            },
+            "version" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "docFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "transmitType" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "recCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitEnable" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "xlsType" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmitSelect" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "staticArguments" : {
+"description" : "",
+"type" : "object"
+            },
+            "documentProgramCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "upload" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "printEnabled" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "forcedPrint" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "pendingApproval" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "courierCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "generateInvoiceBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenerateInvoiceBean"
+            },
+            "transmitToList" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "jasperServiceName" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitToSuggestion" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "ediInvoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "userTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "blMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "document_ref" : {
+"description" : "",
+"type" : "string"
+            },
+            "comments" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentSubject" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userFullName" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmissionDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "defaultSelected" : {
+"description" : "",
+"type" : "string"
+            },
+            "index" : {
+"description" : "",
+"type" : "string"
+            },
+            "wareHouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "localDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "printCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "transmit" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "emailEnabled" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "isCancel" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "voided" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "sailConfirmed" : {
+"description" : "",
+"type" : "string"
+            },
+            "noTransmit" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "documentAttached" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "governmentReferenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmissionCheckBoxRequire" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "emailWithoutLogo" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "previewPopupHeader" : {
+"description" : "",
+"type" : "string"
+            },
+            "docSelected" : {
+"description" : "",
+"type" : "number"
+            },
+            "previewUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentSequence" : {
+"description" : "",
+"type" : "number"
+            },
+            "status_name" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_DocumentSettingBean" : {
+      "type" : "object",
+      "title" : "DocumentSettingBean",
+          "properties" : {
+            "documentSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "shipmentObjectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_FileSearchBean" : {
+      "type" : "object",
+      "title" : "FileSearchBean",
+          "properties" : {
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "carrier" : {
+"description" : "",
+"type" : "string"
+            },
+            "stopOff" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "carrierBooking" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "mblNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "departureDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadplans" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadCode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_GenerateInvoiceBean" : {
+      "type" : "object",
+      "title" : "GenerateInvoiceBean",
+          "properties" : {
+            "openAR" : {
+"description" : "",
+"type" : "number"
+            },
+            "creditHold" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditLimit" : {
+"description" : "",
+"type" : "string"
+            },
+            "unpostedInvAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "creditUsed" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerCdoe" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "unpostedWorkAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "errorMessage" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_HoldBean" : {
+      "type" : "object",
+      "title" : "HoldBean",
+          "properties" : {
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "code" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_InvoiceBean" : {
+      "type" : "object",
+      "title" : "InvoiceBean",
+          "properties" : {
+            "airInvoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "closeDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceForeignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "issuedByAt" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "balanceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "arSubType" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyVat" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "sale" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "payerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "groupInvoiceFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "recstatcode" : {
+"description" : "",
+"type" : "string"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            },
+            "additionalType" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "siiNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "glNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalRecord" : {
+"description" : "",
+"type" : "number"
+            },
+            "paid" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "SQLTypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoicestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "name" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "countAirDocument" : {
+"description" : "",
+"type" : "number"
+            },
+            "company" : {
+"description" : "",
+"type" : "string"
+            },
+            "arPostingDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurr" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "dualInvoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "localAmt" : {
+"description" : "",
+"type" : "number"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "arBatch" : {
+"description" : "",
+"type" : "number"
+            },
+            "payerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "amountPaid" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "houseReferNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "blNo" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_InvoiceDetailBean" : {
+      "type" : "object",
+      "title" : "InvoiceDetailBean",
+          "properties" : {
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentDetailBean"
+            },
+            "vatFlag" : {
+"description" : "",
+"type" : "string"
+            },
+            "airInvoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "custRef" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "ediInvoiceStatusDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedValue" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckBookingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCustomer" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceUserSchema" : {
+"description" : "",
+"type" : "string"
+            },
+            "closeDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "issuedByCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "sale" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceIssuedBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "ediInvoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "arSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentName" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arType" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentAttachedBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_DocumentAttachedBean"
+}
+}
+            },
+            "applyTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "arBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoicestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "paidAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputed" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "arSubType" : {
+"description" : "",
+"type" : "string"
+            },
+            "ratingDetailBeansList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_RatingDetailBean"
+}
+}
+            },
+            "transmissionDocType" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "countAirDocument" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceDueDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "dualInvoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "note1" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyVat" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyToHistoryDetailList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ApplyToHistoryBean"
+}
+}
+            },
+            "inputDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceForeignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "docType" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuedByAt" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "houseReferNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationResultDetailBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationResultDetailBean"
+}
+}
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "cancelAdditionalInvoice" : {
+"description" : "",
+"type" : "string"
+            },
+            "recstatcode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "postingDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeStampBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_TimeStampBean"
+            },
+            "invoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "govRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "intercoExpFile" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "note2" : {
+"description" : "",
+"type" : "string"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceDueDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "glDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "closeDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDetailList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PaymentDetailBean"
+}
+}
+            },
+            "chargeCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "glNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PaymentDetailBean"
+            },
+            "postingDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "routingDetailBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_RoutingDetailBean"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_LoadPlanQuickSearchBean" : {
+      "type" : "object",
+      "title" : "LoadPlanQuickSearchBean",
+          "properties" : {
+            "schemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "loadPlanReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "destination" : {
+"description" : "",
+"type" : "string"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_LotBean" : {
+      "type" : "object",
+      "title" : "LotBean",
+          "properties" : {
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "hold" : {
+"description" : "",
+"type" : "string"
+            },
+            "sel" : {
+"description" : "",
+"type" : "string"
+            },
+            "exceptions" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "container" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrNoticeNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "inSqlDate" : {
+"description" : "",
+"$ref" : "#/definitions/json_Date"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperAdress1" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "proNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "commonBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_CommonBean"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "inDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "warehouse" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "trucker" : {
+"description" : "",
+"type" : "string"
+            },
+            "vessel" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "holdDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "inTime" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_OrganizationResultDetailBean" : {
+      "type" : "object",
+      "title" : "OrganizationResultDetailBean",
+          "properties" : {
+            "accountClass" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditTerm" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactDetailBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ContactDetailBean"
+}
+}
+            },
+            "onHoldStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateAssignedLabel" : {
+"description" : "",
+"type" : "string"
+            },
+            "totalImportCredit" : {
+"description" : "",
+"type" : "string"
+            },
+            "uninvoicedShipment" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationAddress2" : {
+"description" : "",
+"type" : "string"
+            },
+            "arStatement" : {
+"description" : "",
+"type" : "string"
+            },
+            "name1" : {
+"description" : "",
+"type" : "string"
+            },
+            "einType" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaCustomer" : {
+"description" : "",
+"type" : "string"
+            },
+            "collectionOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoneNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "saleRepresentativeType" : {
+"description" : "",
+"type" : "string"
+            },
+            "cellPhone" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateAssigned" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "countryCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "postalCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "agent" : {
+"description" : "",
+"type" : "string"
+            },
+            "nvoccBond" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxId" : {
+"description" : "",
+"type" : "string"
+            },
+            "state" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationTypeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactPerson" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingMainBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_AgingMainBean"
+            },
+            "organizationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "bookingCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "inTransitShipment" : {
+"description" : "",
+"type" : "number"
+            },
+            "fmcNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "country" : {
+"description" : "",
+"type" : "string"
+            },
+            "city" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "broker" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselSchedule" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditOverAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "accuRateProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "fax" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAddress" : {
+"description" : "",
+"type" : "string"
+            },
+            "rateProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "region" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "email" : {
+"description" : "",
+"type" : "string"
+            },
+            "callCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "custCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAddress3" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditLimit" : {
+"description" : "",
+"type" : "number"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentStatisticBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatisticBean"
+}
+}
+            },
+            "billToCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "additionalProfile" : {
+"description" : "",
+"type" : "string"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentIndicator" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PaymentDetailBean" : {
+      "type" : "object",
+      "title" : "PaymentDetailBean",
+          "properties" : {
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDescription1" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDescription2" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentBatchNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_PurchaseOrderSearchResultBean" : {
+      "type" : "object",
+      "title" : "PurchaseOrderSearchResultBean",
+          "properties" : {
+            "volumeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "venderName" : {
+"description" : "",
+"type" : "string"
+            },
+            "destination" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "actualDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipEarliest" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightKg" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "arriveEarliest" : {
+"description" : "",
+"type" : "string"
+            },
+            "voulmeCbm" : {
+"description" : "",
+"type" : "string"
+            },
+            "handlingOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "outerPieces" : {
+"description" : "",
+"type" : "string"
+            },
+            "purchaseOrderNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "origin" : {
+"description" : "",
+"type" : "string"
+            },
+            "innerPieces" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "localDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "direction" : {
+"description" : "",
+"type" : "string"
+            },
+            "reference" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "venderDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "transportMode" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_QuoteBean" : {
+      "type" : "object",
+      "title" : "QuoteBean",
+          "properties" : {
+            "originName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdOrigin" : {
+"description" : "",
+"type" : "string"
+            },
+            "cube" : {
+"description" : "",
+"type" : "number"
+            },
+            "e_m" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "quoteDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperName" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "vesselName" : {
+"description" : "",
+"type" : "string"
+            },
+            "quoteNo" : {
+"description" : "",
+"type" : "number"
+            },
+            "sqlUdt" : {
+"description" : "",
+"type" : "string"
+            },
+            "originCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "pieces" : {
+"description" : "",
+"type" : "number"
+            },
+            "vesselCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "loadPortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etaDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "sailDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightLbs" : {
+"description" : "",
+"type" : "string"
+            },
+            "forwarderReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortName" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "wwaReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "voyage" : {
+"description" : "",
+"type" : "string"
+            },
+            "sqltypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "cubeCbf" : {
+"description" : "",
+"type" : "string"
+            },
+            "fclLcl" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "communicationReference" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_RatingDetailBean" : {
+      "type" : "object",
+      "title" : "RatingDetailBean",
+          "properties" : {
+            "foreignCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "basisDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "basis" : {
+"description" : "",
+"type" : "string"
+            },
+            "rate" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "exchangeRate" : {
+"description" : "",
+"type" : "number"
+            },
+            "chargeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "localAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ResultJson" : {
+      "type" : "object",
+      "title" : "ResultJson",
+          "properties" : {
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_RoutingDetailBean" : {
+      "type" : "object",
+      "title" : "RoutingDetailBean",
+          "properties" : {
+            "loadPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "etsDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "etapDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "airETA" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "etadDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "placeOfDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "etsDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "airETD" : {
+"description" : "",
+"type" : "string"
+            },
+            "etdDate" : {
+"description" : "",
+"type" : "number"
+            },
+            "placeOfReceipt" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originLocationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etapDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "destAirportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePort" : {
+"description" : "",
+"type" : "string"
+            },
+            "locationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "etadDateDisplay" : {
+"description" : "",
+"type" : "string"
+            },
+            "originAirportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "destLocationName" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipcoSearchHistInetBean" : {
+      "type" : "object",
+      "title" : "ShipcoSearchHistInetBean",
+          "properties" : {
+            "senderCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "serialversionuid" : {
+"description" : "",
+"type" : "number"
+            },
+            "transactionTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "recordType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "recSeq" : {
+"description" : "",
+"type" : "string"
+            },
+            "subSystem" : {
+"description" : "",
+"type" : "string"
+            },
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionType" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipcoSearchIntertrackBean" : {
+      "type" : "object",
+      "title" : "ShipcoSearchIntertrackBean",
+          "properties" : {
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "lotNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "transactionTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "subSystem" : {
+"description" : "",
+"type" : "string"
+            },
+            "senderCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "recordType" : {
+"description" : "",
+"type" : "string"
+            },
+            "serialversionuid" : {
+"description" : "",
+"type" : "number"
+            },
+            "transactionDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "recSeq" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentDetailBean" : {
+      "type" : "object",
+      "title" : "ShipmentDetailBean",
+          "properties" : {
+            "containerTypeList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "containerDescList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mawbNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "airBookingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerType" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "bolSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "consignee" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSizeList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "arrivalNoticeNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerSize" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerNumberList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "shipper" : {
+"description" : "",
+"type" : "string"
+            },
+            "bookingNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "arnSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "airRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "containerDesc" : {
+"description" : "",
+"type" : "string"
+            },
+            "billOfLadingNumber" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_ShipmentStatisticBean" : {
+      "type" : "object",
+      "title" : "ShipmentStatisticBean",
+          "properties" : {
+            "docType" : {
+"description" : "",
+"type" : "string"
+            },
+            "pastWeight" : {
+"description" : "",
+"type" : "number"
+            },
+            "pastVolume" : {
+"description" : "",
+"type" : "number"
+            },
+            "countIndicator" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "docCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "weightPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "volumePercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "pastCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "weightIndicator" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "countPercent" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentVolume" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentCount" : {
+"description" : "",
+"type" : "number"
+            },
+            "currentWeight" : {
+"description" : "",
+"type" : "number"
+            },
+            "volumeIndicator" : {
+"description" : "",
+"type" : "boolean"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_TimeStampBean" : {
+      "type" : "object",
+      "title" : "TimeStampBean",
+          "properties" : {
+            "timeCountService" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountRender" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountDao" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeCountTranfer" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeStart" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_TrackingResultBean" : {
+      "type" : "object",
+      "title" : "TrackingResultBean",
+          "properties" : {
+            "loadPlanBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_LoadPlanQuickSearchBean"
+}
+}
+            },
+            "fileSearchBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_FileSearchBean"
+}
+}
+            },
+            "customerBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_CustomerBean"
+}
+}
+            },
+            "quoteBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_QuoteBean"
+}
+}
+            },
+            "totalCubeCbf" : {
+"description" : "",
+"type" : "object"
+            },
+            "type" : {
+"description" : "",
+"type" : "string"
+            },
+            "countItemForm" : {
+"description" : "",
+"type" : "object"
+            },
+            "totalCubeCbm" : {
+"description" : "",
+"type" : "object"
+            },
+            "invoiceDetailBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_InvoiceDetailBean"
+}
+}
+            },
+            "shipcoSearchIntertrackBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipcoSearchIntertrackBean"
+}
+}
+            },
+            "shipcoSearchHistInetBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipcoSearchHistInetBean"
+}
+}
+            },
+            "totalPieces" : {
+"description" : "",
+"type" : "object"
+            },
+            "totalWeightKg" : {
+"description" : "",
+"type" : "object"
+            },
+            "purchaseOrderSearchResultBeanList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_PurchaseOrderSearchResultBean"
+}
+}
+            },
+            "totalWeightLbs" : {
+"description" : "",
+"type" : "object"
+            },
+            "invoiceBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_InvoiceBean"
+}
+}
+            },
+            "bolBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_BolBean"
+}
+}
+            },
+            "lotBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_LotBean"
+}
+}
+            },
+            "holdBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_HoldBean"
+}
+}
+            },
+            "bookingBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_BookingBean"
+}
+}
+            },
+            "arnBeanArray" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ArrivalNoticeBean"
+}
+}
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseManifestBean" : {
+      "type" : "object",
+      "title" : "WarehouseManifestBean",
+          "properties" : {
+            "filename" : {
+"description" : "",
+"type" : "string"
+            },
+            "xml" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "json_WarehouseManifestResultBean" : {
+      "type" : "object",
+      "title" : "WarehouseManifestResultBean",
+          "properties" : {
+            "resultCode" : {
+"description" : "",
+"type" : "number"
+            },
+            "message" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "description" : ""
+    }
+    ,
+    "xml_ns0_customerInformationBean" : {
+      "type" : "object",
+      "title" : "customerInformationBean",
+      "allOf" : [
+        {
+          "properties" : {
+            "Address2" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "Address3" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "CompanyName" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "ContactName" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "CustomerCode" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "CustomerName" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "Email" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "Fax" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "OfficeCollect" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "State" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "Telephone" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "Type" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "ZipCountry" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+  },
+  "paths": {
+    "\/billoflading/send/json" : {
+      "get" : {
+        "tags" : [ "BillOfLadingDataWebService" ],
+        "description" : "",
+        "operationId" : "resource_BillOfLadingDataWebService_GenerateBillOfLading_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "bolNumber",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "schemaName",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/bookingdetails/bookingInfo" : {
+      "get" : {
+        "tags" : [ "BookingInfoResource" ],
+        "description" : "",
+        "operationId" : "resource_BookingInfoResource_getBookings_GET",
+        "parameters" : [
+          {
+            "name" : "bkgNumber",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "officeType",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "schemaName",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "siteId",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "userId",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/customer/searchAllOffice" : {
+      "get" : {
+        "tags" : [ "CustomerDataWebService" ],
+        "description" : "",
+        "operationId" : "resource_CustomerDataWebService_getCustomerDetailsByIdAllOffice_GET",
+        "produces" : [ "application/xml" ],
+        "parameters" : [
+          {
+            "name" : "custId",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/customer/searchOffice" : {
+      "get" : {
+        "tags" : [ "CustomerDataWebService" ],
+        "description" : "",
+        "operationId" : "resource_CustomerDataWebService_getCustomerDetailsByIdAndOfficeCode_GET",
+        "produces" : [ "application/xml" ],
+        "parameters" : [
+          {
+            "name" : "custId",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "officeCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/api/customer/apiorgjson" : {
+      "post" : {
+        "tags" : [ "CustomerSearchApiWebService" ],
+        "summary" : "PHX-22414 For Customer Search this method called when the user hits url\r\nonly with customer params.",
+        "description" : "PHX-22414 For Customer Search this method called when the user hits url\r\nonly with customer params",
+        "operationId" : "resource_CustomerSearchApiWebService_fetchOrgDataJson_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/api/customer/apiorgxml" : {
+      "post" : {
+        "tags" : [ "CustomerSearchApiWebService" ],
+        "summary" : "PHX-22414 For Customer Search this method called when the user hits url\r\nonly with customer params.",
+        "description" : "PHX-22414 For Customer Search this method called when the user hits url\r\nonly with customer params",
+        "operationId" : "resource_CustomerSearchApiWebService_fetchOrgDataxml_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/customer/json" : {
+      "get" : {
+        "tags" : [ "CustomerSearchWebService" ],
+        "description" : "",
+        "operationId" : "resource_CustomerSearchWebService_getCustomerDetailsJson_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "customerCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "officeCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_CustomerInformationBean"
+}
+}
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/customer/orgjson" : {
+      "post" : {
+        "tags" : [ "CustomerSearchWebService" ],
+        "summary" : "PHX-22414 For Customer Search\r\nthis method called when the user hits\r\nurl only with customer params.",
+        "description" : "PHX-22414 For Customer Search\r\nthis method called when the user hits\r\nurl only with customer params",
+        "operationId" : "resource_CustomerSearchWebService_fetchOrgDataJson_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/customer/orgxml" : {
+      "post" : {
+        "tags" : [ "CustomerSearchWebService" ],
+        "summary" : "PHX-22414 For Customer Search\r\nthis method called when the user hits\r\nurl only with customer params.",
+        "description" : "PHX-22414 For Customer Search\r\nthis method called when the user hits\r\nurl only with customer params",
+        "operationId" : "resource_CustomerSearchWebService_fetchOrgDataxml_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/search/customer/xml" : {
+      "get" : {
+        "tags" : [ "CustomerSearchWebService" ],
+        "description" : "",
+        "operationId" : "resource_CustomerSearchWebService_getCustomerDetailsXml_GET",
+        "produces" : [ "application/xml" ],
+        "parameters" : [
+          {
+            "name" : "customerCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "officeCode",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/authentication/login" : {
+      "get" : {
+        "tags" : [ "GlobalLoginService" ],
+        "description" : "",
+        "operationId" : "resource_GlobalLoginService_login_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "apikey",
+            "in" : "header",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "password",
+            "in" : "header",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "username",
+            "in" : "header",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "string"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/wwaagentdetails/getShipmentDetails" : {
+      "get" : {
+        "tags" : [ "ShipmentDetailsThirdPartyResource" ],
+        "description" : "",
+        "operationId" : "resource_ShipmentDetailsThirdPartyResource_getShipmentDetails_GET",
+        "produces" : [ "application/json", "application/xml", "text/plain" ],
+        "parameters" : [
+          {
+            "name" : "HBLReference",
+            "in" : "query",
+            "type" : "array",
+            "items" : {
+            "type" : "string"
+            },
+            "collectionFormat" : "multi",
+            "description" : ""
+          },
+          {
+            "name" : "WWAReference",
+            "in" : "query",
+            "type" : "array",
+            "items" : {
+            "type" : "string"
+            },
+            "collectionFormat" : "multi",
+            "description" : ""
+          },
+          {
+            "name" : "agentAlias",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "apiKey",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "fromLocation",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "toLocation",
+            "in" : "query",
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/crm/getData" : {
+      "post" : {
+        "tags" : [ "ShipmentObjectResource" ],
+        "description" : "",
+        "operationId" : "resource_ShipmentObjectResource_getCRMData_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/shipment/search" : {
+      "post" : {
+        "tags" : [ "ShipmentSearchGlobalResource" ],
+        "description" : "",
+        "operationId" : "resource_ShipmentSearchGlobalResource_getShipmentSearchGlobalResource_POST",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ResultJson"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "\/warehousemanifest/receive" : {
+      "post" : {
+        "tags" : [ "WarehouseManifestGlobalWebService" ],
+        "description" : "",
+        "operationId" : "resource_WarehouseManifestGlobalWebService_createLotFromWarehouseManifest_POST",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_WarehouseManifestBean"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_WarehouseManifestResultBean"
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+  }
+}
