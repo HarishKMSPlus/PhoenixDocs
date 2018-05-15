@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: AdditionalInvoiceResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: AdditionalInvoiceResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_AdditionalInvoiceResource_getInvoiceData_POST">POST /additionalinvoice/get</a></li>
+          <li><a href="#resource_AdditionalInvoiceResource_saveNonIssuedCharges_POST">POST /additionalinvoice/save</a></li>
+          <li><a href="#resource_AdditionalInvoiceResource_generateInvoice_POST"><abbr title="POST /additionalinvoice/generate">POST /additionalinvoice/genera...</abbr></a></li>
+          <li><a href="#resource_AdditionalInvoiceResource_cancelInvoice_POST">POST /additionalinvoice/cancel</a></li>
+          <li><a href="#resource_AdditionalInvoiceResource_deleteNonIssuedCharges_POST">POST /additionalinvoice/delete</a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_AdditionalInvoiceResource.html">AdditionalInvoiceResource</a></li>
+        </ol>
+
+      <h1 class="page-header">AdditionalInvoiceResource <small>Resource</small></h1>
+
+      <p></p>
+
+      <div id="resource_AdditionalInvoiceResource_getInvoiceData_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/additionalinvoice/get <a href="./1.0/additionalinvoice/get" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method load the initial data.</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">resultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /additionalinvoice/get
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNo&quot; : &quot;...&quot;,
+  &quot;product&quot; : &quot;...&quot;,
+  &quot;direction&quot; : &quot;...&quot;,
+  &quot;iOnlyIntertrack&quot; : &quot;...&quot;,
+  &quot;generatedInvoice&quot; : &quot;...&quot;,
+  &quot;generatedVatInvoice&quot; : &quot;...&quot;,
+  &quot;errorMessage&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;inputUserOffice&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_AdditionalInvoiceResource_saveNonIssuedCharges_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/additionalinvoice/save <a href="./1.0/additionalinvoice/save" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method saves the Non-Issued Charges data.</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_AdditionalInvoiceMainBean.html">AdditionalInvoiceMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_AdditionalInvoiceMainBean.html">AdditionalInvoiceMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">resultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /additionalinvoice/save
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNoVated&quot; : &quot;...&quot;,
+  &quot;creditNumber&quot; : &quot;...&quot;,
+  &quot;creditNumberVated&quot; : &quot;...&quot;,
+  &quot;lastCancelInvoiceNo&quot; : &quot;...&quot;,
+  &quot;invoiceDate&quot; : &quot;...&quot;,
+  &quot;applyVat&quot; : &quot;...&quot;,
+  &quot;direction&quot; : &quot;...&quot;,
+  &quot;product&quot; : &quot;...&quot;,
+  &quot;salesCode&quot; : &quot;...&quot;,
+  &quot;payorCode&quot; : &quot;...&quot;,
+  &quot;payorName&quot; : &quot;...&quot;,
+  &quot;payorReference&quot; : &quot;...&quot;,
+  &quot;totalPieces&quot; : &quot;...&quot;,
+  &quot;totalKgs&quot; : &quot;...&quot;,
+  &quot;totalLbs&quot; : &quot;...&quot;,
+  &quot;totalCbm&quot; : &quot;...&quot;,
+  &quot;totalCbf&quot; : &quot;...&quot;,
+  &quot;desc1&quot; : &quot;...&quot;,
+  &quot;desc2&quot; : &quot;...&quot;,
+  &quot;desc3&quot; : &quot;...&quot;,
+  &quot;chargeType&quot; : &quot;...&quot;,
+  &quot;localCurrencyCode&quot; : &quot;...&quot;,
+  &quot;totalPrepaidAmount&quot; : &quot;...&quot;,
+  &quot;totalCollectAmount&quot; : &quot;...&quot;,
+  &quot;totalLocalAmount&quot; : &quot;...&quot;,
+  &quot;totalTaxAmount&quot; : &quot;...&quot;,
+  &quot;sequenceId&quot; : &quot;...&quot;,
+  &quot;totalInvoices&quot; : [ [ {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  }, {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  }, {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  } ] ],
+  &quot;salesCodes&quot; : [ [ {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  }, {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  }, {
+    &quot;selectionCode&quot; : &quot;...&quot;,
+    &quot;selectionDescription&quot; : &quot;...&quot;
+  } ] ],
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;inputUserOffice&quot; : &quot;...&quot;,
+  &quot;printOnDoc&quot; : &quot;...&quot;,
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;totalPrepaid&quot; : &quot;...&quot;,
+  &quot;totalCollect&quot; : &quot;...&quot;,
+  &quot;roeType&quot; : &quot;...&quot;,
+  &quot;transactionalFlag&quot; : &quot;...&quot;,
+  &quot;payableAt&quot; : &quot;...&quot;,
+  &quot;invoiceStatus&quot; : &quot;...&quot;,
+  &quot;additionalInvoiceChargeBean&quot; : {
+    &quot;additionalInvoiceChargeLineItemBeanList&quot; : [ [ {
+      &quot;oldRate&quot; : &quot;...&quot;,
+      &quot;oldBasis&quot; : &quot;...&quot;,
+      &quot;oldInvoiceNumber&quot; : &quot;...&quot;,
+      &quot;oldVendor&quot; : &quot;...&quot;,
+      &quot;dirty&quot; : true,
+      &quot;rowID&quot; : &quot;...&quot;,
+      &quot;transactionalFlag&quot; : &quot;...&quot;,
+      &quot;blNo&quot; : &quot;...&quot;,
+      &quot;code&quot; : &quot;...&quot;,
+      &quot;basis&quot; : &quot;...&quot;,
+      &quot;rate&quot; : &quot;...&quot;,
+      &quot;payType&quot; : &quot;...&quot;,
+      &quot;blPrepaid&quot; : 12345.0,
+      &quot;blCollect&quot; : 12345.0,
+      &quot;recCount&quot; : 12345,
+      &quot;description&quot; : &quot;...&quot;,
+      &quot;invoiceDate&quot; : &quot;...&quot;,
+      &quot;currency&quot; : &quot;...&quot;,
+      &quot;exchangeRate&quot; : &quot;...&quot;,
+      &quot;localAmount&quot; : 12345.0,
+      &quot;applyVat&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;pnlExpense&quot; : &quot;...&quot;,
+      &quot;invoiceNumber&quot; : &quot;...&quot;,
+      &quot;vendor&quot; : &quot;...&quot;,
+      &quot;expense&quot; : &quot;...&quot;,
+      &quot;relayFlag&quot; : &quot;...&quot;,
+      &quot;buyRate&quot; : &quot;...&quot;,
+      &quot;markupRate&quot; : &quot;...&quot;,
+      &quot;markupAmount&quot; : &quot;...&quot;,
+      &quot;invoiceRate&quot; : &quot;...&quot;,
+      &quot;invoiceAmount&quot; : &quot;...&quot;,
+      &quot;oldCharge&quot; : &quot;...&quot;,
+      &quot;oldCurrencyCode&quot; : &quot;...&quot;,
+      &quot;oldLocalAmount&quot; : 12345.0,
+      &quot;roeType&quot; : &quot;...&quot;,
+      &quot;containerType&quot; : &quot;...&quot;,
+      &quot;numberOfContainer&quot; : 12345,
+      &quot;oldRoeType&quot; : &quot;...&quot;,
+      &quot;oldExchangeRate&quot; : &quot;...&quot;,
+      &quot;bolChargeId&quot; : &quot;...&quot;,
+      &quot;localeDescription&quot; : &quot;...&quot;,
+      &quot;oldExpense&quot; : &quot;...&quot;,
+      &quot;oldPnlExpense&quot; : &quot;...&quot;,
+      &quot;calculatedExpense&quot; : &quot;...&quot;,
+      &quot;oldBlPrepaid&quot; : 12345.0,
+      &quot;oldBlCollect&quot; : 12345.0,
+      &quot;iQuantity&quot; : &quot;...&quot;,
+      &quot;chargeType&quot; : &quot;...&quot;,
+      &quot;linked&quot; : true,
+      &quot;rateOldBasis&quot; : &quot;...&quot;,
+      &quot;checkAgainstBasis&quot; : &quot;...&quot;,
+      &quot;vatPercentage&quot; : &quot;...&quot;,
+      &quot;vatAmount&quot; : 12345.0,
+      &quot;taxCode&quot; : &quot;...&quot;,
+      &quot;taxText&quot; : &quot;...&quot;,
+      &quot;applyFor&quot; : &quot;...&quot;,
+      &quot;glCode&quot; : &quot;...&quot;,
+      &quot;localeChargeDescription&quot; : &quot;...&quot;,
+      &quot;taxKey&quot; : &quot;...&quot;,
+      &quot;expenseCurrency&quot; : &quot;...&quot;,
+      &quot;expenseRateOfExchange&quot; : 12345.0,
+      &quot;expenseLocalAmount&quot; : 12345.0,
+      &quot;expenseVat&quot; : 12345.0,
+      &quot;expenseVendorReference&quot; : &quot;...&quot;,
+      &quot;expenseOldBasis&quot; : &quot;...&quot;,
+      &quot;printOndocument&quot; : &quot;...&quot;,
+      &quot;expenseBasis&quot; : &quot;...&quot;,
+      &quot;totalPrepaid&quot; : &quot;...&quot;,
+      &quot;totalCollect&quot; : &quot;...&quot;,
+      &quot;taxPercent&quot; : &quot;...&quot;,
+      &quot;maximum&quot; : &quot;...&quot;,
+      &quot;expenseMaximum&quot; : 12345.0,
+      &quot;minimum&quot; : &quot;...&quot;,
+      &quot;expenseMinimum&quot; : 12345.0,
+      &quot;iStatus&quot; : &quot;...&quot;,
+      &quot;chargeDetailId&quot; : &quot;...&quot;,
+      &quot;sequenceId&quot; : &quot;...&quot;,
+      &quot;recordSequence&quot; : &quot;...&quot;,
+      &quot;invoiceCurrency&quot; : &quot;...&quot;,
+      &quot;invoiceExchangeRate&quot; : 12345.0,
+      &quot;invoiceCurrencyTotalAmount&quot; : 12345.0,
+      &quot;invoiceSellRateOfExchange&quot; : 12345.0,
+      &quot;invoiceExpenseRateOfExchange&quot; : 12345.0,
+      &quot;invoiceSellAmount&quot; : 12345.0,
+      &quot;invoiceExpenseAmount&quot; : 12345.0,
+      &quot;userDefineChargeDescription&quot; : &quot;...&quot;
+    }, {
+      &quot;oldRate&quot; : &quot;...&quot;,
+      &quot;oldBasis&quot; : &quot;...&quot;,
+      &quot;oldInvoiceNumber&quot; : &quot;...&quot;,
+      &quot;oldVendor&quot; : &quot;...&quot;,
+      &quot;dirty&quot; : true,
+      &quot;rowID&quot; : &quot;...&quot;,
+      &quot;transactionalFlag&quot; : &quot;...&quot;,
+      &quot;blNo&quot; : &quot;...&quot;,
+      &quot;code&quot; : &quot;...&quot;,
+      &quot;basis&quot; : &quot;...&quot;,
+      &quot;rate&quot; : &quot;...&quot;,
+      &quot;payType&quot; : &quot;...&quot;,
+      &quot;blPrepaid&quot; : 12345.0,
+      &quot;blCollect&quot; : 12345.0,
+      &quot;recCount&quot; : 12345,
+      &quot;description&quot; : &quot;...&quot;,
+      &quot;invoiceDate&quot; : &quot;...&quot;,
+      &quot;currency&quot; : &quot;...&quot;,
+      &quot;exchangeRate&quot; : &quot;...&quot;,
+      &quot;localAmount&quot; : 12345.0,
+      &quot;applyVat&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;pnlExpense&quot; : &quot;...&quot;,
+      &quot;invoiceNumber&quot; : &quot;...&quot;,
+      &quot;vendor&quot; : &quot;...&quot;,
+      &quot;expense&quot; : &quot;...&quot;,
+      &quot;relayFlag&quot; : &quot;...&quot;,
+      &quot;buyRate&quot; : &quot;...&quot;,
+      &quot;markupRate&quot; : &quot;...&quot;,
+      &quot;markupAmount&quot; : &quot;...&quot;,
+      &quot;invoiceRate&quot; : &quot;...&quot;,
+      &quot;invoiceAmount&quot; : &quot;...&quot;,
+      &quot;oldCharge&quot; : &quot;...&quot;,
+      &quot;oldCurrencyCode&quot; : &quot;...&quot;,
+      &quot;oldLocalAmount&quot; : 12345.0,
+      &quot;roeType&quot; : &quot;...&quot;,
+      &quot;containerType&quot; : &quot;...&quot;,
+      &quot;numberOfContainer&quot; : 12345,
+      &quot;oldRoeType&quot; : &quot;...&quot;,
+      &quot;oldExchangeRate&quot; : &quot;...&quot;,
+      &quot;bolChargeId&quot; : &quot;...&quot;,
+      &quot;localeDescription&quot; : &quot;...&quot;,
+      &quot;oldExpense&quot; : &quot;...&quot;,
+      &quot;oldPnlExpense&quot; : &quot;...&quot;,
+      &quot;calculatedExpense&quot; : &quot;...&quot;,
+      &quot;oldBlPrepaid&quot; : 12345.0,
+      &quot;oldBlCollect&quot; : 12345.0,
+      &quot;iQuantity&quot; : &quot;...&quot;,
+      &quot;chargeType&quot; : &quot;...&quot;,
+      &quot;linked&quot; : true,
+      &quot;rateOldBasis&quot; : &quot;...&quot;,
+      &quot;checkAgainstBasis&quot; : &quot;...&quot;,
+      &quot;vatPercentage&quot; : &quot;...&quot;,
+      &quot;vatAmount&quot; : 12345.0,
+      &quot;taxCode&quot; : &quot;...&quot;,
+      &quot;taxText&quot; : &quot;...&quot;,
+      &quot;applyFor&quot; : &quot;...&quot;,
+      &quot;glCode&quot; : &quot;...&quot;,
+      &quot;localeChargeDescription&quot; : &quot;...&quot;,
+      &quot;taxKey&quot; : &quot;...&quot;,
+      &quot;expenseCurrency&quot; : &quot;...&quot;,
+      &quot;expenseRateOfExchange&quot; : 12345.0,
+      &quot;expenseLocalAmount&quot; : 12345.0,
+      &quot;expenseVat&quot; : 12345.0,
+      &quot;expenseVendorReference&quot; : &quot;...&quot;,
+      &quot;expenseOldBasis&quot; : &quot;...&quot;,
+      &quot;printOndocument&quot; : &quot;...&quot;,
+      &quot;expenseBasis&quot; : &quot;...&quot;,
+      &quot;totalPrepaid&quot; : &quot;...&quot;,
+      &quot;totalCollect&quot; : &quot;...&quot;,
+      &quot;taxPercent&quot; : &quot;...&quot;,
+      &quot;maximum&quot; : &quot;...&quot;,
+      &quot;expenseMaximum&quot; : 12345.0,
+      &quot;minimum&quot; : &quot;...&quot;,
+      &quot;expenseMinimum&quot; : 12345.0,
+      &quot;iStatus&quot; : &quot;...&quot;,
+      &quot;chargeDetailId&quot; : &quot;...&quot;,
+      &quot;sequenceId&quot; : &quot;...&quot;,
+      &quot;recordSequence&quot; : &quot;...&quot;,
+      &quot;invoiceCurrency&quot; : &quot;...&quot;,
+      &quot;invoiceExchangeRate&quot; : 12345.0,
+      &quot;invoiceCurrencyTotalAmount&quot; : 12345.0,
+      &quot;invoiceSellRateOfExchange&quot; : 12345.0,
+      &quot;invoiceExpenseRateOfExchange&quot; : 12345.0,
+      &quot;invoiceSellAmount&quot; : 12345.0,
+      &quot;invoiceExpenseAmount&quot; : 12345.0,
+      &quot;userDefineChargeDescription&quot; : &quot;...&quot;
+    } ], [ {
+      &quot;oldRate&quot; : &quot;...&quot;,
+      &quot;oldBasis&quot; : &quot;...&quot;,
+      &quot;oldInvoiceNumber&quot; : &quot;...&quot;,
+      &quot;oldVendor&quot; : &quot;...&quot;,
+      &quot;dirty&quot; : true,
+      &quot;rowID&quot; : &quot;...&quot;,
+      &quot;transactionalFlag&quot; : &quot;...&quot;,
+      &quot;blNo&quot; : &quot;...&quot;,
+      &quot;code&quot; : &quot;...&quot;,
+      &quot;basis&quot; : &quot;...&quot;,
+      &quot;rate&quot; : &quot;...&quot;,
+      &quot;payType&quot; : &quot;...&quot;,
+      &quot;blPrepaid&quot; : 12345.0,
+      &quot;blCollect&quot; : 12345.0,
+      &quot;recCount&quot; : 12345,
+      &quot;description&quot; : &quot;...&quot;,
+      &quot;invoiceDate&quot; : &quot;...&quot;,
+      &quot;currency&quot; : &quot;...&quot;,
+      &quot;exchangeRate&quot; : &quot;...&quot;,
+      &quot;localAmount&quot; : 12345.0,
+      &quot;applyVat&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;pnlExpense&quot; : &quot;...&quot;,
+      &quot;invoiceNumber&quot; : &quot;...&quot;,
+      &quot;vendor&quot; : &quot;...&quot;,
+      &quot;expense&quot; : &quot;...&quot;,
+      &quot;relayFlag&quot; : &quot;...&quot;,
+      &quot;buyRate&quot; : &quot;...&quot;,
+      &quot;markupRate&quot; : &quot;...&quot;,
+      &quot;markupAmount&quot; : &quot;...&quot;,
+      &quot;invoiceRate&quot; : &quot;...&quot;,
+      &quot;invoiceAmount&quot; : &quot;...&quot;,
+      &quot;oldCharge&quot; : &quot;...&quot;,
+      &quot;oldCurrencyCode&quot; : &quot;...&quot;,
+      &quot;oldLocalAmount&quot; : 12345.0,
+      &quot;roeType&quot; : &quot;...&quot;,
+      &quot;containerType&quot; : &quot;...&quot;,
+      &quot;numberOfContainer&quot; : 12345,
+      &quot;oldRoeType&quot; : &quot;...&quot;,
+      &quot;oldExchangeRate&quot; : &quot;...&quot;,
+      &quot;bolChargeId&quot; : &quot;...&quot;,
+      &quot;localeDescription&quot; : &quot;...&quot;,
+      &quot;oldExpense&quot; : &quot;...&quot;,
+      &quot;oldPnlExpense&quot; : &quot;...&quot;,
+      &quot;calculatedExpense&quot; : &quot;...&quot;,
+      &quot;oldBlPrepaid&quot; : 12345.0,
+      &quot;oldBlCollect&quot; : 12345.0,
+      &quot;iQuantity&quot; : &quot;...&quot;,
+      &quot;chargeType&quot; : &quot;...&quot;,
+      &quot;linked&quot; : true,
+      &quot;rateOldBasis&quot; : &quot;...&quot;,
+      &quot;checkAgainstBasis&quot; : &quot;...&quot;,
+      &quot;vatPercentage&quot; : &quot;...&quot;,
+      &quot;vatAmount&quot; : 12345.0,
+      &quot;taxCode&quot; : &quot;...&quot;,
+      &quot;taxText&quot; : &quot;...&quot;,
+      &quot;applyFor&quot; : &quot;...&quot;,
+      &quot;glCode&quot; : &quot;...&quot;,
+      &quot;localeChargeDescription&quot; : &quot;...&quot;,
+      &quot;taxKey&quot; : &quot;...&quot;,
+      &quot;expenseCurrency&quot; : &quot;...&quot;,
+      &quot;expenseRateOfExchange&quot; : 12345.0,
+      &quot;expenseLocalAmount&quot; : 12345.0,
+      &quot;expenseVat&quot; : 12345.0,
+      &quot;expenseVendorReference&quot; : &quot;...&quot;,
+      &quot;expenseOldBasis&quot; : &quot;...&quot;,
+      &quot;printOndocument&quot; : &quot;...&quot;,
+      &quot;expenseBasis&quot; : &quot;...&quot;,
+      &quot;totalPrepaid&quot; : &quot;...&quot;,
+      &quot;totalCollect&quot; : &quot;...&quot;,
+      &quot;taxPercent&quot; : &quot;...&quot;,
+      &quot;maximum&quot; : &quot;...&quot;,
+      &quot;expenseMaximum&quot; : 12345.0,
+      &quot;minimum&quot; : &quot;...&quot;,
+      &quot;expenseMinimum&quot; : 12345.0,
+      &quot;iStatus&quot; : &quot;...&quot;,
+      &quot;chargeDetailId&quot; : &quot;...&quot;,
+      &quot;sequenceId&quot; : &quot;...&quot;,
+      &quot;recordSequence&quot; : &quot;...&quot;,
+      &quot;invoiceCurrency&quot; : &quot;...&quot;,
+      &quot;invoiceExchangeRate&quot; : 12345.0,
+      &quot;invoiceCurrencyTotalAmount&quot; : 12345.0,
+      &quot;invoiceSellRateOfExchange&quot; : 12345.0,
+      &quot;invoiceExpenseRateOfExchange&quot; : 12345.0,
+      &quot;invoiceSellAmount&quot; : 12345.0,
+      &quot;invoiceExpenseAmount&quot; : 12345.0,
+      &quot;userDefineChargeDescription&quot; : &quot;...&quot;
+    }, {
+      &quot;oldRate&quot; : &quot;...&quot;,
+      &quot;oldBasis&quot; : &quot;...&quot;,
+      &quot;oldInvoiceNumber&quot; : &quot;...&quot;,
+      &quot;oldVendor&quot; : &quot;...&quot;,
+      &quot;dirty&quot; : true,
+      &quot;rowID&quot; : &quot;...&quot;,
+      &quot;transactionalFlag&quot; : &quot;...&quot;,
+      &quot;blNo&quot; : &quot;...&quot;,
+      &quot;code&quot; : &quot;...&quot;,
+      &quot;basis&quot; : &quot;...&quot;,
+      &quot;rate&quot; : &quot;...&quot;,
+      &quot;payType&quot; : &quot;...&quot;,
+      &quot;blPrepaid&quot; : 12345.0,
+      &quot;blCollect&quot; : 12345.0,
+      &quot;recCount&quot; : 12345,
+      &quot;description&quot; : &quot;...&quot;,
+      &quot;invoiceDate&quot; : &quot;...&quot;,
+      &quot;currency&quot; : &quot;...&quot;,
+      &quot;exchangeRate&quot; : &quot;...&quot;,
+      &quot;localAmount&quot; : 12345.0,
+      &quot;applyVat&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;pnlExpense&quot; : &quot;...&quot;,
+      &quot;invoiceNumber&quot; : &quot;...&quot;,
+      &quot;vendor&quot; : &quot;...&quot;,
+      &quot;expense&quot; : &quot;...&quot;,
+      &quot;relayFlag&quot; : &quot;...&quot;,
+      &quot;buyRate&quot; : &quot;...&quot;,
+      &quot;markupRate&quot; : &quot;...&quot;,
+      &quot;markupAmount&quot; : &quot;...&quot;,
+      &quot;invoiceRate&quot; : &quot;...&quot;,
+      &quot;invoiceAmount&quot; : &quot;...&quot;,
+      &quot;oldCharge&quot; : &quot;...&quot;,
+      &quot;oldCurrencyCode&quot; : &quot;...&quot;,
+      &quot;oldLocalAmount&quot; : 12345.0,
+      &quot;roeType&quot; : &quot;...&quot;,
+      &quot;containerType&quot; : &quot;...&quot;,
+      &quot;numberOfContainer&quot; : 12345,
+      &quot;oldRoeType&quot; : &quot;...&quot;,
+      &quot;oldExchangeRate&quot; : &quot;...&quot;,
+      &quot;bolChargeId&quot; : &quot;...&quot;,
+      &quot;localeDescription&quot; : &quot;...&quot;,
+      &quot;oldExpense&quot; : &quot;...&quot;,
+      &quot;oldPnlExpense&quot; : &quot;...&quot;,
+      &quot;calculatedExpense&quot; : &quot;...&quot;,
+      &quot;oldBlPrepaid&quot; : 12345.0,
+      &quot;oldBlCollect&quot; : 12345.0,
+      &quot;iQuantity&quot; : &quot;...&quot;,
+      &quot;chargeType&quot; : &quot;...&quot;,
+      &quot;linked&quot; : true,
+      &quot;rateOldBasis&quot; : &quot;...&quot;,
+      &quot;checkAgainstBasis&quot; : &quot;...&quot;,
+      &quot;vatPercentage&quot; : &quot;...&quot;,
+      &quot;vatAmount&quot; : 12345.0,
+      &quot;taxCode&quot; : &quot;...&quot;,
+      &quot;taxText&quot; : &quot;...&quot;,
+      &quot;applyFor&quot; : &quot;...&quot;,
+      &quot;glCode&quot; : &quot;...&quot;,
+      &quot;localeChargeDescription&quot; : &quot;...&quot;,
+      &quot;taxKey&quot; : &quot;...&quot;,
+      &quot;expenseCurrency&quot; : &quot;...&quot;,
+      &quot;expenseRateOfExchange&quot; : 12345.0,
+      &quot;expenseLocalAmount&quot; : 12345.0,
+      &quot;expenseVat&quot; : 12345.0,
+      &quot;expenseVendorReference&quot; : &quot;...&quot;,
+      &quot;expenseOldBasis&quot; : &quot;...&quot;,
+      &quot;printOndocument&quot; : &quot;...&quot;,
+      &quot;expenseBasis&quot; : &quot;...&quot;,
+      &quot;totalPrepaid&quot; : &quot;...&quot;,
+      &quot;totalCollect&quot; : &quot;...&quot;,
+      &quot;taxPercent&quot; : &quot;...&quot;,
+      &quot;maximum&quot; : &quot;...&quot;,
+      &quot;expenseMaximum&quot; : 12345.0,
+      &quot;minimum&quot; : &quot;...&quot;,
+      &quot;expenseMinimum&quot; : 12345.0,
+      &quot;iStatus&quot; : &quot;...&quot;,
+      &quot;chargeDetailId&quot; : &quot;...&quot;,
+      &quot;sequenceId&quot; : &quot;...&quot;,
+      &quot;recordSequence&quot; : &quot;...&quot;,
+      &quot;invoiceCurrency&quot; : &quot;...&quot;,
+      &quot;invoiceExchangeRate&quot; : 12345.0,
+      &quot;invoiceCurrencyTotalAmount&quot; : 12345.0,
+      &quot;invoiceSellRateOfExchange&quot; : 12345.0,
+      &quot;invoiceExpenseRateOfExchange&quot; : 12345.0,
+      &quot;invoiceSellAmount&quot; : 12345.0,
+      &quot;invoiceExpenseAmount&quot; : 12345.0,
+      &quot;userDefineChargeDescription&quot; : &quot;...&quot;
+    } ] ],
+    &quot;additionalInvoiceChargeSettingBean&quot; : {
+      &quot;transactionalFlag&quot; : &quot;...&quot;,
+      &quot;billToCode&quot; : &quot;...&quot;,
+      &quot;billToName&quot; : &quot;...&quot;,
+      &quot;billToAddr1&quot; : &quot;...&quot;,
+      &quot;billToAddr2&quot; : &quot;...&quot;,
+      &quot;billToCity&quot; : &quot;...&quot;,
+      &quot;billToState&quot; : &quot;...&quot;,
+      &quot;billToZip&quot; : &quot;...&quot;,
+      &quot;collectCode&quot; : &quot;...&quot;,
+      &quot;collectName&quot; : &quot;...&quot;,
+      &quot;collectAddr1&quot; : &quot;...&quot;,
+      &quot;collectAddr2&quot; : &quot;...&quot;,
+      &quot;collectCity&quot; : &quot;...&quot;,
+      &quot;collectState&quot; : &quot;...&quot;,
+      &quot;collectZip&quot; : &quot;...&quot;,
+      &quot;totalPrepaid&quot; : &quot;...&quot;,
+      &quot;totalCollect&quot; : &quot;...&quot;,
+      &quot;stationNo&quot; : &quot;...&quot;,
+      &quot;reference&quot; : &quot;...&quot;,
+      &quot;handlingOffice&quot; : &quot;...&quot;,
+      &quot;fileNo&quot; : &quot;...&quot;,
+      &quot;salesCode&quot; : &quot;...&quot;,
+      &quot;ratingType&quot; : &quot;...&quot;,
+      &quot;rateProfile&quot; : &quot;...&quot;,
+      &quot;additionalProfile&quot; : &quot;...&quot;,
+      &quot;billingCompany&quot; : &quot;...&quot;,
+      &quot;pieces&quot; : &quot;...&quot;,
+      &quot;weight&quot; : &quot;...&quot;,
+      &quot;cube&quot; : &quot;...&quot;,
+      &quot;em&quot; : &quot;...&quot;,
+      &quot;weightLbs&quot; : &quot;...&quot;,
+      &quot;cubeCbf&quot; : &quot;...&quot;,
+      &quot;settingBookingRates&quot; : &quot;...&quot;,
+      &quot;bookingTYpe&quot; : &quot;...&quot;,
+      &quot;totalLocalAmount&quot; : &quot;...&quot;,
+      &quot;totalTaxAmount&quot; : &quot;...&quot;,
+      &quot;invoiceCurrency&quot; : &quot;...&quot;,
+      &quot;invoiceExchangeRate&quot; : 12345.0,
+      &quot;invoiceCurrencyTotalAmount&quot; : 12345.0
+    }
+  },
+  &quot;oldPayorCode&quot; : &quot;...&quot;,
+  &quot;etaDate&quot; : &quot;...&quot;,
+  &quot;etdDate&quot; : &quot;...&quot;,
+  &quot;etaDestinationDate&quot; : &quot;...&quot;,
+  &quot;attention&quot; : &quot;...&quot;,
+  &quot;customerType&quot; : &quot;...&quot;,
+  &quot;invoiceCurrency&quot; : &quot;...&quot;,
+  &quot;invoiceExchangeRate&quot; : 12345.0,
+  &quot;invoiceCurrencyTotalAmount&quot; : 12345.0
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_AdditionalInvoiceResource_generateInvoice_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/additionalinvoice/generate <a href="./1.0/additionalinvoice/generate" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method Generate additional invoice.</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">resultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /additionalinvoice/generate
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNo&quot; : &quot;...&quot;,
+  &quot;product&quot; : &quot;...&quot;,
+  &quot;direction&quot; : &quot;...&quot;,
+  &quot;iOnlyIntertrack&quot; : &quot;...&quot;,
+  &quot;generatedInvoice&quot; : &quot;...&quot;,
+  &quot;generatedVatInvoice&quot; : &quot;...&quot;,
+  &quot;errorMessage&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;inputUserOffice&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_AdditionalInvoiceResource_cancelInvoice_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/additionalinvoice/cancel <a href="./1.0/additionalinvoice/cancel" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method Cancel additional invoice.</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">resultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /additionalinvoice/cancel
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNo&quot; : &quot;...&quot;,
+  &quot;product&quot; : &quot;...&quot;,
+  &quot;direction&quot; : &quot;...&quot;,
+  &quot;iOnlyIntertrack&quot; : &quot;...&quot;,
+  &quot;generatedInvoice&quot; : &quot;...&quot;,
+  &quot;generatedVatInvoice&quot; : &quot;...&quot;,
+  &quot;errorMessage&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;inputUserOffice&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_AdditionalInvoiceResource_deleteNonIssuedCharges_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/additionalinvoice/delete <a href="./1.0/additionalinvoice/delete" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method delete the Non-Issued Charges before generating additional
+invoice.</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_InvoiceParamBean.html">InvoiceParamBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">resultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /additionalinvoice/delete
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;invoiceNo&quot; : &quot;...&quot;,
+  &quot;product&quot; : &quot;...&quot;,
+  &quot;direction&quot; : &quot;...&quot;,
+  &quot;iOnlyIntertrack&quot; : &quot;...&quot;,
+  &quot;generatedInvoice&quot; : &quot;...&quot;,
+  &quot;generatedVatInvoice&quot; : &quot;...&quot;,
+  &quot;errorMessage&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;inputUserOffice&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

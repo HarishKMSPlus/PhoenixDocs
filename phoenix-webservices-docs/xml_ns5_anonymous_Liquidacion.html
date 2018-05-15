@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: Liquidacion (Anonymous)</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: Liquidacion (Anonymous)</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="syntax_xml.html">XML</a></li>
+          <li class="dropdown"><a href="xml_ns5_anonymous_Liquidacion.html">Liquidacion (Anonymous)</a></li>
+        </ol>
+
+      <h1 class="page-header">Liquidacion (Anonymous) <small>Data Type</small></h1>
+
+      <p><p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content contained
+within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Encabezado">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="IdDoc">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="TipoDTE" type="{http://www.sii.cl/SiiDte}LIQType"/>
+                             &lt;element name="Folio" type="{http://www.sii.cl/SiiDte}FolioType"/>
+                             &lt;element name="FchEmis" type="{http://www.sii.cl/SiiDte}FechaType"/>
+                             &lt;element name="IndServicio" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                                   &lt;enumeration value="1"/>
+                                   &lt;enumeration value="2"/>
+                                   &lt;enumeration value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="MntBruto" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+                                   &lt;enumeration value="1"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="FmaPago" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                                   &lt;enumeration value="1"/>
+                                   &lt;enumeration value="2"/>
+                                   &lt;enumeration value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="FchCancel" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                             &lt;element name="MntCancel" type="{http://www.sii.cl/SiiDte}MontoType" minOccurs="0"/>
+                             &lt;element name="SaldoInsol" type="{http://www.sii.cl/SiiDte}MontoType" minOccurs="0"/>
+                             &lt;element name="MntPagos" maxOccurs="30" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="FchPago" type="{http://www.sii.cl/SiiDte}FechaType"/>
+                                       &lt;element name="MntPago" type="{http://www.sii.cl/SiiDte}MontoType"/>
+                                       &lt;element name="GlosaPagos" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="40"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="PeriodoDesde" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                             &lt;element name="PeriodoHasta" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                             &lt;element name="MedioPago" type="{http://www.sii.cl/SiiDte}MedioPagoType" minOccurs="0"/>
+                             &lt;element name="TpoCtaPago" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="10"/>
+                                   &lt;minLength value="5"/>
+                                   &lt;enumeration value="AHORRO"/>
+                                   &lt;enumeration value="CORRIENTE"/>
+                                   &lt;enumeration value="VISTA"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="NumCtaPago" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="BcoPago" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="TermPagoCdg" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="4"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="TermPagoGlosa" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="100"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="TermPagoDias" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                                   &lt;totalDigits value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="FchVenc" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="Emisor">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="RUTEmisor" type="{http://www.sii.cl/SiiDte}RUTType"/>
+                             &lt;element name="RznSoc">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="100"/>
+                                   &lt;minLength value="1"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="GiroEmis">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="80"/>
+                                   &lt;minLength value="1"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Telefono" maxOccurs="2" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.sii.cl/SiiDte}FonoType">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CorreoEmisor" type="{http://www.sii.cl/SiiDte}MailType" minOccurs="0"/>
+                             &lt;element name="Acteco" maxOccurs="4">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                                   &lt;totalDigits value="6"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Sucursal" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CdgSIISucur" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                                   &lt;totalDigits value="9"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="DirOrigen">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="70"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CmnaOrigen" type="{http://www.sii.cl/SiiDte}ComunaType" minOccurs="0"/>
+                             &lt;element name="CiudadOrigen" type="{http://www.sii.cl/SiiDte}CiudadType" minOccurs="0"/>
+                             &lt;element name="CdgVendedor" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="60"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="Receptor">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="RUTRecep" type="{http://www.sii.cl/SiiDte}RUTType"/>
+                             &lt;element name="CdgIntRecep" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="RznSocRecep" type="{http://www.sii.cl/SiiDte}RznSocLargaType"/>
+                             &lt;element name="GiroRecep">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Contacto" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="80"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CorreoRecep" type="{http://www.sii.cl/SiiDte}MailType" minOccurs="0"/>
+                             &lt;element name="DirRecep">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="70"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CmnaRecep" type="{http://www.sii.cl/SiiDte}ComunaType"/>
+                             &lt;element name="CiudadRecep" type="{http://www.sii.cl/SiiDte}CiudadType" minOccurs="0"/>
+                             &lt;element name="DirPostal" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="70"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CmnaPostal" type="{http://www.sii.cl/SiiDte}ComunaType" minOccurs="0"/>
+                             &lt;element name="CiudadPostal" type="{http://www.sii.cl/SiiDte}CiudadType" minOccurs="0"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="Totales">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="MntNeto" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="MntExe" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="TasaIVA" type="{http://www.sii.cl/SiiDte}PctType" minOccurs="0"/>
+                             &lt;element name="IVA" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="IVAProp" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="IVATerc" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="ImptoReten" maxOccurs="20" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="TipoImp" type="{http://www.sii.cl/SiiDte}ImpAdicDTEType"/>
+                                       &lt;element name="TasaImp" type="{http://www.sii.cl/SiiDte}PctType" minOccurs="0"/>
+                                       &lt;element name="MontoImp" type="{http://www.sii.cl/SiiDte}MntImpType"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="Comisiones" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="ValComNeto" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                                       &lt;element name="ValComExe" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                                       &lt;element name="ValComIVA" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="MntTotal" type="{http://www.sii.cl/SiiDte}ValorType"/>
+                             &lt;element name="MontoPeriodo" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="SaldoAnterior" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                             &lt;element name="VlrPagar" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="Detalle" maxOccurs="60">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="NroLinDet">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;maxInclusive value="99"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CdgItem" maxOccurs="5" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="TpoCodigo">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="10"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="VlrCodigo">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="35"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="TpoDocLiq">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="1"/>
+                         &lt;maxLength value="3"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="IndExe" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;enumeration value="1"/>
+                         &lt;enumeration value="2"/>
+                         &lt;enumeration value="3"/>
+                         &lt;enumeration value="4"/>
+                         &lt;enumeration value="5"/>
+                         &lt;enumeration value="6"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="NmbItem">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="80"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="DscItem" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1000"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="QtyRef" type="{http://www.sii.cl/SiiDte}Dec12_6Type" minOccurs="0"/>
+                   &lt;element name="UnmdRef" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="4"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PrcRef" type="{http://www.sii.cl/SiiDte}Dec12_6Type" minOccurs="0"/>
+                   &lt;element name="QtyItem" type="{http://www.sii.cl/SiiDte}Dec12_6Type" minOccurs="0"/>
+                   &lt;element name="Subcantidad" maxOccurs="5" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="SubQty" type="{http://www.sii.cl/SiiDte}Dec12_6Type"/>
+                             &lt;element name="SubCod">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="35"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="FchElabor" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                   &lt;element name="FchVencim" type="{http://www.sii.cl/SiiDte}FechaType" minOccurs="0"/>
+                   &lt;element name="UnmdItem" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="4"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PrcItem" type="{http://www.sii.cl/SiiDte}Dec12_6Type" minOccurs="0"/>
+                   &lt;element name="CodImpAdic" type="{http://www.sii.cl/SiiDte}ImpAdicDTEType" maxOccurs="2" minOccurs="0"/>
+                   &lt;element name="MontoItem" type="{http://www.sii.cl/SiiDte}ValorType"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="SubTotInfo" maxOccurs="20" minOccurs="0">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="NroSTI">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;maxInclusive value="99"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="GlosaSTI">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OrdenSTI" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;maxInclusive value="99"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="SubTotNetoSTI" type="{http://www.sii.cl/SiiDte}Dec16_2Type" minOccurs="0"/>
+                   &lt;element name="SubTotIVASTI" type="{http://www.sii.cl/SiiDte}Dec16_2Type" minOccurs="0"/>
+                   &lt;element name="SubTotAdicSTI" type="{http://www.sii.cl/SiiDte}Dec16_2Type" minOccurs="0"/>
+                   &lt;element name="SubTotExeSTI" type="{http://www.sii.cl/SiiDte}Dec16_2Type" minOccurs="0"/>
+                   &lt;element name="ValSubtotSTI" type="{http://www.sii.cl/SiiDte}Dec16_2Type" minOccurs="0"/>
+                   &lt;element name="LineasDeta" maxOccurs="60" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="Referencia" maxOccurs="40" minOccurs="0">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="NroLinRef">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;maxInclusive value="99"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="TpoDocRef">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="3"/>
+                         &lt;minLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="IndGlobal" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger">
+                         &lt;totalDigits value="1"/>
+                         &lt;enumeration value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FolioRef" type="{http://www.sii.cl/SiiDte}FolioRType"/>
+                   &lt;element name="FchRef" type="{http://www.sii.cl/SiiDte}FechaType"/>
+                   &lt;element name="CodRef" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;enumeration value="1"/>
+                         &lt;enumeration value="2"/>
+                         &lt;enumeration value="3"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="RazonRef" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="90"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="Comisiones" maxOccurs="20" minOccurs="0">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="NroLinCom">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
+                         &lt;maxInclusive value="20"/>
+                         &lt;totalDigits value="2"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="TipoMovim">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="1"/>
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="C"/>
+                         &lt;enumeration value="O"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Glosa">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="60"/>
+                         &lt;minLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="TasaComision" type="{http://www.sii.cl/SiiDte}PctType" minOccurs="0"/>
+                   &lt;element name="ValComNeto" type="{http://www.sii.cl/SiiDte}ValorType"/>
+                   &lt;element name="ValComExe" type="{http://www.sii.cl/SiiDte}ValorType"/>
+                   &lt;element name="ValComIVA" type="{http://www.sii.cl/SiiDte}ValorType" minOccurs="0"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="TED">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="DD">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="RE" type="{http://www.sii.cl/SiiDte}RUTType"/>
+                             &lt;element name="TD" type="{http://www.sii.cl/SiiDte}LIQType"/>
+                             &lt;element name="F" type="{http://www.sii.cl/SiiDte}FolioType"/>
+                             &lt;element name="FE" type="{http://www.sii.cl/SiiDte}FechaType"/>
+                             &lt;element name="RR" type="{http://www.sii.cl/SiiDte}RUTType"/>
+                             &lt;element name="RSR">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="MNT" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/>
+                             &lt;element name="IT1">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CAF">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="DA">
+                                         &lt;complexType>
+                                           &lt;complexContent>
+                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                               &lt;sequence>
+                                                 &lt;element name="RE" type="{http://www.sii.cl/SiiDte}RUTType"/>
+                                                 &lt;element name="RS" type="{http://www.sii.cl/SiiDte}RznSocCortaType"/>
+                                                 &lt;element name="TD" type="{http://www.sii.cl/SiiDte}LIQType"/>
+                                                 &lt;element name="RNG">
+                                                   &lt;complexType>
+                                                     &lt;complexContent>
+                                                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                                         &lt;sequence>
+                                                           &lt;element name="D" type="{http://www.sii.cl/SiiDte}FolioType"/>
+                                                           &lt;element name="H" type="{http://www.sii.cl/SiiDte}FolioType"/>
+                                                         &lt;/sequence>
+                                                       &lt;/restriction>
+                                                     &lt;/complexContent>
+                                                   &lt;/complexType>
+                                                 &lt;/element>
+                                                 &lt;element name="FA" type="{http://www.sii.cl/SiiDte}FechaType"/>
+                                                 &lt;choice>
+                                                   &lt;element name="RSAPK">
+                                                     &lt;complexType>
+                                                       &lt;complexContent>
+                                                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                                           &lt;sequence>
+                                                             &lt;element name="M" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                             &lt;element name="E" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                           &lt;/sequence>
+                                                         &lt;/restriction>
+                                                       &lt;/complexContent>
+                                                     &lt;/complexType>
+                                                   &lt;/element>
+                                                   &lt;element name="DSAPK">
+                                                     &lt;complexType>
+                                                       &lt;complexContent>
+                                                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                                           &lt;sequence>
+                                                             &lt;element name="P" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                             &lt;element name="Q" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                             &lt;element name="G" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                             &lt;element name="Y" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                                           &lt;/sequence>
+                                                         &lt;/restriction>
+                                                       &lt;/complexContent>
+                                                     &lt;/complexType>
+                                                   &lt;/element>
+                                                 &lt;/choice>
+                                                 &lt;element name="IDK" type="{http://www.w3.org/2001/XMLSchema}long"/>
+                                               &lt;/sequence>
+                                             &lt;/restriction>
+                                           &lt;/complexContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                       &lt;element name="FRMA">
+                                         &lt;complexType>
+                                           &lt;simpleContent>
+                                             &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>base64Binary">
+                                               &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" fixed="SHA1withRSA" />
+                                             &lt;/extension>
+                                           &lt;/simpleContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                     &lt;/sequence>
+                                     &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" fixed="1.0" />
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="TSTED" type="{http://www.sii.cl/SiiDte}FechaHoraType"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="FRMT">
+                     &lt;complexType>
+                       &lt;simpleContent>
+                         &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>base64Binary">
+                           &lt;attribute name="algoritmo" use="required">
+                             &lt;simpleType>
+                               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                 &lt;enumeration value="SHA1withRSA"/>
+                                 &lt;enumeration value="SHA1withDSA"/>
+                               &lt;/restriction>
+                             &lt;/simpleType>
+                           &lt;/attribute>
+                         &lt;/extension>
+                       &lt;/simpleContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+                 &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" fixed="1.0" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="TmstFirma" type="{http://www.sii.cl/SiiDte}FechaHoraType"/>
+       &lt;/sequence>
+       &lt;attribute name="ID" use="required" type="{http://www.w3.org/2001/XMLSchema}ID" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre></p>
+
+      <dl class="dl-horizontal">
+        <dt>Namespace</dt>
+        <dd><code>http://www.sii.cl/SiiDte</code></dd>
+        <dt>Schema</dt>
+        <dd><a href="ns5.xsd">ns5.xsd</a></dd>
+      </dl>
+
+      <table class="table">
+        <caption>Properties</caption>
+        <thead>
+        <tr>
+          <th>name</th>
+          <th>data type</th>
+          <th>type</th>
+          <th>namespace</th>
+          <th>min/max occurs</th>
+          <th>constraints</th>
+          <th>description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>  <span class="property-name">ID</span>
+</td>
+          <td>  <span class="datatype-reference">ID
+</span>
+</td>
+          <td>  <span class="property-type">attribute
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Comisiones</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_Comisiones.html">Comisiones (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Detalle</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_Detalle.html">Detalle (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Encabezado</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_Encabezado.html">Encabezado (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Referencia</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_Referencia.html">Referencia (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">SubTotInfo</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_SubTotInfo.html">SubTotInfo (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">TED</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns5_anonymous_TED.html">TED (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">TmstFirma</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo"><abbr title="http://www.sii.cl/SiiDte">ns5</abbr>
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <p class="lead">Example</p>
+
+      <pre class="prettyprint language-xml example">&lt;l----- ID=&quot;...&quot; xmlns=&quot;http://www.sii.cl/SiiDte&quot;&gt;
+  &lt;Encabezado&gt;
+    &lt;IdDoc&gt;
+      &lt;TipoDTE&gt;...&lt;/TipoDTE&gt;
+      &lt;Folio&gt;...&lt;/Folio&gt;
+      &lt;FchEmis&gt;...&lt;/FchEmis&gt;
+      &lt;IndServicio&gt;...&lt;/IndServicio&gt;
+      &lt;MntBruto&gt;...&lt;/MntBruto&gt;
+      &lt;FmaPago&gt;...&lt;/FmaPago&gt;
+      &lt;FchCancel&gt;...&lt;/FchCancel&gt;
+      &lt;MntCancel&gt;...&lt;/MntCancel&gt;
+      &lt;SaldoInsol&gt;...&lt;/SaldoInsol&gt;
+      &lt;MntPagos/&gt;
+      &lt;PeriodoDesde&gt;...&lt;/PeriodoDesde&gt;
+      &lt;PeriodoHasta&gt;...&lt;/PeriodoHasta&gt;
+      &lt;MedioPago&gt;...&lt;/MedioPago&gt;
+      &lt;TpoCtaPago&gt;...&lt;/TpoCtaPago&gt;
+      &lt;NumCtaPago&gt;...&lt;/NumCtaPago&gt;
+      &lt;BcoPago&gt;...&lt;/BcoPago&gt;
+      &lt;TermPagoCdg&gt;...&lt;/TermPagoCdg&gt;
+      &lt;TermPagoGlosa&gt;...&lt;/TermPagoGlosa&gt;
+      &lt;TermPagoDias&gt;...&lt;/TermPagoDias&gt;
+      &lt;FchVenc&gt;...&lt;/FchVenc&gt;
+    &lt;/IdDoc&gt;
+    &lt;Emisor&gt;
+      &lt;RUTEmisor&gt;...&lt;/RUTEmisor&gt;
+      &lt;RznSoc&gt;...&lt;/RznSoc&gt;
+      &lt;GiroEmis&gt;...&lt;/GiroEmis&gt;
+      &lt;Telefono&gt;...&lt;/Telefono&gt;
+      &lt;CorreoEmisor&gt;...&lt;/CorreoEmisor&gt;
+      &lt;Acteco&gt;...&lt;/Acteco&gt;
+      &lt;Sucursal&gt;...&lt;/Sucursal&gt;
+      &lt;CdgSIISucur&gt;...&lt;/CdgSIISucur&gt;
+      &lt;DirOrigen&gt;...&lt;/DirOrigen&gt;
+      &lt;CmnaOrigen&gt;...&lt;/CmnaOrigen&gt;
+      &lt;CiudadOrigen&gt;...&lt;/CiudadOrigen&gt;
+      &lt;CdgVendedor&gt;...&lt;/CdgVendedor&gt;
+    &lt;/Emisor&gt;
+    &lt;Receptor&gt;
+      &lt;RUTRecep&gt;...&lt;/RUTRecep&gt;
+      &lt;CdgIntRecep&gt;...&lt;/CdgIntRecep&gt;
+      &lt;RznSocRecep&gt;...&lt;/RznSocRecep&gt;
+      &lt;GiroRecep&gt;...&lt;/GiroRecep&gt;
+      &lt;Contacto&gt;...&lt;/Contacto&gt;
+      &lt;CorreoRecep&gt;...&lt;/CorreoRecep&gt;
+      &lt;DirRecep&gt;...&lt;/DirRecep&gt;
+      &lt;CmnaRecep&gt;...&lt;/CmnaRecep&gt;
+      &lt;CiudadRecep&gt;...&lt;/CiudadRecep&gt;
+      &lt;DirPostal&gt;...&lt;/DirPostal&gt;
+      &lt;CmnaPostal&gt;...&lt;/CmnaPostal&gt;
+      &lt;CiudadPostal&gt;...&lt;/CiudadPostal&gt;
+    &lt;/Receptor&gt;
+    &lt;Totales&gt;
+      &lt;MntNeto&gt;...&lt;/MntNeto&gt;
+      &lt;MntExe&gt;...&lt;/MntExe&gt;
+      &lt;TasaIVA&gt;...&lt;/TasaIVA&gt;
+      &lt;IVA&gt;...&lt;/IVA&gt;
+      &lt;IVAProp&gt;...&lt;/IVAProp&gt;
+      &lt;IVATerc&gt;...&lt;/IVATerc&gt;
+      &lt;ImptoReten/&gt;
+      &lt;Comisiones/&gt;
+      &lt;MntTotal&gt;...&lt;/MntTotal&gt;
+      &lt;MontoPeriodo&gt;...&lt;/MontoPeriodo&gt;
+      &lt;SaldoAnterior&gt;...&lt;/SaldoAnterior&gt;
+      &lt;VlrPagar&gt;...&lt;/VlrPagar&gt;
+    &lt;/Totales&gt;
+  &lt;/Encabezado&gt;
+  &lt;Detalle&gt;
+    &lt;NroLinDet&gt;...&lt;/NroLinDet&gt;
+    &lt;CdgItem&gt;
+      &lt;TpoCodigo&gt;...&lt;/TpoCodigo&gt;
+      &lt;VlrCodigo&gt;...&lt;/VlrCodigo&gt;
+    &lt;/CdgItem&gt;
+    &lt;TpoDocLiq&gt;...&lt;/TpoDocLiq&gt;
+    &lt;IndExe&gt;...&lt;/IndExe&gt;
+    &lt;NmbItem&gt;...&lt;/NmbItem&gt;
+    &lt;DscItem&gt;...&lt;/DscItem&gt;
+    &lt;QtyRef&gt;...&lt;/QtyRef&gt;
+    &lt;UnmdRef&gt;...&lt;/UnmdRef&gt;
+    &lt;PrcRef&gt;...&lt;/PrcRef&gt;
+    &lt;QtyItem&gt;...&lt;/QtyItem&gt;
+    &lt;Subcantidad&gt;
+      &lt;SubQty&gt;...&lt;/SubQty&gt;
+      &lt;SubCod&gt;...&lt;/SubCod&gt;
+    &lt;/Subcantidad&gt;
+    &lt;FchElabor&gt;...&lt;/FchElabor&gt;
+    &lt;FchVencim&gt;...&lt;/FchVencim&gt;
+    &lt;UnmdItem&gt;...&lt;/UnmdItem&gt;
+    &lt;PrcItem&gt;...&lt;/PrcItem&gt;
+    &lt;CodImpAdic&gt;...&lt;/CodImpAdic&gt;
+    &lt;MontoItem&gt;...&lt;/MontoItem&gt;
+  &lt;/Detalle&gt;
+  &lt;SubTotInfo&gt;
+    &lt;NroSTI&gt;...&lt;/NroSTI&gt;
+    &lt;GlosaSTI&gt;...&lt;/GlosaSTI&gt;
+    &lt;OrdenSTI&gt;...&lt;/OrdenSTI&gt;
+    &lt;SubTotNetoSTI&gt;...&lt;/SubTotNetoSTI&gt;
+    &lt;SubTotIVASTI&gt;...&lt;/SubTotIVASTI&gt;
+    &lt;SubTotAdicSTI&gt;...&lt;/SubTotAdicSTI&gt;
+    &lt;SubTotExeSTI&gt;...&lt;/SubTotExeSTI&gt;
+    &lt;ValSubtotSTI&gt;...&lt;/ValSubtotSTI&gt;
+    &lt;LineasDeta&gt;...&lt;/LineasDeta&gt;
+  &lt;/SubTotInfo&gt;
+  &lt;Referencia&gt;
+    &lt;NroLinRef&gt;...&lt;/NroLinRef&gt;
+    &lt;TpoDocRef&gt;...&lt;/TpoDocRef&gt;
+    &lt;IndGlobal&gt;...&lt;/IndGlobal&gt;
+    &lt;FolioRef&gt;...&lt;/FolioRef&gt;
+    &lt;FchRef&gt;...&lt;/FchRef&gt;
+    &lt;CodRef&gt;...&lt;/CodRef&gt;
+    &lt;RazonRef&gt;...&lt;/RazonRef&gt;
+  &lt;/Referencia&gt;
+  &lt;Comisiones&gt;
+    &lt;NroLinCom&gt;...&lt;/NroLinCom&gt;
+    &lt;TipoMovim&gt;...&lt;/TipoMovim&gt;
+    &lt;Glosa&gt;...&lt;/Glosa&gt;
+    &lt;TasaComision&gt;...&lt;/TasaComision&gt;
+    &lt;ValComNeto&gt;...&lt;/ValComNeto&gt;
+    &lt;ValComExe&gt;...&lt;/ValComExe&gt;
+    &lt;ValComIVA&gt;...&lt;/ValComIVA&gt;
+  &lt;/Comisiones&gt;
+  &lt;TED version=&quot;...&quot;&gt;
+    &lt;DD&gt;
+      &lt;RE&gt;...&lt;/RE&gt;
+      &lt;TD&gt;...&lt;/TD&gt;
+      &lt;F&gt;...&lt;/F&gt;
+      &lt;FE&gt;...&lt;/FE&gt;
+      &lt;RR&gt;...&lt;/RR&gt;
+      &lt;RSR&gt;...&lt;/RSR&gt;
+      &lt;MNT&gt;...&lt;/MNT&gt;
+      &lt;IT1&gt;...&lt;/IT1&gt;
+      &lt;CAF/&gt;
+      &lt;TSTED&gt;...&lt;/TSTED&gt;
+    &lt;/DD&gt;
+    &lt;FRMT algoritmo=&quot;...&quot;&gt;...&lt;/FRMT&gt;
+  &lt;/TED&gt;
+  &lt;TmstFirma&gt;...&lt;/TmstFirma&gt;
+&lt;/l-----&gt;
+</pre>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

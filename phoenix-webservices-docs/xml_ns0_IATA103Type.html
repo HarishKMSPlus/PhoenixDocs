@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: IATA103Type</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: IATA103Type</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="syntax_xml.html">XML</a></li>
+          <li class="dropdown"><a href="xml_ns0_IATA103Type.html">IATA103Type</a></li>
+        </ol>
+
+      <h1 class="page-header">IATA103Type <small>Data Type</small></h1>
+
+      <p><p>Java class for IATA103Type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+<p>
+<pre>
+ &lt;simpleType name="IATA103Type">
+   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     &lt;pattern value="[A-Z][A-Z][A-Z]"/>
+     &lt;minLength value="3"/>
+     &lt;maxLength value="3"/>
+     &lt;enumeration value="ABI"/>
+     &lt;enumeration value="ABS"/>
+     &lt;enumeration value="ABT"/>
+     &lt;enumeration value="ACC"/>
+     &lt;enumeration value="ACD"/>
+     &lt;enumeration value="ACK"/>
+     &lt;enumeration value="ACS"/>
+     &lt;enumeration value="AGT"/>
+     &lt;enumeration value="AID"/>
+     &lt;enumeration value="AIR"/>
+     &lt;enumeration value="ALA"/>
+     &lt;enumeration value="ALI"/>
+     &lt;enumeration value="ALR"/>
+     &lt;enumeration value="ALT"/>
+     &lt;enumeration value="AMD"/>
+     &lt;enumeration value="API"/>
+     &lt;enumeration value="ARD"/>
+     &lt;enumeration value="ARI"/>
+     &lt;enumeration value="ATH"/>
+     &lt;enumeration value="ATW"/>
+     &lt;enumeration value="AUD"/>
+     &lt;enumeration value="AVS"/>
+     &lt;enumeration value="BGD"/>
+     &lt;enumeration value="BGT"/>
+     &lt;enumeration value="CAI"/>
+     &lt;enumeration value="CAN"/>
+     &lt;enumeration value="CAS"/>
+     &lt;enumeration value="CBD"/>
+     &lt;enumeration value="CBI"/>
+     &lt;enumeration value="CBP"/>
+     &lt;enumeration value="CBR"/>
+     &lt;enumeration value="CBS"/>
+     &lt;enumeration value="CBV"/>
+     &lt;enumeration value="CCD"/>
+     &lt;enumeration value="CCL"/>
+     &lt;enumeration value="CDC"/>
+     &lt;enumeration value="CDI"/>
+     &lt;enumeration value="CER"/>
+     &lt;enumeration value="CID"/>
+     &lt;enumeration value="CIH"/>
+     &lt;enumeration value="CIN"/>
+     &lt;enumeration value="CMI"/>
+     &lt;enumeration value="CND"/>
+     &lt;enumeration value="CNE"/>
+     &lt;enumeration value="COI"/>
+     &lt;enumeration value="COL"/>
+     &lt;enumeration value="COM"/>
+     &lt;enumeration value="COR"/>
+     &lt;enumeration value="CRD"/>
+     &lt;enumeration value="CRR"/>
+     &lt;enumeration value="CTI"/>
+     &lt;enumeration value="CTW"/>
+     &lt;enumeration value="CUR"/>
+     &lt;enumeration value="CUS"/>
+     &lt;enumeration value="CVD"/>
+     &lt;enumeration value="CWI"/>
+     &lt;enumeration value="DAI"/>
+     &lt;enumeration value="DAP"/>
+     &lt;enumeration value="DAT"/>
+     &lt;enumeration value="DAU"/>
+     &lt;enumeration value="DCI"/>
+     &lt;enumeration value="DES"/>
+     &lt;enumeration value="DHD"/>
+     &lt;enumeration value="DII"/>
+     &lt;enumeration value="DIM"/>
+     &lt;enumeration value="DNR"/>
+     &lt;enumeration value="DOC"/>
+     &lt;enumeration value="DOS"/>
+     &lt;enumeration value="DPI"/>
+     &lt;enumeration value="DQP"/>
+     &lt;enumeration value="DRA"/>
+     &lt;enumeration value="DRC"/>
+     &lt;enumeration value="DRP"/>
+     &lt;enumeration value="DSN"/>
+     &lt;enumeration value="DSU"/>
+     &lt;enumeration value="DTN"/>
+     &lt;enumeration value="EIC"/>
+     &lt;enumeration value="FLT"/>
+     &lt;enumeration value="GRI"/>
+     &lt;enumeration value="GTI"/>
+     &lt;enumeration value="HAH"/>
+     &lt;enumeration value="HBS"/>
+     &lt;enumeration value="HCD"/>
+     &lt;enumeration value="HDL"/>
+     &lt;enumeration value="HLC"/>
+     &lt;enumeration value="HPI"/>
+     &lt;enumeration value="HTS"/>
+     &lt;enumeration value="ISU"/>
+     &lt;enumeration value="ITA"/>
+     &lt;enumeration value="ITW"/>
+     &lt;enumeration value="JST"/>
+     &lt;enumeration value="MAT"/>
+     &lt;enumeration value="MBI"/>
+     &lt;enumeration value="MCH"/>
+     &lt;enumeration value="MCT"/>
+     &lt;enumeration value="MID"/>
+     &lt;enumeration value="MLI"/>
+     &lt;enumeration value="MOD"/>
+     &lt;enumeration value="MPI"/>
+     &lt;enumeration value="MSD"/>
+     &lt;enumeration value="MSU"/>
+     &lt;enumeration value="MUD"/>
+     &lt;enumeration value="NBI"/>
+     &lt;enumeration value="NEW"/>
+     &lt;enumeration value="NFY"/>
+     &lt;enumeration value="NNS"/>
+     &lt;enumeration value="NOM"/>
+     &lt;enumeration value="OCI"/>
+     &lt;enumeration value="OLD"/>
+     &lt;enumeration value="OPI"/>
+     &lt;enumeration value="OSI"/>
+     &lt;enumeration value="OTH"/>
+     &lt;enumeration value="PAS"/>
+     &lt;enumeration value="PID"/>
+     &lt;enumeration value="PPD"/>
+     &lt;enumeration value="PRD"/>
+     &lt;enumeration value="RCI"/>
+     &lt;enumeration value="REC"/>
+     &lt;enumeration value="REF"/>
+     &lt;enumeration value="RID"/>
+     &lt;enumeration value="RIH"/>
+     &lt;enumeration value="RIR"/>
+     &lt;enumeration value="RQD"/>
+     &lt;enumeration value="RQH"/>
+     &lt;enumeration value="RQT"/>
+     &lt;enumeration value="RQU"/>
+     &lt;enumeration value="RQV"/>
+     &lt;enumeration value="RTD"/>
+     &lt;enumeration value="RTG"/>
+     &lt;enumeration value="RTI"/>
+     &lt;enumeration value="RTS"/>
+     &lt;enumeration value="SAA"/>
+     &lt;enumeration value="SAR"/>
+     &lt;enumeration value="SCI"/>
+     &lt;enumeration value="SCS"/>
+     &lt;enumeration value="SDI"/>
+     &lt;enumeration value="SHP"/>
+     &lt;enumeration value="SII"/>
+     &lt;enumeration value="SKH"/>
+     &lt;enumeration value="SLC"/>
+     &lt;enumeration value="SPH"/>
+     &lt;enumeration value="SPI"/>
+     &lt;enumeration value="SRA"/>
+     &lt;enumeration value="SRI"/>
+     &lt;enumeration value="SRR"/>
+     &lt;enumeration value="SSI"/>
+     &lt;enumeration value="SSR"/>
+     &lt;enumeration value="STI"/>
+     &lt;enumeration value="STS"/>
+     &lt;enumeration value="SVA"/>
+     &lt;enumeration value="SVD"/>
+     &lt;enumeration value="SVL"/>
+     &lt;enumeration value="SVN"/>
+     &lt;enumeration value="TAR"/>
+     &lt;enumeration value="TCC"/>
+     &lt;enumeration value="TID"/>
+     &lt;enumeration value="TOT"/>
+     &lt;enumeration value="TRN"/>
+     &lt;enumeration value="TXS"/>
+     &lt;enumeration value="TXT"/>
+     &lt;enumeration value="UCI"/>
+     &lt;enumeration value="UDI"/>
+     &lt;enumeration value="UII"/>
+     &lt;enumeration value="ULD"/>
+     &lt;enumeration value="UMI"/>
+     &lt;enumeration value="UPI"/>
+     &lt;enumeration value="VCD"/>
+     &lt;enumeration value="VOD"/>
+     &lt;enumeration value="WBD"/>
+     &lt;enumeration value="WBH"/>
+     &lt;enumeration value="WBI"/>
+     &lt;enumeration value="WBL"/>
+   &lt;/restriction>
+ &lt;/simpleType>
+ </pre></p>
+
+      <dl class="dl-horizontal">
+        <dt>Namespace</dt>
+        <dd>(Default)</dd>
+        <dt>Schema</dt>
+        <dd><a href="ns0.xsd">ns0.xsd</a></dd>
+      </dl>
+
+      <table class="table">
+        <caption>Values</caption>
+        <thead>
+        <tr>
+          <th>value</th>
+          <th>description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><span class="value-value">ABI</span></td>
+          <td><span class="value-description">AWB Amount Detail Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ABS</span></td>
+          <td><span class="value-description">AWB Supplementary Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ABT</span></td>
+          <td><span class="value-description">AWB Total Amount Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ACC</span></td>
+          <td><span class="value-description">Accounting Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ACD</span></td>
+          <td><span class="value-description">AWB Consignment Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ACK</span></td>
+          <td><span class="value-description">Reason for Acknowledgement</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ACS</span></td>
+          <td><span class="value-description">AWB Charge Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AGT</span></td>
+          <td><span class="value-description">Agent</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AID</span></td>
+          <td><span class="value-description">Arrival Information Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AIR</span></td>
+          <td><span class="value-description">Airline Header</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ALA</span></td>
+          <td><span class="value-description">Allotment Availability Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ALI</span></td>
+          <td><span class="value-description">Allotment Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ALR</span></td>
+          <td><span class="value-description">Allotment Remaining</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ALT</span></td>
+          <td><span class="value-description">Allotment Total</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AMD</span></td>
+          <td><span class="value-description">Amendment Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">API</span></td>
+          <td><span class="value-description">Air Waybill Piece Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ARD</span></td>
+          <td><span class="value-description">Agent Reference Data</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ARI</span></td>
+          <td><span class="value-description">AWB Recapitulation Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ATH</span></td>
+          <td><span class="value-description">Authorisation</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ATW</span></td>
+          <td><span class="value-description">AWB Total Weight Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AUD</span></td>
+          <td><span class="value-description">Allotment Used Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">AVS</span></td>
+          <td><span class="value-description">Availability Supplementary Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">BGD</span></td>
+          <td><span class="value-description">Baggage Detail Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">BGT</span></td>
+          <td><span class="value-description">Baggage Tag Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CAI</span></td>
+          <td><span class="value-description">CCA/Adjustment Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CAN</span></td>
+          <td><span class="value-description">Customs Action Notification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CAS</span></td>
+          <td><span class="value-description">CCA/Adjustment Supplementary Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBD</span></td>
+          <td><span class="value-description">CASS Billing Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBI</span></td>
+          <td><span class="value-description">CASS Billing Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBP</span></td>
+          <td><span class="value-description">CASS Billing Period</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBR</span></td>
+          <td><span class="value-description">Courier Baggage Receiver</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBS</span></td>
+          <td><span class="value-description">Courier Baggage Sender</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CBV</span></td>
+          <td><span class="value-description">Courier Baggage Voucher Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CCD</span></td>
+          <td><span class="value-description">Consignment Control Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CCL</span></td>
+          <td><span class="value-description">Cargo Control Location</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CDC</span></td>
+          <td><span class="value-description">CC Charges in Destination Currency</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CDI</span></td>
+          <td><span class="value-description">Charge Declarations</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CER</span></td>
+          <td><span class="value-description">AWB Content Certification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CID</span></td>
+          <td><span class="value-description">Correction Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CIH</span></td>
+          <td><span class="value-description">CASS Invoice Header Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CIN</span></td>
+          <td><span class="value-description">CASS Identification Number</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CMI</span></td>
+          <td><span class="value-description">Consignment Onward Movement Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CND</span></td>
+          <td><span class="value-description">Customs Notification Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CNE</span></td>
+          <td><span class="value-description">Consignee</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">COI</span></td>
+          <td><span class="value-description">Commission Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">COL</span></td>
+          <td><span class="value-description">Collect Charge Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">COM</span></td>
+          <td><span class="value-description">Embargoed Commodities</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">COR</span></td>
+          <td><span class="value-description">Customs Origin</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CRD</span></td>
+          <td><span class="value-description">Carrier Reference Data</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CRR</span></td>
+          <td><span class="value-description">Embargo Carriage Restrictions</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CTI</span></td>
+          <td><span class="value-description">CCA/Adjustment Total Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CTW</span></td>
+          <td><span class="value-description">CCA/Adjustment Total Weight Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CUR</span></td>
+          <td><span class="value-description">Currency Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CUS</span></td>
+          <td><span class="value-description">Customer Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CVD</span></td>
+          <td><span class="value-description">Charge Declarations</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">CWI</span></td>
+          <td><span class="value-description">CASS AWB Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DAI</span></td>
+          <td><span class="value-description">DGD Additional Handling Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DAP</span></td>
+          <td><span class="value-description">DGD ?All Packed in One? Indication</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DAT</span></td>
+          <td><span class="value-description">DGD ?All Packed in One? Total</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DAU</span></td>
+          <td><span class="value-description">DGD Item Authorisation</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DCI</span></td>
+          <td><span class="value-description">DGD Emergency Contact Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DES</span></td>
+          <td><span class="value-description">Despatch Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DHD</span></td>
+          <td><span class="value-description">DGD Header Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DII</span></td>
+          <td><span class="value-description">DGD Item Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DIM</span></td>
+          <td><span class="value-description">Dimensions Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DNR</span></td>
+          <td><span class="value-description">DGD Item Number</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DOC</span></td>
+          <td><span class="value-description">Documentation Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DOS</span></td>
+          <td><span class="value-description">DGD Overpack Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DPI</span></td>
+          <td><span class="value-description">DGD Item Packing Group and Instructions</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DQP</span></td>
+          <td><span class="value-description">DGD Item Quantity and Type of Packing</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DRA</span></td>
+          <td><span class="value-description">DGD Radioactive Activity Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DRC</span></td>
+          <td><span class="value-description">DGD Radioactive Consignment Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DRP</span></td>
+          <td><span class="value-description">DGD Radioactive Packing Instructions</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DSN</span></td>
+          <td><span class="value-description">DGD Item Shipping Name</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DSU</span></td>
+          <td><span class="value-description">DGD Signatory Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">DTN</span></td>
+          <td><span class="value-description">Date/Time of Notification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">EIC</span></td>
+          <td><span class="value-description">Empty Equipment in Compartment Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">FLT</span></td>
+          <td><span class="value-description">Flight Booking</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">GRI</span></td>
+          <td><span class="value-description">Grand AWB Recapitulation Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">GTI</span></td>
+          <td><span class="value-description">Grand Total Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HAH</span></td>
+          <td><span class="value-description">HWB Agent?s Head Office</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HBS</span></td>
+          <td><span class="value-description">House Waybill Summary Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HCD</span></td>
+          <td><span class="value-description">HWB Consignment Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HDL</span></td>
+          <td><span class="value-description">Handling Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HLC</span></td>
+          <td><span class="value-description">HWB Letter of Credit Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HPI</span></td>
+          <td><span class="value-description">House Waybill Piece Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">HTS</span></td>
+          <td><span class="value-description">Harmonised Tariff Schedule Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ISU</span></td>
+          <td><span class="value-description">AWB Issue Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ITA</span></td>
+          <td><span class="value-description">Invoice Total Amount Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ITW</span></td>
+          <td><span class="value-description">Invoice Total Weight Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">JST</span></td>
+          <td><span class="value-description">Embargo Justification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MAT</span></td>
+          <td><span class="value-description">Message Advice Type</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MBI</span></td>
+          <td><span class="value-description">Master Waybill Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MCH</span></td>
+          <td><span class="value-description">Mail Consignment Header</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MCT</span></td>
+          <td><span class="value-description">Mail Consignment Total</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MID</span></td>
+          <td><span class="value-description">Mail Inbound Data</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MLI</span></td>
+          <td><span class="value-description">Mail Label Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MOD</span></td>
+          <td><span class="value-description">Mail Outbound Data</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MPI</span></td>
+          <td><span class="value-description">Movement Priority Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MSD</span></td>
+          <td><span class="value-description">Mail Status Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MSU</span></td>
+          <td><span class="value-description">Message Sequence and ULD Origin</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">MUD</span></td>
+          <td><span class="value-description">Mail ULD Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">NBI</span></td>
+          <td><span class="value-description">Net Billing Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">NEW</span></td>
+          <td><span class="value-description">New Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">NFY</span></td>
+          <td><span class="value-description">Notify Name and Address</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">NNS</span></td>
+          <td><span class="value-description">Net/Net Sales</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">NOM</span></td>
+          <td><span class="value-description">Nominated Handling Party</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">OCI</span></td>
+          <td><span class="value-description">Other Customs Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">OLD</span></td>
+          <td><span class="value-description">Original Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">OPI</span></td>
+          <td><span class="value-description">Other Participant Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">OSI</span></td>
+          <td><span class="value-description">Other Service Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">OTH</span></td>
+          <td><span class="value-description">Other Charges</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">PAS</span></td>
+          <td><span class="value-description">Passenger Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">PID</span></td>
+          <td><span class="value-description">Product Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">PPD</span></td>
+          <td><span class="value-description">Prepaid Charge Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">PRD</span></td>
+          <td><span class="value-description">Planning Request Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RCI</span></td>
+          <td><span class="value-description">Recapitulation Amount Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">REC</span></td>
+          <td><span class="value-description">Receptacle Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">REF</span></td>
+          <td><span class="value-description">Booking References</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RID</span></td>
+          <td><span class="value-description">Rate Information Answer Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RIH</span></td>
+          <td><span class="value-description">Rate Information Answer Header</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RIR</span></td>
+          <td><span class="value-description">Rate Information Request Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RQD</span></td>
+          <td><span class="value-description">Charge Calculation Answer Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RQH</span></td>
+          <td><span class="value-description">Charge Calculation Request Header</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RQT</span></td>
+          <td><span class="value-description">Charge Calculation Answer Totals</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RQU</span></td>
+          <td><span class="value-description">Charge Calculation Request - ULD</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RQV</span></td>
+          <td><span class="value-description">Charge Calculation Request - Volume</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RTD</span></td>
+          <td><span class="value-description">Rate Description</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RTG</span></td>
+          <td><span class="value-description">Routing</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RTI</span></td>
+          <td><span class="value-description">Recapitulation Total Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">RTS</span></td>
+          <td><span class="value-description">Embargo Routes/Areas</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SAA</span></td>
+          <td><span class="value-description">Schedule and Availability Information Answer Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SAR</span></td>
+          <td><span class="value-description">Schedule and Availability Information Request Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SCI</span></td>
+          <td><span class="value-description">Special Customs Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SCS</span></td>
+          <td><span class="value-description">Surface Charge Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SDI</span></td>
+          <td><span class="value-description">Surface Delivery Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SHP</span></td>
+          <td><span class="value-description">Shipper</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SII</span></td>
+          <td><span class="value-description">Sales Incentive Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SKH</span></td>
+          <td><span class="value-description">Schedule Information Answer Header</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SLC</span></td>
+          <td><span class="value-description">Status List Criteria</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SPH</span></td>
+          <td><span class="value-description">Special Handling Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SPI</span></td>
+          <td><span class="value-description">Surface Pickup Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SRA</span></td>
+          <td><span class="value-description">Supplementary Rate Information Answer Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SRI</span></td>
+          <td><span class="value-description">Shipment Reference Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SRR</span></td>
+          <td><span class="value-description">Supplementary Rate Information Request Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SSI</span></td>
+          <td><span class="value-description">Supplementary Status Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SSR</span></td>
+          <td><span class="value-description">Special Service Request</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">STI</span></td>
+          <td><span class="value-description">Storage Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">STS</span></td>
+          <td><span class="value-description">Status Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SVA</span></td>
+          <td><span class="value-description">Surface Vehicle Arrival Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SVD</span></td>
+          <td><span class="value-description">Surface Vehicle Departure Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SVL</span></td>
+          <td><span class="value-description">Surface Vehicle Delay Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">SVN</span></td>
+          <td><span class="value-description">Surface Vehicle Next Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TAR</span></td>
+          <td><span class="value-description">Total AWB Recapitulation Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TCC</span></td>
+          <td><span class="value-description">Total Collect Charges</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TID</span></td>
+          <td><span class="value-description">Terminal Identification</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TOT</span></td>
+          <td><span class="value-description">Total Amount</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TRN</span></td>
+          <td><span class="value-description">Transfer/Transit Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TXS</span></td>
+          <td><span class="value-description">Tax Summary</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">TXT</span></td>
+          <td><span class="value-description">Free Text Description</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">UCI</span></td>
+          <td><span class="value-description">ULD Connection Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">UDI</span></td>
+          <td><span class="value-description">ULD Destination Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">UII</span></td>
+          <td><span class="value-description">ULD Inclusion Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">ULD</span></td>
+          <td><span class="value-description">ULD Description</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">UMI</span></td>
+          <td><span class="value-description">ULD Movement Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">UPI</span></td>
+          <td><span class="value-description">Unique Piece Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">VCD</span></td>
+          <td><span class="value-description">Void/Cancel Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">VOD</span></td>
+          <td><span class="value-description">Vehicle Operator Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">WBD</span></td>
+          <td><span class="value-description">Waybill Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">WBH</span></td>
+          <td><span class="value-description">Waybill Header Details</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">WBI</span></td>
+          <td><span class="value-description">Waybill Information</span></td>
+        </tr>
+        <tr>
+          <td><span class="value-value">WBL</span></td>
+          <td><span class="value-description">Waybill Details</span></td>
+        </tr>
+        </tbody>
+      </table>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

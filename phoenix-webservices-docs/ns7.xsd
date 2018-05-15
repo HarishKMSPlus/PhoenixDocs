@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" targetNamespace="https://www.myvan.descartes.com/schemas/cargoimp"
+  xmlns:ns7="https://www.myvan.descartes.com/schemas/cargoimp"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="ns0.xsd"/>
+
+  <xs:element name="FSU" type="FSU"/>
+  <xs:element name="FSU" type="FSUType"/>
+</xs:schema>

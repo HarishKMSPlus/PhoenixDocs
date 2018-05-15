@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: MultiShipmentResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: MultiShipmentResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_MultiShipmentResource_getDischargePlan_POST"><abbr title="POST /multishipment/dischargeplan">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_updateHistory_POST"><abbr title="POST /multishipment/statistics/update">POST /multishipment/statistics...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_saveDischargePlan_POST">POST /multishipment/save</a></li>
+          <li><a href="#resource_MultiShipmentResource_savePostProcessing_POST"><abbr title="POST /multishipment/save_post_processing">POST /multishipment/save_post_...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_verifyDischargePlan_POST"><abbr title="POST /multishipment/dischargeplan/verify">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_verifyBooking_POST"><abbr title="POST /multishipment/dischargeplan/addlot">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_createDischargePlanAndPrint_POST"><abbr title="POST /multishipment/dischargeplan/saveandprint">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_printLotLabels_POST"><abbr title="POST /multishipment/dischargeplan/label/print">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_printDischargePlanReport_POST"><abbr title="POST /multishipment/dischargeplan/report/print">POST /multishipment/dischargep...</abbr></a></li>
+          <li><a href="#resource_MultiShipmentResource_printLabelAndReport_POST"><abbr title="POST /multishipment/dischargeplan/labelnreport/print">POST /multishipment/dischargep...</abbr></a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_MultiShipmentResource.html">MultiShipmentResource</a></li>
+        </ol>
+
+      <h1 class="page-header">MultiShipmentResource <small>Resource</small></h1>
+
+      <p></p>
+
+      <div id="resource_MultiShipmentResource_getDischargePlan_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan <a href="./1.0/multishipment/dischargeplan" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CargoLoadingBean.html">CargoLoadingBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CargoLoadingBean.html">CargoLoadingBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;fileNo&quot; : &quot;...&quot;,
+  &quot;commonFields&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  }
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_updateHistory_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/statistics/update <a href="./1.0/multishipment/statistics/update" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ContainerLoadPlanStatisticBean.html">ContainerLoadPlanStatisticBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ContainerLoadPlanStatisticBean.html">ContainerLoadPlanStatisticBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/statistics/update
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonFields&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;piecesDetails&quot; : [ [ {
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;pieceNumber&quot; : &quot;...&quot;,
+    &quot;pieceStatus&quot; : &quot;...&quot;,
+    &quot;comments&quot; : &quot;...&quot;,
+    &quot;scannedSequence&quot; : 12345.0,
+    &quot;loadPlanHistoryId&quot; : 12345.0,
+    &quot;lotStatus&quot; : &quot;...&quot;
+  }, {
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;pieceNumber&quot; : &quot;...&quot;,
+    &quot;pieceStatus&quot; : &quot;...&quot;,
+    &quot;comments&quot; : &quot;...&quot;,
+    &quot;scannedSequence&quot; : 12345.0,
+    &quot;loadPlanHistoryId&quot; : 12345.0,
+    &quot;lotStatus&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;pieceNumber&quot; : &quot;...&quot;,
+    &quot;pieceStatus&quot; : &quot;...&quot;,
+    &quot;comments&quot; : &quot;...&quot;,
+    &quot;scannedSequence&quot; : 12345.0,
+    &quot;loadPlanHistoryId&quot; : 12345.0,
+    &quot;lotStatus&quot; : &quot;...&quot;
+  }, {
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;pieceNumber&quot; : &quot;...&quot;,
+    &quot;pieceStatus&quot; : &quot;...&quot;,
+    &quot;comments&quot; : &quot;...&quot;,
+    &quot;scannedSequence&quot; : 12345.0,
+    &quot;loadPlanHistoryId&quot; : 12345.0,
+    &quot;lotStatus&quot; : &quot;...&quot;
+  } ] ],
+  &quot;fileNo&quot; : &quot;...&quot;,
+  &quot;referenceNo&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_saveDischargePlan_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/save <a href="./1.0/multishipment/save" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanBean.html">DischargePlanBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanBean.html">DischargePlanBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/save
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;lotNumbers&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;commonFields&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  }
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_savePostProcessing_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/save_post_processing <a href="./1.0/multishipment/save_post_processing" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanBean.html">DischargePlanBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanBean.html">DischargePlanBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/save_post_processing
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;referenceNo&quot; : &quot;...&quot;,
+  &quot;lotNumbers&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;commonFields&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  }
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_verifyDischargePlan_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/verify <a href="./1.0/multishipment/dischargeplan/verify" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for verify discharge plan and get lot details</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanDetailsBean.html">DischargePlanDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanDetailsBean.html">DischargePlanDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/verify
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;lotDetailsBeanList&quot; : [ [ {
+    &quot;pieces&quot; : &quot;...&quot;,
+    &quot;hazardousClass&quot; : &quot;...&quot;,
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;customDocument&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;hazardous&quot; : &quot;...&quot;
+  }, {
+    &quot;pieces&quot; : &quot;...&quot;,
+    &quot;hazardousClass&quot; : &quot;...&quot;,
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;customDocument&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;hazardous&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;pieces&quot; : &quot;...&quot;,
+    &quot;hazardousClass&quot; : &quot;...&quot;,
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;customDocument&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;hazardous&quot; : &quot;...&quot;
+  }, {
+    &quot;pieces&quot; : &quot;...&quot;,
+    &quot;hazardousClass&quot; : &quot;...&quot;,
+    &quot;lotNumber&quot; : &quot;...&quot;,
+    &quot;customDocument&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;hazardous&quot; : &quot;...&quot;
+  } ] ],
+  &quot;totalPieces&quot; : &quot;...&quot;,
+  &quot;dischargePlanNumber&quot; : &quot;...&quot;,
+  &quot;truckerName&quot; : &quot;...&quot;,
+  &quot;proNumber&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_verifyBooking_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/addlot <a href="./1.0/multishipment/dischargeplan/addlot" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for verify booking and add lot</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_BookingDetailsBean.html">BookingDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_BookingDetailsBean.html">BookingDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/addlot
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;bookingMainBeanList&quot; : [ [ {
+    &quot;proNumber&quot; : &quot;...&quot;,
+    &quot;truckerName&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;controlNumber&quot; : &quot;...&quot;,
+    &quot;totalPieces&quot; : &quot;...&quot;
+  }, {
+    &quot;proNumber&quot; : &quot;...&quot;,
+    &quot;truckerName&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;controlNumber&quot; : &quot;...&quot;,
+    &quot;totalPieces&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;proNumber&quot; : &quot;...&quot;,
+    &quot;truckerName&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;controlNumber&quot; : &quot;...&quot;,
+    &quot;totalPieces&quot; : &quot;...&quot;
+  }, {
+    &quot;proNumber&quot; : &quot;...&quot;,
+    &quot;truckerName&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;controlNumber&quot; : &quot;...&quot;,
+    &quot;totalPieces&quot; : &quot;...&quot;
+  } ] ],
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  }
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_createDischargePlanAndPrint_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/saveandprint <a href="./1.0/multishipment/dischargeplan/saveandprint" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for save discharge plan details</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanMainBean.html">DischargePlanMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanMainBean.html">DischargePlanMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/saveandprint
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;dischargePlanNumber&quot; : &quot;...&quot;,
+  &quot;showLotLabel&quot; : &quot;...&quot;,
+  &quot;lotList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;proNumber&quot; : &quot;...&quot;,
+  &quot;lotLabelPrinter&quot; : &quot;...&quot;,
+  &quot;hold&quot; : &quot;...&quot;,
+  &quot;noOfCopies&quot; : &quot;...&quot;,
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;dischargePlanReportPrinter&quot; : &quot;...&quot;,
+  &quot;warehouse&quot; : &quot;...&quot;,
+  &quot;truckerName&quot; : &quot;...&quot;,
+  &quot;showDischargePlanReport&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_printLotLabels_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/label/print <a href="./1.0/multishipment/dischargeplan/label/print" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for print lot labels</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanPrintBean.html">DischargePlanPrintBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanPrintBean.html">DischargePlanPrintBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/label/print
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;noOfCopies&quot; : &quot;...&quot;,
+  &quot;printerName&quot; : &quot;...&quot;,
+  &quot;lotList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;dischargePlanNumber&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_printDischargePlanReport_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/report/print <a href="./1.0/multishipment/dischargeplan/report/print" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for print discharge plan</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanPrintBean.html">DischargePlanPrintBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanPrintBean.html">DischargePlanPrintBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/report/print
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;noOfCopies&quot; : &quot;...&quot;,
+  &quot;printerName&quot; : &quot;...&quot;,
+  &quot;lotList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;dischargePlanNumber&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MultiShipmentResource_printLabelAndReport_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/multishipment/dischargeplan/labelnreport/print <a href="./1.0/multishipment/dischargeplan/labelnreport/print" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanMainBean.html">DischargePlanMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_DischargePlanMainBean.html">DischargePlanMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /multishipment/dischargeplan/labelnreport/print
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;dischargePlanNumber&quot; : &quot;...&quot;,
+  &quot;showLotLabel&quot; : &quot;...&quot;,
+  &quot;lotList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;proNumber&quot; : &quot;...&quot;,
+  &quot;lotLabelPrinter&quot; : &quot;...&quot;,
+  &quot;hold&quot; : &quot;...&quot;,
+  &quot;noOfCopies&quot; : &quot;...&quot;,
+  &quot;commonBean&quot; : {
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;
+  },
+  &quot;dischargePlanReportPrinter&quot; : &quot;...&quot;,
+  &quot;warehouse&quot; : &quot;...&quot;,
+  &quot;truckerName&quot; : &quot;...&quot;,
+  &quot;showDischargePlanReport&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

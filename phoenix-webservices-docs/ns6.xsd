@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" targetNamespace="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:ns6="http://www.w3.org/2000/09/xmldsig#"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="SignatureType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[Firma Digital con Restricciones
+
+<p>Java class for SignatureType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="SignatureType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="SignedInfo">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="CanonicalizationMethod">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="SignatureMethod">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;attribute name="Algorithm" use="required">
+                             &lt;simpleType>
+                               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyURI">
+                                 &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                                 &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+                               &lt;/restriction>
+                             &lt;/simpleType>
+                           &lt;/attribute>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="Reference">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Transforms" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="Transform">
+                                         &lt;complexType>
+                                           &lt;complexContent>
+                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                               &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+                                             &lt;/restriction>
+                                           &lt;/complexContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="DigestMethod">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/2000/09/xmldsig#sha1" />
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="DigestValue" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                           &lt;/sequence>
+                           &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="SignatureValue" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+         &lt;element name="KeyInfo">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="KeyValue">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;choice>
+                             &lt;element name="RSAKeyValue">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="Modulus" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                       &lt;element name="Exponent" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="DSAKeyValue">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="P" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                       &lt;element name="Q" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                       &lt;element name="G" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                       &lt;element name="Y" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                           &lt;/choice>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="X509Data">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="X509Certificate" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="SignedInfo" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="CanonicalizationMethod">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="SignatureMethod">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;attribute name="Algorithm" use="required">
+                   &lt;simpleType>
+                     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyURI">
+                       &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                       &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+                     &lt;/restriction>
+                   &lt;/simpleType>
+                 &lt;/attribute>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="Reference">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="Transforms" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Transform">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="DigestMethod">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/2000/09/xmldsig#sha1" />
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="DigestValue" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                 &lt;/sequence>
+                 &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:CanonicalizationMethod" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:SignatureMethod" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:Reference" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="SignatureValue" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="KeyInfo" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="KeyValue">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;choice>
+                   &lt;element name="RSAKeyValue">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Modulus" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                             &lt;element name="Exponent" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="DSAKeyValue">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="P" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                             &lt;element name="Q" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                             &lt;element name="G" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                             &lt;element name="Y" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/choice>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="X509Data">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="X509Certificate" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:KeyValue" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:X509Data" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:element name="CanonicalizationMethod">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:attribute name="Algorithm" use="required" type="xs:anyURI">
+      </xs:attribute>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="DSAKeyValue">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="P" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+         &lt;element name="Q" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+         &lt;element name="G" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+         &lt;element name="Y" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:P" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:Q" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:G" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:Y" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="DigestMethod">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/2000/09/xmldsig#sha1" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:attribute name="Algorithm" use="required" type="xs:anyURI">
+      </xs:attribute>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="DigestValue" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="Exponent" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="G" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="KeyValue">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;choice>
+         &lt;element name="RSAKeyValue">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="Modulus" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                   &lt;element name="Exponent" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="DSAKeyValue">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="P" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                   &lt;element name="Q" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                   &lt;element name="G" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                   &lt;element name="Y" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/choice>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:RSAKeyValue" minOccurs="0">
+              </xs:element>
+              <xs:element ref="ns6:DSAKeyValue" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Modulus" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="P" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="Q" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="RSAKeyValue">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Modulus" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+         &lt;element name="Exponent" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:Modulus" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:Exponent" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Reference">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Transforms" minOccurs="0">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="Transform">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="DigestMethod">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" fixed="http://www.w3.org/2000/09/xmldsig#sha1" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="DigestValue" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+       &lt;/sequence>
+       &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:Transforms" minOccurs="0">
+              </xs:element>
+              <xs:element ref="ns6:DigestMethod" minOccurs="1">
+              </xs:element>
+              <xs:element ref="ns6:DigestValue" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+      <xs:attribute name="URI" use="required" type="xs:anyURI">
+      </xs:attribute>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Signature" type="ns6:SignatureType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="SignatureMethod">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;attribute name="Algorithm" use="required">
+         &lt;simpleType>
+           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyURI">
+             &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+             &lt;enumeration value="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+           &lt;/restriction>
+         &lt;/simpleType>
+       &lt;/attribute>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:attribute name="Algorithm" use="required" type="xs:string">
+      </xs:attribute>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Transform">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:attribute name="Algorithm" use="required" type="xs:anyURI">
+      </xs:attribute>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Transforms">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Transform">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;attribute name="Algorithm" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:Transform" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="X509Certificate" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+<xs:element name="X509Data">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="X509Certificate" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element ref="ns6:X509Certificate" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+<xs:element name="Y" type="xs:string">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[]]>
+    </xs:documentation>
+  </xs:annotation>
+</xs:element>
+</xs:schema>

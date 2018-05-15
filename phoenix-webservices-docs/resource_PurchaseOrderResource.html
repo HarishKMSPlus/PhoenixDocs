@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: PurchaseOrderResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: PurchaseOrderResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_PurchaseOrderResource_automationPurchaseOrder_POST">POST /purchaseorder/automation</a></li>
+          <li><a href="#resource_PurchaseOrderResource_fetchPurchaseOrder_POST">POST /purchaseorder/fetch</a></li>
+          <li><a href="#resource_PurchaseOrderResource_savePurchaseOrder_POST">POST /purchaseorder/save</a></li>
+          <li><a href="#resource_PurchaseOrderResource_closePurchaseOrder_POST">POST /purchaseorder/close</a></li>
+          <li><a href="#resource_PurchaseOrderResource_archivePurchaseOrder_POST">POST /purchaseorder/archive</a></li>
+          <li><a href="#resource_PurchaseOrderResource_dailyNotification_POST"><abbr title="POST /purchaseorder/dailyNotification">POST /purchaseorder/dailyNotif...</abbr></a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_PurchaseOrderResource.html">PurchaseOrderResource</a></li>
+        </ol>
+
+      <h1 class="page-header">PurchaseOrderResource <small>Resource</small></h1>
+
+      <p>This class contains the web services content for the operations releated to
+purchase order module.</p>
+
+      <div id="resource_PurchaseOrderResource_automationPurchaseOrder_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/automation <a href="./1.0/purchaseorder/automation" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is used to call the purchase order automation API</p>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/automation
+Accept: application/json
+
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_PurchaseOrderResource_fetchPurchaseOrder_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/fetch <a href="./1.0/purchaseorder/fetch" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>It is used to fetch PO details from PO reference number</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_PurchaseOrderMainBean.html">PurchaseOrderMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_PurchaseOrderMainBean.html">PurchaseOrderMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/fetch
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonBean&quot; : {
+    &quot;userRoleID&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userLoginId&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderCustomerMainBean&quot; : {
+    &quot;customerEmail&quot; : &quot;...&quot;,
+    &quot;salesRepresentative&quot; : &quot;...&quot;,
+    &quot;customerName&quot; : &quot;...&quot;,
+    &quot;purchaseOrderForwarderBean&quot; : {
+      &quot;forwarderReference&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;forwarderContactName&quot; : &quot;...&quot;,
+      &quot;forwarderAddress&quot; : &quot;...&quot;,
+      &quot;forwarderName&quot; : &quot;...&quot;,
+      &quot;forwarderPhone&quot; : &quot;...&quot;,
+      &quot;forwarderEanCode&quot; : &quot;...&quot;,
+      &quot;forwarderCode&quot; : &quot;...&quot;
+    },
+    &quot;customerCode&quot; : &quot;...&quot;,
+    &quot;purchaseOrderVendorBean&quot; : {
+      &quot;vendorAddress&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;vendorEanCode&quot; : &quot;...&quot;,
+      &quot;vendorCode&quot; : &quot;...&quot;,
+      &quot;vendorName&quot; : &quot;...&quot;,
+      &quot;vendorReference&quot; : &quot;...&quot;,
+      &quot;vendorPhone&quot; : &quot;...&quot;,
+      &quot;vendorContactName&quot; : &quot;...&quot;
+    },
+    &quot;customerMobileNumber&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;customerAddress&quot; : &quot;...&quot;,
+    &quot;customerReference&quot; : &quot;...&quot;,
+    &quot;purchaseOrderSubVendorBean&quot; : {
+      &quot;subVendorPhone&quot; : &quot;...&quot;,
+      &quot;subVendorAddress&quot; : &quot;...&quot;,
+      &quot;subVendorCode&quot; : &quot;...&quot;,
+      &quot;subVendorContactName&quot; : &quot;...&quot;,
+      &quot;subResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;subVendorReference&quot; : &quot;...&quot;,
+      &quot;subVendorName&quot; : &quot;...&quot;,
+      &quot;subVendorEanCode&quot; : &quot;...&quot;
+    },
+    &quot;customerContactName&quot; : &quot;...&quot;,
+    &quot;customerEanCode&quot; : &quot;...&quot;,
+    &quot;customerTelephoneNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderDeliveryBean&quot; : {
+      &quot;deliveryName&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;deliveryPhone&quot; : &quot;...&quot;,
+      &quot;deliveryReference&quot; : &quot;...&quot;,
+      &quot;deliveryContactName&quot; : &quot;...&quot;,
+      &quot;deliveryCode&quot; : &quot;...&quot;,
+      &quot;deliveryEanCode&quot; : &quot;...&quot;,
+      &quot;deliveryAddress&quot; : &quot;...&quot;
+    },
+    &quot;purchaseOrderDispatchPartyBean&quot; : {
+      &quot;dispatchPartyContactName&quot; : &quot;...&quot;,
+      &quot;dispatchPartyName&quot; : &quot;...&quot;,
+      &quot;dispatchPartyAddress&quot; : &quot;...&quot;,
+      &quot;dispatchPartyPhone&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;dispatchPartyReference&quot; : &quot;...&quot;,
+      &quot;dispatchPartyEanCode&quot; : &quot;...&quot;,
+      &quot;dispatchPartyCode&quot; : &quot;...&quot;
+    },
+    &quot;customerReferenceNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderConsigneeBean&quot; : {
+      &quot;consigneeAddress&quot; : &quot;...&quot;,
+      &quot;consigneeReference&quot; : &quot;...&quot;,
+      &quot;consigneePhone&quot; : &quot;...&quot;,
+      &quot;consigneeCode&quot; : &quot;...&quot;,
+      &quot;consigneeContactName&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;consigneeEanCode&quot; : &quot;...&quot;,
+      &quot;consigneeName&quot; : &quot;...&quot;
+    },
+    &quot;purchaseOrderAgentBean&quot; : {
+      &quot;agentEanCode&quot; : &quot;...&quot;,
+      &quot;agentCode&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;agentContactName&quot; : &quot;...&quot;,
+      &quot;agentReference&quot; : &quot;...&quot;,
+      &quot;agentName&quot; : &quot;...&quot;,
+      &quot;agentPhone&quot; : &quot;...&quot;,
+      &quot;agentAddress&quot; : &quot;...&quot;
+    },
+    &quot;responsibleAgency&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderReportLabels&quot; : {
+    &quot;cbfLabel&quot; : &quot;...&quot;,
+    &quot;directionLabel&quot; : &quot;...&quot;,
+    &quot;outerLabel&quot; : &quot;...&quot;,
+    &quot;buyerProductLabel&quot; : &quot;...&quot;,
+    &quot;arrivalEarliestDateLabel&quot; : &quot;...&quot;,
+    &quot;referenceNumberLabel&quot; : &quot;...&quot;,
+    &quot;itemLabel&quot; : &quot;...&quot;,
+    &quot;includeLabel&quot; : &quot;...&quot;,
+    &quot;actualDeliveryDateLabel&quot; : &quot;...&quot;,
+    &quot;vendorDetailsLabel&quot; : &quot;...&quot;,
+    &quot;customerDetailsLabel&quot; : &quot;...&quot;,
+    &quot;totalLabel&quot; : &quot;...&quot;,
+    &quot;vendorsProductLabel&quot; : &quot;...&quot;,
+    &quot;handlingOfficeLabel&quot; : &quot;...&quot;,
+    &quot;mainDetailsLabel&quot; : &quot;...&quot;,
+    &quot;innerLabel&quot; : &quot;...&quot;,
+    &quot;modeOfTransportLabel&quot; : &quot;...&quot;,
+    &quot;lineOfCreditNumberLabel&quot; : &quot;...&quot;,
+    &quot;routingLabel&quot; : &quot;...&quot;,
+    &quot;volumeLabel&quot; : &quot;...&quot;,
+    &quot;cargoLabel&quot; : &quot;...&quot;,
+    &quot;localDeliveryDateLabel&quot; : &quot;...&quot;,
+    &quot;purchaseOrderStatusLabel&quot; : &quot;...&quot;,
+    &quot;weightLabel&quot; : &quot;...&quot;,
+    &quot;orderLabel&quot; : &quot;...&quot;,
+    &quot;termsLabel&quot; : &quot;...&quot;,
+    &quot;bookingLabel&quot; : &quot;...&quot;,
+    &quot;destinationNameLabel&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;shipEarliestDateLabel&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;originCodeNameLabel&quot; : &quot;...&quot;,
+    &quot;commodityLabel&quot; : &quot;...&quot;,
+    &quot;namedPlaceLabel&quot; : &quot;...&quot;,
+    &quot;packagesLabel&quot; : &quot;...&quot;,
+    &quot;numberLabel&quot; : &quot;...&quot;,
+    &quot;bookingNumberLabel&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
+    &quot;clientNumberLabel&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderBean&quot; : {
+    &quot;modified&quot; : true,
+    &quot;syntaxVersionNumber&quot; : 12345,
+    &quot;terms&quot; : &quot;...&quot;,
+    &quot;createdOn&quot; : &quot;...&quot;,
+    &quot;createdBy&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345,
+    &quot;transportStageQualifier&quot; : &quot;...&quot;,
+    &quot;senderEanNumber&quot; : &quot;...&quot;,
+    &quot;modOfTransportCode&quot; : &quot;...&quot;,
+    &quot;conveyReferenceNumber&quot; : &quot;...&quot;,
+    &quot;termsOfDeliveryFunction&quot; : &quot;...&quot;,
+    &quot;interchangeControlReference&quot; : &quot;...&quot;,
+    &quot;updatedBy&quot; : &quot;...&quot;,
+    &quot;messageDate&quot; : &quot;...&quot;,
+    &quot;receiverEanNumber&quot; : &quot;...&quot;,
+    &quot;uniqueReferenceNumber&quot; : &quot;...&quot;,
+    &quot;messageReferenceNumber&quot; : &quot;...&quot;,
+    &quot;documentName&quot; : &quot;...&quot;,
+    &quot;contractStatusIftmcs&quot; : &quot;...&quot;,
+    &quot;clientNumber&quot; : &quot;...&quot;,
+    &quot;syntaxIdentifier&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderActionSource&quot; : &quot;...&quot;,
+    &quot;lineOfCreditNumber&quot; : &quot;...&quot;,
+    &quot;preparationDate&quot; : &quot;...&quot;,
+    &quot;senderIdentificationNumber&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;receiverIdentificationNumber&quot; : &quot;...&quot;,
+    &quot;modeOfTransport&quot; : &quot;...&quot;,
+    &quot;interComLocationQualifier&quot; : &quot;...&quot;,
+    &quot;contractStatusIftman&quot; : &quot;...&quot;,
+    &quot;updatedOn&quot; : &quot;...&quot;,
+    &quot;direction&quot; : &quot;...&quot;,
+    &quot;purchaseOrderSource&quot; : &quot;...&quot;,
+    &quot;purchaseOrderStatus&quot; : &quot;...&quot;,
+    &quot;interComLocationDescription&quot; : &quot;...&quot;,
+    &quot;termsDescription&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderRoutingBean&quot; : {
+    &quot;originalArrivalEarliestDate&quot; : &quot;...&quot;,
+    &quot;destinationName&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;routingRefernceNumber&quot; : &quot;...&quot;,
+    &quot;arrivalEarliestDate&quot; : &quot;...&quot;,
+    &quot;destinationCode&quot; : &quot;...&quot;,
+    &quot;shipEarliestDate&quot; : &quot;...&quot;,
+    &quot;originCode&quot; : &quot;...&quot;,
+    &quot;localDeliveryDate&quot; : &quot;...&quot;,
+    &quot;actualDeliveryDate&quot; : &quot;...&quot;,
+    &quot;originCodeName&quot; : &quot;...&quot;,
+    &quot;originalShipEarliestDate&quot; : &quot;...&quot;
+  },
+  &quot;validationError&quot; : &quot;...&quot;,
+  &quot;purchaseOrderCargoBean&quot; : {
+    &quot;cargoReferenceNumber&quot; : &quot;...&quot;,
+    &quot;innerPackagingType&quot; : &quot;...&quot;,
+    &quot;descriptionOfGoods&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;marksAndNumbers&quot; : &quot;...&quot;,
+    &quot;totalWeightCbm&quot; : 12345.0,
+    &quot;totalWeightKg&quot; : 12345.0,
+    &quot;totalWeightLbs&quot; : 12345.0,
+    &quot;slipSheet&quot; : &quot;...&quot;,
+    &quot;outerPackagingType&quot; : &quot;...&quot;,
+    &quot;totalWeightCbf&quot; : 12345.0,
+    &quot;purchaseOrderCargoLineItemBeanList&quot; : [ [ {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    }, {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    } ], [ {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    }, {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    } ] ],
+    &quot;outerPackagePieces&quot; : 12345,
+    &quot;innerPackagePieces&quot; : 12345
+  },
+  &quot;transactionalFlag&quot; : { },
+  &quot;transmit&quot; : true
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_PurchaseOrderResource_savePurchaseOrder_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/save <a href="./1.0/purchaseorder/save" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>It is used to save PO</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_PurchaseOrderMainBean.html">PurchaseOrderMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_PurchaseOrderMainBean.html">PurchaseOrderMainBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/save
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;commonBean&quot; : {
+    &quot;userRoleID&quot; : 12345,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userLoginId&quot; : 12345,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderCustomerMainBean&quot; : {
+    &quot;customerEmail&quot; : &quot;...&quot;,
+    &quot;salesRepresentative&quot; : &quot;...&quot;,
+    &quot;customerName&quot; : &quot;...&quot;,
+    &quot;purchaseOrderForwarderBean&quot; : {
+      &quot;forwarderReference&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;forwarderContactName&quot; : &quot;...&quot;,
+      &quot;forwarderAddress&quot; : &quot;...&quot;,
+      &quot;forwarderName&quot; : &quot;...&quot;,
+      &quot;forwarderPhone&quot; : &quot;...&quot;,
+      &quot;forwarderEanCode&quot; : &quot;...&quot;,
+      &quot;forwarderCode&quot; : &quot;...&quot;
+    },
+    &quot;customerCode&quot; : &quot;...&quot;,
+    &quot;purchaseOrderVendorBean&quot; : {
+      &quot;vendorAddress&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;vendorEanCode&quot; : &quot;...&quot;,
+      &quot;vendorCode&quot; : &quot;...&quot;,
+      &quot;vendorName&quot; : &quot;...&quot;,
+      &quot;vendorReference&quot; : &quot;...&quot;,
+      &quot;vendorPhone&quot; : &quot;...&quot;,
+      &quot;vendorContactName&quot; : &quot;...&quot;
+    },
+    &quot;customerMobileNumber&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;customerAddress&quot; : &quot;...&quot;,
+    &quot;customerReference&quot; : &quot;...&quot;,
+    &quot;purchaseOrderSubVendorBean&quot; : {
+      &quot;subVendorPhone&quot; : &quot;...&quot;,
+      &quot;subVendorAddress&quot; : &quot;...&quot;,
+      &quot;subVendorCode&quot; : &quot;...&quot;,
+      &quot;subVendorContactName&quot; : &quot;...&quot;,
+      &quot;subResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;subVendorReference&quot; : &quot;...&quot;,
+      &quot;subVendorName&quot; : &quot;...&quot;,
+      &quot;subVendorEanCode&quot; : &quot;...&quot;
+    },
+    &quot;customerContactName&quot; : &quot;...&quot;,
+    &quot;customerEanCode&quot; : &quot;...&quot;,
+    &quot;customerTelephoneNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderDeliveryBean&quot; : {
+      &quot;deliveryName&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;deliveryPhone&quot; : &quot;...&quot;,
+      &quot;deliveryReference&quot; : &quot;...&quot;,
+      &quot;deliveryContactName&quot; : &quot;...&quot;,
+      &quot;deliveryCode&quot; : &quot;...&quot;,
+      &quot;deliveryEanCode&quot; : &quot;...&quot;,
+      &quot;deliveryAddress&quot; : &quot;...&quot;
+    },
+    &quot;purchaseOrderDispatchPartyBean&quot; : {
+      &quot;dispatchPartyContactName&quot; : &quot;...&quot;,
+      &quot;dispatchPartyName&quot; : &quot;...&quot;,
+      &quot;dispatchPartyAddress&quot; : &quot;...&quot;,
+      &quot;dispatchPartyPhone&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;dispatchPartyReference&quot; : &quot;...&quot;,
+      &quot;dispatchPartyEanCode&quot; : &quot;...&quot;,
+      &quot;dispatchPartyCode&quot; : &quot;...&quot;
+    },
+    &quot;customerReferenceNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderConsigneeBean&quot; : {
+      &quot;consigneeAddress&quot; : &quot;...&quot;,
+      &quot;consigneeReference&quot; : &quot;...&quot;,
+      &quot;consigneePhone&quot; : &quot;...&quot;,
+      &quot;consigneeCode&quot; : &quot;...&quot;,
+      &quot;consigneeContactName&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;consigneeEanCode&quot; : &quot;...&quot;,
+      &quot;consigneeName&quot; : &quot;...&quot;
+    },
+    &quot;purchaseOrderAgentBean&quot; : {
+      &quot;agentEanCode&quot; : &quot;...&quot;,
+      &quot;agentCode&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;agentContactName&quot; : &quot;...&quot;,
+      &quot;agentReference&quot; : &quot;...&quot;,
+      &quot;agentName&quot; : &quot;...&quot;,
+      &quot;agentPhone&quot; : &quot;...&quot;,
+      &quot;agentAddress&quot; : &quot;...&quot;
+    },
+    &quot;responsibleAgency&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderReportLabels&quot; : {
+    &quot;cbfLabel&quot; : &quot;...&quot;,
+    &quot;directionLabel&quot; : &quot;...&quot;,
+    &quot;outerLabel&quot; : &quot;...&quot;,
+    &quot;buyerProductLabel&quot; : &quot;...&quot;,
+    &quot;arrivalEarliestDateLabel&quot; : &quot;...&quot;,
+    &quot;referenceNumberLabel&quot; : &quot;...&quot;,
+    &quot;itemLabel&quot; : &quot;...&quot;,
+    &quot;includeLabel&quot; : &quot;...&quot;,
+    &quot;actualDeliveryDateLabel&quot; : &quot;...&quot;,
+    &quot;vendorDetailsLabel&quot; : &quot;...&quot;,
+    &quot;customerDetailsLabel&quot; : &quot;...&quot;,
+    &quot;totalLabel&quot; : &quot;...&quot;,
+    &quot;vendorsProductLabel&quot; : &quot;...&quot;,
+    &quot;handlingOfficeLabel&quot; : &quot;...&quot;,
+    &quot;mainDetailsLabel&quot; : &quot;...&quot;,
+    &quot;innerLabel&quot; : &quot;...&quot;,
+    &quot;modeOfTransportLabel&quot; : &quot;...&quot;,
+    &quot;lineOfCreditNumberLabel&quot; : &quot;...&quot;,
+    &quot;routingLabel&quot; : &quot;...&quot;,
+    &quot;volumeLabel&quot; : &quot;...&quot;,
+    &quot;cargoLabel&quot; : &quot;...&quot;,
+    &quot;localDeliveryDateLabel&quot; : &quot;...&quot;,
+    &quot;purchaseOrderStatusLabel&quot; : &quot;...&quot;,
+    &quot;weightLabel&quot; : &quot;...&quot;,
+    &quot;orderLabel&quot; : &quot;...&quot;,
+    &quot;termsLabel&quot; : &quot;...&quot;,
+    &quot;bookingLabel&quot; : &quot;...&quot;,
+    &quot;destinationNameLabel&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;shipEarliestDateLabel&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;originCodeNameLabel&quot; : &quot;...&quot;,
+    &quot;commodityLabel&quot; : &quot;...&quot;,
+    &quot;namedPlaceLabel&quot; : &quot;...&quot;,
+    &quot;packagesLabel&quot; : &quot;...&quot;,
+    &quot;numberLabel&quot; : &quot;...&quot;,
+    &quot;bookingNumberLabel&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
+    &quot;clientNumberLabel&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderBean&quot; : {
+    &quot;modified&quot; : true,
+    &quot;syntaxVersionNumber&quot; : 12345,
+    &quot;terms&quot; : &quot;...&quot;,
+    &quot;createdOn&quot; : &quot;...&quot;,
+    &quot;createdBy&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345,
+    &quot;transportStageQualifier&quot; : &quot;...&quot;,
+    &quot;senderEanNumber&quot; : &quot;...&quot;,
+    &quot;modOfTransportCode&quot; : &quot;...&quot;,
+    &quot;conveyReferenceNumber&quot; : &quot;...&quot;,
+    &quot;termsOfDeliveryFunction&quot; : &quot;...&quot;,
+    &quot;interchangeControlReference&quot; : &quot;...&quot;,
+    &quot;updatedBy&quot; : &quot;...&quot;,
+    &quot;messageDate&quot; : &quot;...&quot;,
+    &quot;receiverEanNumber&quot; : &quot;...&quot;,
+    &quot;uniqueReferenceNumber&quot; : &quot;...&quot;,
+    &quot;messageReferenceNumber&quot; : &quot;...&quot;,
+    &quot;documentName&quot; : &quot;...&quot;,
+    &quot;contractStatusIftmcs&quot; : &quot;...&quot;,
+    &quot;clientNumber&quot; : &quot;...&quot;,
+    &quot;syntaxIdentifier&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;purchaseOrderActionSource&quot; : &quot;...&quot;,
+    &quot;lineOfCreditNumber&quot; : &quot;...&quot;,
+    &quot;preparationDate&quot; : &quot;...&quot;,
+    &quot;senderIdentificationNumber&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;bookingNumber&quot; : &quot;...&quot;,
+    &quot;receiverIdentificationNumber&quot; : &quot;...&quot;,
+    &quot;modeOfTransport&quot; : &quot;...&quot;,
+    &quot;interComLocationQualifier&quot; : &quot;...&quot;,
+    &quot;contractStatusIftman&quot; : &quot;...&quot;,
+    &quot;updatedOn&quot; : &quot;...&quot;,
+    &quot;direction&quot; : &quot;...&quot;,
+    &quot;purchaseOrderSource&quot; : &quot;...&quot;,
+    &quot;purchaseOrderStatus&quot; : &quot;...&quot;,
+    &quot;interComLocationDescription&quot; : &quot;...&quot;,
+    &quot;termsDescription&quot; : &quot;...&quot;
+  },
+  &quot;purchaseOrderRoutingBean&quot; : {
+    &quot;originalArrivalEarliestDate&quot; : &quot;...&quot;,
+    &quot;destinationName&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;routingRefernceNumber&quot; : &quot;...&quot;,
+    &quot;arrivalEarliestDate&quot; : &quot;...&quot;,
+    &quot;destinationCode&quot; : &quot;...&quot;,
+    &quot;shipEarliestDate&quot; : &quot;...&quot;,
+    &quot;originCode&quot; : &quot;...&quot;,
+    &quot;localDeliveryDate&quot; : &quot;...&quot;,
+    &quot;actualDeliveryDate&quot; : &quot;...&quot;,
+    &quot;originCodeName&quot; : &quot;...&quot;,
+    &quot;originalShipEarliestDate&quot; : &quot;...&quot;
+  },
+  &quot;validationError&quot; : &quot;...&quot;,
+  &quot;purchaseOrderCargoBean&quot; : {
+    &quot;cargoReferenceNumber&quot; : &quot;...&quot;,
+    &quot;innerPackagingType&quot; : &quot;...&quot;,
+    &quot;descriptionOfGoods&quot; : &quot;...&quot;,
+    &quot;modified&quot; : true,
+    &quot;marksAndNumbers&quot; : &quot;...&quot;,
+    &quot;totalWeightCbm&quot; : 12345.0,
+    &quot;totalWeightKg&quot; : 12345.0,
+    &quot;totalWeightLbs&quot; : 12345.0,
+    &quot;slipSheet&quot; : &quot;...&quot;,
+    &quot;outerPackagingType&quot; : &quot;...&quot;,
+    &quot;totalWeightCbf&quot; : 12345.0,
+    &quot;purchaseOrderCargoLineItemBeanList&quot; : [ [ {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    }, {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    } ], [ {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    }, {
+      &quot;innerPackageType&quot; : &quot;...&quot;,
+      &quot;commodity&quot; : &quot;...&quot;,
+      &quot;cbfLabel&quot; : &quot;...&quot;,
+      &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+      &quot;item&quot; : &quot;...&quot;,
+      &quot;responsibleAgency&quot; : &quot;...&quot;,
+      &quot;freeText2&quot; : &quot;...&quot;,
+      &quot;buyerProductNumber&quot; : &quot;...&quot;,
+      &quot;freeText1&quot; : &quot;...&quot;,
+      &quot;outerPackages&quot; : 12345,
+      &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+      &quot;orderLine&quot; : 12345,
+      &quot;lbsLabel&quot; : &quot;...&quot;,
+      &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+      &quot;lbs&quot; : 12345.0,
+      &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
+      &quot;kg&quot; : 12345.0,
+      &quot;kgLabel&quot; : &quot;...&quot;,
+      &quot;customerArticleNumber&quot; : 12345,
+      &quot;vendorProductNumber&quot; : &quot;...&quot;,
+      &quot;includeInBooking&quot; : 12345,
+      &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+      &quot;itemNumberType&quot; : &quot;...&quot;,
+      &quot;status&quot; : 12345,
+      &quot;cbf&quot; : 12345.0,
+      &quot;orderNumber&quot; : 12345,
+      &quot;lastRecord&quot; : true,
+      &quot;innerPackages&quot; : 12345,
+      &quot;locationQualifier&quot; : &quot;...&quot;,
+      &quot;cbmLabel&quot; : &quot;...&quot;,
+      &quot;originLine&quot; : 12345,
+      &quot;origin&quot; : &quot;...&quot;,
+      &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
+      &quot;cbm&quot; : 12345.0
+    } ] ],
+    &quot;outerPackagePieces&quot; : 12345,
+    &quot;innerPackagePieces&quot; : 12345
+  },
+  &quot;transactionalFlag&quot; : { },
+  &quot;transmit&quot; : true
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_PurchaseOrderResource_closePurchaseOrder_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/close <a href="./1.0/purchaseorder/close" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/close
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_PurchaseOrderResource_archivePurchaseOrder_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/archive <a href="./1.0/purchaseorder/archive" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Added by the Rachana Shah on 4th Jan 2017 for Mission 22864, to Archive the Purchase orders</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/archive
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_PurchaseOrderResource_dailyNotification_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/purchaseorder/dailyNotification <a href="./1.0/purchaseorder/dailyNotification" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>PHX-25199 : Rohit Dobariya : Send Purchase Order Detail</p>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">ResultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /purchaseorder/dailyNotification
+Accept: application/json
+
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

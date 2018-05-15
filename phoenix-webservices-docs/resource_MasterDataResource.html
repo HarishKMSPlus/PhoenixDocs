@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: MasterDataResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: MasterDataResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_MasterDataResource_getPackagingMasterData_POST">POST /masterdata/packagingdata</a></li>
+          <li><a href="#resource_MasterDataResource_getWarehouseMasterData_POST">POST /masterdata/warehousedata</a></li>
+          <li><a href="#resource_MasterDataResource_getExceptionsTypesMasterData_POST"><abbr title="POST /masterdata/exceptionstypes">POST /masterdata/exceptionstyp...</abbr></a></li>
+          <li><a href="#resource_MasterDataResource_getHoldTypeMasterData_POST">POST /masterdata/holdtypedata</a></li>
+          <li><a href="#resource_MasterDataResource_saveErrorLogIntoDB_POST"><abbr title="POST /masterdata/failureevents/save">POST /masterdata/failureevents...</abbr></a></li>
+          <li><a href="#resource_MasterDataResource_getDocumentTypes_POST"><abbr title="POST /masterdata/warehouse/documenttypes">POST /masterdata/warehouse/doc...</abbr></a></li>
+          <li><a href="#resource_MasterDataResource_getPrinterName_POST">POST /masterdata/printername</a></li>
+          <li><a href="#resource_MasterDataResource_getLocationCodes_POST">POST /masterdata/locations</a></li>
+          <li><a href="#resource_MasterDataResource_getCustomerCodes_POST">POST /masterdata/customers</a></li>
+          <li><a href="#resource_MasterDataResource_getTermsAndConditions_POST"><abbr title="POST /masterdata/multishipment/tandc">POST /masterdata/multishipment...</abbr></a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_MasterDataResource.html">MasterDataResource</a></li>
+        </ol>
+
+      <h1 class="page-header">MasterDataResource <small>Resource</small></h1>
+
+      <p>This class contains the web services content for the master data which will
+use in mobileApp core forms</p>
+
+      <div id="resource_MasterDataResource_getPackagingMasterData_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/packagingdata <a href="./1.0/masterdata/packagingdata" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>to get the packaging data for lot form master data v1</p>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">ResultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/packagingdata
+Accept: application/json
+
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getWarehouseMasterData_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/warehousedata <a href="./1.0/masterdata/warehousedata" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>to get the packaging data for lot form master data v1</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/xml&quot; HTTP header to specify this media type to the server."><span class="request-type">application/xml</span></abbr></td>
+            <td><span class="datatype-reference"><a href="xml_ns0_commonBean.html">commonBean</a>
+ (XML)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">ResultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/warehousedata
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;username&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;inputUserFullname&quot; : &quot;...&quot;,
+  &quot;userLoginId&quot; : 12345,
+  &quot;alternateCityName&quot; : &quot;...&quot;,
+  &quot;password&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;userRoleID&quot; : 12345,
+  &quot;userCompanyName&quot; : &quot;...&quot;,
+  &quot;updateUserFullname&quot; : &quot;...&quot;,
+  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;userID&quot; : 12345,
+  &quot;updateDate&quot; : &quot;...&quot;,
+  &quot;ldapUsername&quot; : &quot;...&quot;,
+  &quot;locale&quot; : &quot;...&quot;,
+  &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;config&quot; : &quot;...&quot;,
+  &quot;officeTimezone&quot; : &quot;...&quot;,
+  &quot;updateLdapUser&quot; : &quot;...&quot;,
+  &quot;userOfficeID&quot; : 12345,
+  &quot;localCurrency&quot; : &quot;...&quot;,
+  &quot;userSchemaID&quot; : 12345,
+  &quot;userCompany&quot; : &quot;...&quot;,
+  &quot;userFullname&quot; : &quot;...&quot;,
+  &quot;debugModeFlag&quot; : 12345,
+  &quot;userSchemaName&quot; : &quot;...&quot;,
+  &quot;updateUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getExceptionsTypesMasterData_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/exceptionstypes <a href="./1.0/masterdata/exceptionstypes" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>to get the exceptions types for lot form master data v1</p>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">ResultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/exceptionstypes
+Accept: application/json
+
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getHoldTypeMasterData_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/holdtypedata <a href="./1.0/masterdata/holdtypedata" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>to get the hold-type data for lot form master data v1</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+            <th>description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+            <td rowspan="2" class="multi-row-description"><span class="response-description">ResultJson</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/holdtypedata
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;username&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;inputUserFullname&quot; : &quot;...&quot;,
+  &quot;userLoginId&quot; : 12345,
+  &quot;alternateCityName&quot; : &quot;...&quot;,
+  &quot;password&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;userRoleID&quot; : 12345,
+  &quot;userCompanyName&quot; : &quot;...&quot;,
+  &quot;updateUserFullname&quot; : &quot;...&quot;,
+  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;userID&quot; : 12345,
+  &quot;updateDate&quot; : &quot;...&quot;,
+  &quot;ldapUsername&quot; : &quot;...&quot;,
+  &quot;locale&quot; : &quot;...&quot;,
+  &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;config&quot; : &quot;...&quot;,
+  &quot;officeTimezone&quot; : &quot;...&quot;,
+  &quot;updateLdapUser&quot; : &quot;...&quot;,
+  &quot;userOfficeID&quot; : 12345,
+  &quot;localCurrency&quot; : &quot;...&quot;,
+  &quot;userSchemaID&quot; : 12345,
+  &quot;userCompany&quot; : &quot;...&quot;,
+  &quot;userFullname&quot; : &quot;...&quot;,
+  &quot;debugModeFlag&quot; : 12345,
+  &quot;userSchemaName&quot; : &quot;...&quot;,
+  &quot;updateUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_saveErrorLogIntoDB_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/failureevents/save <a href="./1.0/masterdata/failureevents/save" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Changed for PHX-20901
+PHX-19891 Common method to store error message in gen_error_log</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ErrorLogBean.html">ErrorLogBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ErrorLogBean.html">ErrorLogBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/failureevents/save
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;warehouseCode&quot; : &quot;...&quot;,
+  &quot;ldapUserName&quot; : &quot;...&quot;,
+  &quot;deviceInformation&quot; : &quot;...&quot;,
+  &quot;connectionType&quot; : &quot;...&quot;,
+  &quot;moduleName&quot; : &quot;...&quot;,
+  &quot;eventName&quot; : &quot;...&quot;,
+  &quot;errorMsg&quot; : &quot;...&quot;,
+  &quot;serverCallStatus&quot; : 12345,
+  &quot;timestamp&quot; : 12345
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getDocumentTypes_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/warehouse/documenttypes <a href="./1.0/masterdata/warehouse/documenttypes" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/xml&quot; HTTP header to specify this media type to the server."><span class="request-type">application/xml</span></abbr></td>
+            <td><span class="datatype-reference">(custom)
+ (XML)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/warehouse/documenttypes
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getPrinterName_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/printername <a href="./1.0/masterdata/printername" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for fetch Printer name</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/xml&quot; HTTP header to specify this media type to the server."><span class="request-type">application/xml</span></abbr></td>
+            <td><span class="datatype-reference">(custom)
+ (XML)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/printername
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getLocationCodes_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/locations <a href="./1.0/masterdata/locations" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for fetch Destination Codes</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/locations
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getCustomerCodes_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/customers <a href="./1.0/masterdata/customers" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>This method is use for fetch Customer Codes</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">object
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/customers
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-txt">
+...
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_MasterDataResource_getTermsAndConditions_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/masterdata/multishipment/tandc <a href="./1.0/masterdata/multishipment/tandc" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p></p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /masterdata/multishipment/tandc
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;username&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;inputUserFullname&quot; : &quot;...&quot;,
+  &quot;userLoginId&quot; : 12345,
+  &quot;alternateCityName&quot; : &quot;...&quot;,
+  &quot;password&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;userRoleID&quot; : 12345,
+  &quot;userCompanyName&quot; : &quot;...&quot;,
+  &quot;updateUserFullname&quot; : &quot;...&quot;,
+  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;userID&quot; : 12345,
+  &quot;updateDate&quot; : &quot;...&quot;,
+  &quot;ldapUsername&quot; : &quot;...&quot;,
+  &quot;locale&quot; : &quot;...&quot;,
+  &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;config&quot; : &quot;...&quot;,
+  &quot;officeTimezone&quot; : &quot;...&quot;,
+  &quot;updateLdapUser&quot; : &quot;...&quot;,
+  &quot;userOfficeID&quot; : 12345,
+  &quot;localCurrency&quot; : &quot;...&quot;,
+  &quot;userSchemaID&quot; : 12345,
+  &quot;userCompany&quot; : &quot;...&quot;,
+  &quot;userFullname&quot; : &quot;...&quot;,
+  &quot;debugModeFlag&quot; : 12345,
+  &quot;userSchemaName&quot; : &quot;...&quot;,
+  &quot;updateUser&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

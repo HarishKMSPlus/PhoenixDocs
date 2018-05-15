@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: RatePopulateResource</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: RatePopulateResource</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li><a href="#resource_RatePopulateResource_searchRates_POST"><abbr title="POST /populaterateservice/searchrates">POST /populaterateservice/sear...</abbr></a></li>
+          <li><a href="#resource_RatePopulateResource_saveSpotRate_POST">POST /populaterateservice/save</a></li>
+          <li><a href="#resource_RatePopulateResource_searchSpotRates_POST"><abbr title="POST /populaterateservice/getspotates">POST /populaterateservice/gets...</abbr></a></li>
+          <li><a href="#resource_RatePopulateResource_isSpotRateExist_POST"><abbr title="POST /populaterateservice/isSpotRateExist">POST /populaterateservice/isSp...</abbr></a></li>
+          <li class="divider"></li>
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="resources.html">Resources</a></li>
+          <li class="dropdown"><a href="resource_RatePopulateResource.html">RatePopulateResource</a></li>
+        </ol>
+
+      <h1 class="page-header">RatePopulateResource <small>Resource</small></h1>
+
+      <p></p>
+
+      <div id="resource_RatePopulateResource_searchRates_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/populaterateservice/searchrates <a href="./1.0/populaterateservice/searchrates" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Modified by Sangita for PHX-23791 added SystemException and set routing as per toggle</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_RateRequestBean.html">RateRequestBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_RateRequestBean.html">RateRequestBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /populaterateservice/searchrates
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;placeOfReceiptCode&quot; : &quot;...&quot;,
+  &quot;loadCode&quot; : &quot;...&quot;,
+  &quot;dischargeCode&quot; : &quot;...&quot;,
+  &quot;deconsolidationCode&quot; : &quot;...&quot;,
+  &quot;finalCfsCode&quot; : &quot;...&quot;,
+  &quot;placeOfDeliveryCode&quot; : &quot;...&quot;,
+  &quot;originInlandCFSCode&quot; : &quot;...&quot;,
+  &quot;consolidationCFSCode&quot; : &quot;...&quot;,
+  &quot;portOfLoadingCode&quot; : &quot;...&quot;,
+  &quot;transhipment1Code&quot; : &quot;...&quot;,
+  &quot;transhipment2Code&quot; : &quot;...&quot;,
+  &quot;transhipment3Code&quot; : &quot;...&quot;,
+  &quot;portOfDischargeCode&quot; : &quot;...&quot;,
+  &quot;deconsolidationCFSCode&quot; : &quot;...&quot;,
+  &quot;destinationCFSCode&quot; : &quot;...&quot;,
+  &quot;originOfRequest&quot; : &quot;...&quot;,
+  &quot;controllingEntity&quot; : &quot;...&quot;,
+  &quot;cubeCargoInFeet&quot; : 12345.0,
+  &quot;dimensionBeans&quot; : [ [ {
+    &quot;unit&quot; : &quot;...&quot;,
+    &quot;length&quot; : 12345.0,
+    &quot;width&quot; : 12345.0,
+    &quot;height&quot; : 12345.0,
+    &quot;pieces&quot; : 12345,
+    &quot;cbm&quot; : 12345.0,
+    &quot;cbf&quot; : 12345.0,
+    &quot;kg&quot; : 12345.0,
+    &quot;lbs&quot; : 12345.0,
+    &quot;serialversionuid&quot; : 12345
+  }, {
+    &quot;unit&quot; : &quot;...&quot;,
+    &quot;length&quot; : 12345.0,
+    &quot;width&quot; : 12345.0,
+    &quot;height&quot; : 12345.0,
+    &quot;pieces&quot; : 12345,
+    &quot;cbm&quot; : 12345.0,
+    &quot;cbf&quot; : 12345.0,
+    &quot;kg&quot; : 12345.0,
+    &quot;lbs&quot; : 12345.0,
+    &quot;serialversionuid&quot; : 12345
+  } ], [ {
+    &quot;unit&quot; : &quot;...&quot;,
+    &quot;length&quot; : 12345.0,
+    &quot;width&quot; : 12345.0,
+    &quot;height&quot; : 12345.0,
+    &quot;pieces&quot; : 12345,
+    &quot;cbm&quot; : 12345.0,
+    &quot;cbf&quot; : 12345.0,
+    &quot;kg&quot; : 12345.0,
+    &quot;lbs&quot; : 12345.0,
+    &quot;serialversionuid&quot; : 12345
+  }, {
+    &quot;unit&quot; : &quot;...&quot;,
+    &quot;length&quot; : 12345.0,
+    &quot;width&quot; : 12345.0,
+    &quot;height&quot; : 12345.0,
+    &quot;pieces&quot; : 12345,
+    &quot;cbm&quot; : 12345.0,
+    &quot;cbf&quot; : 12345.0,
+    &quot;kg&quot; : 12345.0,
+    &quot;lbs&quot; : 12345.0,
+    &quot;serialversionuid&quot; : 12345
+  } ] ],
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;namedAccountCode&quot; : &quot;...&quot;,
+  &quot;hazardousFlag&quot; : true,
+  &quot;serialversionuid&quot; : 12345,
+  &quot;overLengthFlag&quot; : true,
+  &quot;overWeightFlag&quot; : true,
+  &quot;cubeCargo&quot; : 12345.0,
+  &quot;weightCargo&quot; : 12345.0,
+  &quot;uomValue&quot; : &quot;...&quot;,
+  &quot;prepaidCollect&quot; : &quot;...&quot;,
+  &quot;rateProfileCode&quot; : &quot;...&quot;,
+  &quot;shipmentDate&quot; : &quot;...&quot;,
+  &quot;companyId&quot; : &quot;...&quot;,
+  &quot;locale&quot; : &quot;...&quot;,
+  &quot;module&quot; : &quot;...&quot;,
+  &quot;destinationCFSNamedAccount&quot; : &quot;...&quot;,
+  &quot;dischargeNamedAccount&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
+  &quot;spotRateFlag&quot; : 12345,
+  &quot;officeCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_RatePopulateResource_saveSpotRate_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/populaterateservice/save <a href="./1.0/populaterateservice/save" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Added by Pranav Tallewar<ptallewar@scan-it.com.sg> Saves Spot Rates</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">array of array of <a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">array of array of <a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /populaterateservice/save
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;rateNamedAccountId&quot; : &quot;...&quot;,
+  &quot;comments&quot; : &quot;...&quot;,
+  &quot;rate&quot; : &quot;...&quot;,
+  &quot;shipmentDate&quot; : &quot;...&quot;,
+  &quot;rateNamedAccountCode&quot; : &quot;...&quot;,
+  &quot;routingReferenceId&quot; : &quot;...&quot;,
+  &quot;userLdapName&quot; : &quot;...&quot;,
+  &quot;expirationDate&quot; : &quot;...&quot;,
+  &quot;companyId&quot; : &quot;...&quot;,
+  &quot;basis&quot; : &quot;...&quot;,
+  &quot;endTo&quot; : 12345,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;efftectiveDate&quot; : &quot;...&quot;,
+  &quot;userOfficeId&quot; : 12345,
+  &quot;rateProfileCode&quot; : &quot;...&quot;,
+  &quot;rateProfileId&quot; : &quot;...&quot;,
+  &quot;spotrateDetailId&quot; : &quot;...&quot;,
+  &quot;startFrom&quot; : 12345,
+  &quot;rateDetailId&quot; : &quot;...&quot;,
+  &quot;currency&quot; : &quot;...&quot;,
+  &quot;parentRateDetaildId&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_RatePopulateResource_searchSpotRates_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/populaterateservice/getspotates <a href="./1.0/populaterateservice/getspotates" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Added by Pranav for PHX-26663 : Get Spot Rates for AccuRate rate</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /populaterateservice/getspotates
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;rateNamedAccountId&quot; : &quot;...&quot;,
+  &quot;comments&quot; : &quot;...&quot;,
+  &quot;rate&quot; : &quot;...&quot;,
+  &quot;shipmentDate&quot; : &quot;...&quot;,
+  &quot;rateNamedAccountCode&quot; : &quot;...&quot;,
+  &quot;routingReferenceId&quot; : &quot;...&quot;,
+  &quot;userLdapName&quot; : &quot;...&quot;,
+  &quot;expirationDate&quot; : &quot;...&quot;,
+  &quot;companyId&quot; : &quot;...&quot;,
+  &quot;basis&quot; : &quot;...&quot;,
+  &quot;endTo&quot; : 12345,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;efftectiveDate&quot; : &quot;...&quot;,
+  &quot;userOfficeId&quot; : 12345,
+  &quot;rateProfileCode&quot; : &quot;...&quot;,
+  &quot;rateProfileId&quot; : &quot;...&quot;,
+  &quot;spotrateDetailId&quot; : &quot;...&quot;,
+  &quot;startFrom&quot; : 12345,
+  &quot;rateDetailId&quot; : &quot;...&quot;,
+  &quot;currency&quot; : &quot;...&quot;,
+  &quot;parentRateDetaildId&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resource_RatePopulateResource_isSpotRateExist_POST">
+        <h3><span class="label label-default resource-method">POST</span> <span class="resource-path">/populaterateservice/isSpotRateExist <a href="./1.0/populaterateservice/isSpotRateExist" class="glyphicon glyphicon-new-window" target="_blank"></a></span></h3>
+
+        <p>Added by Pranav for PHX-31506
+Checks list duplicate spot rates exist for company,customer and named account</p>
+
+        <table class="table">
+          <caption>Request Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">array of array of <a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Content-Type: application/json&quot; HTTP header to specify this media type to the server."><span class="request-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference">array of array of <a href="json_SpotRateDetailsBean.html">SpotRateDetailsBean</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <caption>Response Body</caption>
+          <thead>
+          <tr>
+            <th>media type</th>
+            <th>data type</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          <tr>
+            <td><abbr data-toggle="tooltip" data-placement="top" title="Use the &quot;Accept: application/json&quot; HTTP header to request that this media type be provided by the server."><span class="response-type">application/json</span></abbr></td>
+            <td><span class="datatype-reference"><a href="json_ResultJson.html">ResultJson</a>
+ (JSON)</span></td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>Example</h4>
+
+        <div class="container-fluid example panel">
+          <div class="row panel-body">
+            <div class="col-md-6">
+              <h5>Request</h5>
+              <pre>
+POST /populaterateservice/isSpotRateExist
+Content-Type: application/json
+Accept: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;rateNamedAccountId&quot; : &quot;...&quot;,
+  &quot;comments&quot; : &quot;...&quot;,
+  &quot;rate&quot; : &quot;...&quot;,
+  &quot;shipmentDate&quot; : &quot;...&quot;,
+  &quot;rateNamedAccountCode&quot; : &quot;...&quot;,
+  &quot;routingReferenceId&quot; : &quot;...&quot;,
+  &quot;userLdapName&quot; : &quot;...&quot;,
+  &quot;expirationDate&quot; : &quot;...&quot;,
+  &quot;companyId&quot; : &quot;...&quot;,
+  &quot;basis&quot; : &quot;...&quot;,
+  &quot;endTo&quot; : 12345,
+  &quot;companyCode&quot; : &quot;...&quot;,
+  &quot;efftectiveDate&quot; : &quot;...&quot;,
+  &quot;userOfficeId&quot; : 12345,
+  &quot;rateProfileCode&quot; : &quot;...&quot;,
+  &quot;rateProfileId&quot; : &quot;...&quot;,
+  &quot;spotrateDetailId&quot; : &quot;...&quot;,
+  &quot;startFrom&quot; : 12345,
+  &quot;rateDetailId&quot; : &quot;...&quot;,
+  &quot;currency&quot; : &quot;...&quot;,
+  &quot;parentRateDetaildId&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+            <div class="col-md-6">
+              <h5>Response</h5>
+              <pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+                <code class="prettyprint language-js">
+{
+  &quot;success&quot; : 12345,
+  &quot;result&quot; : { },
+  &quot;message&quot; : &quot;...&quot;,
+  &quot;errorCode&quot; : &quot;...&quot;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

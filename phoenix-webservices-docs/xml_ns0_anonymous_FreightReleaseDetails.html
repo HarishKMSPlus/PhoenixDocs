@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: FreightReleaseDetails (Anonymous)</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: FreightReleaseDetails (Anonymous)</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="syntax_xml.html">XML</a></li>
+          <li class="dropdown"><a href="xml_ns0_anonymous_FreightReleaseDetails.html">FreightReleaseDetails (Anonymous)</a></li>
+        </ol>
+
+      <h1 class="page-header">FreightReleaseDetails (Anonymous) <small>Data Type</small></h1>
+
+      <p><p>Java class for anonymous complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="RequestType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         &lt;element name="FileNumber">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="10"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="TypeOfMove">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="1"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="StopOff">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="1"/>
+               &lt;minLength value="0"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="MasterBLNumber">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="25"/>
+               &lt;minLength value="0"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="CarrierServiceContract">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="20"/>
+               &lt;minLength value="0"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="InTransitEntryFlag">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="1"/>
+               &lt;minLength value="0"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+    
+         &lt;element name="ChargeDescription">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="24"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="OriginOrLocalCharge">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="1"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="PrepaidCollect">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="1"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="Basis">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="3"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="ForeignAmount" type="{http://www.w3.org/2001/XMLSchema}double"/>
+         &lt;element name="ExchangeRate" type="{http://www.w3.org/2001/XMLSchema}double"/>
+         &lt;element name="Currency">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="4"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="PCName">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="40"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="Remarks" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         &lt;element name="InTransitEntryDetails" maxOccurs="unbounded" minOccurs="0">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="InTransitEntryNo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                   &lt;element name="Class" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                   &lt;element name="PortCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                   &lt;element name="EtaPort" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                   &lt;element name="BondedCarrier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="ShipmentDetails" maxOccurs="unbounded">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="ArrivalNoticeNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="12"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FreightRelease">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;minLength value="1"/>
+                         &lt;enumeration value="Y"/>
+                         &lt;enumeration value="N"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BillOfLadingNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="NumberOfOriginals">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="2"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BLReleasePoint">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CommentDetails" maxOccurs="3" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Remarks">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="CustomsHouseBlNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="16"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CargoControlNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ManifestFrom">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ManifestTo">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CarrierBlNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="16"/>
+                         &lt;minLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CargoType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="1"/>
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="DeliveryType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OriginalsRequired">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="TermsOfShipment">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="10"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CargoAvailableDate">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="11"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="WarehouseFreeOfChargeDays">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="2"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PaymentRequiredFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ActualPieces">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="10"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="LotNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ReferenceDetails">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="ShipperReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="30"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ConsigneeReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="30"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="NotifyReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="30"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ForwarderReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="30"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CustomsReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="30"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="PaymentDetails">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="PaymentType">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="PaymentAmount">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="InvoiceDate">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="11"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="InvoiceNumber">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="AddressDetailsInformation">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="AddressDetailsType" maxOccurs="5">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="1"/>
+                         &lt;maxLength value="2"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Name">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Address">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CityName">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="StateProvince">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PostalCode">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CountryName">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="RoutingDetails">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="ImoNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="7"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CarrierSCAC">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="10"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="VesselName">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Voyage">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="10"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PrecarriageFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="EtdOrigin">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="11"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OriginCode">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OriginName">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="EtsLoadPort">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PortOfLoadingCode">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PortOfLoadingName">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="EtaDischarge" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="DischargeCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="DischargeName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="EtaFinalDestination" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="FinalDestinationCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="FinalDestinationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+                   &lt;element name="PrecarriageDetails" maxOccurs="unbounded" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="PrecarriageDoneBy" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageOriginCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageOriginName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageOriginDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageDestinationCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageDestinationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="PrecarriageDestinationDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="ContainerDetails" maxOccurs="unbounded">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="ContainerNumber">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="11"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CargoDetails" maxOccurs="unbounded" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Pieces">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+                                   &lt;totalDigits value="6"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Packaging">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="25"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Commodity" maxOccurs="unbounded">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="85"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Weight">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="10"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Volume">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="10"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="UOM">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="1"/>
+                                   &lt;minLength value="1"/>
+                                   &lt;enumeration value="E"/>
+                                   &lt;enumeration value="M"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Marks" maxOccurs="unbounded">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="85"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CargoImageURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                             &lt;element name="HazardousFlag">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="1"/>
+                                   &lt;enumeration value="N"/>
+                                   &lt;enumeration value="Y"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="HazardousDetails" maxOccurs="unbounded" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="HazardousClass" type="{http://www.w3.org/2001/XMLSchema}float"/>
+                                       &lt;element name="Flashpoint" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="FlashpointFlag" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;minLength value="0"/>
+                                             &lt;maxLength value="1"/>
+                                             &lt;enumeration value="C"/>
+                                             &lt;enumeration value="F"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="HazardousContent" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="40"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="ShippingName">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="40"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="UNNumber">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="PackingGroup" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="3"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="PackageCount" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;minLength value="1"/>
+                                             &lt;maxLength value="8"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="PackageType" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="20"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="NetWeight" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                             &lt;totalDigits value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="EmergencyPhoneNumber" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="15"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="HazCargoImageURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre></p>
+
+      <dl class="dl-horizontal">
+        <dt>Namespace</dt>
+        <dd>(Default)</dd>
+        <dt>Schema</dt>
+        <dd><a href="ns0.xsd">ns0.xsd</a></dd>
+      </dl>
+
+      <table class="table">
+        <caption>Properties</caption>
+        <thead>
+        <tr>
+          <th>name</th>
+          <th>data type</th>
+          <th>type</th>
+          <th>namespace</th>
+          <th>min/max occurs</th>
+          <th>constraints</th>
+          <th>description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>  <span class="property-name">AddressDetailsInformation</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_AddressDetailsInformation.html">AddressDetailsInformation (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Basis</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">CarrierServiceContract</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">ChargeDescription</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">ContainerDetails</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_ContainerDetails.html">ContainerDetails (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Currency</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">FileNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">InTransitEntryDetails</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_InTransitEntryDetails.html">InTransitEntryDetails (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">InTransitEntryFlag</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">MasterBLNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">OriginOrLocalCharge</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">PCName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">PrepaidCollect</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">Remarks</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/1
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">RequestType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">0/1
+</span>
+</td>
+          <td>  <span class="property-constraints">&nbsp;
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">RoutingDetails</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_RoutingDetails.html">RoutingDetails (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">ShipmentDetails</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_ShipmentDetails.html">ShipmentDetails (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">StopOff</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">TypeOfMove</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <p class="lead">Example</p>
+
+      <pre class="prettyprint language-xml example">&lt;f-----&gt;
+  &lt;RequestType&gt;...&lt;/RequestType&gt;
+  &lt;FileNumber&gt;...&lt;/FileNumber&gt;
+  &lt;TypeOfMove&gt;...&lt;/TypeOfMove&gt;
+  &lt;StopOff&gt;...&lt;/StopOff&gt;
+  &lt;MasterBLNumber&gt;...&lt;/MasterBLNumber&gt;
+  &lt;CarrierServiceContract&gt;...&lt;/CarrierServiceContract&gt;
+  &lt;InTransitEntryFlag&gt;...&lt;/InTransitEntryFlag&gt;
+  &lt;ChargeDescription&gt;...&lt;/ChargeDescription&gt;
+  &lt;OriginOrLocalCharge&gt;...&lt;/OriginOrLocalCharge&gt;
+  &lt;PrepaidCollect&gt;...&lt;/PrepaidCollect&gt;
+  &lt;Basis&gt;...&lt;/Basis&gt;
+  &lt;Currency&gt;...&lt;/Currency&gt;
+  &lt;PCName&gt;...&lt;/PCName&gt;
+  &lt;Remarks&gt;...&lt;/Remarks&gt;
+  &lt;InTransitEntryDetails&gt;
+    &lt;InTransitEntryNo&gt;...&lt;/InTransitEntryNo&gt;
+    &lt;Class&gt;...&lt;/Class&gt;
+    &lt;PortCode&gt;...&lt;/PortCode&gt;
+    &lt;EtaPort&gt;...&lt;/EtaPort&gt;
+    &lt;BondedCarrier&gt;...&lt;/BondedCarrier&gt;
+  &lt;/InTransitEntryDetails&gt;
+  &lt;ShipmentDetails&gt;
+    &lt;ArrivalNoticeNumber&gt;...&lt;/ArrivalNoticeNumber&gt;
+    &lt;FreightRelease&gt;...&lt;/FreightRelease&gt;
+    &lt;BillOfLadingNumber&gt;...&lt;/BillOfLadingNumber&gt;
+    &lt;NumberOfOriginals&gt;...&lt;/NumberOfOriginals&gt;
+    &lt;BLReleasePoint&gt;...&lt;/BLReleasePoint&gt;
+    &lt;CommentDetails&gt;
+      &lt;Remarks&gt;...&lt;/Remarks&gt;
+    &lt;/CommentDetails&gt;
+    &lt;CustomsHouseBlNumber&gt;...&lt;/CustomsHouseBlNumber&gt;
+    &lt;CargoControlNumber&gt;...&lt;/CargoControlNumber&gt;
+    &lt;ManifestFrom&gt;...&lt;/ManifestFrom&gt;
+    &lt;ManifestTo&gt;...&lt;/ManifestTo&gt;
+    &lt;CarrierBlNumber&gt;...&lt;/CarrierBlNumber&gt;
+    &lt;CargoType&gt;...&lt;/CargoType&gt;
+    &lt;DeliveryType&gt;...&lt;/DeliveryType&gt;
+    &lt;OriginalsRequired&gt;...&lt;/OriginalsRequired&gt;
+    &lt;TermsOfShipment&gt;...&lt;/TermsOfShipment&gt;
+    &lt;CargoAvailableDate&gt;...&lt;/CargoAvailableDate&gt;
+    &lt;WarehouseFreeOfChargeDays&gt;...&lt;/WarehouseFreeOfChargeDays&gt;
+    &lt;PaymentRequiredFlag&gt;...&lt;/PaymentRequiredFlag&gt;
+    &lt;ActualPieces&gt;...&lt;/ActualPieces&gt;
+    &lt;LotNumber&gt;...&lt;/LotNumber&gt;
+    &lt;ReferenceDetails&gt;
+      &lt;ShipperReference&gt;...&lt;/ShipperReference&gt;
+      &lt;ConsigneeReference&gt;...&lt;/ConsigneeReference&gt;
+      &lt;NotifyReference&gt;...&lt;/NotifyReference&gt;
+      &lt;ForwarderReference&gt;...&lt;/ForwarderReference&gt;
+      &lt;CustomsReference&gt;...&lt;/CustomsReference&gt;
+    &lt;/ReferenceDetails&gt;
+    &lt;PaymentDetails&gt;
+      &lt;PaymentType&gt;...&lt;/PaymentType&gt;
+      &lt;PaymentAmount&gt;...&lt;/PaymentAmount&gt;
+      &lt;InvoiceDate&gt;...&lt;/InvoiceDate&gt;
+      &lt;InvoiceNumber&gt;...&lt;/InvoiceNumber&gt;
+    &lt;/PaymentDetails&gt;
+  &lt;/ShipmentDetails&gt;
+  &lt;AddressDetailsInformation&gt;
+    &lt;AddressDetailsType&gt;...&lt;/AddressDetailsType&gt;
+    &lt;Name&gt;...&lt;/Name&gt;
+    &lt;Address&gt;...&lt;/Address&gt;
+    &lt;CityName&gt;...&lt;/CityName&gt;
+    &lt;StateProvince&gt;...&lt;/StateProvince&gt;
+    &lt;PostalCode&gt;...&lt;/PostalCode&gt;
+    &lt;CountryName&gt;...&lt;/CountryName&gt;
+  &lt;/AddressDetailsInformation&gt;
+  &lt;RoutingDetails&gt;
+    &lt;ImoNumber&gt;...&lt;/ImoNumber&gt;
+    &lt;CarrierSCAC&gt;...&lt;/CarrierSCAC&gt;
+    &lt;VesselName&gt;...&lt;/VesselName&gt;
+    &lt;Voyage&gt;...&lt;/Voyage&gt;
+    &lt;PrecarriageFlag&gt;...&lt;/PrecarriageFlag&gt;
+    &lt;EtdOrigin&gt;...&lt;/EtdOrigin&gt;
+    &lt;OriginCode&gt;...&lt;/OriginCode&gt;
+    &lt;OriginName&gt;...&lt;/OriginName&gt;
+    &lt;EtsLoadPort&gt;...&lt;/EtsLoadPort&gt;
+    &lt;PortOfLoadingCode&gt;...&lt;/PortOfLoadingCode&gt;
+    &lt;PortOfLoadingName&gt;...&lt;/PortOfLoadingName&gt;
+    &lt;EtaDischarge&gt;...&lt;/EtaDischarge&gt;
+    &lt;DischargeCode&gt;...&lt;/DischargeCode&gt;
+    &lt;DischargeName&gt;...&lt;/DischargeName&gt;
+    &lt;EtaFinalDestination&gt;...&lt;/EtaFinalDestination&gt;
+    &lt;FinalDestinationCode&gt;...&lt;/FinalDestinationCode&gt;
+    &lt;FinalDestinationName&gt;...&lt;/FinalDestinationName&gt;
+    &lt;PrecarriageDetails&gt;
+      &lt;PrecarriageDoneBy&gt;...&lt;/PrecarriageDoneBy&gt;
+      &lt;PrecarriageOriginCode&gt;...&lt;/PrecarriageOriginCode&gt;
+      &lt;PrecarriageOriginName&gt;...&lt;/PrecarriageOriginName&gt;
+      &lt;PrecarriageOriginDate&gt;...&lt;/PrecarriageOriginDate&gt;
+      &lt;PrecarriageDestinationCode&gt;...&lt;/PrecarriageDestinationCode&gt;
+      &lt;PrecarriageDestinationName&gt;...&lt;/PrecarriageDestinationName&gt;
+      &lt;PrecarriageDestinationDate&gt;...&lt;/PrecarriageDestinationDate&gt;
+    &lt;/PrecarriageDetails&gt;
+  &lt;/RoutingDetails&gt;
+  &lt;ContainerDetails&gt;
+    &lt;ContainerNumber&gt;...&lt;/ContainerNumber&gt;
+    &lt;CargoDetails&gt;
+      &lt;Pieces&gt;...&lt;/Pieces&gt;
+      &lt;Packaging&gt;...&lt;/Packaging&gt;
+      &lt;Commodity&gt;...&lt;/Commodity&gt;
+      &lt;WeightKG&gt;...&lt;/WeightKG&gt;
+      &lt;VolumeCbm&gt;...&lt;/VolumeCbm&gt;
+      &lt;UOM&gt;...&lt;/UOM&gt;
+      &lt;Marks&gt;...&lt;/Marks&gt;
+      &lt;CargoImageURL&gt;...&lt;/CargoImageURL&gt;
+      &lt;HazardousFlag&gt;...&lt;/HazardousFlag&gt;
+      &lt;WeightLbs&gt;...&lt;/WeightLbs&gt;
+      &lt;VolumeCbf&gt;...&lt;/VolumeCbf&gt;
+    &lt;/CargoDetails&gt;
+    &lt;HazardousDetails&gt;
+      &lt;HazardousClass&gt;...&lt;/HazardousClass&gt;
+      &lt;Flashpoint&gt;...&lt;/Flashpoint&gt;
+      &lt;FlashpointFlag&gt;...&lt;/FlashpointFlag&gt;
+      &lt;HazardousContent&gt;...&lt;/HazardousContent&gt;
+      &lt;ShippingName&gt;...&lt;/ShippingName&gt;
+      &lt;UNNumber&gt;...&lt;/UNNumber&gt;
+      &lt;PackingGroup&gt;...&lt;/PackingGroup&gt;
+      &lt;PackageCount&gt;...&lt;/PackageCount&gt;
+      &lt;PackageType&gt;...&lt;/PackageType&gt;
+      &lt;NetWeight&gt;...&lt;/NetWeight&gt;
+      &lt;EmergencyPhoneNumber&gt;...&lt;/EmergencyPhoneNumber&gt;
+      &lt;HazCargoImageURL&gt;...&lt;/HazCargoImageURL&gt;
+    &lt;/HazardousDetails&gt;
+  &lt;/ContainerDetails&gt;
+&lt;/f-----&gt;
+</pre>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" targetNamespace="http://www.scan-it.com.sg"
+elementFormDefault="qualified"   xmlns:ns1="http://www.scan-it.com.sg"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="ns0.xsd"/>
+
+  <xs:element name="Trucker" type="ns1:TruckerType"/>
+  <xs:element name="Trucker" type="ns1:TruckerType"/>
+  <xs:element name="ThirdPartyAcknowledgement" type="ns1:ThirdPartyType"/>
+  <xs:element name="trucker" type="ns1:TruckerType"/>
+  <xs:element name="trucker" type="ns1:TruckerType"/>
+<xs:complexType name="CargoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for CargoType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="CargoType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="DescriptionOfGoods" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="4"/>
+         &lt;element name="ContainerDetails" type="{http://www.scan-it.com.sg}ContainerType" maxOccurs="3"/>
+         &lt;element name="MeasurementDetails" type="{http://www.scan-it.com.sg}MeasurementType"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Hazardousgroup"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DescriptionOfGoods" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="Descriptions" type="ns1:DescriptionsType" minOccurs="1">
+              </xs:element>
+              <xs:element name="PiecesInfo" type="ns1:PiecesInfoType" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContainerDetails" type="ns1:ContainerType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="MeasurementDetails" type="ns1:MeasurementType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Hazardous" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="HazardousDetails" type="ns1:HazardousType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="HazardousInfo" type="ns1:HazardousInfoType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ContainerType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Number" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Type" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Size" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeliverType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for DeliverType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="DeliverType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Place" type="{http://www.scan-it.com.sg}PlaceType"/>
+         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="TimeDetails" type="{http://www.scan-it.com.sg}TimeType"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Place" type="ns1:PlaceType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Date" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TimeDetails" type="ns1:TimeType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DescriptionOfGoodsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856 17-11-2017]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Value" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DescriptionsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DescriptionOfGoods" type="ns1:DescriptionOfGoodsType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DimensionType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Pieces" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Length" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Width" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Height" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HazardousInfoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="HazardousDetails" type="ns1:HazardousType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HazardousType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for HazardousType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="HazardousType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="HazardousClass" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="FlashPoint" minOccurs="0">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="10"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="FlashPointFlag" minOccurs="0">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;minLength value="0"/>
+               &lt;maxLength value="1"/>
+               &lt;enumeration value="C"/>
+               &lt;enumeration value="F"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="HazardousContent">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="40"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="ShippingName">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="40"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="UnNumber">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="10"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="PackingGroup">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="3"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="HazcargoImageUrl" type="{http://www.w3.org/2001/XMLSchema}anyURI" maxOccurs="unbounded" minOccurs="0"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="HazardousClass" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="FlashPoint" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="FlashPointFlag" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="HazardousContent" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShippingName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="UnNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="PackingGroup" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="HazcargoImageUrl" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HeaderType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for HeaderType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="HeaderType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Version" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Sender">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="50"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="SenderName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="SenderEmail" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DataSendDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="SendTo" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="OfficeId" type="{http://www.w3.org/2001/XMLSchema}int"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Version" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Sender" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SenderName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SenderEmail" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DataSendDate" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SendTo" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="OfficeId" type="xs:int" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InstructionType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856 17-11-2017]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Value" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InstructionsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Instruction" type="ns1:InstructionType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MeasurementType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for MeasurementType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="MeasurementType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Cbm" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Cbf" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Kg" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Lbs" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Cbm" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Cbf" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Kg" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Lbs" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PickupType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for PickupType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="PickupType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Place" type="{http://www.scan-it.com.sg}PlaceType"/>
+         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="TimeDetails" type="{http://www.scan-it.com.sg}TimeType"/>
+         &lt;element name="Instruction" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="4"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Place" type="ns1:PlaceType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Date" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TimeDetails" type="ns1:TimeType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Instruction" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="Instructions" type="ns1:InstructionsType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PiecesInfoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Dimension" type="ns1:DimensionType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PlaceType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for PlaceType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="PlaceType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Code" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Address" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="5"/>
+         &lt;element name="PostalCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ContactInformation" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Code" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Name" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Address" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="AddressLine1" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="AddressLine2" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Zip" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="PostalCode" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="City" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Country" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContactInformation" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReturnType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ReturnType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ReturnType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Place" type="{http://www.scan-it.com.sg}PlaceType"/>
+         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="TimeDetails" type="{http://www.scan-it.com.sg}TimeType"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Place" type="ns1:PlaceType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Date" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TimeDetails" type="ns1:TimeType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ShipmentType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ShipmentType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ShipmentType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="BookingType" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ShipperName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ReferrenceType" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="BookingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="BillOfLadingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ContainerNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierBillOfLading" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierBookingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Vessel" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Voyage" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="EstimateTimeSailing" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="OriginName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="LoadPortName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DischargePortName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DestinationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="BookingType" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShipperName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReferrenceType" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="BookingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierCode" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="BillOfLadingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContainerNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierBillOfLading" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierBookingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Vessel" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Voyage" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="EstimateTimeSailing" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="OriginName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="LoadPortName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DischargePortName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DestinationName" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TimeType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for TimeType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="TimeType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="From" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="To" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="From" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="To" type="xs:string" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TruckerType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for TruckerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="TruckerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;group ref="{http://www.scan-it.com.sg}Headergroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Shipmentgroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Pickupgroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Delivergroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Returngroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Cargogroup"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Header" type="ns1:HeaderType" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShipmentDetails" type="ns1:ShipmentType" minOccurs="1">
+              </xs:element>
+              <xs:element name="PickupDetails" type="ns1:PickupType" minOccurs="1">
+              </xs:element>
+              <xs:element name="DeliverDetails" type="ns1:DeliverType" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReturnDetails" type="ns1:ReturnType" minOccurs="1">
+              </xs:element>
+              <xs:element name="CargoDetails" type="ns1:CargoType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CargoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for CargoType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="CargoType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="DescriptionOfGoods" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="4"/>
+         &lt;element name="Pieces" type="{http://www.w3.org/2001/XMLSchema}int"/>
+         &lt;element name="Packaging" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ContainerDetails" type="{http://www.scan-it.com.sg}ContainerType" maxOccurs="3"/>
+         &lt;element name="MeasurementDetails" type="{http://www.scan-it.com.sg}MeasurementType"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Hazardousgroup"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DescriptionOfGoods" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="Descriptions" type="ns1:DescriptionsType" minOccurs="1">
+              </xs:element>
+              <xs:element name="PiecesInfo" type="ns1:PiecesInfoType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Pieces" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="Packaging" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContainerDetails" type="ns1:ContainerType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="MeasurementDetails" type="ns1:MeasurementType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Hazardous" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="HazardousDetails" type="ns1:HazardousType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="HazardousInfo" type="ns1:HazardousInfoType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ContainerType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Number" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Type" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Size" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeliverType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for DeliverType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="DeliverType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Place" type="{http://www.scan-it.com.sg}PlaceType"/>
+         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="TimeDetails" type="{http://www.scan-it.com.sg}TimeType"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Place" type="ns1:PlaceType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Date" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TimeDetails" type="ns1:TimeType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DescriptionOfGoodsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856 17-11-2017]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Value" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DescriptionsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DescriptionOfGoods" type="ns1:DescriptionOfGoodsType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DimensionType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Pieces" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Length" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Width" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Height" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HazardousInfoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="HazardousDetails" type="ns1:HazardousType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HazardousType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for HazardousType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="HazardousType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="HazardousClass" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="FlashPoint" minOccurs="0">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="10"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="FlashPointFlag" minOccurs="0">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;minLength value="0"/>
+               &lt;maxLength value="1"/>
+               &lt;enumeration value="C"/>
+               &lt;enumeration value="F"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="HazardousContent">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="40"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="ShippingName">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="40"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="UnNumber">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="10"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="PackingGroup">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="3"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="HazcargoImageUrl" type="{http://www.w3.org/2001/XMLSchema}anyURI" maxOccurs="unbounded" minOccurs="0"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="HazardousClass" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="FlashPoint" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="FlashPointFlag" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="HazardousContent" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShippingName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="UnNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="PackingGroup" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="HazcargoImageUrl" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HeaderType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for HeaderType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="HeaderType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Version" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Sender">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;maxLength value="50"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="SenderName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="SenderEmail" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DataSendDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="SendTo" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="OfficeId" type="{http://www.w3.org/2001/XMLSchema}int"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Version" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Sender" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SenderName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SenderEmail" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DataSendDate" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SendTo" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="OfficeId" type="xs:int" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InstructionType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856 17-11-2017]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Value" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InstructionsType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Instruction" type="ns1:InstructionType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MeasurementType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for MeasurementType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="MeasurementType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Cbm" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Cbf" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Kg" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Lbs" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Cbm" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Cbf" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Kg" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Lbs" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PickupType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for PickupType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="PickupType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Place" type="{http://www.scan-it.com.sg}PlaceType"/>
+         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="TimeDetails" type="{http://www.scan-it.com.sg}TimeType"/>
+         &lt;element name="Instruction" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="4"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Place" type="ns1:PlaceType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Date" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TimeDetails" type="ns1:TimeType" minOccurs="1">
+              </xs:element>
+              <xs:element name="Instruction" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="Instructions" type="ns1:InstructionsType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PiecesInfoType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ContainerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ContainerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Number" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Type" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+Added for PHX-21856]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Dimension" type="ns1:DimensionType" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PlaceType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for PlaceType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="PlaceType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="Code" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Address" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="5"/>
+         &lt;element name="PostalCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ContactInformation" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Code" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Name" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Address" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="AddressLine1" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="AddressLine2" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Zip" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="PostalCode" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="City" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Country" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContactInformation" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ShipmentType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ShipmentType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ShipmentType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="BookingType" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ShipperName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ReferrenceType" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="BookingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="BillOfLadingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ContainerNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierBillOfLading" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="CarrierBookingNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Vessel" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Voyage" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="EstimateTimeSailing" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="OriginName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="LoadPortName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DischargePortName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="DestinationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="BookingType" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShipperName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReferrenceType" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="BookingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="BillOfLadingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ContainerNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierBillOfLading" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CarrierBookingNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Vessel" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Voyage" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="EstimateTimeSailing" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="OriginName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="LoadPortName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DischargePortName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="DestinationName" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TimeType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for TimeType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="TimeType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="From" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="To" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="From" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="To" type="xs:string" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TruckerType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for TruckerType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="TruckerType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;group ref="{http://www.scan-it.com.sg}Headergroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Shipmentgroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Pickupgroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Delivergroup"/>
+         &lt;group ref="{http://www.scan-it.com.sg}Cargogroup"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="Header" type="ns1:HeaderType" minOccurs="1">
+              </xs:element>
+              <xs:element name="ShipmentDetails" type="ns1:ShipmentType" minOccurs="1">
+              </xs:element>
+              <xs:element name="PickupDetails" type="ns1:PickupType" minOccurs="1">
+              </xs:element>
+              <xs:element name="DeliverDetails" type="ns1:DeliverType" minOccurs="1">
+              </xs:element>
+              <xs:element name="CargoDetails" type="ns1:CargoType" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ThirdPartyType">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>Java class for ThirdPartyType complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+ &lt;complexType name="ThirdPartyType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="ThirdPartyCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ThirdPartyName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         &lt;element name="ReceiveDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="ReferrenceNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="FileName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         &lt;element name="Status">
+           &lt;simpleType>
+             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+               &lt;minLength value="1"/>
+               &lt;maxLength value="1"/>
+               &lt;enumeration value="A"/>
+               &lt;enumeration value="R"/>
+             &lt;/restriction>
+           &lt;/simpleType>
+         &lt;/element>
+         &lt;element name="RecipientList" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         &lt;element name="ThirdPartyRef" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         &lt;element name="Message" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+   <xs:complexContent>
+    <xs:extension base="vendorAcknowledgementBean">
+      <xs:sequence>
+              <xs:element name="ThirdPartyCode" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="ThirdPartyName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReceiveDateTime" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="OfficeId" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReferrenceType" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="ReferrenceNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="FileName" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="Status" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RecipientList" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="ThirdPartyRef" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="Message" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+</xs:schema>

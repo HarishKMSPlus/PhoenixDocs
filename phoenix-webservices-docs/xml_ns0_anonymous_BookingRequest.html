@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>phoenix-webservices Maven Webapp: BookingRequest (Anonymous)</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--custom css for these pages-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#apinav">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">phoenix-webservices Maven Webapp: BookingRequest (Anonymous)</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="data.html">Data Types</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar" id="apinav">
+        <ul class="nav nav-sidebar">
+          <li class="text-right"><a href="#top"><small>Back to Top</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <ol class="breadcrumb" id="top">
+          <li class="active dropdown"><a href="index.html">Home</a></li>
+          <li class="active dropdown"><a href="syntax_xml.html">XML</a></li>
+          <li class="dropdown"><a href="xml_ns0_anonymous_BookingRequest.html">BookingRequest (Anonymous)</a></li>
+        </ol>
+
+      <h1 class="page-header">BookingRequest (Anonymous) <small>Data Type</small></h1>
+
+      <p><p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content contained within
+this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="BookingEnvelope">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="SenderID">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="50"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ReceiverID">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="6"/>
+                         &lt;maxLength value="100"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Password">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="6"/>
+                         &lt;maxLength value="100"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Type">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="50"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Version">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="8"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="EnvelopeID">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="40"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="BookingDetails" maxOccurs="unbounded">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="ApplicationType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="2"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BookingType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="F"/>
+                         &lt;enumeration value="L"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BookingDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
+                   &lt;element name="LastSentDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+                   &lt;element name="RequestType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BookingNumber" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="WWAShipmentReference" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomerControlCode">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BookingOffice" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FPI">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="P"/>
+                         &lt;enumeration value="C"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CommunicationReference">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomerReference">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ShipperReference" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="30"/>
+                         &lt;minLength value="0"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ForwarderReference" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ConsigneeReference" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;minLength value="0"/>
+                         &lt;maxLength value="30"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Address" maxOccurs="unbounded">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="AddressID">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="2"/>
+                                   &lt;minLength value="2"/>
+                                   &lt;enumeration value="SH"/>
+                                   &lt;enumeration value="CN"/>
+                                   &lt;enumeration value="N1"/>
+                                   &lt;enumeration value="N2"/>
+                                   &lt;enumeration value="FW"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine1">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="40"/>
+                                   &lt;minLength value="1"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine2" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine3" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine4" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine5" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="AddressLine6" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Phone" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Fax" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="1"/>
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Email" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="CustomerContact" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="50"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomerPhone" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomerEmail" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="50"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BUCustomerEmail" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="50"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OnHold">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="HVC" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="BondedCargo" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="3"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                         &lt;enumeration value="Yes"/>
+                         &lt;enumeration value="No"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CFSOrigin">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PortOfLoading" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CFSDestination">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PortOfDischarge">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FinalDestination">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="5"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FinalDestinationPlace">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="35"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FinalDestinationType">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="10"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="FinalDestinationCountry" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OncarriageFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OncarriagePlace" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="20"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="AmsFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="AesFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="ColoadCommodity" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="Remarks" maxOccurs="unbounded">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="2048"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="OnwardGateway" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PickupFlag">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="1"/>
+                         &lt;enumeration value="N"/>
+                         &lt;enumeration value="Y"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="PickupDetails" minOccurs="0">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="CombinedCompanyNameandAddress" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="175"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="PickupReference" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="254"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="CompanyName" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Address" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="192"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="City" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="PostalCode" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="StateProvince" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Country" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Contact" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Phone" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="64"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Email" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+                             &lt;element name="Time" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="5"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Remarks" maxOccurs="unbounded">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="2048"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="SailingDetails">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="VesselVoyageID" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="40"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="VesselName">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="IMONumber" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;minLength value="7"/>
+                                   &lt;maxLength value="7"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Voyage">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="10"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ETDCFS" type="{http://www.w3.org/2001/XMLSchema}date"/>
+                             &lt;element name="ETACFS" type="{http://www.w3.org/2001/XMLSchema}date"/>
+                             &lt;element name="ETSOrigin" type="{http://www.w3.org/2001/XMLSchema}date"/>
+                             &lt;element name="ETSPoL" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="CargoDetails" maxOccurs="unbounded">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="Pieces">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ShippingMarks" maxOccurs="unbounded">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="2048"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Packaging">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="20"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Commodity" maxOccurs="unbounded">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="254"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="HSCode" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="14"/>
+                                   &lt;minLength value="8"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Weight" type="{http://www.w3.org/2001/XMLSchema}float"/>
+                             &lt;element name="Volume" type="{http://www.w3.org/2001/XMLSchema}float"/>
+                             &lt;element name="UOM">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="1"/>
+                                   &lt;enumeration value="M"/>
+                                   &lt;enumeration value="E"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="HazardousFlag">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="1"/>
+                                   &lt;enumeration value="N"/>
+                                   &lt;enumeration value="Y"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="HazardousDetails" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="HazardousClass" type="{http://www.w3.org/2001/XMLSchema}float"/>
+                                       &lt;element name="Flashpoint" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="FlashpointFlag" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;minLength value="0"/>
+                                             &lt;maxLength value="1"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="ShippingName">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="150"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="UNNumber">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="PackingGroup">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="3"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="Pieces" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="6"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="Packaging" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="10"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="Weight" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="8"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="ShipmentRelatedData" maxOccurs="25" minOccurs="0">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="Quantity" minOccurs="0">
+                                         &lt;simpleType>
+                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                             &lt;maxLength value="3"/>
+                                           &lt;/restriction>
+                                         &lt;/simpleType>
+                                       &lt;/element>
+                                       &lt;element name="Length" type="{http://www.w3.org/2001/XMLSchema}double"/>
+                                       &lt;element name="Width" type="{http://www.w3.org/2001/XMLSchema}double"/>
+                                       &lt;element name="Height" type="{http://www.w3.org/2001/XMLSchema}double"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="OverDimensionFlag" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="OverHeightFlag" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="OverLengthFlag" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="OverWeightFlag" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="OverWidthFlag" minOccurs="0">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="ChargeDetails" maxOccurs="unbounded">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="ChargeCode">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="4"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ChargeName">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Rate">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="8"/>
+                                   &lt;fractionDigits value="4"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Currency">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="3"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Basis">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="2"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="ESTCharge">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="10"/>
+                                   &lt;fractionDigits value="4"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="MarkupRate">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="4"/>
+                                   &lt;fractionDigits value="2"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="TotalCost">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+                                   &lt;totalDigits value="10"/>
+                                   &lt;fractionDigits value="4"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                             &lt;element name="Remarks">
+                               &lt;simpleType>
+                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                                   &lt;maxLength value="50"/>
+                                 &lt;/restriction>
+                               &lt;/simpleType>
+                             &lt;/element>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="TransportTemperatureRangeFrom">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="6"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="TransportTemperatureRangeTo">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="6"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomsRelatedData" maxOccurs="10" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="255"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CTCCode" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="3"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CTCDescription" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="255"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomsContact" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="64"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                   &lt;element name="CustomsPhone" minOccurs="0">
+                     &lt;simpleType>
+                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+                         &lt;maxLength value="64"/>
+                       &lt;/restriction>
+                     &lt;/simpleType>
+                   &lt;/element>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre></p>
+
+      <dl class="dl-horizontal">
+        <dt>Namespace</dt>
+        <dd>(Default)</dd>
+        <dt>Schema</dt>
+        <dd><a href="ns0.xsd">ns0.xsd</a></dd>
+      </dl>
+
+      <table class="table">
+        <caption>Properties</caption>
+        <thead>
+        <tr>
+          <th>name</th>
+          <th>data type</th>
+          <th>type</th>
+          <th>namespace</th>
+          <th>min/max occurs</th>
+          <th>constraints</th>
+          <th>description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>  <span class="property-name">BookingDetails</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_BookingDetails.html">BookingDetails (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/unbounded
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">BookingEnvelope</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="xml_ns0_anonymous_BookingEnvelope.html">BookingEnvelope (Anonymous)</a>
+</span>
+</td>
+          <td>  <span class="property-type">element
+</span>
+</td>
+          <td>  <span class="property-namespaceInfo">
+</span>
+</td>
+          <td>  <span class="property-minMaxOccurs">1/1
+</span>
+</td>
+          <td>  <span class="property-constraints">required
+</span>
+</td>
+          <td>  <span class="property-description">&nbsp;</span>
+</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <p class="lead">Example</p>
+
+      <pre class="prettyprint language-xml example">&lt;BookingRequest&gt;
+  &lt;BookingEnvelope&gt;
+    &lt;SenderID&gt;...&lt;/SenderID&gt;
+    &lt;ReceiverID&gt;...&lt;/ReceiverID&gt;
+    &lt;Password&gt;...&lt;/Password&gt;
+    &lt;Type&gt;...&lt;/Type&gt;
+    &lt;Version&gt;...&lt;/Version&gt;
+    &lt;EnvelopeID&gt;...&lt;/EnvelopeID&gt;
+  &lt;/BookingEnvelope&gt;
+  &lt;BookingDetails&gt;
+    &lt;ApplicationType&gt;...&lt;/ApplicationType&gt;
+    &lt;BookingType&gt;...&lt;/BookingType&gt;
+    &lt;BookingDate&gt;...&lt;/BookingDate&gt;
+    &lt;LastSentDate&gt;...&lt;/LastSentDate&gt;
+    &lt;RequestType&gt;...&lt;/RequestType&gt;
+    &lt;BookingNumber&gt;...&lt;/BookingNumber&gt;
+    &lt;WWAShipmentReference&gt;...&lt;/WWAShipmentReference&gt;
+    &lt;CustomerControlCode&gt;...&lt;/CustomerControlCode&gt;
+    &lt;SubmitterType&gt;...&lt;/SubmitterType&gt;
+    &lt;BookingOffice&gt;...&lt;/BookingOffice&gt;
+    &lt;FPI&gt;...&lt;/FPI&gt;
+    &lt;CommunicationReference&gt;...&lt;/CommunicationReference&gt;
+    &lt;CustomerReference&gt;...&lt;/CustomerReference&gt;
+    &lt;ShipperReference&gt;...&lt;/ShipperReference&gt;
+    &lt;ForwarderReference&gt;...&lt;/ForwarderReference&gt;
+    &lt;ConsigneeReference&gt;...&lt;/ConsigneeReference&gt;
+    &lt;Address&gt;
+      &lt;AddressID&gt;...&lt;/AddressID&gt;
+      &lt;AddressLine1&gt;...&lt;/AddressLine1&gt;
+      &lt;AddressLine2&gt;...&lt;/AddressLine2&gt;
+      &lt;AddressLine3&gt;...&lt;/AddressLine3&gt;
+      &lt;AddressLine4&gt;...&lt;/AddressLine4&gt;
+      &lt;AddressLine5&gt;...&lt;/AddressLine5&gt;
+      &lt;AddressLine6&gt;...&lt;/AddressLine6&gt;
+      &lt;Phone&gt;...&lt;/Phone&gt;
+      &lt;Fax&gt;...&lt;/Fax&gt;
+      &lt;Email&gt;...&lt;/Email&gt;
+    &lt;/Address&gt;
+    &lt;CustomerContact&gt;...&lt;/CustomerContact&gt;
+    &lt;CustomerPhone&gt;...&lt;/CustomerPhone&gt;
+    &lt;CustomerEmail&gt;...&lt;/CustomerEmail&gt;
+    &lt;BUCustomerEmail&gt;...&lt;/BUCustomerEmail&gt;
+    &lt;OnHold&gt;...&lt;/OnHold&gt;
+    &lt;HVC&gt;...&lt;/HVC&gt;
+    &lt;BondedCargo&gt;...&lt;/BondedCargo&gt;
+    &lt;CFSOrigin&gt;...&lt;/CFSOrigin&gt;
+    &lt;PortOfLoading&gt;...&lt;/PortOfLoading&gt;
+    &lt;CFSDestination&gt;...&lt;/CFSDestination&gt;
+    &lt;PortOfDischarge&gt;...&lt;/PortOfDischarge&gt;
+    &lt;FinalDestination&gt;...&lt;/FinalDestination&gt;
+    &lt;FinalDestinationPlace&gt;...&lt;/FinalDestinationPlace&gt;
+    &lt;FinalDestinationType&gt;...&lt;/FinalDestinationType&gt;
+    &lt;FinalDestinationCountry&gt;...&lt;/FinalDestinationCountry&gt;
+    &lt;OncarriageFlag&gt;...&lt;/OncarriageFlag&gt;
+    &lt;OncarriagePlace&gt;...&lt;/OncarriagePlace&gt;
+    &lt;AmsFlag&gt;...&lt;/AmsFlag&gt;
+    &lt;AesFlag&gt;...&lt;/AesFlag&gt;
+    &lt;ColoadCommodity&gt;...&lt;/ColoadCommodity&gt;
+    &lt;Remarks&gt;...&lt;/Remarks&gt;
+    &lt;OnwardGateway&gt;...&lt;/OnwardGateway&gt;
+    &lt;PickupFlag&gt;...&lt;/PickupFlag&gt;
+    &lt;PickupDetails&gt;
+      &lt;CombinedCompanyNameandAddress&gt;...&lt;/CombinedCompanyNameandAddress&gt;
+      &lt;PickupReference&gt;...&lt;/PickupReference&gt;
+      &lt;CompanyName&gt;...&lt;/CompanyName&gt;
+      &lt;Address&gt;...&lt;/Address&gt;
+      &lt;City&gt;...&lt;/City&gt;
+      &lt;PostalCode&gt;...&lt;/PostalCode&gt;
+      &lt;StateProvince&gt;...&lt;/StateProvince&gt;
+      &lt;Country&gt;...&lt;/Country&gt;
+      &lt;Contact&gt;...&lt;/Contact&gt;
+      &lt;Phone&gt;...&lt;/Phone&gt;
+      &lt;Email&gt;...&lt;/Email&gt;
+      &lt;Date&gt;...&lt;/Date&gt;
+      &lt;Time&gt;...&lt;/Time&gt;
+      &lt;Remarks&gt;...&lt;/Remarks&gt;
+    &lt;/PickupDetails&gt;
+    &lt;SailingDetails&gt;
+      &lt;VesselVoyageID&gt;...&lt;/VesselVoyageID&gt;
+      &lt;VesselName&gt;...&lt;/VesselName&gt;
+      &lt;IMONumber&gt;...&lt;/IMONumber&gt;
+      &lt;Voyage&gt;...&lt;/Voyage&gt;
+      &lt;ETDCFS&gt;...&lt;/ETDCFS&gt;
+      &lt;ETACFS&gt;...&lt;/ETACFS&gt;
+      &lt;ETSOrigin&gt;...&lt;/ETSOrigin&gt;
+      &lt;ETSPoL&gt;...&lt;/ETSPoL&gt;
+    &lt;/SailingDetails&gt;
+    &lt;CargoDetails&gt;
+      &lt;Pieces&gt;...&lt;/Pieces&gt;
+      &lt;ShippingMarks&gt;...&lt;/ShippingMarks&gt;
+      &lt;Packaging&gt;...&lt;/Packaging&gt;
+      &lt;Commodity&gt;...&lt;/Commodity&gt;
+      &lt;HSCode&gt;...&lt;/HSCode&gt;
+      &lt;Weight&gt;...&lt;/Weight&gt;
+      &lt;Volume&gt;...&lt;/Volume&gt;
+      &lt;UOM&gt;...&lt;/UOM&gt;
+      &lt;HazardousFlag&gt;...&lt;/HazardousFlag&gt;
+      &lt;HazardousDetails/&gt;
+      &lt;ShipmentRelatedData/&gt;
+      &lt;OverDimensionFlag&gt;...&lt;/OverDimensionFlag&gt;
+      &lt;OverHeightFlag&gt;...&lt;/OverHeightFlag&gt;
+      &lt;OverLengthFlag&gt;...&lt;/OverLengthFlag&gt;
+      &lt;OverWeightFlag&gt;...&lt;/OverWeightFlag&gt;
+      &lt;OverWidthFlag&gt;...&lt;/OverWidthFlag&gt;
+    &lt;/CargoDetails&gt;
+    &lt;ChargeDetails&gt;
+      &lt;ChargeCode&gt;...&lt;/ChargeCode&gt;
+      &lt;ChargeName&gt;...&lt;/ChargeName&gt;
+      &lt;Rate&gt;...&lt;/Rate&gt;
+      &lt;Currency&gt;...&lt;/Currency&gt;
+      &lt;Basis&gt;...&lt;/Basis&gt;
+      &lt;ESTCharge&gt;...&lt;/ESTCharge&gt;
+      &lt;MarkupRate&gt;...&lt;/MarkupRate&gt;
+      &lt;TotalCost&gt;...&lt;/TotalCost&gt;
+      &lt;Remarks&gt;...&lt;/Remarks&gt;
+    &lt;/ChargeDetails&gt;
+    &lt;TransportTemperatureRangeFrom&gt;...&lt;/TransportTemperatureRangeFrom&gt;
+    &lt;TransportTemperatureRangeTo&gt;...&lt;/TransportTemperatureRangeTo&gt;
+    &lt;CustomsRelatedData&gt;...&lt;/CustomsRelatedData&gt;
+    &lt;CTCCode&gt;...&lt;/CTCCode&gt;
+    &lt;CTCDescription&gt;...&lt;/CTCDescription&gt;
+    &lt;CustomsContact&gt;...&lt;/CustomsContact&gt;
+    &lt;CustomsPhone&gt;...&lt;/CustomsPhone&gt;
+  &lt;/BookingDetails&gt;
+&lt;/BookingRequest&gt;
+</pre>
+
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Generated by <a href="http://enunciate.webcohesion.com">Enunciate</a>.</p>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript placed at the end of the document so the pages load faster. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+      });
+
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+</html>
