@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ShipmentAccepted">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content contained within
+this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="UpdateTime" type="{}UpdateTimeDefinition"/>
+         &lt;element name="SheetNumber" type="{}SheetNumberDefinition"/>
+         &lt;element name="InvoiceNumber" type="{}InvoiceNumberDefinition"/>
+         &lt;element name="TED">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="DD">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="RE" type="{}REDefinition"/>
+                             &lt;element name="TD" type="{}TDDefinition"/>
+                             &lt;element name="F" type="{}FDefinition"/>
+                             &lt;element name="FE" type="{}FEDefinition"/>
+                             &lt;element name="RR" type="{}RRDefinition"/>
+                             &lt;element name="RSR" type="{}RSRDefinition"/>
+                             &lt;element name="MNT" type="{}MNTDefinition"/>
+                             &lt;element name="IT1" type="{}IT1Definition"/>
+                             &lt;element name="CAF">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="DA">
+                                         &lt;complexType>
+                                           &lt;complexContent>
+                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                               &lt;sequence>
+                                                 &lt;element name="RE" type="{}REDefinition"/>
+                                                 &lt;element name="RS" type="{}RSDefinition"/>
+                                                 &lt;element name="TD" type="{}TDDefinition"/>
+                                                 &lt;element name="RNG">
+                                                   &lt;complexType>
+                                                     &lt;complexContent>
+                                                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                                         &lt;sequence>
+                                                           &lt;element name="D" type="{}DDefinition"/>
+                                                           &lt;element name="H" type="{}HDefinition"/>
+                                                         &lt;/sequence>
+                                                       &lt;/restriction>
+                                                     &lt;/complexContent>
+                                                   &lt;/complexType>
+                                                 &lt;/element>
+                                                 &lt;element name="FA" type="{}FADefinition"/>
+                                                 &lt;element name="RSAPK">
+                                                   &lt;complexType>
+                                                     &lt;complexContent>
+                                                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                                         &lt;sequence>
+                                                           &lt;element name="M" type="{}MDefinition"/>
+                                                           &lt;element name="E" type="{}EDefinition"/>
+                                                         &lt;/sequence>
+                                                       &lt;/restriction>
+                                                     &lt;/complexContent>
+                                                   &lt;/complexType>
+                                                 &lt;/element>
+                                                 &lt;element name="IDK" type="{}IDKDefinition"/>
+                                               &lt;/sequence>
+                                             &lt;/restriction>
+                                           &lt;/complexContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                       &lt;element name="FRMA">
+                                         &lt;complexType>
+                                           &lt;simpleContent>
+                                             &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                                               &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                                             &lt;/extension>
+                                           &lt;/simpleContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                     &lt;/sequence>
+                                     &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="TSTED" type="{}TSTEDDefinition"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="FRMT">
+                     &lt;complexType>
+                       &lt;simpleContent>
+                         &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                           &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                         &lt;/extension>
+                       &lt;/simpleContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+                 &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="UpdateTime" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="SheetNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="InvoiceNumber" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element ref="TED" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+  </xs:element>
+  <xs:element name="TED">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content contained
+within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="DD">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="RE" type="{}REDefinition"/>
+                   &lt;element name="TD" type="{}TDDefinition"/>
+                   &lt;element name="F" type="{}FDefinition"/>
+                   &lt;element name="FE" type="{}FEDefinition"/>
+                   &lt;element name="RR" type="{}RRDefinition"/>
+                   &lt;element name="RSR" type="{}RSRDefinition"/>
+                   &lt;element name="MNT" type="{}MNTDefinition"/>
+                   &lt;element name="IT1" type="{}IT1Definition"/>
+                   &lt;element name="CAF">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="DA">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="RE" type="{}REDefinition"/>
+                                       &lt;element name="RS" type="{}RSDefinition"/>
+                                       &lt;element name="TD" type="{}TDDefinition"/>
+                                       &lt;element name="RNG">
+                                         &lt;complexType>
+                                           &lt;complexContent>
+                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                               &lt;sequence>
+                                                 &lt;element name="D" type="{}DDefinition"/>
+                                                 &lt;element name="H" type="{}HDefinition"/>
+                                               &lt;/sequence>
+                                             &lt;/restriction>
+                                           &lt;/complexContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                       &lt;element name="FA" type="{}FADefinition"/>
+                                       &lt;element name="RSAPK">
+                                         &lt;complexType>
+                                           &lt;complexContent>
+                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                               &lt;sequence>
+                                                 &lt;element name="M" type="{}MDefinition"/>
+                                                 &lt;element name="E" type="{}EDefinition"/>
+                                               &lt;/sequence>
+                                             &lt;/restriction>
+                                           &lt;/complexContent>
+                                         &lt;/complexType>
+                                       &lt;/element>
+                                       &lt;element name="IDK" type="{}IDKDefinition"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="FRMA">
+                               &lt;complexType>
+                                 &lt;simpleContent>
+                                   &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                                     &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                                   &lt;/extension>
+                                 &lt;/simpleContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                           &lt;/sequence>
+                           &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="TSTED" type="{}TSTEDDefinition"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="FRMT">
+           &lt;complexType>
+             &lt;simpleContent>
+               &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                 &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+               &lt;/extension>
+             &lt;/simpleContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+       &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DD" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content
+contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="RE" type="{}REDefinition"/>
+         &lt;element name="TD" type="{}TDDefinition"/>
+         &lt;element name="F" type="{}FDefinition"/>
+         &lt;element name="FE" type="{}FEDefinition"/>
+         &lt;element name="RR" type="{}RRDefinition"/>
+         &lt;element name="RSR" type="{}RSRDefinition"/>
+         &lt;element name="MNT" type="{}MNTDefinition"/>
+         &lt;element name="IT1" type="{}IT1Definition"/>
+         &lt;element name="CAF">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="DA">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="RE" type="{}REDefinition"/>
+                             &lt;element name="RS" type="{}RSDefinition"/>
+                             &lt;element name="TD" type="{}TDDefinition"/>
+                             &lt;element name="RNG">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="D" type="{}DDefinition"/>
+                                       &lt;element name="H" type="{}HDefinition"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="FA" type="{}FADefinition"/>
+                             &lt;element name="RSAPK">
+                               &lt;complexType>
+                                 &lt;complexContent>
+                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                                     &lt;sequence>
+                                       &lt;element name="M" type="{}MDefinition"/>
+                                       &lt;element name="E" type="{}EDefinition"/>
+                                     &lt;/sequence>
+                                   &lt;/restriction>
+                                 &lt;/complexContent>
+                               &lt;/complexType>
+                             &lt;/element>
+                             &lt;element name="IDK" type="{}IDKDefinition"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="FRMA">
+                     &lt;complexType>
+                       &lt;simpleContent>
+                         &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                           &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+                         &lt;/extension>
+                       &lt;/simpleContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                 &lt;/sequence>
+                 &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="TSTED" type="{}TSTEDDefinition"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="RE" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TD" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="F" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="FE" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RR" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RSR" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="MNT" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="IT1" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="CAF" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content
+contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="DA">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="RE" type="{}REDefinition"/>
+                   &lt;element name="RS" type="{}RSDefinition"/>
+                   &lt;element name="TD" type="{}TDDefinition"/>
+                   &lt;element name="RNG">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="D" type="{}DDefinition"/>
+                             &lt;element name="H" type="{}HDefinition"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="FA" type="{}FADefinition"/>
+                   &lt;element name="RSAPK">
+                     &lt;complexType>
+                       &lt;complexContent>
+                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                           &lt;sequence>
+                             &lt;element name="M" type="{}MDefinition"/>
+                             &lt;element name="E" type="{}EDefinition"/>
+                           &lt;/sequence>
+                         &lt;/restriction>
+                       &lt;/complexContent>
+                     &lt;/complexType>
+                   &lt;/element>
+                   &lt;element name="IDK" type="{}IDKDefinition"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="FRMA">
+           &lt;complexType>
+             &lt;simpleContent>
+               &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+                 &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+               &lt;/extension>
+             &lt;/simpleContent>
+           &lt;/complexType>
+         &lt;/element>
+       &lt;/sequence>
+       &lt;attribute name="version" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="DA" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content
+contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="RE" type="{}REDefinition"/>
+         &lt;element name="RS" type="{}RSDefinition"/>
+         &lt;element name="TD" type="{}TDDefinition"/>
+         &lt;element name="RNG">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="D" type="{}DDefinition"/>
+                   &lt;element name="H" type="{}HDefinition"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="FA" type="{}FADefinition"/>
+         &lt;element name="RSAPK">
+           &lt;complexType>
+             &lt;complexContent>
+               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 &lt;sequence>
+                   &lt;element name="M" type="{}MDefinition"/>
+                   &lt;element name="E" type="{}EDefinition"/>
+                 &lt;/sequence>
+               &lt;/restriction>
+             &lt;/complexContent>
+           &lt;/complexType>
+         &lt;/element>
+         &lt;element name="IDK" type="{}IDKDefinition"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="RE" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RS" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="TD" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RNG" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected
+content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="D" type="{}DDefinition"/>
+         &lt;element name="H" type="{}HDefinition"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="D" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="H" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="FA" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="RSAPK" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected
+content contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="M" type="{}MDefinition"/>
+         &lt;element name="E" type="{}EDefinition"/>
+       &lt;/sequence>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+       <xs:sequence>
+              <xs:element name="M" type="xs:string" minOccurs="1">
+              </xs:element>
+              <xs:element name="E" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="IDK" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="FRMA" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content
+contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;simpleContent>
+     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+       &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+     &lt;/extension>
+   &lt;/simpleContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="algoritmo" use="required" type="xs:string">
+      </xs:attribute>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+              </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" type="xs:string">
+      </xs:attribute>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="TSTED" type="xs:string" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+              </xs:element>
+              <xs:element name="FRMT" minOccurs="1">
+<xs:complexType>
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[<p>
+Java class for anonymous complex type.
+
+<p>
+The following schema fragment specifies the expected content
+contained within this class.
+
+<pre>
+ &lt;complexType>
+   &lt;simpleContent>
+     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+       &lt;attribute name="algoritmo" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+     &lt;/extension>
+   &lt;/simpleContent>
+ &lt;/complexType>
+ </pre>]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="algoritmo" use="required" type="xs:string">
+      </xs:attribute>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+              </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" type="xs:string">
+      </xs:attribute>
+</xs:complexType>
+
+  </xs:element>
+</xs:schema>
