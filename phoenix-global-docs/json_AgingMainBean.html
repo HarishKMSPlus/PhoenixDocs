@@ -79,27 +79,18 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">agingWidgetBeanList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_AgingWidgetBean.html">AgingWidgetBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">unappliedAmount</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">organizationCode</span>
 </td>
           <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">agingWidgetBeanList</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_AgingWidgetBean.html">AgingWidgetBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -123,49 +114,58 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">unappliedAmount</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;agingWidgetBeanList&quot; : [ [ {
-    &quot;unPaidamount&quot; : 12345.0,
-    &quot;intervalCount&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;targetType&quot; : &quot;...&quot;,
-    &quot;target&quot; : 12345.0,
-    &quot;statusPercent&quot; : 12345.0,
-    &quot;intervalRange&quot; : &quot;...&quot;
-  }, {
-    &quot;unPaidamount&quot; : 12345.0,
-    &quot;intervalCount&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;targetType&quot; : &quot;...&quot;,
-    &quot;target&quot; : 12345.0,
-    &quot;statusPercent&quot; : 12345.0,
-    &quot;intervalRange&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;unPaidamount&quot; : 12345.0,
-    &quot;intervalCount&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;targetType&quot; : &quot;...&quot;,
-    &quot;target&quot; : 12345.0,
-    &quot;statusPercent&quot; : 12345.0,
-    &quot;intervalRange&quot; : &quot;...&quot;
-  }, {
-    &quot;unPaidamount&quot; : 12345.0,
-    &quot;intervalCount&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;targetType&quot; : &quot;...&quot;,
-    &quot;target&quot; : 12345.0,
-    &quot;statusPercent&quot; : 12345.0,
-    &quot;intervalRange&quot; : &quot;...&quot;
-  } ] ],
-  &quot;unappliedAmount&quot; : 12345.0,
   &quot;organizationCode&quot; : &quot;...&quot;,
+  &quot;agingWidgetBeanList&quot; : [ [ {
+    &quot;intervalRange&quot; : &quot;...&quot;,
+    &quot;unPaidamount&quot; : 12345.0,
+    &quot;statusPercent&quot; : 12345.0,
+    &quot;target&quot; : 12345.0,
+    &quot;targetType&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;intervalCount&quot; : &quot;...&quot;
+  }, {
+    &quot;intervalRange&quot; : &quot;...&quot;,
+    &quot;unPaidamount&quot; : 12345.0,
+    &quot;statusPercent&quot; : 12345.0,
+    &quot;target&quot; : 12345.0,
+    &quot;targetType&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;intervalCount&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;intervalRange&quot; : &quot;...&quot;,
+    &quot;unPaidamount&quot; : 12345.0,
+    &quot;statusPercent&quot; : 12345.0,
+    &quot;target&quot; : 12345.0,
+    &quot;targetType&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;intervalCount&quot; : &quot;...&quot;
+  }, {
+    &quot;intervalRange&quot; : &quot;...&quot;,
+    &quot;unPaidamount&quot; : 12345.0,
+    &quot;statusPercent&quot; : 12345.0,
+    &quot;target&quot; : 12345.0,
+    &quot;targetType&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;intervalCount&quot; : &quot;...&quot;
+  } ] ],
   &quot;agingType&quot; : &quot;...&quot;,
-  &quot;totalAmount&quot; : 12345.0
+  &quot;totalAmount&quot; : 12345.0,
+  &quot;unappliedAmount&quot; : 12345.0
 }</pre>
 
         <footer class="footer">

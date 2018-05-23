@@ -79,36 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">accurateProfile</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">shipperBean</span>
 </td>
           <td>  <span class="datatype-reference"><a href="json_ShipperBean.html">ShipperBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">wwaReference</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">actualforwarderBean</span>
-</td>
-          <td>  <span class="datatype-reference"><a href="json_ForwarderBean.html">ForwarderBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -133,36 +106,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">wwaCustomer</span>
+          <td>  <span class="property-name">actualforwarderBean</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference"><a href="json_ForwarderBean.html">ForwarderBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">customerType</span>
+          <td>  <span class="property-name">consigneeBean</span>
 </td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">rateProfile</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">billingCompany</span>
-</td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference"><a href="json_ConsigneeBean.html">ConsigneeBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -187,9 +142,36 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">consigneeBean</span>
+          <td>  <span class="property-name">wwaCustomer</span>
 </td>
-          <td>  <span class="datatype-reference"><a href="json_ConsigneeBean.html">ConsigneeBean</a>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">billingCompany</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">rateProfile</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">customerType</span>
+</td>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -205,7 +187,25 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">salesRepresentative</span>
+          <td>  <span class="property-name">wwaReference</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">customerEmail</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">accurateProfile</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -223,7 +223,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">customerEmail</span>
+          <td>  <span class="property-name">salesRepresentative</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -237,80 +237,80 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;accurateProfile&quot; : &quot;...&quot;,
   &quot;shipperBean&quot; : {
-    &quot;shipperAddress1&quot; : &quot;...&quot;,
-    &quot;creditHold&quot; : &quot;...&quot;,
-    &quot;namedAccount&quot; : &quot;...&quot;,
-    &quot;namedAccountFullName&quot; : &quot;...&quot;,
-    &quot;shipperName&quot; : &quot;...&quot;,
-    &quot;customerContact&quot; : &quot;...&quot;,
-    &quot;shipperReference&quot; : &quot;...&quot;,
-    &quot;shipperTelephone&quot; : &quot;...&quot;,
-    &quot;shipperAddress3&quot; : &quot;...&quot;,
     &quot;shipperContact&quot; : &quot;...&quot;,
-    &quot;customerAlias&quot; : &quot;...&quot;,
-    &quot;customerReference&quot; : &quot;...&quot;,
-    &quot;shipperCellphone&quot; : &quot;...&quot;,
-    &quot;shipperCity&quot; : &quot;...&quot;,
+    &quot;shipperAddress2&quot; : &quot;...&quot;,
+    &quot;shipperAddress3&quot; : &quot;...&quot;,
     &quot;wwaCustomer&quot; : &quot;...&quot;,
+    &quot;namedAccountFullName&quot; : &quot;...&quot;,
+    &quot;shipperAddress1&quot; : &quot;...&quot;,
+    &quot;customerContact&quot; : &quot;...&quot;,
+    &quot;shipperName&quot; : &quot;...&quot;,
+    &quot;namedAccount&quot; : &quot;...&quot;,
+    &quot;customerAlias&quot; : &quot;...&quot;,
     &quot;shipperFax&quot; : &quot;...&quot;,
-    &quot;shipperPhone&quot; : &quot;...&quot;,
+    &quot;creditHold&quot; : &quot;...&quot;,
     &quot;shipperCode&quot; : &quot;...&quot;,
-    &quot;shipperAddress2&quot; : &quot;...&quot;
-  },
-  &quot;wwaReference&quot; : &quot;...&quot;,
-  &quot;actualforwarderBean&quot; : {
-    &quot;forwarderCode&quot; : &quot;...&quot;,
-    &quot;forwarderNameAccount&quot; : &quot;...&quot;,
-    &quot;forwarderAddress1&quot; : &quot;...&quot;,
-    &quot;forwarderContact&quot; : &quot;...&quot;,
-    &quot;forwarderReference&quot; : &quot;...&quot;,
-    &quot;forwarderAddress2&quot; : &quot;...&quot;,
-    &quot;forwarderNamedAccountFullName&quot; : &quot;...&quot;,
-    &quot;forwarderName&quot; : &quot;...&quot;,
-    &quot;forwarderPhone&quot; : &quot;...&quot;,
-    &quot;forwarderFax&quot; : &quot;...&quot;,
-    &quot;forwarderAddress3&quot; : &quot;...&quot;
+    &quot;shipperCellphone&quot; : &quot;...&quot;,
+    &quot;shipperTelephone&quot; : &quot;...&quot;,
+    &quot;shipperReference&quot; : &quot;...&quot;,
+    &quot;customerReference&quot; : &quot;...&quot;,
+    &quot;shipperPhone&quot; : &quot;...&quot;,
+    &quot;shipperCity&quot; : &quot;...&quot;
   },
   &quot;additinoalProfile&quot; : &quot;...&quot;,
   &quot;forwarderBean&quot; : {
-    &quot;forwarderCode&quot; : &quot;...&quot;,
+    &quot;forwarderAddress3&quot; : &quot;...&quot;,
     &quot;forwarderNameAccount&quot; : &quot;...&quot;,
-    &quot;forwarderAddress1&quot; : &quot;...&quot;,
-    &quot;forwarderContact&quot; : &quot;...&quot;,
-    &quot;forwarderReference&quot; : &quot;...&quot;,
-    &quot;forwarderAddress2&quot; : &quot;...&quot;,
     &quot;forwarderNamedAccountFullName&quot; : &quot;...&quot;,
+    &quot;forwarderAddress1&quot; : &quot;...&quot;,
     &quot;forwarderName&quot; : &quot;...&quot;,
-    &quot;forwarderPhone&quot; : &quot;...&quot;,
+    &quot;forwarderCode&quot; : &quot;...&quot;,
+    &quot;forwarderAddress2&quot; : &quot;...&quot;,
+    &quot;forwarderContact&quot; : &quot;...&quot;,
     &quot;forwarderFax&quot; : &quot;...&quot;,
-    &quot;forwarderAddress3&quot; : &quot;...&quot;
+    &quot;forwarderReference&quot; : &quot;...&quot;,
+    &quot;forwarderPhone&quot; : &quot;...&quot;
   },
-  &quot;wwaCustomer&quot; : &quot;...&quot;,
-  &quot;customerType&quot; : &quot;...&quot;,
-  &quot;rateProfile&quot; : &quot;...&quot;,
-  &quot;billingCompany&quot; : &quot;...&quot;,
-  &quot;trackingCustomer2&quot; : &quot;...&quot;,
-  &quot;customerAlias&quot; : &quot;...&quot;,
+  &quot;actualforwarderBean&quot; : {
+    &quot;forwarderAddress3&quot; : &quot;...&quot;,
+    &quot;forwarderNameAccount&quot; : &quot;...&quot;,
+    &quot;forwarderNamedAccountFullName&quot; : &quot;...&quot;,
+    &quot;forwarderAddress1&quot; : &quot;...&quot;,
+    &quot;forwarderName&quot; : &quot;...&quot;,
+    &quot;forwarderCode&quot; : &quot;...&quot;,
+    &quot;forwarderAddress2&quot; : &quot;...&quot;,
+    &quot;forwarderContact&quot; : &quot;...&quot;,
+    &quot;forwarderFax&quot; : &quot;...&quot;,
+    &quot;forwarderReference&quot; : &quot;...&quot;,
+    &quot;forwarderPhone&quot; : &quot;...&quot;
+  },
   &quot;consigneeBean&quot; : {
-    &quot;consigneeAddress2&quot; : &quot;...&quot;,
     &quot;consigneeFax&quot; : &quot;...&quot;,
+    &quot;namedAccountFullName&quot; : &quot;...&quot;,
+    &quot;consigneeAddress1&quot; : &quot;...&quot;,
     &quot;consigneeAddress3&quot; : &quot;...&quot;,
-    &quot;consigneeReference&quot; : &quot;...&quot;,
-    &quot;consigneeName1&quot; : &quot;...&quot;,
     &quot;consigneeName&quot; : &quot;...&quot;,
+    &quot;consigneeReference&quot; : &quot;...&quot;,
+    &quot;consigneeAddress2&quot; : &quot;...&quot;,
+    &quot;namedAccount&quot; : &quot;...&quot;,
     &quot;consigneeContact&quot; : &quot;...&quot;,
     &quot;consigneePhone&quot; : &quot;...&quot;,
-    &quot;consigneeAddress1&quot; : &quot;...&quot;,
-    &quot;namedAccount&quot; : &quot;...&quot;,
-    &quot;consigneeCode&quot; : &quot;...&quot;,
-    &quot;namedAccountFullName&quot; : &quot;...&quot;
+    &quot;consigneeName1&quot; : &quot;...&quot;,
+    &quot;consigneeCode&quot; : &quot;...&quot;
   },
+  &quot;trackingCustomer2&quot; : &quot;...&quot;,
+  &quot;customerAlias&quot; : &quot;...&quot;,
+  &quot;wwaCustomer&quot; : &quot;...&quot;,
+  &quot;billingCompany&quot; : &quot;...&quot;,
+  &quot;rateProfile&quot; : &quot;...&quot;,
+  &quot;customerType&quot; : &quot;...&quot;,
   &quot;trackingCustomer1&quot; : &quot;...&quot;,
-  &quot;salesRepresentative&quot; : &quot;...&quot;,
+  &quot;wwaReference&quot; : &quot;...&quot;,
+  &quot;customerEmail&quot; : &quot;...&quot;,
+  &quot;accurateProfile&quot; : &quot;...&quot;,
   &quot;purchaseOrderNumber&quot; : &quot;...&quot;,
-  &quot;customerEmail&quot; : &quot;...&quot;
+  &quot;salesRepresentative&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

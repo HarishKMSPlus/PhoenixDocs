@@ -5,6 +5,8 @@
     "version" : "1.0",
     "title" : "phoenix-framework"
   },
+  "host" : "scan-it.phxcloud.io",
+  "basePath" : "/phoenix/1.0",
   "schemes" : [],
   "tags" : [
     {
@@ -52,13 +54,13 @@
       "type" : "object",
       "title" : "BusinessRuleRequestBean",
           "properties" : {
-            "shipmentStatusUpdateBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
-            },
             "objectMap" : {
 "description" : "",
 "type" : "object"
+            },
+            "shipmentStatusUpdateBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_ShipmentStatusUpdateBean"
             }
           },
       "description" : ""
@@ -68,10 +70,6 @@
       "type" : "object",
       "title" : "ExecuteReportRequestBean",
           "properties" : {
-            "userID" : {
-"description" : "",
-"type" : "number"
-            },
             "perlReportBeans" : {
 "description" : "",
 "type" : "array",
@@ -89,6 +87,10 @@
             "userSchemaName" : {
 "description" : "",
 "type" : "string"
+            },
+            "userID" : {
+"description" : "",
+"type" : "number"
             }
           },
       "description" : ""
@@ -98,19 +100,23 @@
       "type" : "object",
       "title" : "GenDefinesBean",
           "properties" : {
-            "dataSource" : {
+            "phpShellPath" : {
 "description" : "",
 "type" : "string"
             },
-            "biBaseUrl" : {
+            "oracleEnv" : {
 "description" : "",
 "type" : "string"
             },
-            "tempDirPath" : {
+            "phpBaseUrl" : {
 "description" : "",
 "type" : "string"
             },
-            "urlPath" : {
+            "definesID" : {
+"description" : "",
+"type" : "number"
+            },
+            "phpBaseurl" : {
 "description" : "",
 "type" : "string"
             },
@@ -118,11 +124,15 @@
 "description" : "",
 "type" : "string"
             },
-            "phpShellPath" : {
+            "perlHome" : {
 "description" : "",
 "type" : "string"
             },
-            "perlHome" : {
+            "biBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpHome" : {
 "description" : "",
 "type" : "string"
             },
@@ -130,7 +140,23 @@
 "description" : "",
 "type" : "string"
             },
-            "oracleEnv" : {
+            "formHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "urlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "formBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUrl" : {
 "description" : "",
 "type" : "string"
             },
@@ -142,43 +168,19 @@
 "description" : "",
 "type" : "string"
             },
+            "tempDirPath" : {
+"description" : "",
+"type" : "string"
+            },
             "ecommercePassword" : {
 "description" : "",
 "type" : "string"
             },
-            "jasperUrlPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpHome" : {
+            "dataSource" : {
 "description" : "",
 "type" : "string"
             },
             "globalUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "formBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "formHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpBaseurl" : {
-"description" : "",
-"type" : "string"
-            },
-            "definesID" : {
-"description" : "",
-"type" : "number"
-            },
-            "ecommerceUrl" : {
 "description" : "",
 "type" : "string"
             }
@@ -190,35 +192,7 @@
       "type" : "object",
       "title" : "PerlReportBean",
           "properties" : {
-            "passkey18" : {
-"description" : "",
-"type" : "string"
-            },
-            "phoenixSystemUserBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_PhoenixSystemUserBean"
-            },
-            "passkey10" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey3" : {
-"description" : "",
-"type" : "string"
-            },
-            "executeVia" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey19" : {
-"description" : "",
-"type" : "string"
-            },
-            "key" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey13" : {
+            "passkey7" : {
 "description" : "",
 "type" : "string"
             },
@@ -226,95 +200,19 @@
 "description" : "",
 "type" : "string"
             },
-            "argumentMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey1" : {
+            "passkey3" : {
 "description" : "",
 "type" : "string"
             },
-            "argumentListMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey4" : {
+            "key" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey21" : {
+            "passkey10" : {
 "description" : "",
 "type" : "string"
             },
-            "tag" : {
-"description" : "",
-"type" : "string"
-            },
-            "printerName" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey20" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey23" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey14" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey15" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey16" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey6" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey8" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlscriptName" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey22" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey2" : {
-"description" : "",
-"type" : "string"
-            },
-            "counter" : {
-"description" : "",
-"type" : "number"
-            },
-            "passkey7" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey5" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey11" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
+            "passkey19" : {
 "description" : "",
 "type" : "string"
             },
@@ -322,9 +220,113 @@
 "description" : "",
 "type" : "string"
             },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlscriptName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey21" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey6" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey4" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey2" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey8" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey15" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "tag" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey18" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey11" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey23" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey5" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
             "passkey17" : {
 "description" : "",
 "type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
+            "printerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey13" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey1" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey20" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentMap" : {
+"description" : "",
+"type" : "object"
             }
           },
       "description" : ""
@@ -334,31 +336,7 @@
       "type" : "object",
       "title" : "PhoenixSystemUserBean",
           "properties" : {
-            "genDefinesBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_GenDefinesBean"
-            },
-            "siteId" : {
-"description" : "",
-"type" : "number"
-            },
-            "userPassword" : {
-"description" : "",
-"type" : "string"
-            },
-            "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "debugMode" : {
-"description" : "",
-"type" : "string"
-            },
-            "officeSettingMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "companyCode" : {
+            "schemaName" : {
 "description" : "",
 "type" : "string"
             },
@@ -366,11 +344,7 @@
 "description" : "",
 "type" : "string"
             },
-            "officeId" : {
-"description" : "",
-"type" : "number"
-            },
-            "officeCode" : {
+            "userEmail" : {
 "description" : "",
 "type" : "string"
             },
@@ -378,9 +352,25 @@
 "description" : "",
 "type" : "string"
             },
-            "userEmail" : {
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userName" : {
 "description" : "",
 "type" : "string"
+            },
+            "companyCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            },
+            "userId" : {
+"description" : "",
+"type" : "number"
             },
             "companyGroupName" : {
 "description" : "",
@@ -390,19 +380,31 @@
 "description" : "",
 "type" : "string"
             },
+            "officeSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
             "userFullName" : {
 "description" : "",
 "type" : "string"
             },
-            "userId" : {
-"description" : "",
-"type" : "number"
-            },
-            "schemaName" : {
+            "debugMode" : {
 "description" : "",
 "type" : "string"
             },
-            "userName" : {
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "userPassword" : {
 "description" : "",
 "type" : "string"
             }
@@ -414,10 +416,6 @@
       "type" : "object",
       "title" : "ResultJson",
           "properties" : {
-            "success" : {
-"description" : "",
-"type" : "number"
-            },
             "result" : {
 "description" : "",
 "type" : "object"
@@ -425,6 +423,10 @@
             "message" : {
 "description" : "",
 "type" : "string"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
             },
             "errorCode" : {
 "description" : "",
@@ -438,6 +440,10 @@
       "type" : "object",
       "title" : "ShipmentStatusEventBean",
           "properties" : {
+            "eventName" : {
+"description" : "",
+"type" : "string"
+            },
             "comment" : {
 "description" : "",
 "type" : "string"
@@ -445,10 +451,6 @@
             "commentParams" : {
 "description" : "",
 "type" : "object"
-            },
-            "eventName" : {
-"description" : "",
-"type" : "string"
             }
           },
       "description" : ""
@@ -459,28 +461,6 @@
       "title" : "ShipmentStatusUpdateBean",
           "properties" : {
             "deletedReference" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "userSchemaId" : {
-"description" : "",
-"type" : "number"
-            },
-            "shipmentId" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "relatedRerefence" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -504,10 +484,6 @@
 "description" : "",
 "type" : "number"
             },
-            "documentHistoryId" : {
-"description" : "",
-"type" : "number"
-            },
             "relatedType" : {
 "description" : "",
 "type" : "array",
@@ -522,15 +498,17 @@
 "description" : "",
 "type" : "string"
             },
-            "publicPrivateType" : {
-"description" : "",
-"type" : "string"
-            },
-            "objectCode" : {
-"description" : "",
-"type" : "string"
-            },
             "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "relatedRerefence" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -553,6 +531,30 @@
   "$ref" : "#/definitions/json_ShipmentStatusEventBean"
 }
 }
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -578,6 +580,10 @@
       "type" : "object",
       "title" : "ExecuteReportRequestBean",
           "properties" : {
+            "userID" : {
+"description" : "",
+"type" : "number"
+            },
             "perlReportBeans" : {
 "description" : "",
 "type" : "array",
@@ -588,17 +594,13 @@
 }
 }
             },
-            "userSchemaName" : {
-"description" : "",
-"type" : "string"
-            },
             "userOfficeID" : {
 "description" : "",
 "type" : "number"
             },
-            "userID" : {
+            "userSchemaName" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             }
           },
       "description" : ""
@@ -608,75 +610,7 @@
       "type" : "object",
       "title" : "GenDefinesBean",
           "properties" : {
-            "dataSource" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpShellPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "tempDirPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommercePassword" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommerceUserName" : {
-"description" : "",
-"type" : "string"
-            },
-            "globalUrl" : {
-"description" : "",
-"type" : "string"
-            },
             "phpHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "jasperUrlPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "oracleEnv" : {
-"description" : "",
-"type" : "string"
-            },
-            "formHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "formBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "jspBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommerceUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "configuration" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "urlPath" : {
 "description" : "",
 "type" : "string"
             },
@@ -688,7 +622,75 @@
 "description" : "",
 "type" : "number"
             },
+            "perlHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "configuration" : {
+"description" : "",
+"type" : "string"
+            },
+            "globalUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "tempDirPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "urlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dataSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommercePassword" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpShellPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "jspBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "formHome" : {
+"description" : "",
+"type" : "string"
+            },
             "biBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "formBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "oracleEnv" : {
 "description" : "",
 "type" : "string"
             }
@@ -700,74 +702,6 @@
       "type" : "object",
       "title" : "PerlReportBean",
           "properties" : {
-            "passkey12" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey18" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
-"description" : "",
-"type" : "string"
-            },
-            "key" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey20" : {
-"description" : "",
-"type" : "string"
-            },
-            "argumentListMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey17" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey23" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey11" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey21" : {
-"description" : "",
-"type" : "string"
-            },
-            "executeVia" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey22" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey9" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlscriptName" : {
-"description" : "",
-"type" : "string"
-            },
-            "tag" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey1" : {
-"description" : "",
-"type" : "string"
-            },
             "passkey19" : {
 "description" : "",
 "type" : "string"
@@ -776,11 +710,99 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey16" : {
+            "passkey8" : {
 "description" : "",
 "type" : "string"
             },
             "passkey2" : {
+"description" : "",
+"type" : "string"
+            },
+            "tag" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey13" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey6" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey5" : {
+"description" : "",
+"type" : "string"
+            },
+            "argumentMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "key" : {
+"description" : "",
+"type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "executeVia" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey15" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey17" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
+            "passkey11" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey1" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey23" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey4" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey20" : {
 "description" : "",
 "type" : "string"
             },
@@ -792,27 +814,11 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey8" : {
+            "perlscriptName" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey14" : {
-"description" : "",
-"type" : "string"
-            },
-            "counter" : {
-"description" : "",
-"type" : "number"
-            },
-            "passkey5" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey15" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey4" : {
+            "passkey9" : {
 "description" : "",
 "type" : "string"
             },
@@ -820,19 +826,15 @@
 "description" : "",
 "type" : "string"
             },
-            "argumentMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey6" : {
+            "passkey21" : {
 "description" : "",
 "type" : "string"
             },
-            "phoenixSystemUserBean" : {
+            "passkey12" : {
 "description" : "",
-"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+"type" : "string"
             },
-            "passkey13" : {
+            "passkey18" : {
 "description" : "",
 "type" : "string"
             }
@@ -844,11 +846,11 @@
       "type" : "object",
       "title" : "PhoenixSystemUserBean",
           "properties" : {
-            "userPassword" : {
+            "siteId" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
-            "companyGroupName" : {
+            "companyCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -856,7 +858,7 @@
 "description" : "",
 "type" : "string"
             },
-            "timezone" : {
+            "userPassword" : {
 "description" : "",
 "type" : "string"
             },
@@ -864,17 +866,9 @@
 "description" : "",
 "type" : "object"
             },
-            "userName" : {
+            "officeCode" : {
 "description" : "",
 "type" : "string"
-            },
-            "alternateCityName" : {
-"description" : "",
-"type" : "string"
-            },
-            "siteId" : {
-"description" : "",
-"type" : "number"
             },
             "customer" : {
 "description" : "",
@@ -884,23 +878,11 @@
 "description" : "",
 "type" : "string"
             },
-            "debugMode" : {
+            "timezone" : {
 "description" : "",
 "type" : "string"
-            },
-            "genDefinesBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_GenDefinesBean"
             },
             "userEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "officeCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -908,9 +890,29 @@
 "description" : "",
 "type" : "string"
             },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            },
             "officeId" : {
 "description" : "",
 "type" : "number"
+            },
+            "userName" : {
+"description" : "",
+"type" : "string"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
+            },
+            "companyGroupName" : {
+"description" : "",
+"type" : "string"
             },
             "userId" : {
 "description" : "",
@@ -924,6 +926,14 @@
       "type" : "object",
       "title" : "ResultJson",
           "properties" : {
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
+            },
             "message" : {
 "description" : "",
 "type" : "string"
@@ -931,14 +941,6 @@
             "errorCode" : {
 "description" : "",
 "type" : "string"
-            },
-            "success" : {
-"description" : "",
-"type" : "number"
-            },
-            "result" : {
-"description" : "",
-"type" : "object"
             }
           },
       "description" : ""
@@ -948,11 +950,11 @@
       "type" : "object",
       "title" : "ShipmentStatusEventBean",
           "properties" : {
-            "comment" : {
+            "eventName" : {
 "description" : "",
 "type" : "string"
             },
-            "eventName" : {
+            "comment" : {
 "description" : "",
 "type" : "string"
             },
@@ -968,6 +970,16 @@
       "type" : "object",
       "title" : "ShipmentStatusUpdateBean",
           "properties" : {
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
             "notesShownOnCodes" : {
 "description" : "",
 "type" : "array",
@@ -978,47 +990,7 @@
 }
 }
             },
-            "eventList" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
-}
-}
-            },
             "shipmentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "relatedType" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "userSchemaId" : {
-"description" : "",
-"type" : "number"
-            },
-            "shipmentId" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "documentHistoryId" : {
-"description" : "",
-"type" : "number"
-            },
-            "objectCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -1026,15 +998,7 @@
 "description" : "",
 "type" : "number"
             },
-            "publicPrivateType" : {
-"description" : "",
-"type" : "string"
-            },
-            "clausesText" : {
-"description" : "",
-"type" : "string"
-            },
-            "deletedReference" : {
+            "relatedType" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1054,7 +1018,37 @@
 }
 }
             },
-            "relatedRerefence" : {
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "eventList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_ShipmentStatusEventBean"
+}
+}
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "deletedReference" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1063,6 +1057,14 @@
   "type" : "string"
 }
 }
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""

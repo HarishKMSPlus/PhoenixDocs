@@ -79,7 +79,25 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">scacCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">type</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">rowid</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -97,9 +115,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">filingType</span>
+          <td>  <span class="property-name">controlFlag</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">object
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -124,7 +142,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">description</span>
+          <td>  <span class="property-name">filingType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -133,7 +151,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">rowid</span>
+          <td>  <span class="property-name">description</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -150,40 +168,22 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
-        <tr>
-          <td>  <span class="property-name">controlFlag</span>
-</td>
-          <td>  <span class="datatype-reference">object
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">scacCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
+  &quot;scacCode&quot; : &quot;...&quot;,
   &quot;type&quot; : &quot;...&quot;,
+  &quot;rowid&quot; : &quot;...&quot;,
   &quot;referenceNumber&quot; : &quot;...&quot;,
-  &quot;filingType&quot; : &quot;...&quot;,
+  &quot;controlFlag&quot; : { },
   &quot;updateUser&quot; : &quot;...&quot;,
   &quot;itnNumber&quot; : &quot;...&quot;,
+  &quot;filingType&quot; : &quot;...&quot;,
   &quot;description&quot; : &quot;...&quot;,
-  &quot;rowid&quot; : &quot;...&quot;,
-  &quot;inputUser&quot; : &quot;...&quot;,
-  &quot;controlFlag&quot; : { },
-  &quot;scacCode&quot; : &quot;...&quot;
+  &quot;inputUser&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

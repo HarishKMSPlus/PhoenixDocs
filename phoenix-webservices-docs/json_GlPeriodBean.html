@@ -79,9 +79,18 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">currentPeriod</span>
+          <td>  <span class="property-name">beginDate</span>
 </td>
-          <td>  <span class="datatype-reference">boolean
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">periodStatus</span>
+</td>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -106,24 +115,6 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">year</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">beginDate</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">period</span>
 </td>
           <td>  <span class="datatype-reference">number
@@ -133,9 +124,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">periodStatus</span>
+          <td>  <span class="property-name">year</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">currentPeriod</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -153,31 +153,7 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">companyId</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">officeId</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">company</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">updateUserFullname</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">inputUserOffice</span></td>
+          <td><span class="property-name">officeCode</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -189,7 +165,7 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">inputDate</span></td>
+          <td><span class="property-name">officeTimezone</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -201,31 +177,13 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">schemaName</span></td>
+          <td><span class="property-name">inputDate</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">updateUser</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">updateDate</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">alternateCityName</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">officeCode</span></td>
+          <td><span class="property-name">updateLdapUser</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -237,14 +195,26 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">id</span></td>
+          <td><span class="property-name">updateDate</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">officeId</span></td>
           <td><span class="datatype-reference">number
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">inputLdapUser</span></td>
+          <td><span class="property-name">inputUserOffice</span></td>
           <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">decimalAllowed</span></td>
+          <td><span class="datatype-reference">boolean
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
@@ -255,7 +225,37 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">updateLdapUser</span></td>
+          <td><span class="property-name">id</span></td>
+          <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">updateUserFullname</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">inputLdapUser</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">alternateCityName</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">schemaName</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">updateUser</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -273,20 +273,20 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">decimalAllowed</span></td>
-          <td><span class="datatype-reference">boolean
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
           <td><span class="property-name">locale</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">officeTimezone</span></td>
+          <td><span class="property-name">company</span></td>
           <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">companyId</span></td>
+          <td><span class="datatype-reference">number
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
@@ -296,37 +296,37 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;currentPeriod&quot; : true,
+  &quot;beginDate&quot; : &quot;...&quot;,
+  &quot;periodStatus&quot; : &quot;...&quot;,
   &quot;profitAndLossStatus&quot; : &quot;...&quot;,
   &quot;endDate&quot; : &quot;...&quot;,
-  &quot;year&quot; : 12345,
-  &quot;beginDate&quot; : &quot;...&quot;,
   &quot;period&quot; : 12345,
-  &quot;periodStatus&quot; : &quot;...&quot;,
+  &quot;year&quot; : 12345,
+  &quot;currentPeriod&quot; : true,
   &quot;updateUserOffice&quot; : &quot;...&quot;,
-  &quot;companyId&quot; : 12345,
-  &quot;officeId&quot; : 12345,
-  &quot;company&quot; : &quot;...&quot;,
-  &quot;updateUserFullname&quot; : &quot;...&quot;,
-  &quot;inputUserOffice&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
   &quot;inputUserFullname&quot; : &quot;...&quot;,
-  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;officeTimezone&quot; : &quot;...&quot;,
   &quot;userSchemaID&quot; : 12345,
+  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;updateLdapUser&quot; : &quot;...&quot;,
+  &quot;status&quot; : 12345,
+  &quot;updateDate&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
+  &quot;inputUserOffice&quot; : &quot;...&quot;,
+  &quot;decimalAllowed&quot; : true,
+  &quot;inputUser&quot; : &quot;...&quot;,
+  &quot;id&quot; : 12345,
+  &quot;updateUserFullname&quot; : &quot;...&quot;,
+  &quot;inputLdapUser&quot; : &quot;...&quot;,
+  &quot;alternateCityName&quot; : &quot;...&quot;,
   &quot;schemaName&quot; : &quot;...&quot;,
   &quot;updateUser&quot; : &quot;...&quot;,
-  &quot;updateDate&quot; : &quot;...&quot;,
-  &quot;alternateCityName&quot; : &quot;...&quot;,
-  &quot;officeCode&quot; : &quot;...&quot;,
-  &quot;status&quot; : 12345,
-  &quot;id&quot; : 12345,
-  &quot;inputLdapUser&quot; : &quot;...&quot;,
-  &quot;inputUser&quot; : &quot;...&quot;,
-  &quot;updateLdapUser&quot; : &quot;...&quot;,
   &quot;maxNumberOfRows&quot; : 12345,
   &quot;recordOverflow&quot; : true,
-  &quot;decimalAllowed&quot; : true,
   &quot;locale&quot; : &quot;...&quot;,
-  &quot;officeTimezone&quot; : &quot;...&quot;
+  &quot;company&quot; : &quot;...&quot;,
+  &quot;companyId&quot; : 12345
 }</pre>
 
         <footer class="footer">

@@ -79,24 +79,6 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">filePath</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">templateType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">fileName</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -106,16 +88,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">fileContent</span>
-</td>
-          <td>  <span class="datatype-reference">array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">templateMaster</span>
+          <td>  <span class="property-name">fileType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -133,9 +106,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">masterId</span>
+          <td>  <span class="property-name">fileContent</span>
 </td>
-          <td>  <span class="datatype-reference">number
+          <td>  <span class="datatype-reference">array of string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -160,7 +133,34 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">fileType</span>
+          <td>  <span class="property-name">filePath</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">masterId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">templateMaster</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">templateType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -174,16 +174,16 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;filePath&quot; : &quot;...&quot;,
-  &quot;templateType&quot; : &quot;...&quot;,
   &quot;fileName&quot; : &quot;...&quot;,
-  &quot;fileContent&quot; : [ &quot;...&quot;, &quot;...&quot; ],
-  &quot;templateMaster&quot; : &quot;...&quot;,
+  &quot;fileType&quot; : &quot;...&quot;,
   &quot;templateName&quot; : &quot;...&quot;,
-  &quot;masterId&quot; : 12345,
+  &quot;fileContent&quot; : [ &quot;...&quot;, &quot;...&quot; ],
   &quot;edit&quot; : true,
   &quot;validTemplateList&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;fileType&quot; : &quot;...&quot;
+  &quot;filePath&quot; : &quot;...&quot;,
+  &quot;masterId&quot; : 12345,
+  &quot;templateMaster&quot; : &quot;...&quot;,
+  &quot;templateType&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

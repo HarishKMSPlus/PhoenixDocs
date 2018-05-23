@@ -79,6 +79,15 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">sqltypeName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">loadPlanReference</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -88,9 +97,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">fileNumber</span>
+          <td>  <span class="property-name">cube</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">weight</span>
+</td>
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -106,7 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">e_m</span>
+          <td>  <span class="property-name">schemaName</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -115,9 +133,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">sqltypeName</span>
+          <td>  <span class="property-name">weightLbs</span>
 </td>
           <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">schemaId</span>
+</td>
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -133,7 +160,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">weightLbs</span>
+          <td>  <span class="property-name">cubeCbf</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -160,16 +187,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">cube</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">schemaName</span>
+          <td>  <span class="property-name">fileNumber</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -178,27 +196,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">weight</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">cubeCbf</span>
+          <td>  <span class="property-name">e_m</span>
 </td>
           <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">schemaId</span>
-</td>
-          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -210,20 +210,20 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;loadPlanReference&quot; : &quot;...&quot;,
-  &quot;fileNumber&quot; : &quot;...&quot;,
-  &quot;sqlUdt&quot; : &quot;...&quot;,
-  &quot;e_m&quot; : &quot;...&quot;,
   &quot;sqltypeName&quot; : &quot;...&quot;,
-  &quot;pieces&quot; : 12345,
+  &quot;loadPlanReference&quot; : &quot;...&quot;,
+  &quot;cube&quot; : 12345.0,
+  &quot;weight&quot; : 12345.0,
+  &quot;sqlUdt&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
   &quot;weightLbs&quot; : &quot;...&quot;,
+  &quot;schemaId&quot; : 12345,
+  &quot;pieces&quot; : 12345,
+  &quot;cubeCbf&quot; : &quot;...&quot;,
   &quot;destination&quot; : &quot;...&quot;,
   &quot;vessel&quot; : &quot;...&quot;,
-  &quot;cube&quot; : 12345.0,
-  &quot;schemaName&quot; : &quot;...&quot;,
-  &quot;weight&quot; : 12345.0,
-  &quot;cubeCbf&quot; : &quot;...&quot;,
-  &quot;schemaId&quot; : 12345
+  &quot;fileNumber&quot; : &quot;...&quot;,
+  &quot;e_m&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

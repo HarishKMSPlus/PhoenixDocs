@@ -79,18 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">customerCode</span>
+          <td>  <span class="property-name">contactDocumentBeans</span>
 </td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">contactName</span>
-</td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">array of array of <a href="json_OrganizationContactDocumentBean.html">OrganizationContactDocumentBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -115,16 +106,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">schemaName</span>
+          <td>  <span class="property-name">officeId</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">officeId</span>
+          <td>  <span class="property-name">customerId</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -142,18 +133,27 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">contactDocumentBeans</span>
+          <td>  <span class="property-name">contactName</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_OrganizationContactDocumentBean.html">OrganizationContactDocumentBean</a>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">customerId</span>
+          <td>  <span class="property-name">schemaName</span>
 </td>
-          <td>  <span class="datatype-reference">number
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">customerCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -165,45 +165,6 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;customerCode&quot; : &quot;...&quot;,
-  &quot;contactName&quot; : &quot;...&quot;,
-  &quot;contactDetailBeans&quot; : [ [ {
-    &quot;contactValue&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;status&quot; : true,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345
-  }, {
-    &quot;contactValue&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;status&quot; : true,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345
-  } ], [ {
-    &quot;contactValue&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;status&quot; : true,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345
-  }, {
-    &quot;contactValue&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;status&quot; : true,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345
-  } ] ],
-  &quot;contactReference&quot; : &quot;...&quot;,
-  &quot;schemaName&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
-  &quot;customerName&quot; : &quot;...&quot;,
   &quot;contactDocumentBeans&quot; : [ [ {
     &quot;documentCode&quot; : &quot;...&quot;,
     &quot;documentID&quot; : 12345.0,
@@ -221,7 +182,46 @@
     &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0
   } ] ],
-  &quot;customerId&quot; : 12345.0
+  &quot;contactDetailBeans&quot; : [ [ {
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;status&quot; : true,
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;contactType&quot; : &quot;...&quot;,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;officeId&quot; : 12345
+  }, {
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;status&quot; : true,
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;contactType&quot; : &quot;...&quot;,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;officeId&quot; : 12345
+  } ], [ {
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;status&quot; : true,
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;contactType&quot; : &quot;...&quot;,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;officeId&quot; : 12345
+  }, {
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;status&quot; : true,
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;contactType&quot; : &quot;...&quot;,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;officeId&quot; : 12345
+  } ] ],
+  &quot;contactReference&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
+  &quot;customerId&quot; : 12345.0,
+  &quot;customerName&quot; : &quot;...&quot;,
+  &quot;contactName&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;customerCode&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

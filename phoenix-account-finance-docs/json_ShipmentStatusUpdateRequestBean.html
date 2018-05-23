@@ -79,9 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">origin</span>
+          <td>  <span class="property-name">vendorTracking</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference"><a href="json_VendorTracking.html">VendorTracking</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -97,9 +97,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">vendorTracking</span>
+          <td>  <span class="property-name">origin</span>
 </td>
-          <td>  <span class="datatype-reference"><a href="json_VendorTracking.html">VendorTracking</a>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -111,118 +111,118 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;origin&quot; : &quot;...&quot;,
+  &quot;vendorTracking&quot; : {
+    &quot;VendorTrackingEnvelope&quot; : {
+      &quot;ReceiverID&quot; : &quot;...&quot;,
+      &quot;Type&quot; : &quot;...&quot;,
+      &quot;EnvelopeID&quot; : &quot;...&quot;,
+      &quot;SenderID&quot; : &quot;...&quot;,
+      &quot;Password&quot; : &quot;...&quot;,
+      &quot;Version&quot; : &quot;...&quot;
+    },
+    &quot;VendorTrackingDetails&quot; : [ [ {
+      &quot;StatusDetails&quot; : { },
+      &quot;ContainerStatusFlag&quot; : &quot;...&quot;,
+      &quot;monitoringId&quot; : 12345,
+      &quot;WarehouseCode&quot; : &quot;...&quot;,
+      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
+      &quot;WarehouseName&quot; : &quot;...&quot;,
+      &quot;Mode&quot; : &quot;...&quot;,
+      &quot;ITdate&quot; : &quot;...&quot;,
+      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
+      &quot;warehouseTimezone&quot; : &quot;...&quot;,
+      &quot;ContainerNumber&quot; : &quot;...&quot;,
+      &quot;CommentDetails&quot; : { },
+      &quot;ITNumber&quot; : &quot;...&quot;,
+      &quot;VendorReference&quot; : &quot;...&quot;,
+      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
+      &quot;BookingNumber&quot; : &quot;...&quot;,
+      &quot;TypeOfMove&quot; : &quot;...&quot;,
+      &quot;StatusLocationName&quot; : &quot;...&quot;,
+      &quot;FileNumber&quot; : &quot;...&quot;,
+      &quot;StatusLocationCode&quot; : &quot;...&quot;,
+      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
+      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
+      &quot;CustomersIdentifier&quot; : &quot;...&quot;
+    }, {
+      &quot;StatusDetails&quot; : { },
+      &quot;ContainerStatusFlag&quot; : &quot;...&quot;,
+      &quot;monitoringId&quot; : 12345,
+      &quot;WarehouseCode&quot; : &quot;...&quot;,
+      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
+      &quot;WarehouseName&quot; : &quot;...&quot;,
+      &quot;Mode&quot; : &quot;...&quot;,
+      &quot;ITdate&quot; : &quot;...&quot;,
+      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
+      &quot;warehouseTimezone&quot; : &quot;...&quot;,
+      &quot;ContainerNumber&quot; : &quot;...&quot;,
+      &quot;CommentDetails&quot; : { },
+      &quot;ITNumber&quot; : &quot;...&quot;,
+      &quot;VendorReference&quot; : &quot;...&quot;,
+      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
+      &quot;BookingNumber&quot; : &quot;...&quot;,
+      &quot;TypeOfMove&quot; : &quot;...&quot;,
+      &quot;StatusLocationName&quot; : &quot;...&quot;,
+      &quot;FileNumber&quot; : &quot;...&quot;,
+      &quot;StatusLocationCode&quot; : &quot;...&quot;,
+      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
+      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
+      &quot;CustomersIdentifier&quot; : &quot;...&quot;
+    } ], [ {
+      &quot;StatusDetails&quot; : { },
+      &quot;ContainerStatusFlag&quot; : &quot;...&quot;,
+      &quot;monitoringId&quot; : 12345,
+      &quot;WarehouseCode&quot; : &quot;...&quot;,
+      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
+      &quot;WarehouseName&quot; : &quot;...&quot;,
+      &quot;Mode&quot; : &quot;...&quot;,
+      &quot;ITdate&quot; : &quot;...&quot;,
+      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
+      &quot;warehouseTimezone&quot; : &quot;...&quot;,
+      &quot;ContainerNumber&quot; : &quot;...&quot;,
+      &quot;CommentDetails&quot; : { },
+      &quot;ITNumber&quot; : &quot;...&quot;,
+      &quot;VendorReference&quot; : &quot;...&quot;,
+      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
+      &quot;BookingNumber&quot; : &quot;...&quot;,
+      &quot;TypeOfMove&quot; : &quot;...&quot;,
+      &quot;StatusLocationName&quot; : &quot;...&quot;,
+      &quot;FileNumber&quot; : &quot;...&quot;,
+      &quot;StatusLocationCode&quot; : &quot;...&quot;,
+      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
+      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
+      &quot;CustomersIdentifier&quot; : &quot;...&quot;
+    }, {
+      &quot;StatusDetails&quot; : { },
+      &quot;ContainerStatusFlag&quot; : &quot;...&quot;,
+      &quot;monitoringId&quot; : 12345,
+      &quot;WarehouseCode&quot; : &quot;...&quot;,
+      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
+      &quot;WarehouseName&quot; : &quot;...&quot;,
+      &quot;Mode&quot; : &quot;...&quot;,
+      &quot;ITdate&quot; : &quot;...&quot;,
+      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
+      &quot;warehouseTimezone&quot; : &quot;...&quot;,
+      &quot;ContainerNumber&quot; : &quot;...&quot;,
+      &quot;CommentDetails&quot; : { },
+      &quot;ITNumber&quot; : &quot;...&quot;,
+      &quot;VendorReference&quot; : &quot;...&quot;,
+      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
+      &quot;BookingNumber&quot; : &quot;...&quot;,
+      &quot;TypeOfMove&quot; : &quot;...&quot;,
+      &quot;StatusLocationName&quot; : &quot;...&quot;,
+      &quot;FileNumber&quot; : &quot;...&quot;,
+      &quot;StatusLocationCode&quot; : &quot;...&quot;,
+      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
+      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
+      &quot;CustomersIdentifier&quot; : &quot;...&quot;
+    } ] ]
+  },
   &quot;inputMap&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;vendorTracking&quot; : {
-    &quot;VendorTrackingEnvelope&quot; : {
-      &quot;ReceiverID&quot; : &quot;...&quot;,
-      &quot;Version&quot; : &quot;...&quot;,
-      &quot;EnvelopeID&quot; : &quot;...&quot;,
-      &quot;Type&quot; : &quot;...&quot;,
-      &quot;SenderID&quot; : &quot;...&quot;,
-      &quot;Password&quot; : &quot;...&quot;
-    },
-    &quot;VendorTrackingDetails&quot; : [ [ {
-      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
-      &quot;warehouseTimezone&quot; : &quot;...&quot;,
-      &quot;ITdate&quot; : &quot;...&quot;,
-      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
-      &quot;ITNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationName&quot; : &quot;...&quot;,
-      &quot;FileNumber&quot; : &quot;...&quot;,
-      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
-      &quot;BookingNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationCode&quot; : &quot;...&quot;,
-      &quot;TypeOfMove&quot; : &quot;...&quot;,
-      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
-      &quot;monitoringId&quot; : 12345,
-      &quot;VendorReference&quot; : &quot;...&quot;,
-      &quot;CommentDetails&quot; : { },
-      &quot;ContainerNumber&quot; : &quot;...&quot;,
-      &quot;CustomersIdentifier&quot; : &quot;...&quot;,
-      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
-      &quot;WarehouseCode&quot; : &quot;...&quot;,
-      &quot;WarehouseName&quot; : &quot;...&quot;,
-      &quot;Mode&quot; : &quot;...&quot;,
-      &quot;StatusDetails&quot; : { },
-      &quot;ContainerStatusFlag&quot; : &quot;...&quot;
-    }, {
-      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
-      &quot;warehouseTimezone&quot; : &quot;...&quot;,
-      &quot;ITdate&quot; : &quot;...&quot;,
-      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
-      &quot;ITNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationName&quot; : &quot;...&quot;,
-      &quot;FileNumber&quot; : &quot;...&quot;,
-      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
-      &quot;BookingNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationCode&quot; : &quot;...&quot;,
-      &quot;TypeOfMove&quot; : &quot;...&quot;,
-      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
-      &quot;monitoringId&quot; : 12345,
-      &quot;VendorReference&quot; : &quot;...&quot;,
-      &quot;CommentDetails&quot; : { },
-      &quot;ContainerNumber&quot; : &quot;...&quot;,
-      &quot;CustomersIdentifier&quot; : &quot;...&quot;,
-      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
-      &quot;WarehouseCode&quot; : &quot;...&quot;,
-      &quot;WarehouseName&quot; : &quot;...&quot;,
-      &quot;Mode&quot; : &quot;...&quot;,
-      &quot;StatusDetails&quot; : { },
-      &quot;ContainerStatusFlag&quot; : &quot;...&quot;
-    } ], [ {
-      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
-      &quot;warehouseTimezone&quot; : &quot;...&quot;,
-      &quot;ITdate&quot; : &quot;...&quot;,
-      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
-      &quot;ITNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationName&quot; : &quot;...&quot;,
-      &quot;FileNumber&quot; : &quot;...&quot;,
-      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
-      &quot;BookingNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationCode&quot; : &quot;...&quot;,
-      &quot;TypeOfMove&quot; : &quot;...&quot;,
-      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
-      &quot;monitoringId&quot; : 12345,
-      &quot;VendorReference&quot; : &quot;...&quot;,
-      &quot;CommentDetails&quot; : { },
-      &quot;ContainerNumber&quot; : &quot;...&quot;,
-      &quot;CustomersIdentifier&quot; : &quot;...&quot;,
-      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
-      &quot;WarehouseCode&quot; : &quot;...&quot;,
-      &quot;WarehouseName&quot; : &quot;...&quot;,
-      &quot;Mode&quot; : &quot;...&quot;,
-      &quot;StatusDetails&quot; : { },
-      &quot;ContainerStatusFlag&quot; : &quot;...&quot;
-    }, {
-      &quot;CFSPickupFlag&quot; : &quot;...&quot;,
-      &quot;warehouseTimezone&quot; : &quot;...&quot;,
-      &quot;ITdate&quot; : &quot;...&quot;,
-      &quot;CargoDescription&quot; : [ [ { }, { } ], [ { }, { } ] ],
-      &quot;ITNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationName&quot; : &quot;...&quot;,
-      &quot;FileNumber&quot; : &quot;...&quot;,
-      &quot;DevanningStatusFlag&quot; : &quot;...&quot;,
-      &quot;BookingNumber&quot; : &quot;...&quot;,
-      &quot;StatusLocationCode&quot; : &quot;...&quot;,
-      &quot;TypeOfMove&quot; : &quot;...&quot;,
-      &quot;DamageStatusFlag&quot; : &quot;...&quot;,
-      &quot;monitoringId&quot; : 12345,
-      &quot;VendorReference&quot; : &quot;...&quot;,
-      &quot;CommentDetails&quot; : { },
-      &quot;ContainerNumber&quot; : &quot;...&quot;,
-      &quot;CustomersIdentifier&quot; : &quot;...&quot;,
-      &quot;BillofLadingNumber&quot; : &quot;...&quot;,
-      &quot;WarehouseCode&quot; : &quot;...&quot;,
-      &quot;WarehouseName&quot; : &quot;...&quot;,
-      &quot;Mode&quot; : &quot;...&quot;,
-      &quot;StatusDetails&quot; : { },
-      &quot;ContainerStatusFlag&quot; : &quot;...&quot;
-    } ] ]
-  }
+  &quot;origin&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

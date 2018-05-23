@@ -79,6 +79,33 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">stackTrace</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">eventType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">subSystem</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">errorMessage</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -97,34 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">eventType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">parameters</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">subSystem</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">stackTrace</span>
+          <td>  <span class="property-name">userName</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -142,15 +142,6 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">actionTime</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">errorType</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -160,9 +151,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userName</span>
+          <td>  <span class="property-name">actionTime</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -177,23 +168,32 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">parameters</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
+  &quot;stackTrace&quot; : &quot;...&quot;,
+  &quot;eventType&quot; : &quot;...&quot;,
+  &quot;subSystem&quot; : &quot;...&quot;,
   &quot;errorMessage&quot; : &quot;...&quot;,
   &quot;eventDate&quot; : &quot;...&quot;,
-  &quot;eventType&quot; : &quot;...&quot;,
-  &quot;parameters&quot; : &quot;...&quot;,
-  &quot;subSystem&quot; : &quot;...&quot;,
-  &quot;stackTrace&quot; : &quot;...&quot;,
-  &quot;moduleName&quot; : &quot;...&quot;,
-  &quot;actionTime&quot; : 12345,
-  &quot;errorType&quot; : &quot;...&quot;,
   &quot;userName&quot; : &quot;...&quot;,
-  &quot;officeCode&quot; : &quot;...&quot;
+  &quot;moduleName&quot; : &quot;...&quot;,
+  &quot;errorType&quot; : &quot;...&quot;,
+  &quot;actionTime&quot; : 12345,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;parameters&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

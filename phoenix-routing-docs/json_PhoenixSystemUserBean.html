@@ -79,9 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">timezone</span>
+          <td>  <span class="property-name">genDefinesBean</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference"><a href="json_GenDefinesBean.html">GenDefinesBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -97,70 +97,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userId</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">schemaName</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">officeId</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">officeSettingMap</span>
-</td>
-          <td>  <span class="datatype-reference">object
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">genDefinesBean</span>
-</td>
-          <td>  <span class="datatype-reference"><a href="json_GenDefinesBean.html">GenDefinesBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">userFullName</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">companyGroupName</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">companyCode</span>
+          <td>  <span class="property-name">userEmail</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -187,7 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">officeCode</span>
+          <td>  <span class="property-name">companyCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -196,7 +133,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userEmail</span>
+          <td>  <span class="property-name">schemaName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userPassword</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -214,9 +160,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userPassword</span>
+          <td>  <span class="property-name">userId</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -232,7 +178,61 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">companyGroupName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">officeSettingMap</span>
+</td>
+          <td>  <span class="datatype-reference">object
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">alternateCityName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userFullName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">officeId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">officeCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">timezone</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -246,49 +246,49 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;timezone&quot; : &quot;...&quot;,
+  &quot;genDefinesBean&quot; : {
+    &quot;formBaseUrl&quot; : &quot;...&quot;,
+    &quot;globalUrl&quot; : &quot;...&quot;,
+    &quot;jspBaseUrl&quot; : &quot;...&quot;,
+    &quot;ecommerceUserName&quot; : &quot;...&quot;,
+    &quot;perlBaseUrl&quot; : &quot;...&quot;,
+    &quot;tempDirPath&quot; : &quot;...&quot;,
+    &quot;configuration&quot; : &quot;...&quot;,
+    &quot;oracleEnv&quot; : &quot;...&quot;,
+    &quot;biBaseUrl&quot; : &quot;...&quot;,
+    &quot;ecommerceUrl&quot; : &quot;...&quot;,
+    &quot;phpHome&quot; : &quot;...&quot;,
+    &quot;urlPath&quot; : &quot;...&quot;,
+    &quot;phpBaseurl&quot; : &quot;...&quot;,
+    &quot;definesID&quot; : 12345,
+    &quot;perlHome&quot; : &quot;...&quot;,
+    &quot;formHome&quot; : &quot;...&quot;,
+    &quot;ecommercePassword&quot; : &quot;...&quot;,
+    &quot;phpBaseUrl&quot; : &quot;...&quot;,
+    &quot;dataSource&quot; : &quot;...&quot;,
+    &quot;phpShellPath&quot; : &quot;...&quot;,
+    &quot;jasperUrlPath&quot; : &quot;...&quot;
+  },
   &quot;userName&quot; : &quot;...&quot;,
-  &quot;userId&quot; : 12345,
+  &quot;userEmail&quot; : &quot;...&quot;,
+  &quot;debugMode&quot; : &quot;...&quot;,
+  &quot;ldapUserName&quot; : &quot;...&quot;,
+  &quot;companyCode&quot; : &quot;...&quot;,
   &quot;schemaName&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
+  &quot;userPassword&quot; : &quot;...&quot;,
+  &quot;siteId&quot; : 12345,
+  &quot;userId&quot; : 12345,
+  &quot;customer&quot; : &quot;...&quot;,
+  &quot;companyGroupName&quot; : &quot;...&quot;,
   &quot;officeSettingMap&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;genDefinesBean&quot; : {
-    &quot;ecommerceUrl&quot; : &quot;...&quot;,
-    &quot;formBaseUrl&quot; : &quot;...&quot;,
-    &quot;formHome&quot; : &quot;...&quot;,
-    &quot;perlBaseUrl&quot; : &quot;...&quot;,
-    &quot;urlPath&quot; : &quot;...&quot;,
-    &quot;dataSource&quot; : &quot;...&quot;,
-    &quot;definesID&quot; : 12345,
-    &quot;ecommercePassword&quot; : &quot;...&quot;,
-    &quot;ecommerceUserName&quot; : &quot;...&quot;,
-    &quot;oracleEnv&quot; : &quot;...&quot;,
-    &quot;phpBaseurl&quot; : &quot;...&quot;,
-    &quot;biBaseUrl&quot; : &quot;...&quot;,
-    &quot;phpBaseUrl&quot; : &quot;...&quot;,
-    &quot;phpShellPath&quot; : &quot;...&quot;,
-    &quot;jspBaseUrl&quot; : &quot;...&quot;,
-    &quot;configuration&quot; : &quot;...&quot;,
-    &quot;globalUrl&quot; : &quot;...&quot;,
-    &quot;phpHome&quot; : &quot;...&quot;,
-    &quot;perlHome&quot; : &quot;...&quot;,
-    &quot;tempDirPath&quot; : &quot;...&quot;,
-    &quot;jasperUrlPath&quot; : &quot;...&quot;
-  },
+  &quot;alternateCityName&quot; : &quot;...&quot;,
   &quot;userFullName&quot; : &quot;...&quot;,
-  &quot;companyGroupName&quot; : &quot;...&quot;,
-  &quot;companyCode&quot; : &quot;...&quot;,
-  &quot;debugMode&quot; : &quot;...&quot;,
-  &quot;ldapUserName&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
   &quot;officeCode&quot; : &quot;...&quot;,
-  &quot;userEmail&quot; : &quot;...&quot;,
-  &quot;siteId&quot; : 12345,
-  &quot;userPassword&quot; : &quot;...&quot;,
-  &quot;customer&quot; : &quot;...&quot;,
-  &quot;alternateCityName&quot; : &quot;...&quot;
+  &quot;timezone&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

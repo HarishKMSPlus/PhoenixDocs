@@ -79,34 +79,7 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">userSchemaId</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">shipmentType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">publicPrivateType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">objectCode</span>
+          <td>  <span class="property-name">shipmentId</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -124,6 +97,24 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">referenceNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">publicPrivateType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">relatedRerefence</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
@@ -133,7 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">officeId</span>
+          <td>  <span class="property-name">userSchemaId</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -142,25 +133,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">deletedReference</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">deletedType</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">referenceNumber</span>
+          <td>  <span class="property-name">objectCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -178,9 +151,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">eventList</span>
+          <td>  <span class="property-name">deletedType</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_ShipmentStatusEventBean.html">ShipmentStatusEventBean</a>
+          <td>  <span class="datatype-reference">array of array of string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -196,7 +169,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">shipmentId</span>
+          <td>  <span class="property-name">shipmentType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -213,55 +186,82 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">deletedReference</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">officeId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">eventList</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_ShipmentStatusEventBean.html">ShipmentStatusEventBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;userSchemaId&quot; : 12345,
-  &quot;shipmentType&quot; : &quot;...&quot;,
-  &quot;publicPrivateType&quot; : &quot;...&quot;,
-  &quot;objectCode&quot; : &quot;...&quot;,
+  &quot;shipmentId&quot; : &quot;...&quot;,
   &quot;relatedType&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;relatedRerefence&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;officeId&quot; : 12345,
-  &quot;deletedReference&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;deletedType&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
   &quot;referenceNumber&quot; : &quot;...&quot;,
+  &quot;publicPrivateType&quot; : &quot;...&quot;,
+  &quot;relatedRerefence&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;userSchemaId&quot; : 12345,
+  &quot;objectCode&quot; : &quot;...&quot;,
   &quot;documentHistoryId&quot; : 12345,
+  &quot;deletedType&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;clausesText&quot; : &quot;...&quot;,
+  &quot;shipmentType&quot; : &quot;...&quot;,
+  &quot;notesShownOnCodes&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;deletedReference&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;officeId&quot; : 12345,
   &quot;eventList&quot; : [ [ {
     &quot;commentParams&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;comment&quot; : &quot;...&quot;,
-    &quot;eventName&quot; : &quot;...&quot;
+    &quot;eventName&quot; : &quot;...&quot;,
+    &quot;comment&quot; : &quot;...&quot;
   }, {
     &quot;commentParams&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;comment&quot; : &quot;...&quot;,
-    &quot;eventName&quot; : &quot;...&quot;
+    &quot;eventName&quot; : &quot;...&quot;,
+    &quot;comment&quot; : &quot;...&quot;
   } ], [ {
     &quot;commentParams&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;comment&quot; : &quot;...&quot;,
-    &quot;eventName&quot; : &quot;...&quot;
+    &quot;eventName&quot; : &quot;...&quot;,
+    &quot;comment&quot; : &quot;...&quot;
   }, {
     &quot;commentParams&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;comment&quot; : &quot;...&quot;,
-    &quot;eventName&quot; : &quot;...&quot;
-  } ] ],
-  &quot;clausesText&quot; : &quot;...&quot;,
-  &quot;shipmentId&quot; : &quot;...&quot;,
-  &quot;notesShownOnCodes&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ]
+    &quot;eventName&quot; : &quot;...&quot;,
+    &quot;comment&quot; : &quot;...&quot;
+  } ] ]
 }</pre>
 
         <footer class="footer">

@@ -79,69 +79,6 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">officeUsername</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">name</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">contentsDotDesktop</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">cookieValue</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">osType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">javaClassId</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">id</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">fileUrl</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -160,7 +97,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">officePassword</span>
+          <td>  <span class="property-name">biBaseUrl</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -169,9 +106,81 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">url</span>
+          <td>  <span class="property-name">osType</span>
 </td>
           <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">currentUrl</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">name</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">cookieValue</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">javaClassId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">ldapUserName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">officeUsername</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">id</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">contentsDotDesktop</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -196,25 +205,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">ldapUserName</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">biBaseUrl</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">currentUrl</span>
+          <td>  <span class="property-name">officePassword</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -231,29 +222,38 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">url</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;officeUsername&quot; : &quot;...&quot;,
-  &quot;name&quot; : &quot;...&quot;,
-  &quot;contentsDotDesktop&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;cookieValue&quot; : &quot;...&quot;,
-  &quot;osType&quot; : &quot;...&quot;,
-  &quot;javaClassId&quot; : 12345,
-  &quot;id&quot; : 12345,
   &quot;fileUrl&quot; : &quot;...&quot;,
   &quot;biDestinyUrl&quot; : &quot;...&quot;,
-  &quot;officePassword&quot; : &quot;...&quot;,
-  &quot;url&quot; : &quot;...&quot;,
+  &quot;biBaseUrl&quot; : &quot;...&quot;,
+  &quot;osType&quot; : &quot;...&quot;,
+  &quot;currentUrl&quot; : &quot;...&quot;,
+  &quot;name&quot; : &quot;...&quot;,
+  &quot;cookieValue&quot; : &quot;...&quot;,
+  &quot;javaClassId&quot; : 12345,
+  &quot;ldapUserName&quot; : &quot;...&quot;,
+  &quot;officeUsername&quot; : &quot;...&quot;,
+  &quot;id&quot; : 12345,
+  &quot;contentsDotDesktop&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
   &quot;permissionOffice&quot; : 12345,
   &quot;permissionCode&quot; : &quot;...&quot;,
-  &quot;ldapUserName&quot; : &quot;...&quot;,
-  &quot;biBaseUrl&quot; : &quot;...&quot;,
-  &quot;currentUrl&quot; : &quot;...&quot;,
-  &quot;cookieName&quot; : &quot;...&quot;
+  &quot;officePassword&quot; : &quot;...&quot;,
+  &quot;cookieName&quot; : &quot;...&quot;,
+  &quot;url&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

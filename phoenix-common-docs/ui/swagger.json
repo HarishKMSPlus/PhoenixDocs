@@ -5,6 +5,8 @@
     "version" : "1.0",
     "title" : "phoenix-common"
   },
+  "host" : "scan-it.phxcloud.io",
+  "basePath" : "/phoenix/1.0",
   "schemes" : [],
   "tags" : [
     {
