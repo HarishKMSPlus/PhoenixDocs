@@ -5,7 +5,7 @@
     "version" : "1.0",
     "title" : "phoenix-reports Maven Webapp"
   },
-  "host" : "https://scan-it.phxcloud.io",
+  "host" : "scan-it.phxcloud.io",
   "basePath" : "/phoenix/reports/1.0",
   "schemes" : [],
   "tags" : [
