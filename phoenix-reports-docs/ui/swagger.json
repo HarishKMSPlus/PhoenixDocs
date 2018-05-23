@@ -5,7 +5,8 @@
     "version" : "1.0",
     "title" : "phoenix-reports Maven Webapp"
   },
-  "basePath" : "https://scan-it.phxcloud.io/phoenix/reports/1.0",
+  "host" : "https://scan-it.phxcloud.io",
+  "basePath" : "/phoenix/reports/1.0",
   "schemes" : [],
   "tags" : [
     {
@@ -212,39 +213,15 @@
         },
         {
           "properties" : {
+            "issuingOfficeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
             "disputedInvoices" : {
-"description" : "",
-"type" : "string"
-            },
-            "amountRangeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationType" : {
-"description" : "",
-"type" : "string"
-            },
-            "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "overdueByDays" : {
-"description" : "",
-"type" : "string"
-            },
-            "debugMode" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceTypeText" : {
-"description" : "",
-"type" : "string"
-            },
-            "ageByText" : {
 "description" : "",
 "type" : "string"
             },
@@ -252,19 +229,7 @@
 "description" : "",
 "type" : "string"
             },
-            "agingIntervalsBucket4" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportOnDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "creditOnImport" : {
+            "userId" : {
 "description" : "",
 "type" : "string"
             },
@@ -272,115 +237,7 @@
 "description" : "",
 "type" : "string"
             },
-            "agingIntervalsBucket3" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket6" : {
-"description" : "",
-"type" : "string"
-            },
-            "includeNotes" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceType" : {
-"description" : "",
-"type" : "string"
-            },
-            "issuingOfficeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket5" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceStatusText" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "asOfDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "autoStatementEnabled" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCompany" : {
-"description" : "",
-"type" : "string"
-            },
-            "issuingOfficeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket2" : {
-"description" : "",
-"type" : "string"
-            },
-            "typeReportDetails" : {
-"description" : "",
-"type" : "string"
-            },
-            "ageBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportOnDateText" : {
-"description" : "",
-"type" : "string"
-            },
-            "disputedInvoicesText" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket1" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameTo" : {
-"description" : "",
-"type" : "string"
-            },
             "sortBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortByText" : {
 "description" : "",
 "type" : "string"
             },
@@ -388,15 +245,83 @@
 "description" : "",
 "type" : "string"
             },
-            "typeDownload" : {
+            "companyName" : {
 "description" : "",
 "type" : "string"
             },
-            "amountRangeTo" : {
+            "invoiceType" : {
 "description" : "",
 "type" : "string"
             },
-            "organizationNameFrom" : {
+            "invoiceTypeText" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedInvoicesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket2" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditOnImport" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "asOfDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "ageByText" : {
+"description" : "",
+"type" : "string"
+            },
+            "ageBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket6" : {
+"description" : "",
+"type" : "string"
+            },
+            "overdueByDays" : {
+"description" : "",
+"type" : "string"
+            },
+            "amountRangeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortByText" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCompany" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOnDateText" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "autoStatementEnabled" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket5" : {
 "description" : "",
 "type" : "string"
             },
@@ -405,6 +330,82 @@
 "type" : "string"
             },
             "organizationTypeText" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeReportDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "includeNotes" : {
+"description" : "",
+"type" : "string"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCodeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket1" : {
+"description" : "",
+"type" : "string"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuingOfficeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket4" : {
+"description" : "",
+"type" : "string"
+            },
+            "amountRangeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeDownload" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOnDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket3" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceStatusText" : {
 "description" : "",
 "type" : "string"
             }
@@ -468,83 +469,7 @@
         },
         {
           "properties" : {
-            "accountReceivableBatchTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "collectionOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "bankCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "showCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentRefTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "postedToAR" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTo" : {
-"description" : "",
-"type" : "string"
-            },
             "organizationCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "subLedger" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentRefFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
 "description" : "",
 "type" : "string"
             },
@@ -552,7 +477,31 @@
 "description" : "",
 "type" : "string"
             },
-            "organizationNameFrom" : {
+            "dateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "subLedger" : {
+"description" : "",
+"type" : "string"
+            },
+            "bankCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentRefTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -560,11 +509,63 @@
 "description" : "",
 "type" : "string"
             },
-            "statementCycleFrom" : {
+            "collectionOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "showCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentRefFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "postedToAR" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivableBatchTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameFrom" : {
 "description" : "",
 "type" : "string"
             },
             "accountReceivableBatchFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCodeTo" : {
 "description" : "",
 "type" : "string"
             }
@@ -591,15 +592,39 @@
       "type" : "object",
       "title" : "CommonBean",
           "properties" : {
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "id" : {
+"description" : "",
+"type" : "number"
+            },
+            "inputUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "userSchemaID" : {
+"description" : "",
+"type" : "number"
+            },
+            "updateUserOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "decimalAllowed" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "updateUser" : {
+"description" : "",
+"type" : "string"
+            },
             "officeTimezone" : {
 "description" : "",
 "type" : "string"
             },
-            "alternateCityName" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateDate" : {
+            "schemaName" : {
 "description" : "",
 "type" : "string"
             },
@@ -607,15 +632,19 @@
 "description" : "",
 "type" : "string"
             },
+            "inputUserOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
             "companyId" : {
 "description" : "",
 "type" : "number"
             },
-            "maxNumberOfRows" : {
-"description" : "",
-"type" : "number"
-            },
-            "inputLdapUser" : {
+            "inputDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -627,30 +656,6 @@
 "description" : "",
 "type" : "string"
             },
-            "updateUserOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "id" : {
-"description" : "",
-"type" : "number"
-            },
-            "locale" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateUserFullname" : {
-"description" : "",
-"type" : "string"
-            },
-            "officeCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "userSchemaID" : {
-"description" : "",
-"type" : "number"
-            },
             "status" : {
 "description" : "",
 "type" : "number"
@@ -659,23 +664,11 @@
 "description" : "",
 "type" : "number"
             },
-            "updateUser" : {
+            "locale" : {
 "description" : "",
 "type" : "string"
             },
-            "inputUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "schemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "decimalAllowed" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "inputUserOffice" : {
+            "updateDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -683,7 +676,15 @@
 "description" : "",
 "type" : "boolean"
             },
-            "inputDate" : {
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "maxNumberOfRows" : {
+"description" : "",
+"type" : "number"
+            },
+            "updateUserFullname" : {
 "description" : "",
 "type" : "string"
             }
@@ -771,10 +772,6 @@
       "type" : "object",
       "title" : "GenerateExcelInputBean",
           "properties" : {
-            "standardRateExcluded" : {
-"description" : "",
-"type" : "boolean"
-            },
             "inputUser" : {
 "description" : "",
 "type" : "string"
@@ -783,13 +780,17 @@
 "description" : "",
 "type" : "string"
             },
-            "tariffDownload" : {
-"description" : "",
-"type" : "boolean"
-            },
             "fileId" : {
 "description" : "",
 "type" : "number"
+            },
+            "standardRateExcluded" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "tariffDownload" : {
+"description" : "",
+"type" : "boolean"
             },
             "ratingSearchMainBean" : {
 "description" : "",
@@ -812,11 +813,11 @@
 "description" : "",
 "$ref" : "#/definitions/json_CommonBean"
             },
-            "dataJobQueue" : {
+            "reportJobQueue" : {
 "description" : "",
 "$ref" : "#/definitions/json_JobQueueBean"
             },
-            "reportJobQueue" : {
+            "dataJobQueue" : {
 "description" : "",
 "$ref" : "#/definitions/json_JobQueueBean"
             }
@@ -835,35 +836,7 @@
         },
         {
           "properties" : {
-            "alcie" : {
-"description" : "",
-"type" : "string"
-            },
-            "glAccountCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "subledger" : {
-"description" : "",
-"type" : "string"
-            },
             "compressCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "subAccountCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "saf" : {
-"description" : "",
-"type" : "string"
-            },
-            "divisionCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "description" : {
 "description" : "",
 "type" : "string"
             },
@@ -871,13 +844,41 @@
 "description" : "",
 "type" : "string"
             },
-            "callForMP" : {
+            "saf" : {
 "description" : "",
-"type" : "boolean"
+"type" : "string"
+            },
+            "subAccountCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "subledger" : {
+"description" : "",
+"type" : "string"
+            },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "glAccountCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "divisionCode" : {
+"description" : "",
+"type" : "string"
             },
             "departmentCode" : {
 "description" : "",
 "type" : "string"
+            },
+            "alcie" : {
+"description" : "",
+"type" : "string"
+            },
+            "callForMP" : {
+"description" : "",
+"type" : "boolean"
             },
             "totalLevel" : {
 "description" : "",
@@ -902,103 +903,7 @@
         },
         {
           "properties" : {
-            "glFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "showCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadInvoiceChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "dateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadCustomerChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "sourceFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "showCreditDebit" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadVoucherLineChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "subTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "divTo" : {
-"description" : "",
-"type" : "string"
-            },
             "depFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadVoucherDetailChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "subFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "glBatchFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "runOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "glBatchTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "glTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
@@ -1006,17 +911,113 @@
 "description" : "",
 "type" : "string"
             },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "divTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "glTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "showCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "glFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
+"description" : "",
+"type" : "string"
+            },
             "sourceTo" : {
 "description" : "",
 "type" : "string"
             },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadInvoiceChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "threadCustomerChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "glBatchFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "subFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadVoucherDetailChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
             "depTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "glBatchTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "subTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
             "divFrom" : {
 "description" : "",
 "type" : "string"
+            },
+            "showCreditDebit" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadVoucherLineChunkSize" : {
+"description" : "",
+"type" : "number"
             }
           }
         }
@@ -1033,11 +1034,7 @@
         },
         {
           "properties" : {
-            "reportCriteria" : {
-"description" : "",
-"$ref" : "#/definitions/json_GlDetailCriteriaBean"
-            },
-            "glAccountResult" : {
+            "reportResult" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1047,7 +1044,11 @@
 }
 }
             },
-            "reportResult" : {
+            "reportCriteria" : {
+"description" : "",
+"$ref" : "#/definitions/json_GlDetailCriteriaBean"
+            },
+            "glAccountResult" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1072,119 +1073,7 @@
         },
         {
           "properties" : {
-            "shipmentReferenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "glAccountDescription" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "expectedVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "chargeCategory" : {
-"description" : "",
-"type" : "string"
-            },
-            "taxCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "einNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDirection" : {
-"description" : "",
-"type" : "string"
-            },
-            "checkDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "sub" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorCountry" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileInfo" : {
-"description" : "",
-"type" : "string"
-            },
-            "batchNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "fAmount" : {
-"description" : "",
-"type" : "number"
-            },
-            "originalShipmentRefNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorInfo" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorName" : {
-"description" : "",
-"type" : "string"
-            },
-            "description" : {
-"description" : "",
-"type" : "string"
-            },
-            "postedDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "department" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "currency" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "amount" : {
-"description" : "",
-"type" : "number"
-            },
-            "source" : {
-"description" : "",
-"type" : "string"
-            },
-            "beginningBalance" : {
-"description" : "",
-"type" : "number"
-            },
-            "gl" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalFileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalShipmentRefType" : {
+            "transDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -1192,27 +1081,15 @@
 "description" : "",
 "type" : "object"
             },
-            "checkNumber" : {
+            "checkDate" : {
 "description" : "",
 "type" : "string"
             },
-            "fileNumber" : {
+            "taxCode" : {
 "description" : "",
 "type" : "string"
             },
-            "endingBalance" : {
-"description" : "",
-"type" : "number"
-            },
-            "customerVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "division" : {
+            "description" : {
 "description" : "",
 "type" : "string"
             },
@@ -1220,11 +1097,7 @@
 "description" : "",
 "type" : "string"
             },
-            "customerVendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "typeOfMove" : {
+            "vendorInfo" : {
 "description" : "",
 "type" : "string"
             },
@@ -1232,7 +1105,135 @@
 "description" : "",
 "type" : "string"
             },
-            "transDate" : {
+            "invoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "source" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "gl" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileInfo" : {
+"description" : "",
+"type" : "string"
+            },
+            "fAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "amount" : {
+"description" : "",
+"type" : "number"
+            },
+            "currency" : {
+"description" : "",
+"type" : "string"
+            },
+            "sub" : {
+"description" : "",
+"type" : "string"
+            },
+            "endingBalance" : {
+"description" : "",
+"type" : "number"
+            },
+            "postedDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorCountry" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalShipmentRefType" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalShipmentRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "division" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentReferenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "department" : {
+"description" : "",
+"type" : "string"
+            },
+            "beginningBalance" : {
+"description" : "",
+"type" : "number"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "checkNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "expectedVendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "glAccountDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorName" : {
 "description" : "",
 "type" : "string"
             }
@@ -1251,9 +1252,15 @@
         },
         {
           "properties" : {
-            "country" : {
+            "organizationAlias" : {
 "description" : "",
-"type" : "string"
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             },
             "office" : {
 "description" : "",
@@ -1269,15 +1276,9 @@
 "description" : "",
 "type" : "string"
             },
-            "organizationAlias" : {
+            "country" : {
 "description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
+"type" : "string"
             }
           }
         }
@@ -1337,39 +1338,11 @@
         },
         {
           "properties" : {
-            "accountReceivableBatch" : {
-"description" : "",
-"type" : "string"
-            },
-            "collectionOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountReceivablePostedDateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "end" : {
+            "poolSize" : {
 "description" : "",
 "type" : "number"
             },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
             "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "generalLedgerBatch" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountReceivableSource" : {
 "description" : "",
 "type" : "string"
             },
@@ -1381,7 +1354,47 @@
 "description" : "",
 "type" : "string"
             },
-            "poolSize" : {
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivableSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "end" : {
+"description" : "",
+"type" : "number"
+            },
+            "accountReceivablePostedDateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "collectionOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "expireMinute" : {
+"description" : "",
+"type" : "number"
+            },
+            "accountReceivableBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivableType" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "start" : {
 "description" : "",
 "type" : "number"
             },
@@ -1393,23 +1406,11 @@
 "description" : "",
 "type" : "string"
             },
-            "runUser" : {
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
-            "start" : {
-"description" : "",
-"type" : "number"
-            },
-            "runOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "expireMinute" : {
-"description" : "",
-"type" : "number"
-            },
-            "accountReceivableType" : {
+            "generalLedgerBatch" : {
 "description" : "",
 "type" : "string"
             }
@@ -1441,10 +1442,6 @@
         },
         {
           "properties" : {
-            "jobStatus" : {
-"description" : "",
-"type" : "string"
-            },
             "jobQueueParameters" : {
 "description" : "",
 "type" : "array",
@@ -1462,6 +1459,10 @@
             "expireMinute" : {
 "description" : "",
 "type" : "number"
+            },
+            "jobStatus" : {
+"description" : "",
+"type" : "string"
             }
           }
         }
@@ -1478,11 +1479,11 @@
         },
         {
           "properties" : {
-            "code" : {
+            "value" : {
 "description" : "",
 "type" : "string"
             },
-            "value" : {
+            "code" : {
 "description" : "",
 "type" : "string"
             },
@@ -1505,15 +1506,7 @@
         },
         {
           "properties" : {
-            "runOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
+            "runUser" : {
 "description" : "",
 "type" : "string"
             },
@@ -1521,23 +1514,15 @@
 "description" : "",
 "type" : "string"
             },
-            "glPostedDateFrom" : {
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
+            "runOption" : {
 "description" : "",
 "type" : "string"
             },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "jeBatchNumber" : {
+            "glPostedDateTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -1545,7 +1530,23 @@
 "description" : "",
 "type" : "string"
             },
-            "glPostedDateTo" : {
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "jeBatchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "glPostedDateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             }
@@ -1636,10 +1637,6 @@
         },
         {
           "properties" : {
-            "poolSize" : {
-"description" : "",
-"type" : "number"
-            },
             "truckingDirections" : {
 "description" : "",
 "type" : "array",
@@ -1650,81 +1647,7 @@
 }
 }
             },
-            "miscellaneousDirections" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "deconsolidationPort" : {
-"description" : "",
-"type" : "string"
-            },
-            "sameKeywords" : {
-"description" : "",
-"type" : "string"
-            },
-            "placeOfDelivery" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileSuffixTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileStatus" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "organizationCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "responsiblePerson" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileNumberTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileSuffixFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "oceanDirections" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "includeAdjustment" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
+            "organizationAlias" : {
 "description" : "",
 "type" : "string"
             },
@@ -1732,11 +1655,73 @@
 "description" : "",
 "type" : "number"
             },
-            "placeOfReceipt" : {
+            "deconsolidationPort" : {
 "description" : "",
 "type" : "string"
             },
-            "truckingTypeOfMoves" : {
+            "poolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "dateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "filePrefixFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "actOrEstimate" : {
+"description" : "",
+"type" : "string"
+            },
+            "includeTax" : {
+"description" : "",
+"type" : "string"
+            },
+            "airTypeOfMoves" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "includeAdjustment" : {
+"description" : "",
+"type" : "string"
+            },
+            "deConsolidationPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "sameKeywords" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportTypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileSuffixFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "handlingOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "miscellaneousDirections" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1756,7 +1741,31 @@
 }
 }
             },
-            "airTypeOfMoves" : {
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            },
+            "dischargePort" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileAllocation" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadCounter" : {
+"description" : "",
+"type" : "number"
+            },
+            "oceanTypeOfMoves" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1770,29 +1779,7 @@
 "description" : "",
 "type" : "string"
             },
-            "filePrefixTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "oceanTypeOfMoves" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "dischargePort" : {
-"description" : "",
-"type" : "string"
-            },
-            "includeTax" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAlias" : {
+            "placeOfDelivery" : {
 "description" : "",
 "type" : "string"
             },
@@ -1800,23 +1787,27 @@
 "description" : "",
 "type" : "string"
             },
-            "reportTypeName" : {
+            "organizationCode" : {
 "description" : "",
 "type" : "string"
             },
-            "dateType" : {
+            "placeOfReceipt" : {
 "description" : "",
 "type" : "string"
             },
-            "handlingOffice" : {
+            "fileNumberFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "actOrEstimate" : {
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
-            "readyToCloseOrMatching" : {
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckingTypeOfMoves" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1826,7 +1817,15 @@
 }
 }
             },
-            "miscellaneousTypeOfMoves" : {
+            "loadPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileStatus" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1835,10 +1834,6 @@
   "type" : "string"
 }
 }
-            },
-            "deConsolidationPort" : {
-"description" : "",
-"type" : "string"
             },
             "oceanStopOffGateWays" : {
 "description" : "",
@@ -1850,37 +1845,55 @@
 }
 }
             },
-            "timeZone" : {
+            "dateType" : {
 "description" : "",
 "type" : "string"
             },
-            "dateTo" : {
+            "fileNumberTo" : {
 "description" : "",
 "type" : "string"
             },
-            "fileNumberFrom" : {
+            "filePrefixTo" : {
 "description" : "",
 "type" : "string"
             },
-            "threadCounter" : {
-"description" : "",
-"type" : "number"
-            },
-            "reportType" : {
+            "fileSuffixTo" : {
 "description" : "",
 "type" : "string"
             },
-            "loadPort" : {
+            "oceanDirections" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "readyToCloseOrMatching" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "responsiblePerson" : {
 "description" : "",
 "type" : "string"
             },
-            "filePrefixFrom" : {
+            "miscellaneousTypeOfMoves" : {
 "description" : "",
-"type" : "string"
-            },
-            "siteId" : {
-"description" : "",
-"type" : "number"
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             },
             "fileDeatilsType" : {
 "description" : "",
@@ -1891,18 +1904,6 @@
   "type" : "string"
 }
 }
-            },
-            "dateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileAllocation" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
             }
           }
         }
@@ -1932,7 +1933,15 @@
         },
         {
           "properties" : {
-            "vendorCodeFrom" : {
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "glFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "divisionTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -1940,11 +1949,7 @@
 "description" : "",
 "type" : "string"
             },
-            "subAccFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
+            "glInvoiceDateEnabled" : {
 "description" : "",
 "type" : "string"
             },
@@ -1952,79 +1957,7 @@
 "description" : "",
 "type" : "string"
             },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "vendorAliasFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadVendorChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "glTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorTypeName" : {
-"description" : "",
-"type" : "string"
-            },
-            "subAccTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "glFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "divisionFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "departmentFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "glInvoiceDateEnabled" : {
-"description" : "",
-"type" : "string"
-            },
-            "showDebitCredit" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "subLedger" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycleTo" : {
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -2036,19 +1969,7 @@
 "description" : "",
 "type" : "string"
             },
-            "dateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadLineChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "vendorNameTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "divisionTo" : {
+            "vendorNameFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -2056,7 +1977,87 @@
 "description" : "",
 "type" : "string"
             },
+            "showDebitCredit" : {
+"description" : "",
+"type" : "string"
+            },
+            "subLedger" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadVendorChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "subAccTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
             "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycleTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "subAccFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCodeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "divisionFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "glTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorTypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadLineChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "departmentFrom" : {
 "description" : "",
 "type" : "string"
             }
@@ -2141,261 +2142,11 @@
       "type" : "object",
       "title" : "RatingSearchBean",
           "properties" : {
-            "expirationDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "mapDeconsolidationCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapTranshipment3" : {
-"description" : "",
-"type" : "object"
-            },
-            "controlingEntity" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "destinationNearyByPorts" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiOceanCustomerCode" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapConsolidationCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapOriginInlandCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "originOfRequest" : {
-"description" : "",
-"type" : "string"
-            },
-            "mapNameAccount" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiCompany" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiRateBasis" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiNameAccount" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapMultiPrepaidCollect" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapTranshipment1" : {
-"description" : "",
-"type" : "object"
-            },
-            "dashboardValidationType" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiportOfDisCharge" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapDestinationCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapMultiOrigin" : {
-"description" : "",
-"type" : "object"
-            },
-            "searchType" : {
-"description" : "",
-"type" : "string"
-            },
-            "rateType" : {
-"description" : "",
-"type" : "string"
-            },
-            "ratingMeasurementList" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "$ref" : "#/definitions/json_RatingUnitMeasurementBean"
-}
-}
-            },
-            "multiTranshipment1" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
             "mapRateType" : {
 "description" : "",
 "type" : "object"
             },
-            "multiOrigin" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapAspect" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiRateType" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapRateBasis" : {
-"description" : "",
-"type" : "object"
-            },
             "mapMultiDestination" : {
-"description" : "",
-"type" : "object"
-            },
-            "dashboardValidation" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "multiDestinationCFS" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapCharge" : {
-"description" : "",
-"type" : "object"
-            },
-            "max_expiration_date" : {
-"description" : "",
-"type" : "string"
-            },
-            "status" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortOrder" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiDeconsolidationCFS" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiPrepaidCollect" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "sortOrderBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiCharge" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiPortOfLoading" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "smartOrigin" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "mapCompany" : {
 "description" : "",
 "type" : "object"
             },
@@ -2409,41 +2160,11 @@
 }
 }
             },
-            "mapTranshipment2" : {
+            "mapOceanCustomerCode" : {
 "description" : "",
 "type" : "object"
             },
             "multiConsolidationCFS" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiTranshipment3" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiDestination" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiCustomer" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -2463,13 +2184,285 @@
 }
 }
             },
+            "smartDestination" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "sortOrderBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "dashboardValidation" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "multiRateType" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapMultiPrepaidCollect" : {
+"description" : "",
+"type" : "object"
+            },
             "mapNamedAccountWithCustomer" : {
 "description" : "",
 "type" : "object"
             },
+            "multiRateBasis" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapNameAccount" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapCompany" : {
+"description" : "",
+"type" : "object"
+            },
+            "originNearyByPorts" : {
+"description" : "",
+"type" : "string"
+            },
+            "controlingEntity" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiDestination" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "ratingMeasurementList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_RatingUnitMeasurementBean"
+}
+}
+            },
             "effectiveDate" : {
 "description" : "",
 "type" : "string"
+            },
+            "multiTranshipment1" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "dashboardValidationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortOrder" : {
+"description" : "",
+"type" : "string"
+            },
+            "multiportOfDisCharge" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiDeconsolidationCFS" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "max_expiration_date" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapTranshipment2" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiPrepaidCollect" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiPortOfLoading" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapRateBasis" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapTranshipment1" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapMultiOrigin" : {
+"description" : "",
+"type" : "object"
+            },
+            "expirationDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "multiCharge" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapMultiControllingEntity" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiTranshipment3" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapCharge" : {
+"description" : "",
+"type" : "object"
+            },
+            "rateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "multiCompany" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiDestinationCFS" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiOceanCustomerCode" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapOriginInlandCFS" : {
+"description" : "",
+"type" : "object"
+            },
+            "searchType" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapCustomer" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiOrigin" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapTranshipment3" : {
+"description" : "",
+"type" : "object"
+            },
+            "destinationNearyByPorts" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapAspect" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapConsolidationCFS" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapDeconsolidationCFS" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapPortOfLoading" : {
+"description" : "",
+"type" : "object"
+            },
+            "smartOrigin" : {
+"description" : "",
+"type" : "boolean"
             },
             "multiOriginInlandCFS" : {
 "description" : "",
@@ -2481,33 +2474,41 @@
 }
 }
             },
+            "mapDestinationCFS" : {
+"description" : "",
+"type" : "object"
+            },
             "mapportOfDisCharge" : {
 "description" : "",
 "type" : "object"
             },
-            "mapPortOfLoading" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapOceanCustomerCode" : {
-"description" : "",
-"type" : "object"
-            },
-            "smartDestination" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "originNearyByPorts" : {
+            "status" : {
 "description" : "",
 "type" : "string"
             },
-            "mapMultiControllingEntity" : {
+            "multiCustomer" : {
 "description" : "",
-"type" : "object"
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             },
-            "mapCustomer" : {
+            "multiNameAccount" : {
 "description" : "",
-"type" : "object"
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "originOfRequest" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -2517,6 +2518,26 @@
       "type" : "object",
       "title" : "RatingSearchMainBean",
           "properties" : {
+            "dataLimit" : {
+"description" : "",
+"type" : "number"
+            },
+            "filterSearchBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_RatingSearchBean"
+            },
+            "aspectEnabled" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "filterApplied" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "tabId" : {
+"description" : "",
+"type" : "number"
+            },
             "excludeSearchBean" : {
 "description" : "",
 "$ref" : "#/definitions/json_RatingSearchBean"
@@ -2529,22 +2550,6 @@
 "description" : "",
 "type" : "boolean"
             },
-            "filterSearchBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_RatingSearchBean"
-            },
-            "aspectEnabled" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "dataLimit" : {
-"description" : "",
-"type" : "number"
-            },
-            "tabId" : {
-"description" : "",
-"type" : "number"
-            },
             "moreDetails" : {
 "description" : "",
 "type" : "boolean"
@@ -2554,10 +2559,6 @@
 "type" : "boolean"
             },
             "fromSingleOrMultiple" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "filterApplied" : {
 "description" : "",
 "type" : "boolean"
             },
@@ -2577,7 +2578,7 @@
       "type" : "object",
       "title" : "RatingUnitMeasurementBean",
           "properties" : {
-            "unitMeasurementbeanType" : {
+            "to" : {
 "description" : "",
 "type" : "string"
             },
@@ -2585,11 +2586,11 @@
 "description" : "",
 "type" : "string"
             },
-            "to" : {
+            "measurementType" : {
 "description" : "",
 "type" : "string"
             },
-            "measurementType" : {
+            "unitMeasurementbeanType" : {
 "description" : "",
 "type" : "string"
             }
@@ -2601,7 +2602,11 @@
       "type" : "object",
       "title" : "ResultJson",
           "properties" : {
-            "errorCode" : {
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
+            "message" : {
 "description" : "",
 "type" : "string"
             },
@@ -2609,13 +2614,9 @@
 "description" : "",
 "type" : "number"
             },
-            "message" : {
+            "errorCode" : {
 "description" : "",
 "type" : "string"
-            },
-            "result" : {
-"description" : "",
-"type" : "object"
             }
           },
       "description" : ""
@@ -2856,13 +2857,13 @@
         },
         {
           "properties" : {
-            "showDebitOrCredit" : {
+            "accountTo" : {
 "description" : "",
-"type" : "string"
+"$ref" : "#/definitions/json_GlChartBean"
             },
-            "isIncludeBeginingOrEndingBalance" : {
+            "poolSize" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
             "expireMinute" : {
 "description" : "",
@@ -2872,19 +2873,7 @@
 "description" : "",
 "type" : "string"
             },
-            "asOfDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountFrom" : {
-"description" : "",
-"$ref" : "#/definitions/json_GlChartBean"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "subTotalBy" : {
+            "showDebitOrCredit" : {
 "description" : "",
 "type" : "string"
             },
@@ -2892,11 +2881,15 @@
 "description" : "",
 "type" : "string"
             },
-            "sortBy" : {
+            "reportType" : {
 "description" : "",
 "type" : "string"
             },
-            "accountTo" : {
+            "subTotalBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountFrom" : {
 "description" : "",
 "$ref" : "#/definitions/json_GlChartBean"
             },
@@ -2904,15 +2897,23 @@
 "description" : "",
 "type" : "string"
             },
-            "poolSize" : {
+            "fileType" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             },
             "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
-            "reportType" : {
+            "asOfDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "isIncludeBeginingOrEndingBalance" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortBy" : {
 "description" : "",
 "type" : "string"
             }
@@ -2943,87 +2944,7 @@
 "description" : "",
 "type" : "string"
             },
-            "createLdapUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "userID" : {
-"description" : "",
-"type" : "string"
-            },
-            "standardRateExcluded" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTime" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateOfficeId" : {
-"description" : "",
-"type" : "string"
-            },
-            "tariffFileID" : {
-"description" : "",
-"type" : "number"
-            },
-            "namedAccountDescription" : {
-"description" : "",
-"type" : "string"
-            },
-            "loginUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "namedaccountid" : {
-"description" : "",
-"type" : "string"
-            },
-            "templateName" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerAccount" : {
-"description" : "",
-"type" : "string"
-            },
             "namedAccount" : {
-"description" : "",
-"type" : "string"
-            },
-            "inputDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "createOfficeId" : {
-"description" : "",
-"type" : "string"
-            },
-            "customer" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateLdapUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "tariffName" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "tariffID" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerAccountCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyId" : {
 "description" : "",
 "type" : "string"
             },
@@ -3031,7 +2952,67 @@
 "description" : "",
 "type" : "string"
             },
-            "company" : {
+            "tariffID" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerAccount" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyId" : {
+"description" : "",
+"type" : "string"
+            },
+            "tariffFileID" : {
+"description" : "",
+"type" : "number"
+            },
+            "dateTime" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "templateName" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "namedAccountDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "userDetails" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerAccountCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "loginUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "tariffName" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateOfficeId" : {
+"description" : "",
+"type" : "string"
+            },
+            "userID" : {
+"description" : "",
+"type" : "string"
+            },
+            "namedaccountid" : {
 "description" : "",
 "type" : "string"
             },
@@ -3039,7 +3020,27 @@
 "description" : "",
 "type" : "string"
             },
-            "userDetails" : {
+            "createLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "company" : {
+"description" : "",
+"type" : "string"
+            },
+            "standardRateExcluded" : {
+"description" : "",
+"type" : "string"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "createOfficeId" : {
 "description" : "",
 "type" : "string"
             }
@@ -3056,31 +3057,15 @@
         },
         {
           "properties" : {
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
             "organizationCodeTo" : {
 "description" : "",
 "type" : "string"
             },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "toDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "subLedger" : {
-"description" : "",
-"type" : "string"
-            },
-            "fromDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleFrom" : {
+            "organizationAliasTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -3088,31 +3073,7 @@
 "description" : "",
 "type" : "string"
             },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "openClosedStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadCustomerChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "reportType" : {
+            "statementCycleTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -3120,7 +3081,39 @@
 "description" : "",
 "type" : "string"
             },
-            "organizationAliasFrom" : {
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadCustomerChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "subLedger" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "openClosedStatus" : {
 "description" : "",
 "type" : "string"
             },
@@ -3132,19 +3125,27 @@
 "description" : "",
 "type" : "string"
             },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromDate" : {
+"description" : "",
+"type" : "string"
+            },
             "chunkThresholdSize" : {
 "description" : "",
 "type" : "number"
             },
-            "organizationAliasTo" : {
+            "organizationAliasFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateType" : {
+            "toDate" : {
 "description" : "",
 "type" : "string"
             }
@@ -3163,7 +3164,7 @@
         },
         {
           "properties" : {
-            "listOfTrialBalanceTotalResultBean" : {
+            "listOfTrialBalanceResultBean" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -3177,7 +3178,7 @@
 "description" : "",
 "$ref" : "#/definitions/json_TrialBalanceCriteriaBean"
             },
-            "listOfTrialBalanceResultBean" : {
+            "listOfTrialBalanceTotalResultBean" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -3206,10 +3207,6 @@
 "description" : "",
 "$ref" : "#/definitions/json_TrialBalanceReportBean"
             },
-            "beginingBalance" : {
-"description" : "",
-"type" : "object"
-            },
             "reportResult" : {
 "description" : "",
 "type" : "array",
@@ -3219,6 +3216,10 @@
   "$ref" : "#/definitions/json_TrialBalanceReportResultBean"
 }
 }
+            },
+            "beginingBalance" : {
+"description" : "",
+"type" : "object"
             }
           }
         }
@@ -3235,7 +3236,7 @@
         },
         {
           "properties" : {
-            "vendorType" : {
+            "reportType" : {
 "description" : "",
 "type" : "string"
             },
@@ -3243,7 +3244,15 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorNameTo" : {
+            "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "sort" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorTypeValue" : {
 "description" : "",
 "type" : "string"
             },
@@ -3251,31 +3260,15 @@
 "description" : "",
 "type" : "string"
             },
-            "dateTo" : {
+            "vendorNameTo" : {
 "description" : "",
 "type" : "string"
             },
-            "reportType" : {
+            "dateType" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "trialBalancestatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
@@ -3287,19 +3280,23 @@
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorTypeValue" : {
-"description" : "",
-"type" : "string"
-            },
             "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "dateType" : {
+            "vendorCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "trialBalancestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
@@ -3307,7 +3304,11 @@
 "description" : "",
 "type" : "string"
             },
-            "sort" : {
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycleFrom" : {
 "description" : "",
 "type" : "string"
             }
@@ -3321,6 +3322,118 @@
       "type" : "object",
       "title" : "TrialBalanceReportResultBean",
           "properties" : {
+            "expenseAmountlocal" : {
+"description" : "",
+"type" : "number"
+            },
+            "division" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceBeginingOfPeriod" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "glNo" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherBalancelocal" : {
+"description" : "",
+"type" : "string"
+            },
+            "periodActivityPayments" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignAmountDetail" : {
+"description" : "",
+"type" : "number"
+            },
+            "vendorCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "invDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "localAmountDetail" : {
+"description" : "",
+"type" : "number"
+            },
+            "voucherNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherAmountForeign" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCountry" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherCurrencyDetail" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalShipmentRefType" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "source" : {
+"description" : "",
+"type" : "string"
+            },
             "balanceAtEndOfPeriod" : {
 "description" : "",
 "type" : "string"
@@ -3329,75 +3442,11 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorName" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "localAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "fileDirection" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCountry" : {
-"description" : "",
-"type" : "string"
-            },
-            "source" : {
-"description" : "",
-"type" : "string"
-            },
             "invoiceDate" : {
 "description" : "",
 "type" : "string"
             },
-            "periodActivityVouchers" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorType" : {
-"description" : "",
-"type" : "string"
-            },
-            "glNo" : {
-"description" : "",
-"type" : "string"
-            },
-            "glDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherCurrencyDetail" : {
-"description" : "",
-"type" : "string"
-            },
-            "chargeCategory" : {
-"description" : "",
-"type" : "string"
-            },
-            "balanceAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "paymentReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "foreignAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "shipmentRefType" : {
+            "expectedVendorCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -3405,79 +3454,11 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorCode" : {
+            "paymentType" : {
 "description" : "",
 "type" : "string"
             },
-            "typeOfMove" : {
-"description" : "",
-"type" : "string"
-            },
-            "periodActivityPayments" : {
-"description" : "",
-"type" : "string"
-            },
-            "division" : {
-"description" : "",
-"type" : "string"
-            },
-            "expenseAmountlocal" : {
-"description" : "",
-"type" : "number"
-            },
-            "paymentDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalShipmentRefType" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentRefNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalFileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherAmountForeign" : {
-"description" : "",
-"type" : "number"
-            },
-            "expectedVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherBalancelocal" : {
-"description" : "",
-"type" : "string"
-            },
-            "balanceBeginingOfPeriod" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "invDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileNumber" : {
+            "periodActivityVouchers" : {
 "description" : "",
 "type" : "string"
             },
@@ -3485,7 +3466,27 @@
 "description" : "",
 "type" : "string"
             },
-            "applyTo" : {
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceAmountDetail" : {
+"description" : "",
+"type" : "number"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentRefType" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorName" : {
 "description" : "",
 "type" : "string"
             }
@@ -3502,79 +3503,7 @@
         },
         {
           "properties" : {
-            "invoiceTotal" : {
-"description" : "",
-"type" : "number"
-            },
-            "typeOfMove" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceBalanceRepDt" : {
-"description" : "",
-"type" : "number"
-            },
-            "organizationAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceForeignAmount" : {
-"description" : "",
-"type" : "number"
-            },
-            "arBatch" : {
-"description" : "",
-"type" : "string"
-            },
-            "glDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycle" : {
-"description" : "",
-"type" : "string"
-            },
             "fileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceBalanceSysDt" : {
-"description" : "",
-"type" : "number"
-            },
-            "invoiceType" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceSource" : {
-"description" : "",
-"type" : "string"
-            },
-            "applyTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRep" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationType" : {
-"description" : "",
-"type" : "string"
-            },
-            "sourceCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDirection" : {
 "description" : "",
 "type" : "string"
             },
@@ -3582,19 +3511,79 @@
 "description" : "",
 "type" : "string"
             },
-            "sub" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationName" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalFileNumber" : {
-"description" : "",
-"type" : "string"
-            },
             "countOfTransactions" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "gl" : {
+"description" : "",
+"type" : "string"
+            },
+            "division" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceForeignAmount" : {
+"description" : "",
+"type" : "number"
+            },
+            "glDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceTotal" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceBalanceRepDt" : {
 "description" : "",
 "type" : "number"
             },
@@ -3602,11 +3591,39 @@
 "description" : "",
 "type" : "string"
             },
-            "department" : {
+            "organizationType" : {
 "description" : "",
 "type" : "string"
             },
-            "division" : {
+            "organizationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "salesRep" : {
+"description" : "",
+"type" : "string"
+            },
+            "sub" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceBalanceSysDt" : {
+"description" : "",
+"type" : "number"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "department" : {
 "description" : "",
 "type" : "string"
             },
@@ -3618,39 +3635,23 @@
 "description" : "",
 "type" : "number"
             },
-            "paymentDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "gl" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerReference" : {
-"description" : "",
-"type" : "string"
-            },
             "paymentType" : {
 "description" : "",
 "type" : "string"
             },
-            "shipmentReference" : {
+            "invoiceCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "arBatch" : {
 "description" : "",
 "type" : "string"
             },
             "paymentTotal" : {
-"description" : "",
-"type" : "number"
-            },
-            "invoiceDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceLocalAmount" : {
 "description" : "",
 "type" : "number"
             }
@@ -3739,43 +3740,11 @@
         },
         {
           "properties" : {
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "allStatusSelected" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "vendorStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "runOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
             "sortOption" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "countryCode" : {
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
@@ -3783,7 +3752,7 @@
 "description" : "",
 "type" : "object"
             },
-            "localCurrency" : {
+            "vendorCodeTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -3791,7 +3760,19 @@
 "description" : "",
 "type" : "string"
             },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "countryCode" : {
+"description" : "",
+"type" : "string"
+            },
             "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
 "description" : "",
 "type" : "string"
             },
@@ -3799,11 +3780,31 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorCodeFrom" : {
+            "vendorCycle" : {
 "description" : "",
 "type" : "string"
             },
             "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "allStatusSelected" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCodeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorStatus" : {
 "description" : "",
 "type" : "string"
             }
@@ -3851,27 +3852,11 @@
         },
         {
           "properties" : {
-            "chargeCategory" : {
-"description" : "",
-"type" : "string"
-            },
-            "reservationAccount" : {
-"description" : "",
-"type" : "string"
-            },
-            "comments2" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "contactName" : {
-"description" : "",
-"type" : "string"
-            },
             "taxCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCategory" : {
 "description" : "",
 "type" : "string"
             },
@@ -3879,35 +3864,51 @@
 "description" : "",
 "type" : "string"
             },
-            "alias" : {
-"description" : "",
-"type" : "string"
-            },
-            "type1099" : {
-"description" : "",
-"type" : "string"
-            },
-            "comments1" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "address1" : {
-"description" : "",
-"type" : "string"
-            },
-            "state" : {
-"description" : "",
-"type" : "string"
-            },
             "terms" : {
 "description" : "",
 "type" : "string"
             },
+            "city" : {
+"description" : "",
+"type" : "string"
+            },
+            "countryCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "alias" : {
+"description" : "",
+"type" : "string"
+            },
             "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendor" : {
+"description" : "",
+"type" : "string"
+            },
+            "name2" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "phone" : {
 "description" : "",
 "type" : "string"
             },
@@ -3919,27 +3920,35 @@
 "description" : "",
 "type" : "string"
             },
+            "address2" : {
+"description" : "",
+"type" : "string"
+            },
+            "reservationAccount" : {
+"description" : "",
+"type" : "string"
+            },
+            "type1099" : {
+"description" : "",
+"type" : "string"
+            },
+            "address1" : {
+"description" : "",
+"type" : "string"
+            },
             "zip" : {
 "description" : "",
 "type" : "string"
             },
-            "countryCode" : {
+            "comments2" : {
 "description" : "",
 "type" : "string"
             },
-            "phone" : {
+            "state" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorType" : {
-"description" : "",
-"type" : "string"
-            },
-            "einNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "name2" : {
+            "comments1" : {
 "description" : "",
 "type" : "string"
             },
@@ -3947,15 +3956,7 @@
 "description" : "",
 "type" : "string"
             },
-            "vendor" : {
-"description" : "",
-"type" : "string"
-            },
-            "city" : {
-"description" : "",
-"type" : "string"
-            },
-            "address2" : {
+            "vendorCycle" : {
 "description" : "",
 "type" : "string"
             }
@@ -3974,15 +3975,7 @@
         },
         {
           "properties" : {
-            "transmitBatchFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "userName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
+            "userOffice" : {
 "description" : "",
 "type" : "string"
             },
@@ -3990,23 +3983,43 @@
 "description" : "",
 "type" : "string"
             },
-            "userOffice" : {
+            "transmitBatchFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "apBatch" : {
+            "ldapUserName" : {
 "description" : "",
 "type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
             },
             "threadThreshold" : {
 "description" : "",
 "type" : "number"
             },
-            "sourceCodeFrom" : {
+            "billingType" : {
 "description" : "",
 "type" : "string"
             },
-            "voucherNoFrom" : {
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "apPostedDateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "apPostedDateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
@@ -4018,43 +4031,11 @@
 "description" : "",
 "type" : "string"
             },
-            "ldapUserName" : {
+            "userCode" : {
 "description" : "",
 "type" : "string"
             },
-            "userCompany" : {
-"description" : "",
-"type" : "string"
-            },
-            "transmitBatchTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "apPostedDateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "office" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "sourceCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "apPostedDateFrom" : {
+            "voucherNoFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -4062,7 +4043,23 @@
 "description" : "",
 "type" : "string"
             },
-            "timeZone" : {
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "apBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "transmitBatchTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -4070,11 +4067,15 @@
 "description" : "",
 "type" : "number"
             },
-            "companyName" : {
+            "userCompany" : {
 "description" : "",
 "type" : "string"
             },
-            "billingType" : {
+            "userName" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceCodeFrom" : {
 "description" : "",
 "type" : "string"
             }
@@ -4106,163 +4107,7 @@
         },
         {
           "properties" : {
-            "agingIntervalsBucket4" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket1" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "ageByText" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket3" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCompany" : {
-"description" : "",
-"type" : "string"
-            },
-            "creditOnImport" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "creditHold" : {
-"description" : "",
-"type" : "string"
-            },
             "reportOnDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceTypeText" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationTypeText" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket5" : {
-"description" : "",
-"type" : "string"
-            },
-            "typeReportDetails" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationType" : {
-"description" : "",
-"type" : "string"
-            },
-            "schemaId" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "issuingOfficeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "ageBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
-"description" : "",
-"type" : "string"
-            },
-            "disputedInvoices" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortByText" : {
-"description" : "",
-"type" : "string"
-            },
-            "overdueByDays" : {
-"description" : "",
-"type" : "string"
-            },
-            "disputedInvoicesText" : {
-"description" : "",
-"type" : "string"
-            },
-            "amountRangeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "amountRangeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportOnDateText" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket2" : {
-"description" : "",
-"type" : "string"
-            },
-            "asOfDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "agingIntervalsBucket6" : {
-"description" : "",
-"type" : "string"
-            },
-            "issuingOfficeFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -4270,27 +4115,7 @@
 "description" : "",
 "type" : "string"
             },
-            "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "autoStatementEnabled" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceStatusText" : {
-"description" : "",
-"type" : "string"
-            },
-            "debugMode" : {
+            "typeReportDetails" : {
 "description" : "",
 "type" : "string"
             },
@@ -4298,7 +4123,183 @@
 "description" : "",
 "type" : "string"
             },
+            "userCompany" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket3" : {
+"description" : "",
+"type" : "string"
+            },
+            "amountRangeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuingOfficeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortByText" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "issuingOfficeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "autoStatementEnabled" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditOnImport" : {
+"description" : "",
+"type" : "string"
+            },
+            "overdueByDays" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "creditHold" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket5" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationTypeText" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket1" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCodeFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket2" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket6" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportOnDateText" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceTypeText" : {
+"description" : "",
+"type" : "string"
+            },
             "invoiceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceStatusText" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaId" : {
+"description" : "",
+"type" : "string"
+            },
+            "agingIntervalsBucket4" : {
+"description" : "",
+"type" : "string"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "ageBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "amountRangeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedInvoicesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "disputedInvoices" : {
+"description" : "",
+"type" : "string"
+            },
+            "asOfDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "ageByText" : {
 "description" : "",
 "type" : "string"
             }
@@ -4362,27 +4363,7 @@
         },
         {
           "properties" : {
-            "accountReceivableBatchFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameTo" : {
-"description" : "",
-"type" : "string"
-            },
             "organizationCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCodeTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -4390,11 +4371,23 @@
 "description" : "",
 "type" : "string"
             },
-            "organizationAliasFrom" : {
+            "postedToAR" : {
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
+            "organizationNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "showCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -4406,27 +4399,7 @@
 "description" : "",
 "type" : "string"
             },
-            "subLedger" : {
-"description" : "",
-"type" : "string"
-            },
-            "collectionOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycleTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "postedToAR" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountReceivableBatchTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentRefTo" : {
+            "organizationAliasFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -4434,23 +4407,39 @@
 "description" : "",
 "type" : "string"
             },
-            "statementCycleFrom" : {
+            "subLedger" : {
 "description" : "",
 "type" : "string"
             },
-            "showCurrency" : {
+            "organizationCodeTo" : {
 "description" : "",
 "type" : "string"
             },
-            "bankCode" : {
+            "accountReceivableBatchFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "dateFrom" : {
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "collectionOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivableBatchTo" : {
 "description" : "",
 "type" : "string"
             },
             "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentRefTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -4459,6 +4448,18 @@
 "type" : "string"
             },
             "paymentRefFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "bankCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycleTo" : {
 "description" : "",
 "type" : "string"
             }
@@ -4485,35 +4486,11 @@
       "type" : "object",
       "title" : "CommonBean",
           "properties" : {
-            "id" : {
-"description" : "",
-"type" : "number"
-            },
-            "status" : {
-"description" : "",
-"type" : "number"
-            },
-            "inputUser" : {
+            "inputUserFullname" : {
 "description" : "",
 "type" : "string"
             },
-            "officeTimezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "recordOverflow" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "updateLdapUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateDate" : {
+            "alternateCityName" : {
 "description" : "",
 "type" : "string"
             },
@@ -4521,47 +4498,23 @@
 "description" : "",
 "type" : "string"
             },
-            "maxNumberOfRows" : {
-"description" : "",
-"type" : "number"
-            },
             "updateUserFullname" : {
 "description" : "",
 "type" : "string"
             },
-            "inputLdapUser" : {
+            "inputUser" : {
 "description" : "",
 "type" : "string"
             },
-            "companyId" : {
+            "status" : {
 "description" : "",
 "type" : "number"
-            },
-            "alternateCityName" : {
-"description" : "",
-"type" : "string"
-            },
-            "inputUserOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "inputUserFullname" : {
-"description" : "",
-"type" : "string"
             },
             "userSchemaID" : {
 "description" : "",
 "type" : "number"
             },
-            "officeId" : {
-"description" : "",
-"type" : "number"
-            },
-            "decimalAllowed" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "inputDate" : {
+            "inputLdapUser" : {
 "description" : "",
 "type" : "string"
             },
@@ -4569,15 +4522,63 @@
 "description" : "",
 "type" : "string"
             },
-            "updateUserOffice" : {
+            "schemaName" : {
 "description" : "",
 "type" : "string"
+            },
+            "updateUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "companyId" : {
+"description" : "",
+"type" : "number"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "id" : {
+"description" : "",
+"type" : "number"
             },
             "locale" : {
 "description" : "",
 "type" : "string"
             },
-            "schemaName" : {
+            "updateLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "decimalAllowed" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "officeTimezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateUserOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "recordOverflow" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "maxNumberOfRows" : {
+"description" : "",
+"type" : "number"
+            },
+            "inputUserOffice" : {
 "description" : "",
 "type" : "string"
             }
@@ -4665,7 +4666,7 @@
       "type" : "object",
       "title" : "GenerateExcelInputBean",
           "properties" : {
-            "tariffDownload" : {
+            "standardRateExcluded" : {
 "description" : "",
 "type" : "boolean"
             },
@@ -4673,21 +4674,21 @@
 "description" : "",
 "$ref" : "#/definitions/json_RatingSearchMainBean"
             },
-            "standardRateExcluded" : {
-"description" : "",
-"type" : "boolean"
-            },
             "inputUser" : {
 "description" : "",
 "type" : "string"
             },
-            "fileName" : {
+            "tariffDownload" : {
 "description" : "",
-"type" : "string"
+"type" : "boolean"
             },
             "fileId" : {
 "description" : "",
 "type" : "number"
+            },
+            "fileName" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -4702,15 +4703,15 @@
         },
         {
           "properties" : {
+            "dataJobQueue" : {
+"description" : "",
+"$ref" : "#/definitions/json_JobQueueBean"
+            },
             "criteria" : {
 "description" : "",
 "$ref" : "#/definitions/json_CommonBean"
             },
             "reportJobQueue" : {
-"description" : "",
-"$ref" : "#/definitions/json_JobQueueBean"
-            },
-            "dataJobQueue" : {
 "description" : "",
 "$ref" : "#/definitions/json_JobQueueBean"
             }
@@ -4729,19 +4730,19 @@
         },
         {
           "properties" : {
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "callForMP" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "totalLevel" : {
+"description" : "",
+"type" : "string"
+            },
             "departmentCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "subAccountCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "subledger" : {
-"description" : "",
-"type" : "string"
-            },
-            "compressCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -4749,23 +4750,11 @@
 "description" : "",
 "type" : "string"
             },
+            "distributionCode" : {
+"description" : "",
+"type" : "string"
+            },
             "saf" : {
-"description" : "",
-"type" : "string"
-            },
-            "description" : {
-"description" : "",
-"type" : "string"
-            },
-            "glChartType" : {
-"description" : "",
-"type" : "string"
-            },
-            "totalLevel" : {
-"description" : "",
-"type" : "string"
-            },
-            "glAccountCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -4773,13 +4762,25 @@
 "description" : "",
 "type" : "string"
             },
-            "distributionCode" : {
+            "compressCode" : {
 "description" : "",
 "type" : "string"
             },
-            "callForMP" : {
+            "glAccountCode" : {
 "description" : "",
-"type" : "boolean"
+"type" : "string"
+            },
+            "subledger" : {
+"description" : "",
+"type" : "string"
+            },
+            "glChartType" : {
+"description" : "",
+"type" : "string"
+            },
+            "subAccountCode" : {
+"description" : "",
+"type" : "string"
             }
           }
         }
@@ -4796,35 +4797,7 @@
         },
         {
           "properties" : {
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "glBatchTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "depFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "showCreditDebit" : {
-"description" : "",
-"type" : "string"
-            },
-            "subFrom" : {
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
@@ -4832,43 +4805,19 @@
 "description" : "",
 "type" : "string"
             },
-            "threadInvoiceChunkSize" : {
+            "threadVoucherDetailChunkSize" : {
 "description" : "",
 "type" : "number"
             },
-            "includeBegEndBalance" : {
+            "divTo" : {
 "description" : "",
 "type" : "string"
-            },
-            "threadCustomerChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "threadVoucherLineChunkSize" : {
-"description" : "",
-"type" : "number"
             },
             "companyName" : {
 "description" : "",
 "type" : "string"
             },
-            "divFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "depTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "sourceFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "glTo" : {
+            "reportType" : {
 "description" : "",
 "type" : "string"
             },
@@ -4876,7 +4825,15 @@
 "description" : "",
 "type" : "string"
             },
-            "sourceTo" : {
+            "includeBegEndBalance" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadInvoiceChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "userCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -4888,11 +4845,43 @@
 "description" : "",
 "type" : "string"
             },
-            "threadVoucherDetailChunkSize" : {
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "depFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadCustomerChunkSize" : {
 "description" : "",
 "type" : "number"
             },
+            "sourceFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "subFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "depTo" : {
+"description" : "",
+"type" : "string"
+            },
             "subTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "divFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -4904,11 +4893,23 @@
 "description" : "",
 "type" : "string"
             },
-            "divTo" : {
+            "showCreditDebit" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadVoucherLineChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "glTo" : {
 "description" : "",
 "type" : "string"
             },
             "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "glBatchTo" : {
 "description" : "",
 "type" : "string"
             }
@@ -4927,16 +4928,6 @@
         },
         {
           "properties" : {
-            "reportResult" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "$ref" : "#/definitions/json_GlDetailReportResultBean"
-}
-}
-            },
             "glAccountResult" : {
 "description" : "",
 "type" : "array",
@@ -4950,6 +4941,16 @@
             "reportCriteria" : {
 "description" : "",
 "$ref" : "#/definitions/json_GlDetailCriteriaBean"
+            },
+            "reportResult" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_GlDetailReportResultBean"
+}
+}
             }
           }
         }
@@ -4966,159 +4967,15 @@
         },
         {
           "properties" : {
-            "endingBalance" : {
-"description" : "",
-"type" : "number"
-            },
-            "einNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorName" : {
-"description" : "",
-"type" : "string"
-            },
-            "source" : {
-"description" : "",
-"type" : "string"
-            },
-            "amount" : {
-"description" : "",
-"type" : "number"
-            },
-            "beginningBalance" : {
-"description" : "",
-"type" : "number"
-            },
-            "customerVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "beginningBalanceMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "description" : {
-"description" : "",
-"type" : "string"
-            },
-            "sub" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorType" : {
-"description" : "",
-"type" : "string"
-            },
             "fAmount" : {
 "description" : "",
 "type" : "number"
             },
-            "typeOfMove" : {
+            "endingBalance" : {
 "description" : "",
-"type" : "string"
-            },
-            "originalShipmentRefNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "batchNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "chargeCategory" : {
-"description" : "",
-"type" : "string"
-            },
-            "division" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "checkNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "department" : {
-"description" : "",
-"type" : "string"
-            },
-            "currency" : {
-"description" : "",
-"type" : "string"
-            },
-            "postedDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDirection" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalFileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "expectedVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "glAccountDescription" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentReferenceType" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerVendorCountry" : {
-"description" : "",
-"type" : "string"
-            },
-            "taxCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentReferenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "transDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "checkDate" : {
-"description" : "",
-"type" : "string"
+"type" : "number"
             },
             "originalShipmentRefType" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileInfo" : {
-"description" : "",
-"type" : "string"
-            },
-            "gl" : {
 "description" : "",
 "type" : "string"
             },
@@ -5126,7 +4983,151 @@
 "description" : "",
 "type" : "string"
             },
+            "description" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "amount" : {
+"description" : "",
+"type" : "number"
+            },
+            "customerVendorCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "glAccountDescription" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "beginningBalance" : {
+"description" : "",
+"type" : "number"
+            },
+            "beginningBalanceMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "postedDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "source" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "checkDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorName" : {
+"description" : "",
+"type" : "string"
+            },
+            "transDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "currency" : {
+"description" : "",
+"type" : "string"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorCountry" : {
+"description" : "",
+"type" : "string"
+            },
+            "expectedVendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "gl" : {
+"description" : "",
+"type" : "string"
+            },
+            "sub" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "batchNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentReferenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
             "vendorInfo" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "checkNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentReferenceType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerVendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "department" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalShipmentRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileInfo" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "division" : {
 "description" : "",
 "type" : "string"
             }
@@ -5145,15 +5146,9 @@
         },
         {
           "properties" : {
-            "organizationAlias" : {
+            "country" : {
 "description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
+"type" : "string"
             },
             "office" : {
 "description" : "",
@@ -5165,13 +5160,19 @@
 }
 }
             },
-            "country" : {
-"description" : "",
-"type" : "string"
-            },
             "reportType" : {
 "description" : "",
 "type" : "string"
+            },
+            "organizationAlias" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             }
           }
         }
@@ -5231,19 +5232,59 @@
         },
         {
           "properties" : {
-            "timeZone" : {
+            "accountReceivableBatch" : {
 "description" : "",
 "type" : "string"
             },
-            "accountReceivablePostedDateFrom" : {
+            "fileType" : {
 "description" : "",
 "type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivablePostedDateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivableSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "end" : {
+"description" : "",
+"type" : "number"
+            },
+            "expireMinute" : {
+"description" : "",
+"type" : "number"
             },
             "collectionOffice" : {
 "description" : "",
 "type" : "string"
             },
+            "poolSize" : {
+"description" : "",
+"type" : "number"
+            },
             "accountReceivableType" : {
+"description" : "",
+"type" : "string"
+            },
+            "start" : {
+"description" : "",
+"type" : "number"
+            },
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
@@ -5255,57 +5296,17 @@
 "description" : "",
 "type" : "string"
             },
-            "userCode" : {
+            "asOfInvoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "accountReceivablePostedDateFrom" : {
 "description" : "",
 "type" : "string"
             },
             "runOption" : {
 "description" : "",
 "type" : "string"
-            },
-            "end" : {
-"description" : "",
-"type" : "number"
-            },
-            "start" : {
-"description" : "",
-"type" : "number"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountReceivableSource" : {
-"description" : "",
-"type" : "string"
-            },
-            "poolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "accountReceivableBatch" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "asOfInvoiceDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountReceivablePostedDateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "expireMinute" : {
-"description" : "",
-"type" : "number"
             }
           }
         }
@@ -5335,9 +5336,9 @@
         },
         {
           "properties" : {
-            "jobStatus" : {
+            "expireMinute" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
             "name" : {
 "description" : "",
@@ -5353,9 +5354,9 @@
 }
 }
             },
-            "expireMinute" : {
+            "jobStatus" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             }
           }
         }
@@ -5372,15 +5373,15 @@
         },
         {
           "properties" : {
+            "value" : {
+"description" : "",
+"type" : "string"
+            },
             "jobQueueId" : {
 "description" : "",
 "type" : "number"
             },
             "code" : {
-"description" : "",
-"type" : "string"
-            },
-            "value" : {
 "description" : "",
 "type" : "string"
             }
@@ -5399,7 +5400,27 @@
         },
         {
           "properties" : {
-            "companyName" : {
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "glPostedDateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
 "description" : "",
 "type" : "string"
             },
@@ -5411,14 +5432,6 @@
 "description" : "",
 "type" : "string"
             },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
             "asOfPeriodEnding" : {
 "description" : "",
 "type" : "string"
@@ -5427,19 +5440,7 @@
 "description" : "",
 "type" : "string"
             },
-            "glPostedDateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "runOption" : {
+            "companyName" : {
 "description" : "",
 "type" : "string"
             }
@@ -5530,7 +5531,7 @@
         },
         {
           "properties" : {
-            "airTypeOfMoves" : {
+            "fileDeatilsType" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -5540,57 +5541,19 @@
 }
 }
             },
-            "miscellaneousDirections" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "airConsoleType" : {
+            "deconsolidationPort" : {
 "description" : "",
 "type" : "string"
             },
-            "fileNumberFrom" : {
+            "fileNumberTo" : {
 "description" : "",
 "type" : "string"
             },
-            "organizationCode" : {
+            "responsiblePerson" : {
 "description" : "",
 "type" : "string"
             },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "truckingTypeOfMoves" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "includeTax" : {
-"description" : "",
-"type" : "string"
-            },
-            "airDirections" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "siteId" : {
+            "expireMinute" : {
 "description" : "",
 "type" : "number"
             },
@@ -5604,115 +5567,7 @@
 }
 }
             },
-            "includeAdjustment" : {
-"description" : "",
-"type" : "string"
-            },
-            "oceanTypeOfMoves" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "placeOfDelivery" : {
-"description" : "",
-"type" : "string"
-            },
-            "expireMinute" : {
-"description" : "",
-"type" : "number"
-            },
-            "filePrefixFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "statementCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "deConsolidationPort" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDeatilsType" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "actOrEstimate" : {
-"description" : "",
-"type" : "string"
-            },
-            "truckingDirections" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "fileSuffixTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileAllocation" : {
-"description" : "",
-"type" : "string"
-            },
-            "placeOfReceipt" : {
-"description" : "",
-"type" : "string"
-            },
-            "poolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "deconsolidationPort" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileNumberTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "loadPort" : {
-"description" : "",
-"type" : "string"
-            },
-            "miscellaneousTypeOfMoves" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "organizationAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "dischargePort" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
+            "filePrefixTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -5726,17 +5581,13 @@
 }
 }
             },
-            "reportTypeName" : {
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
+            "threadCounter" : {
 "description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
+"type" : "number"
             },
             "readyToCloseOrMatching" : {
 "description" : "",
@@ -5748,25 +5599,123 @@
 }
 }
             },
-            "sameKeywords" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateFrom" : {
-"description" : "",
-"type" : "string"
-            },
             "dateType" : {
 "description" : "",
 "type" : "string"
             },
-            "threadCounter" : {
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileSuffixTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "truckingTypeOfMoves" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "loadPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileSuffixFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "oceanTypeOfMoves" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "poolSize" : {
 "description" : "",
 "type" : "number"
+            },
+            "truckingDirections" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "airConsoleType" : {
+"description" : "",
+"type" : "string"
+            },
+            "statementCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "includeTax" : {
+"description" : "",
+"type" : "string"
+            },
+            "actOrEstimate" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "miscellaneousDirections" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileAllocation" : {
+"description" : "",
+"type" : "string"
+            },
+            "airTypeOfMoves" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "siteId" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationAlias" : {
+"description" : "",
+"type" : "string"
             },
             "oceanDirections" : {
 "description" : "",
@@ -5778,15 +5727,37 @@
 }
 }
             },
-            "filePrefixTo" : {
+            "placeOfReceipt" : {
 "description" : "",
 "type" : "string"
             },
-            "fileSuffixFrom" : {
+            "airDirections" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "localCurrency" : {
 "description" : "",
 "type" : "string"
             },
-            "dateTo" : {
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePort" : {
+"description" : "",
+"type" : "string"
+            },
+            "sameKeywords" : {
 "description" : "",
 "type" : "string"
             },
@@ -5794,9 +5765,39 @@
 "description" : "",
 "type" : "string"
             },
-            "responsiblePerson" : {
+            "filePrefixFrom" : {
 "description" : "",
 "type" : "string"
+            },
+            "placeOfDelivery" : {
+"description" : "",
+"type" : "string"
+            },
+            "includeAdjustment" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumberFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "deConsolidationPort" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportTypeName" : {
+"description" : "",
+"type" : "string"
+            },
+            "miscellaneousTypeOfMoves" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             }
           }
         }
@@ -5826,75 +5827,7 @@
         },
         {
           "properties" : {
-            "vendorCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadLineChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "departmentFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
             "vendorType" : {
-"description" : "",
-"type" : "string"
-            },
-            "glFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycleTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadVendorChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "divisionTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "glInvoiceDateEnabledText" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorAliasFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "subAccFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -5902,31 +5835,7 @@
 "description" : "",
 "type" : "string"
             },
-            "glInvoiceDateEnabled" : {
-"description" : "",
-"type" : "string"
-            },
-            "subLedger" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorAliasTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "glTo" : {
+            "vendorCodeFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -5934,15 +5843,43 @@
 "description" : "",
 "type" : "string"
             },
-            "subAccTo" : {
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorNameTo" : {
+            "departmentFrom" : {
 "description" : "",
 "type" : "string"
             },
-            "showDebitCredit" : {
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "divisionFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadLineChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "glInvoiceDateEnabled" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycleFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -5950,7 +5887,71 @@
 "description" : "",
 "type" : "string"
             },
-            "divisionFrom" : {
+            "glFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "timezone" : {
+"description" : "",
+"type" : "string"
+            },
+            "subLedger" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycleTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadVendorChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "vendorCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "showDebitCredit" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "vendorNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "subAccFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "divisionTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "glTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "subAccTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorAliasTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorNameTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "glInvoiceDateEnabledText" : {
 "description" : "",
 "type" : "string"
             }
@@ -6035,95 +6036,9 @@
       "type" : "object",
       "title" : "RatingSearchBean",
           "properties" : {
-            "mapMultiOrigin" : {
+            "mapMultiControllingEntity" : {
 "description" : "",
 "type" : "object"
-            },
-            "mapTranshipment1" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapConsolidationCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "ratingMeasurementList" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "$ref" : "#/definitions/json_RatingUnitMeasurementBean"
-}
-}
-            },
-            "multiCharge" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapMultiDestination" : {
-"description" : "",
-"type" : "object"
-            },
-            "smartOrigin" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "multiTranshipment2" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapNamedAccountWithCustomer" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiRateBasis" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapAspect" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapCharge" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapTranshipment3" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapTranshipment2" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiCustomer" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
             },
             "multiDeconsolidationCFS" : {
 "description" : "",
@@ -6135,209 +6050,15 @@
 }
 }
             },
-            "mapDestinationCFS" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapRateBasis" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapCompany" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiTranshipment3" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "effectiveDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "mapPortOfLoading" : {
-"description" : "",
-"type" : "object"
-            },
-            "originOfRequest" : {
-"description" : "",
-"type" : "string"
-            },
             "mapOriginInlandCFS" : {
 "description" : "",
 "type" : "object"
             },
-            "multiDestinationCFS" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapportOfDisCharge" : {
+            "mapDeconsolidationCFS" : {
 "description" : "",
 "type" : "object"
             },
-            "dashboardValidation" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "mapMultiPrepaidCollect" : {
-"description" : "",
-"type" : "object"
-            },
-            "destinationNearyByPorts" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiCompany" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapMultiControllingEntity" : {
-"description" : "",
-"type" : "object"
-            },
-            "searchType" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortOrderBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "mapRateType" : {
-"description" : "",
-"type" : "object"
-            },
-            "status" : {
-"description" : "",
-"type" : "string"
-            },
-            "mapCustomer" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiOrigin" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "rateType" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiTranshipment1" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "max_expiration_date" : {
-"description" : "",
-"type" : "string"
-            },
-            "originNearyByPorts" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiOriginInlandCFS" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiRateType" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "mapNameAccount" : {
-"description" : "",
-"type" : "object"
-            },
-            "mapOceanCustomerCode" : {
-"description" : "",
-"type" : "object"
-            },
-            "multiportOfDisCharge" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiDestination" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "multiAspect" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "controlingEntity" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "sortOrder" : {
-"description" : "",
-"type" : "string"
-            },
-            "multiConsolidationCFS" : {
+            "multiTranshipment3" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -6357,13 +6078,165 @@
 }
 }
             },
-            "mapDeconsolidationCFS" : {
+            "rateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "destinationNearyByPorts" : {
+"description" : "",
+"type" : "string"
+            },
+            "originNearyByPorts" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapNamedAccountWithCustomer" : {
 "description" : "",
 "type" : "object"
             },
-            "dashboardValidationType" : {
+            "sortOrderBy" : {
 "description" : "",
 "type" : "string"
+            },
+            "multiDestination" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiPrepaidCollect" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "effectiveDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapMultiDestination" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapCustomer" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapRateBasis" : {
+"description" : "",
+"type" : "object"
+            },
+            "ratingMeasurementList" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_RatingUnitMeasurementBean"
+}
+}
+            },
+            "mapCharge" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapConsolidationCFS" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiRateBasis" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapMultiPrepaidCollect" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapNameAccount" : {
+"description" : "",
+"type" : "object"
+            },
+            "status" : {
+"description" : "",
+"type" : "string"
+            },
+            "expirationDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "multiCustomer" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiOriginInlandCFS" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapOceanCustomerCode" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiTranshipment2" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "smartDestination" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "multiportOfDisCharge" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "smartOrigin" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "mapRateType" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapDestinationCFS" : {
+"description" : "",
+"type" : "object"
             },
             "multiNameAccount" : {
 "description" : "",
@@ -6375,11 +6248,75 @@
 }
 }
             },
-            "expirationDate" : {
+            "originOfRequest" : {
 "description" : "",
 "type" : "string"
             },
-            "multiPrepaidCollect" : {
+            "mapTranshipment2" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiTranshipment1" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapportOfDisCharge" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiCompany" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapAspect" : {
+"description" : "",
+"type" : "object"
+            },
+            "sortOrder" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapCompany" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiCharge" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiAspect" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapTranshipment1" : {
+"description" : "",
+"type" : "object"
+            },
+            "multiRateType" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -6399,9 +6336,73 @@
 }
 }
             },
-            "smartDestination" : {
+            "max_expiration_date" : {
+"description" : "",
+"type" : "string"
+            },
+            "multiConsolidationCFS" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "multiDestinationCFS" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "searchType" : {
+"description" : "",
+"type" : "string"
+            },
+            "mapPortOfLoading" : {
+"description" : "",
+"type" : "object"
+            },
+            "mapTranshipment3" : {
+"description" : "",
+"type" : "object"
+            },
+            "dashboardValidation" : {
 "description" : "",
 "type" : "boolean"
+            },
+            "multiOrigin" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "mapMultiOrigin" : {
+"description" : "",
+"type" : "object"
+            },
+            "dashboardValidationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "controlingEntity" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             }
           },
       "description" : ""
@@ -6411,19 +6412,7 @@
       "type" : "object",
       "title" : "RatingSearchMainBean",
           "properties" : {
-            "fromModifySearch" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "aspectEnabled" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "tabId" : {
-"description" : "",
-"type" : "number"
-            },
-            "dataStartFrom" : {
+            "dataLimit" : {
 "description" : "",
 "type" : "number"
             },
@@ -6431,15 +6420,15 @@
 "description" : "",
 "type" : "boolean"
             },
-            "fromSingleOrMultiple" : {
+            "filterSearchBean" : {
 "description" : "",
-"type" : "boolean"
+"$ref" : "#/definitions/json_RatingSearchBean"
             },
-            "requireFilterData" : {
+            "dataStartFrom" : {
 "description" : "",
-"type" : "boolean"
+"type" : "number"
             },
-            "excludeSearchBean" : {
+            "includeSearchBean" : {
 "description" : "",
 "$ref" : "#/definitions/json_RatingSearchBean"
             },
@@ -6447,21 +6436,33 @@
 "description" : "",
 "type" : "boolean"
             },
-            "dataLimit" : {
+            "excludeSearchBean" : {
 "description" : "",
-"type" : "number"
+"$ref" : "#/definitions/json_RatingSearchBean"
+            },
+            "fromSingleOrMultiple" : {
+"description" : "",
+"type" : "boolean"
             },
             "moreDetails" : {
 "description" : "",
 "type" : "boolean"
             },
-            "filterSearchBean" : {
+            "tabId" : {
 "description" : "",
-"$ref" : "#/definitions/json_RatingSearchBean"
+"type" : "number"
             },
-            "includeSearchBean" : {
+            "requireFilterData" : {
 "description" : "",
-"$ref" : "#/definitions/json_RatingSearchBean"
+"type" : "boolean"
+            },
+            "fromModifySearch" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "aspectEnabled" : {
+"description" : "",
+"type" : "boolean"
             }
           },
       "description" : ""
@@ -6471,19 +6472,19 @@
       "type" : "object",
       "title" : "RatingUnitMeasurementBean",
           "properties" : {
-            "unitMeasurementbeanType" : {
-"description" : "",
-"type" : "string"
-            },
             "measurementType" : {
 "description" : "",
 "type" : "string"
             },
-            "from" : {
+            "unitMeasurementbeanType" : {
 "description" : "",
 "type" : "string"
             },
             "to" : {
+"description" : "",
+"type" : "string"
+            },
+            "from" : {
 "description" : "",
 "type" : "string"
             }
@@ -6495,7 +6496,7 @@
       "type" : "object",
       "title" : "ResultJson",
           "properties" : {
-            "errorCode" : {
+            "message" : {
 "description" : "",
 "type" : "string"
             },
@@ -6503,7 +6504,7 @@
 "description" : "",
 "type" : "number"
             },
-            "message" : {
+            "errorCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -6750,23 +6751,7 @@
         },
         {
           "properties" : {
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "accountTo" : {
-"description" : "",
-"$ref" : "#/definitions/json_GlChartBean"
-            },
             "asOfDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "subTotalBy" : {
 "description" : "",
 "type" : "string"
             },
@@ -6774,11 +6759,31 @@
 "description" : "",
 "$ref" : "#/definitions/json_GlChartBean"
             },
-            "includeZeroActivity" : {
+            "reportType" : {
 "description" : "",
 "type" : "string"
             },
+            "accountTo" : {
+"description" : "",
+"$ref" : "#/definitions/json_GlChartBean"
+            },
             "sortBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "expireMinute" : {
+"description" : "",
+"type" : "number"
+            },
+            "isIncludeBeginingOrEndingBalance" : {
 "description" : "",
 "type" : "string"
             },
@@ -6790,25 +6795,21 @@
 "description" : "",
 "type" : "number"
             },
+            "includeZeroActivity" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
             "companyName" : {
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
+            "subTotalBy" : {
 "description" : "",
 "type" : "string"
-            },
-            "isIncludeBeginingOrEndingBalance" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "expireMinute" : {
-"description" : "",
-"type" : "number"
             }
           }
         }
@@ -6833,11 +6834,39 @@
       "type" : "object",
       "title" : "TariffsBean",
           "properties" : {
+            "referenceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "standardRateExcluded" : {
+"description" : "",
+"type" : "string"
+            },
+            "inputDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "tariffName" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyId" : {
+"description" : "",
+"type" : "string"
+            },
             "tariffID" : {
 "description" : "",
 "type" : "string"
             },
-            "customer" : {
+            "tariffFileID" : {
+"description" : "",
+"type" : "number"
+            },
+            "templateName" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateTime" : {
 "description" : "",
 "type" : "string"
             },
@@ -6845,15 +6874,19 @@
 "description" : "",
 "type" : "string"
             },
-            "userDetails" : {
+            "customerAccount" : {
 "description" : "",
 "type" : "string"
             },
-            "namedAccount" : {
+            "companyCode" : {
 "description" : "",
 "type" : "string"
             },
-            "tariffName" : {
+            "updateOfficeId" : {
+"description" : "",
+"type" : "string"
+            },
+            "namedAccountDescription" : {
 "description" : "",
 "type" : "string"
             },
@@ -6865,23 +6898,11 @@
 "description" : "",
 "type" : "string"
             },
-            "tariffFileID" : {
-"description" : "",
-"type" : "number"
-            },
-            "updateOfficeId" : {
-"description" : "",
-"type" : "string"
-            },
-            "regionName" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerAccount" : {
-"description" : "",
-"type" : "string"
-            },
             "createLdapUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "createOfficeId" : {
 "description" : "",
 "type" : "string"
             },
@@ -6889,43 +6910,11 @@
 "description" : "",
 "type" : "string"
             },
-            "inputDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "namedAccountDescription" : {
-"description" : "",
-"type" : "string"
-            },
-            "standardRateExcluded" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "updateDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "templateName" : {
-"description" : "",
-"type" : "string"
-            },
-            "dateTime" : {
-"description" : "",
-"type" : "string"
-            },
             "userID" : {
 "description" : "",
 "type" : "string"
             },
-            "companyId" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyCode" : {
+            "userDetails" : {
 "description" : "",
 "type" : "string"
             },
@@ -6933,7 +6922,19 @@
 "description" : "",
 "type" : "string"
             },
-            "createOfficeId" : {
+            "namedAccount" : {
+"description" : "",
+"type" : "string"
+            },
+            "updateDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "regionName" : {
 "description" : "",
 "type" : "string"
             }
@@ -6950,67 +6951,15 @@
         },
         {
           "properties" : {
-            "statementCycleFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "salesRepresentative" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationAliasTo" : {
-"description" : "",
-"type" : "string"
-            },
             "threadPoolSize" : {
 "description" : "",
 "type" : "number"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "chunkThresholdSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "organizationNameTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "localCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "sortBy" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
             },
             "fromDate" : {
 "description" : "",
 "type" : "string"
             },
-            "openClosedStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadCustomerChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
             "organizationCodeTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "toDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -7018,11 +6967,19 @@
 "description" : "",
 "type" : "string"
             },
-            "timeZone" : {
+            "fileType" : {
 "description" : "",
 "type" : "string"
             },
-            "organizationAliasFrom" : {
+            "chunkThresholdSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "statementCycleFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "dateType" : {
 "description" : "",
 "type" : "string"
             },
@@ -7030,7 +6987,19 @@
 "description" : "",
 "type" : "string"
             },
-            "fileType" : {
+            "organizationAliasTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadCustomerChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "organizationAliasFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "toDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -7038,7 +7007,39 @@
 "description" : "",
 "type" : "string"
             },
-            "dateType" : {
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "openClosedStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortBy" : {
+"description" : "",
+"type" : "string"
+            },
+            "salesRepresentative" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationNameTo" : {
 "description" : "",
 "type" : "string"
             }
@@ -7057,11 +7058,7 @@
         },
         {
           "properties" : {
-            "trialBalanceCriteriaBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_TrialBalanceCriteriaBean"
-            },
-            "listOfTrialBalanceResultBean" : {
+            "listOfTrialBalanceTotalResultBean" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -7071,7 +7068,11 @@
 }
 }
             },
-            "listOfTrialBalanceTotalResultBean" : {
+            "trialBalanceCriteriaBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_TrialBalanceCriteriaBean"
+            },
+            "listOfTrialBalanceResultBean" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -7129,27 +7130,7 @@
         },
         {
           "properties" : {
-            "dateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "trialBalancestatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorType" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorNameFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCodeTo" : {
+            "dateFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -7161,19 +7142,11 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorCodeFrom" : {
+            "companyName" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorCycleTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportType" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
+            "dateTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -7181,11 +7154,11 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorNameTo" : {
+            "vendorCodeTo" : {
 "description" : "",
 "type" : "string"
             },
-            "localCurrency" : {
+            "vendorCycleTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -7193,7 +7166,19 @@
 "description" : "",
 "type" : "string"
             },
-            "dateFrom" : {
+            "timeZone" : {
+"description" : "",
+"type" : "string"
+            },
+            "sort" : {
+"description" : "",
+"type" : "string"
+            },
+            "localCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCodeFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -7201,7 +7186,23 @@
 "description" : "",
 "type" : "string"
             },
-            "sort" : {
+            "vendorNameFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportType" : {
+"description" : "",
+"type" : "string"
+            },
+            "trialBalancestatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorNameTo" : {
 "description" : "",
 "type" : "string"
             }
@@ -7215,99 +7216,15 @@
       "type" : "object",
       "title" : "TrialBalanceReportResultBean",
           "properties" : {
-            "originalFileNumber" : {
+            "glNo" : {
 "description" : "",
 "type" : "string"
             },
-            "expenseAmountlocal" : {
+            "periodActivityPayments" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             },
             "originalShipmentRefType" : {
-"description" : "",
-"type" : "string"
-            },
-            "balanceAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "fileNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "periodActivityVouchers" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalShipmentReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "source" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentRefNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherCurrency" : {
-"description" : "",
-"type" : "string"
-            },
-            "balanceBeginingOfPeriod" : {
-"description" : "",
-"type" : "string"
-            },
-            "foreignAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "typeOfMove" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCountry" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherCurrencyDetail" : {
-"description" : "",
-"type" : "string"
-            },
-            "department" : {
-"description" : "",
-"type" : "string"
-            },
-            "sub" : {
-"description" : "",
-"type" : "string"
-            },
-            "expectedVendorCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDirection" : {
-"description" : "",
-"type" : "string"
-            },
-            "chargeCategory" : {
 "description" : "",
 "type" : "string"
             },
@@ -7315,31 +7232,59 @@
 "description" : "",
 "type" : "string"
             },
+            "shipmentRefNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "invDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "expenseAmountlocal" : {
+"description" : "",
+"type" : "number"
+            },
             "voucherNumber" : {
 "description" : "",
 "type" : "string"
             },
-            "voucherAmountForeign" : {
+            "typeOfMove" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalShipmentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "foreignAmountDetail" : {
 "description" : "",
 "type" : "number"
+            },
+            "invoiceNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCountry" : {
+"description" : "",
+"type" : "string"
             },
             "division" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "localAmountDetail" : {
-"description" : "",
-"type" : "number"
-            },
-            "glNo" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorType" : {
 "description" : "",
 "type" : "string"
             },
@@ -7347,7 +7292,7 @@
 "description" : "",
 "type" : "string"
             },
-            "invoiceNumber" : {
+            "vendorType" : {
 "description" : "",
 "type" : "string"
             },
@@ -7355,7 +7300,79 @@
 "description" : "",
 "type" : "string"
             },
-            "periodActivityPayments" : {
+            "source" : {
+"description" : "",
+"type" : "string"
+            },
+            "department" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceBeginingOfPeriod" : {
+"description" : "",
+"type" : "string"
+            },
+            "balanceAmountDetail" : {
+"description" : "",
+"type" : "number"
+            },
+            "voucherAmountForeign" : {
+"description" : "",
+"type" : "number"
+            },
+            "localAmountDetail" : {
+"description" : "",
+"type" : "number"
+            },
+            "vendorAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "periodActivityVouchers" : {
+"description" : "",
+"type" : "string"
+            },
+            "chargeCategory" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorName" : {
+"description" : "",
+"type" : "string"
+            },
+            "expectedVendorCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "sub" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherCurrencyDetail" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherCurrency" : {
+"description" : "",
+"type" : "string"
+            },
+            "applyTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -7364,22 +7381,6 @@
 "type" : "string"
             },
             "shipmentRefType" : {
-"description" : "",
-"type" : "string"
-            },
-            "applyTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "invDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorName" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycle" : {
 "description" : "",
 "type" : "string"
             }
@@ -7396,39 +7397,11 @@
         },
         {
           "properties" : {
-            "organizationName" : {
+            "organizationCountry" : {
 "description" : "",
 "type" : "string"
             },
-            "paymentReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "sub" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceBalanceRepDt" : {
-"description" : "",
-"type" : "number"
-            },
-            "division" : {
-"description" : "",
-"type" : "string"
-            },
-            "typeOfMove" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileDirection" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationCode" : {
+            "invoiceCurrency" : {
 "description" : "",
 "type" : "string"
             },
@@ -7436,35 +7409,15 @@
 "description" : "",
 "type" : "number"
             },
-            "invoiceCurrency" : {
+            "invoiceForeignAmount" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
-            "arBatch" : {
+            "invoiceBalanceRepDt" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
-            "customerReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "glDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceType" : {
-"description" : "",
-"type" : "string"
-            },
-            "organizationType" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentReference" : {
-"description" : "",
-"type" : "string"
-            },
-            "gl" : {
+            "paymentType" : {
 "description" : "",
 "type" : "string"
             },
@@ -7472,35 +7425,11 @@
 "description" : "",
 "type" : "string"
             },
-            "invoiceLocalAmount" : {
-"description" : "",
-"type" : "number"
-            },
-            "fileNumber" : {
+            "invoiceType" : {
 "description" : "",
 "type" : "string"
-            },
-            "salesRep" : {
-"description" : "",
-"type" : "string"
-            },
-            "paymentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "closingBal" : {
-"description" : "",
-"type" : "number"
             },
             "applyTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "sourceCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "department" : {
 "description" : "",
 "type" : "string"
             },
@@ -7508,7 +7437,43 @@
 "description" : "",
 "type" : "number"
             },
-            "invoiceDate" : {
+            "salesRep" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentTotal" : {
+"description" : "",
+"type" : "number"
+            },
+            "fileDirection" : {
+"description" : "",
+"type" : "string"
+            },
+            "gl" : {
+"description" : "",
+"type" : "string"
+            },
+            "originalFileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "sub" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceTotal" : {
+"description" : "",
+"type" : "number"
+            },
+            "sourceCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -7516,7 +7481,27 @@
 "description" : "",
 "type" : "number"
             },
-            "organizationCountry" : {
+            "glDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationName" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationAlias" : {
+"description" : "",
+"type" : "string"
+            },
+            "organizationType" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "typeOfMove" : {
 "description" : "",
 "type" : "string"
             },
@@ -7524,27 +7509,43 @@
 "description" : "",
 "type" : "string"
             },
+            "arBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "paymentDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentReference" : {
+"description" : "",
+"type" : "string"
+            },
+            "division" : {
+"description" : "",
+"type" : "string"
+            },
+            "closingBal" : {
+"description" : "",
+"type" : "number"
+            },
+            "fileNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "department" : {
+"description" : "",
+"type" : "string"
+            },
+            "invoiceLocalAmount" : {
+"description" : "",
+"type" : "number"
+            },
             "invoiceSource" : {
-"description" : "",
-"type" : "string"
-            },
-            "invoiceForeignAmount" : {
-"description" : "",
-"type" : "number"
-            },
-            "paymentTotal" : {
-"description" : "",
-"type" : "number"
-            },
-            "invoiceTotal" : {
-"description" : "",
-"type" : "number"
-            },
-            "organizationAlias" : {
-"description" : "",
-"type" : "string"
-            },
-            "originalFileNumber" : {
 "description" : "",
 "type" : "string"
             }
@@ -7633,7 +7634,7 @@
         },
         {
           "properties" : {
-            "vendorType" : {
+            "companyName" : {
 "description" : "",
 "type" : "string"
             },
@@ -7641,31 +7642,11 @@
 "description" : "",
 "type" : "string"
             },
-            "allStatusSelected" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "sortOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
             "vendorTypeMap" : {
 "description" : "",
 "type" : "object"
             },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "countryName" : {
-"description" : "",
-"type" : "string"
-            },
-            "timeZone" : {
+            "vendorCycle" : {
 "description" : "",
 "type" : "string"
             },
@@ -7673,7 +7654,11 @@
 "description" : "",
 "type" : "string"
             },
-            "vendorCodeTo" : {
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "sortOption" : {
 "description" : "",
 "type" : "string"
             },
@@ -7681,15 +7666,15 @@
 "description" : "",
 "type" : "string"
             },
-            "runOption" : {
+            "allStatusSelected" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "vendorType" : {
 "description" : "",
 "type" : "string"
             },
-            "vendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
+            "countryName" : {
 "description" : "",
 "type" : "string"
             },
@@ -7697,7 +7682,23 @@
 "description" : "",
 "type" : "string"
             },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
+"description" : "",
+"type" : "string"
+            },
             "vendorStatus" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             }
@@ -7716,10 +7717,6 @@
         },
         {
           "properties" : {
-            "reportCriteria" : {
-"description" : "",
-"$ref" : "#/definitions/json_VendorListingCriteriaBean"
-            },
             "reportResult" : {
 "description" : "",
 "type" : "array",
@@ -7729,6 +7726,10 @@
   "$ref" : "#/definitions/json_VendorListingReportResultBean"
 }
 }
+            },
+            "reportCriteria" : {
+"description" : "",
+"$ref" : "#/definitions/json_VendorListingCriteriaBean"
             }
           }
         }
@@ -7745,35 +7746,7 @@
         },
         {
           "properties" : {
-            "reportStatus" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
-"description" : "",
-"type" : "string"
-            },
-            "countryName" : {
-"description" : "",
-"type" : "string"
-            },
-            "contactName" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorType" : {
-"description" : "",
-"type" : "string"
-            },
-            "countryCode" : {
-"description" : "",
-"type" : "string"
-            },
             "phone" : {
-"description" : "",
-"type" : "string"
-            },
-            "comments1" : {
 "description" : "",
 "type" : "string"
             },
@@ -7781,59 +7754,7 @@
 "description" : "",
 "type" : "string"
             },
-            "controlOffice" : {
-"description" : "",
-"type" : "string"
-            },
-            "terms" : {
-"description" : "",
-"type" : "string"
-            },
-            "einNumber" : {
-"description" : "",
-"type" : "string"
-            },
-            "name2" : {
-"description" : "",
-"type" : "string"
-            },
-            "name1" : {
-"description" : "",
-"type" : "string"
-            },
-            "address1" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendor" : {
-"description" : "",
-"type" : "string"
-            },
-            "zip" : {
-"description" : "",
-"type" : "string"
-            },
-            "billingType" : {
-"description" : "",
-"type" : "string"
-            },
-            "address2" : {
-"description" : "",
-"type" : "string"
-            },
-            "city" : {
-"description" : "",
-"type" : "string"
-            },
-            "vendorCycle" : {
-"description" : "",
-"type" : "string"
-            },
-            "reservationAccount" : {
-"description" : "",
-"type" : "string"
-            },
-            "taxCode" : {
+            "type1099" : {
 "description" : "",
 "type" : "string"
             },
@@ -7841,7 +7762,51 @@
 "description" : "",
 "type" : "string"
             },
-            "alias" : {
+            "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "city" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "name2" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorCycle" : {
+"description" : "",
+"type" : "string"
+            },
+            "name1" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendorType" : {
+"description" : "",
+"type" : "string"
+            },
+            "einNumber" : {
+"description" : "",
+"type" : "string"
+            },
+            "controlOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "zip" : {
+"description" : "",
+"type" : "string"
+            },
+            "address2" : {
+"description" : "",
+"type" : "string"
+            },
+            "reservationAccount" : {
 "description" : "",
 "type" : "string"
             },
@@ -7849,7 +7814,43 @@
 "description" : "",
 "type" : "string"
             },
-            "type1099" : {
+            "countryCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "alias" : {
+"description" : "",
+"type" : "string"
+            },
+            "taxCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "terms" : {
+"description" : "",
+"type" : "string"
+            },
+            "countryName" : {
+"description" : "",
+"type" : "string"
+            },
+            "comments1" : {
+"description" : "",
+"type" : "string"
+            },
+            "vendor" : {
+"description" : "",
+"type" : "string"
+            },
+            "address1" : {
+"description" : "",
+"type" : "string"
+            },
+            "billingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "reportStatus" : {
 "description" : "",
 "type" : "string"
             }
@@ -7868,23 +7869,7 @@
         },
         {
           "properties" : {
-            "voucherNoTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "fileType" : {
-"description" : "",
-"type" : "string"
-            },
-            "apBatch" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadThreshold" : {
-"description" : "",
-"type" : "number"
-            },
-            "userOffice" : {
+            "billingTypeName" : {
 "description" : "",
 "type" : "string"
             },
@@ -7892,39 +7877,7 @@
 "description" : "",
 "type" : "string"
             },
-            "timeZone" : {
-"description" : "",
-"type" : "string"
-            },
-            "office" : {
-"description" : "",
-"type" : "string"
-            },
-            "runOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "apPostedDateFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "voucherNoFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "threadChunkSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "threadPoolSize" : {
-"description" : "",
-"type" : "number"
-            },
-            "sourceCodeTo" : {
+            "sourceCodeFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -7932,31 +7885,7 @@
 "description" : "",
 "type" : "string"
             },
-            "billingTypeName" : {
-"description" : "",
-"type" : "string"
-            },
-            "ldapUserName" : {
-"description" : "",
-"type" : "string"
-            },
-            "runUser" : {
-"description" : "",
-"type" : "string"
-            },
-            "apPostedDateTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "sourceCodeFrom" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userCompany" : {
+            "userName" : {
 "description" : "",
 "type" : "string"
             },
@@ -7964,11 +7893,83 @@
 "description" : "",
 "type" : "string"
             },
-            "userName" : {
+            "apBatch" : {
+"description" : "",
+"type" : "string"
+            },
+            "runUser" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadPoolSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "userOffice" : {
+"description" : "",
+"type" : "string"
+            },
+            "runOption" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherNoFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "timeZone" : {
 "description" : "",
 "type" : "string"
             },
             "billingType" : {
+"description" : "",
+"type" : "string"
+            },
+            "voucherNoTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "office" : {
+"description" : "",
+"type" : "string"
+            },
+            "sourceCodeTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "apPostedDateTo" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyName" : {
+"description" : "",
+"type" : "string"
+            },
+            "fileType" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "apPostedDateFrom" : {
+"description" : "",
+"type" : "string"
+            },
+            "userCompany" : {
+"description" : "",
+"type" : "string"
+            },
+            "threadThreshold" : {
+"description" : "",
+"type" : "number"
+            },
+            "threadChunkSize" : {
+"description" : "",
+"type" : "number"
+            },
+            "ldapUserName" : {
 "description" : "",
 "type" : "string"
             }
