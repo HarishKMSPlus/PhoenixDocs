@@ -79,9 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">transactionalFlag</span>
+          <td>  <span class="property-name">chaserSetupList</span>
 </td>
-          <td>  <span class="datatype-reference">object
+          <td>  <span class="datatype-reference">array of array of <a href="json_ChaserSetupBean.html">ChaserSetupBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -97,9 +97,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">chaserSetupList</span>
+          <td>  <span class="property-name">transactionalFlag</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_ChaserSetupBean.html">ChaserSetupBean</a>
+          <td>  <span class="datatype-reference">object
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -111,94 +111,94 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;transactionalFlag&quot; : { },
+  &quot;chaserSetupList&quot; : [ [ {
+    &quot;defaultGraceAmount&quot; : 12345,
+    &quot;chaserTemplateOverLimit&quot; : 12345,
+    &quot;sendChaserEmailAccountSetup&quot; : true,
+    &quot;chaserType&quot; : &quot;...&quot;,
+    &quot;rollDays&quot; : 12345,
+    &quot;chaserTemplateOverDay&quot; : 12345,
+    &quot;jobId&quot; : 12345,
+    &quot;scheduleTime&quot; : &quot;...&quot;,
+    &quot;chaserTemplateOverlimitDay&quot; : 12345,
+    &quot;emailRecipient&quot; : &quot;...&quot;,
+    &quot;sendChaserStiSalesPerson&quot; : true,
+    &quot;defaultGraceAmountInP&quot; : 12345.0,
+    &quot;scheduleTimezone&quot; : &quot;...&quot;,
+    &quot;activeChaser&quot; : true,
+    &quot;defaultGraceDay&quot; : 12345,
+    &quot;cadHoldAftergraceDay&quot; : true
+  }, {
+    &quot;defaultGraceAmount&quot; : 12345,
+    &quot;chaserTemplateOverLimit&quot; : 12345,
+    &quot;sendChaserEmailAccountSetup&quot; : true,
+    &quot;chaserType&quot; : &quot;...&quot;,
+    &quot;rollDays&quot; : 12345,
+    &quot;chaserTemplateOverDay&quot; : 12345,
+    &quot;jobId&quot; : 12345,
+    &quot;scheduleTime&quot; : &quot;...&quot;,
+    &quot;chaserTemplateOverlimitDay&quot; : 12345,
+    &quot;emailRecipient&quot; : &quot;...&quot;,
+    &quot;sendChaserStiSalesPerson&quot; : true,
+    &quot;defaultGraceAmountInP&quot; : 12345.0,
+    &quot;scheduleTimezone&quot; : &quot;...&quot;,
+    &quot;activeChaser&quot; : true,
+    &quot;defaultGraceDay&quot; : 12345,
+    &quot;cadHoldAftergraceDay&quot; : true
+  } ], [ {
+    &quot;defaultGraceAmount&quot; : 12345,
+    &quot;chaserTemplateOverLimit&quot; : 12345,
+    &quot;sendChaserEmailAccountSetup&quot; : true,
+    &quot;chaserType&quot; : &quot;...&quot;,
+    &quot;rollDays&quot; : 12345,
+    &quot;chaserTemplateOverDay&quot; : 12345,
+    &quot;jobId&quot; : 12345,
+    &quot;scheduleTime&quot; : &quot;...&quot;,
+    &quot;chaserTemplateOverlimitDay&quot; : 12345,
+    &quot;emailRecipient&quot; : &quot;...&quot;,
+    &quot;sendChaserStiSalesPerson&quot; : true,
+    &quot;defaultGraceAmountInP&quot; : 12345.0,
+    &quot;scheduleTimezone&quot; : &quot;...&quot;,
+    &quot;activeChaser&quot; : true,
+    &quot;defaultGraceDay&quot; : 12345,
+    &quot;cadHoldAftergraceDay&quot; : true
+  }, {
+    &quot;defaultGraceAmount&quot; : 12345,
+    &quot;chaserTemplateOverLimit&quot; : 12345,
+    &quot;sendChaserEmailAccountSetup&quot; : true,
+    &quot;chaserType&quot; : &quot;...&quot;,
+    &quot;rollDays&quot; : 12345,
+    &quot;chaserTemplateOverDay&quot; : 12345,
+    &quot;jobId&quot; : 12345,
+    &quot;scheduleTime&quot; : &quot;...&quot;,
+    &quot;chaserTemplateOverlimitDay&quot; : 12345,
+    &quot;emailRecipient&quot; : &quot;...&quot;,
+    &quot;sendChaserStiSalesPerson&quot; : true,
+    &quot;defaultGraceAmountInP&quot; : 12345.0,
+    &quot;scheduleTimezone&quot; : &quot;...&quot;,
+    &quot;activeChaser&quot; : true,
+    &quot;defaultGraceDay&quot; : 12345,
+    &quot;cadHoldAftergraceDay&quot; : true
+  } ] ],
   &quot;commonBean&quot; : {
-    &quot;userOfficeID&quot; : 12345,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;userCompanyCode&quot; : &quot;...&quot;,
     &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
     &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
     &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345,
+    &quot;userID&quot; : 12345,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
     &quot;alternateCityName&quot; : &quot;...&quot;,
     &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;
+    &quot;userCompanyCode&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345
   },
-  &quot;chaserSetupList&quot; : [ [ {
-    &quot;cadHoldAftergraceDay&quot; : true,
-    &quot;jobId&quot; : 12345,
-    &quot;chaserType&quot; : &quot;...&quot;,
-    &quot;emailRecipient&quot; : &quot;...&quot;,
-    &quot;activeChaser&quot; : true,
-    &quot;scheduleTime&quot; : &quot;...&quot;,
-    &quot;chaserTemplateOverlimitDay&quot; : 12345,
-    &quot;chaserTemplateOverDay&quot; : 12345,
-    &quot;chaserTemplateOverLimit&quot; : 12345,
-    &quot;sendChaserEmailAccountSetup&quot; : true,
-    &quot;rollDays&quot; : 12345,
-    &quot;defaultGraceAmount&quot; : 12345,
-    &quot;sendChaserStiSalesPerson&quot; : true,
-    &quot;defaultGraceAmountInP&quot; : 12345.0,
-    &quot;scheduleTimezone&quot; : &quot;...&quot;,
-    &quot;defaultGraceDay&quot; : 12345
-  }, {
-    &quot;cadHoldAftergraceDay&quot; : true,
-    &quot;jobId&quot; : 12345,
-    &quot;chaserType&quot; : &quot;...&quot;,
-    &quot;emailRecipient&quot; : &quot;...&quot;,
-    &quot;activeChaser&quot; : true,
-    &quot;scheduleTime&quot; : &quot;...&quot;,
-    &quot;chaserTemplateOverlimitDay&quot; : 12345,
-    &quot;chaserTemplateOverDay&quot; : 12345,
-    &quot;chaserTemplateOverLimit&quot; : 12345,
-    &quot;sendChaserEmailAccountSetup&quot; : true,
-    &quot;rollDays&quot; : 12345,
-    &quot;defaultGraceAmount&quot; : 12345,
-    &quot;sendChaserStiSalesPerson&quot; : true,
-    &quot;defaultGraceAmountInP&quot; : 12345.0,
-    &quot;scheduleTimezone&quot; : &quot;...&quot;,
-    &quot;defaultGraceDay&quot; : 12345
-  } ], [ {
-    &quot;cadHoldAftergraceDay&quot; : true,
-    &quot;jobId&quot; : 12345,
-    &quot;chaserType&quot; : &quot;...&quot;,
-    &quot;emailRecipient&quot; : &quot;...&quot;,
-    &quot;activeChaser&quot; : true,
-    &quot;scheduleTime&quot; : &quot;...&quot;,
-    &quot;chaserTemplateOverlimitDay&quot; : 12345,
-    &quot;chaserTemplateOverDay&quot; : 12345,
-    &quot;chaserTemplateOverLimit&quot; : 12345,
-    &quot;sendChaserEmailAccountSetup&quot; : true,
-    &quot;rollDays&quot; : 12345,
-    &quot;defaultGraceAmount&quot; : 12345,
-    &quot;sendChaserStiSalesPerson&quot; : true,
-    &quot;defaultGraceAmountInP&quot; : 12345.0,
-    &quot;scheduleTimezone&quot; : &quot;...&quot;,
-    &quot;defaultGraceDay&quot; : 12345
-  }, {
-    &quot;cadHoldAftergraceDay&quot; : true,
-    &quot;jobId&quot; : 12345,
-    &quot;chaserType&quot; : &quot;...&quot;,
-    &quot;emailRecipient&quot; : &quot;...&quot;,
-    &quot;activeChaser&quot; : true,
-    &quot;scheduleTime&quot; : &quot;...&quot;,
-    &quot;chaserTemplateOverlimitDay&quot; : 12345,
-    &quot;chaserTemplateOverDay&quot; : 12345,
-    &quot;chaserTemplateOverLimit&quot; : 12345,
-    &quot;sendChaserEmailAccountSetup&quot; : true,
-    &quot;rollDays&quot; : 12345,
-    &quot;defaultGraceAmount&quot; : 12345,
-    &quot;sendChaserStiSalesPerson&quot; : true,
-    &quot;defaultGraceAmountInP&quot; : 12345.0,
-    &quot;scheduleTimezone&quot; : &quot;...&quot;,
-    &quot;defaultGraceDay&quot; : 12345
-  } ] ]
+  &quot;transactionalFlag&quot; : { }
 }</pre>
 
         <footer class="footer">

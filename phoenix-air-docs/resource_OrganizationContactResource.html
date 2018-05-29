@@ -133,8 +133,8 @@ Accept: application/json
 {
   &quot;schemaName&quot; : &quot;...&quot;,
   &quot;customerName&quot; : &quot;...&quot;,
-  &quot;customerCode&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345
+  &quot;officeId&quot; : 12345,
+  &quot;customerCode&quot; : &quot;...&quot;
 }
                 </code>
               </pre>
@@ -148,9 +148,9 @@ Content-Type: application/json
                 <code class="prettyprint language-js">
 {
   &quot;errorCode&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
   &quot;message&quot; : &quot;...&quot;,
-  &quot;success&quot; : 12345,
-  &quot;result&quot; : { }
+  &quot;success&quot; : 12345
 }
                 </code>
               </pre>
@@ -221,62 +221,62 @@ Accept: application/json
                 <code class="prettyprint language-js">
 {
   &quot;customerName&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
   &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;contactName&quot; : &quot;...&quot;,
+  &quot;contactDetailBeans&quot; : [ [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ] ],
   &quot;customerCode&quot; : &quot;...&quot;,
   &quot;contactReference&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
   &quot;contactDocumentBeans&quot; : [ [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ], [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ] ],
-  &quot;customerId&quot; : 12345.0,
-  &quot;contactDetailBeans&quot; : [ [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ] ],
-  &quot;contactName&quot; : &quot;...&quot;
+  &quot;customerId&quot; : 12345.0
 }
                 </code>
               </pre>
@@ -290,9 +290,9 @@ Content-Type: application/json
                 <code class="prettyprint language-js">
 {
   &quot;errorCode&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
   &quot;message&quot; : &quot;...&quot;,
-  &quot;success&quot; : 12345,
-  &quot;result&quot; : { }
+  &quot;success&quot; : 12345
 }
                 </code>
               </pre>
@@ -363,62 +363,62 @@ Accept: application/json
                 <code class="prettyprint language-js">
 {
   &quot;customerName&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
   &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;contactName&quot; : &quot;...&quot;,
+  &quot;contactDetailBeans&quot; : [ [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ] ],
   &quot;customerCode&quot; : &quot;...&quot;,
   &quot;contactReference&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
   &quot;contactDocumentBeans&quot; : [ [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ], [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ] ],
-  &quot;customerId&quot; : 12345.0,
-  &quot;contactDetailBeans&quot; : [ [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ] ],
-  &quot;contactName&quot; : &quot;...&quot;
+  &quot;customerId&quot; : 12345.0
 }
                 </code>
               </pre>
@@ -432,9 +432,9 @@ Content-Type: application/json
                 <code class="prettyprint language-js">
 {
   &quot;errorCode&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
   &quot;message&quot; : &quot;...&quot;,
-  &quot;success&quot; : 12345,
-  &quot;result&quot; : { }
+  &quot;success&quot; : 12345
 }
                 </code>
               </pre>
@@ -505,62 +505,62 @@ Accept: application/json
                 <code class="prettyprint language-js">
 {
   &quot;customerName&quot; : &quot;...&quot;,
+  &quot;officeId&quot; : 12345,
   &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;contactName&quot; : &quot;...&quot;,
+  &quot;contactDetailBeans&quot; : [ [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  }, {
+    &quot;contactValue&quot; : &quot;...&quot;,
+    &quot;status&quot; : true,
+    &quot;officeId&quot; : 12345,
+    &quot;userCreate&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;customerContactId&quot; : 12345.0,
+    &quot;contactType&quot; : &quot;...&quot;
+  } ] ],
   &quot;customerCode&quot; : &quot;...&quot;,
   &quot;contactReference&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
   &quot;contactDocumentBeans&quot; : [ [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ], [ {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   }, {
-    &quot;documentID&quot; : 12345.0,
     &quot;documentContactId&quot; : 12345.0,
+    &quot;documentID&quot; : 12345.0,
     &quot;documentCode&quot; : &quot;...&quot;
   } ] ],
-  &quot;customerId&quot; : 12345.0,
-  &quot;contactDetailBeans&quot; : [ [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : true,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;contactType&quot; : &quot;...&quot;,
-    &quot;officeId&quot; : 12345,
-    &quot;userCreate&quot; : &quot;...&quot;,
-    &quot;customerContactId&quot; : 12345.0,
-    &quot;contactValue&quot; : &quot;...&quot;
-  } ] ],
-  &quot;contactName&quot; : &quot;...&quot;
+  &quot;customerId&quot; : 12345.0
 }
                 </code>
               </pre>
@@ -574,9 +574,9 @@ Content-Type: application/json
                 <code class="prettyprint language-js">
 {
   &quot;errorCode&quot; : &quot;...&quot;,
+  &quot;result&quot; : { },
   &quot;message&quot; : &quot;...&quot;,
-  &quot;success&quot; : 12345,
-  &quot;result&quot; : { }
+  &quot;success&quot; : 12345
 }
                 </code>
               </pre>

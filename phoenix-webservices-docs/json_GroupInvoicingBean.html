@@ -79,54 +79,18 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">bankCode</span>
+          <td>  <span class="property-name">isGroupInvoiceExtracted</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">organizationCode</span>
 </td>
           <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">toDate</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">groupInvoicingAdditionalDetailsBean</span>
-</td>
-          <td>  <span class="datatype-reference"><a href="json_GroupInvoicingAdditionalDetailsBean.html">GroupInvoicingAdditionalDetailsBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">isVatAdded</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">invoiceDate</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">countOfDepositSlips</span>
-</td>
-          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -142,9 +106,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">depositSlipNumber</span>
+          <td>  <span class="property-name">invoiceAmounts</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">array of array of string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -160,36 +124,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">invoiceAmounts</span>
+          <td>  <span class="property-name">groupInvoicingAdditionalDetailsBean</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of string
+          <td>  <span class="datatype-reference"><a href="json_GroupInvoicingAdditionalDetailsBean.html">GroupInvoicingAdditionalDetailsBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">isGroupInvoiceExtracted</span>
+          <td>  <span class="property-name">chargeCurrency</span>
 </td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">startFrom</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">invoiceNumbers</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -205,9 +151,36 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">arDetailBeans</span>
+          <td>  <span class="property-name">JSONifiedLoginBean</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_ArDetailBean.html">ArDetailBean</a>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">recStatCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">openBalances</span>
+</td>
+          <td>  <span class="datatype-reference">object
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">invoiceNumbers</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -223,7 +196,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">groupedInvoiceNumber</span>
+          <td>  <span class="property-name">endTo</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">toDate</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -232,7 +214,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">organizationName</span>
+          <td>  <span class="property-name">groupedInvoiceNumber</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -250,7 +232,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">recStatCode</span>
+          <td>  <span class="property-name">bankCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -259,9 +241,72 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">JSONifiedLoginBean</span>
+          <td>  <span class="property-name">isVatAdded</span>
 </td>
           <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">organizationName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">depositSlipNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">invoiceDate</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">startFrom</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">arDetailBeans</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_ArDetailBean.html">ArDetailBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">salesCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">countOfDepositSlips</span>
+</td>
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -285,605 +330,560 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
-        <tr>
-          <td>  <span class="property-name">salesCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chargeCurrency</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">organizationCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">openBalances</span>
-</td>
-          <td>  <span class="datatype-reference">object
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">endTo</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;bankCode&quot; : &quot;...&quot;,
-  &quot;toDate&quot; : &quot;...&quot;,
-  &quot;groupInvoicingAdditionalDetailsBean&quot; : {
-    &quot;thirdPartyReceivedDate&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;thirdPartyRefNumber&quot; : &quot;...&quot;,
-    &quot;thirdPartyStatus&quot; : &quot;...&quot;,
-    &quot;thirdPartyRefDate&quot; : &quot;...&quot;,
-    &quot;foreignAmount&quot; : &quot;...&quot;,
-    &quot;thirdPartyExtractedDate&quot; : &quot;...&quot;,
-    &quot;payorName&quot; : &quot;...&quot;,
-    &quot;iStatus&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : &quot;...&quot;
-  },
-  &quot;isVatAdded&quot; : &quot;...&quot;,
-  &quot;invoiceDate&quot; : &quot;...&quot;,
-  &quot;countOfDepositSlips&quot; : 12345.0,
+  &quot;isGroupInvoiceExtracted&quot; : true,
+  &quot;organizationCode&quot; : &quot;...&quot;,
   &quot;glAccount&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;depositSlipNumber&quot; : &quot;...&quot;,
+  &quot;invoiceAmounts&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
   &quot;invoiceAllowedMap&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;invoiceAmounts&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;isGroupInvoiceExtracted&quot; : true,
-  &quot;startFrom&quot; : 12345,
-  &quot;invoiceNumbers&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;collectionOffice&quot; : &quot;...&quot;,
-  &quot;arDetailBeans&quot; : [ [ {
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;invoice&quot; : &quot;...&quot;,
-    &quot;cust_ref&quot; : &quot;...&quot;,
+  &quot;groupInvoicingAdditionalDetailsBean&quot; : {
+    &quot;thirdPartyExtractedDate&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : &quot;...&quot;,
+    &quot;thirdPartyRefDate&quot; : &quot;...&quot;,
+    &quot;foreignAmount&quot; : &quot;...&quot;,
+    &quot;payorName&quot; : &quot;...&quot;,
+    &quot;iStatus&quot; : &quot;...&quot;,
+    &quot;thirdPartyStatus&quot; : &quot;...&quot;,
     &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;igb_confirm&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;closedate&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;igb_batch&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;sii_no&quot; : &quot;...&quot;,
-    &quot;vatFlag&quot; : &quot;...&quot;,
-    &quot;igb_sent&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;t_input_date&quot; : &quot;...&quot;,
-    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
-    &quot;netting_amt&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;file_no&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;famount&quot; : &quot;...&quot;,
-    &quot;t_update_date&quot; : &quot;...&quot;,
-    &quot;userid&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;ar_posted&quot; : &quot;...&quot;,
-    &quot;customer&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;descr&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;vessel&quot; : &quot;...&quot;,
-    &quot;shipper&quot; : &quot;...&quot;,
-    &quot;netting_ref&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;curr&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;
-  }, {
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;invoice&quot; : &quot;...&quot;,
-    &quot;cust_ref&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;igb_confirm&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;closedate&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;igb_batch&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;sii_no&quot; : &quot;...&quot;,
-    &quot;vatFlag&quot; : &quot;...&quot;,
-    &quot;igb_sent&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;t_input_date&quot; : &quot;...&quot;,
-    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
-    &quot;netting_amt&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;file_no&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;famount&quot; : &quot;...&quot;,
-    &quot;t_update_date&quot; : &quot;...&quot;,
-    &quot;userid&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;ar_posted&quot; : &quot;...&quot;,
-    &quot;customer&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;descr&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;vessel&quot; : &quot;...&quot;,
-    &quot;shipper&quot; : &quot;...&quot;,
-    &quot;netting_ref&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;curr&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;invoice&quot; : &quot;...&quot;,
-    &quot;cust_ref&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;igb_confirm&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;closedate&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;igb_batch&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;sii_no&quot; : &quot;...&quot;,
-    &quot;vatFlag&quot; : &quot;...&quot;,
-    &quot;igb_sent&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;t_input_date&quot; : &quot;...&quot;,
-    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
-    &quot;netting_amt&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;file_no&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;famount&quot; : &quot;...&quot;,
-    &quot;t_update_date&quot; : &quot;...&quot;,
-    &quot;userid&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;ar_posted&quot; : &quot;...&quot;,
-    &quot;customer&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;descr&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;vessel&quot; : &quot;...&quot;,
-    &quot;shipper&quot; : &quot;...&quot;,
-    &quot;netting_ref&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;curr&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;
-  }, {
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;invoice&quot; : &quot;...&quot;,
-    &quot;cust_ref&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;igb_confirm&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;closedate&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;igb_batch&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;sii_no&quot; : &quot;...&quot;,
-    &quot;vatFlag&quot; : &quot;...&quot;,
-    &quot;igb_sent&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;t_input_date&quot; : &quot;...&quot;,
-    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
-    &quot;netting_amt&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;file_no&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;famount&quot; : &quot;...&quot;,
-    &quot;t_update_date&quot; : &quot;...&quot;,
-    &quot;userid&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;ar_posted&quot; : &quot;...&quot;,
-    &quot;customer&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;descr&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;vessel&quot; : &quot;...&quot;,
-    &quot;shipper&quot; : &quot;...&quot;,
-    &quot;netting_ref&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;curr&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;
-  } ] ],
-  &quot;openInvoiceCurrencyBalances&quot; : {
-    &quot;property1&quot; : &quot;...&quot;,
-    &quot;property2&quot; : &quot;...&quot;
+    &quot;thirdPartyReceivedDate&quot; : &quot;...&quot;,
+    &quot;thirdPartyRefNumber&quot; : &quot;...&quot;
   },
-  &quot;groupedInvoiceNumber&quot; : &quot;...&quot;,
-  &quot;organizationName&quot; : &quot;...&quot;,
-  &quot;arWkHdrBeans&quot; : [ [ {
-    &quot;ref1&quot; : &quot;...&quot;,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;invCurrCode&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;,
-    &quot;sub&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;interco_exp_file&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;payor_name&quot; : &quot;...&quot;,
-    &quot;gl_posting_date&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;errorAdjustment&quot; : &quot;...&quot;,
-    &quot;inv_no&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;inv_pc&quot; : &quot;...&quot;,
-    &quot;edi_date&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;disch&quot; : &quot;...&quot;,
-    &quot;ar_posting_date&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;div&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;ves_voy&quot; : &quot;...&quot;,
-    &quot;forOrigInvAmt&quot; : &quot;...&quot;,
-    &quot;batch&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;container&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;glDescription&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;house_ref_no&quot; : &quot;...&quot;,
-    &quot;c_reference_type&quot; : &quot;...&quot;,
-    &quot;c_webdescription2&quot; : &quot;...&quot;,
-    &quot;orig_inv_amt&quot; : &quot;...&quot;,
-    &quot;cons_code&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;i_shipment_id&quot; : &quot;...&quot;,
-    &quot;c_webdescription1&quot; : &quot;...&quot;,
-    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
-    &quot;input_date&quot; : &quot;...&quot;,
-    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
-    &quot;payor_code&quot; : &quot;...&quot;,
-    &quot;dept&quot; : &quot;...&quot;,
-    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;descr3&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;lane_dest&quot; : &quot;...&quot;,
-    &quot;c_invoice_type&quot; : &quot;...&quot;,
-    &quot;shipper_code&quot; : &quot;...&quot;,
-    &quot;inet_upd&quot; : &quot;...&quot;,
-    &quot;corrector_no&quot; : &quot;...&quot;,
-    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
-    &quot;user_code&quot; : &quot;...&quot;,
-    &quot;c_edi_generated&quot; : &quot;...&quot;,
-    &quot;gl&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;corr_inv_amt&quot; : &quot;...&quot;,
-    &quot;lane_orig&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;
-  }, {
-    &quot;ref1&quot; : &quot;...&quot;,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;invCurrCode&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;,
-    &quot;sub&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;interco_exp_file&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;payor_name&quot; : &quot;...&quot;,
-    &quot;gl_posting_date&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;errorAdjustment&quot; : &quot;...&quot;,
-    &quot;inv_no&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;inv_pc&quot; : &quot;...&quot;,
-    &quot;edi_date&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;disch&quot; : &quot;...&quot;,
-    &quot;ar_posting_date&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;div&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;ves_voy&quot; : &quot;...&quot;,
-    &quot;forOrigInvAmt&quot; : &quot;...&quot;,
-    &quot;batch&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;container&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;glDescription&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;house_ref_no&quot; : &quot;...&quot;,
-    &quot;c_reference_type&quot; : &quot;...&quot;,
-    &quot;c_webdescription2&quot; : &quot;...&quot;,
-    &quot;orig_inv_amt&quot; : &quot;...&quot;,
-    &quot;cons_code&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;i_shipment_id&quot; : &quot;...&quot;,
-    &quot;c_webdescription1&quot; : &quot;...&quot;,
-    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
-    &quot;input_date&quot; : &quot;...&quot;,
-    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
-    &quot;payor_code&quot; : &quot;...&quot;,
-    &quot;dept&quot; : &quot;...&quot;,
-    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;descr3&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;lane_dest&quot; : &quot;...&quot;,
-    &quot;c_invoice_type&quot; : &quot;...&quot;,
-    &quot;shipper_code&quot; : &quot;...&quot;,
-    &quot;inet_upd&quot; : &quot;...&quot;,
-    &quot;corrector_no&quot; : &quot;...&quot;,
-    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
-    &quot;user_code&quot; : &quot;...&quot;,
-    &quot;c_edi_generated&quot; : &quot;...&quot;,
-    &quot;gl&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;corr_inv_amt&quot; : &quot;...&quot;,
-    &quot;lane_orig&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;ref1&quot; : &quot;...&quot;,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;invCurrCode&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;,
-    &quot;sub&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;interco_exp_file&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;payor_name&quot; : &quot;...&quot;,
-    &quot;gl_posting_date&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;errorAdjustment&quot; : &quot;...&quot;,
-    &quot;inv_no&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;inv_pc&quot; : &quot;...&quot;,
-    &quot;edi_date&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;disch&quot; : &quot;...&quot;,
-    &quot;ar_posting_date&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;div&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;ves_voy&quot; : &quot;...&quot;,
-    &quot;forOrigInvAmt&quot; : &quot;...&quot;,
-    &quot;batch&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;container&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;glDescription&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;house_ref_no&quot; : &quot;...&quot;,
-    &quot;c_reference_type&quot; : &quot;...&quot;,
-    &quot;c_webdescription2&quot; : &quot;...&quot;,
-    &quot;orig_inv_amt&quot; : &quot;...&quot;,
-    &quot;cons_code&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;i_shipment_id&quot; : &quot;...&quot;,
-    &quot;c_webdescription1&quot; : &quot;...&quot;,
-    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
-    &quot;input_date&quot; : &quot;...&quot;,
-    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
-    &quot;payor_code&quot; : &quot;...&quot;,
-    &quot;dept&quot; : &quot;...&quot;,
-    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;descr3&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;lane_dest&quot; : &quot;...&quot;,
-    &quot;c_invoice_type&quot; : &quot;...&quot;,
-    &quot;shipper_code&quot; : &quot;...&quot;,
-    &quot;inet_upd&quot; : &quot;...&quot;,
-    &quot;corrector_no&quot; : &quot;...&quot;,
-    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
-    &quot;user_code&quot; : &quot;...&quot;,
-    &quot;c_edi_generated&quot; : &quot;...&quot;,
-    &quot;gl&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;corr_inv_amt&quot; : &quot;...&quot;,
-    &quot;lane_orig&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;
-  }, {
-    &quot;ref1&quot; : &quot;...&quot;,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;invCurrCode&quot; : &quot;...&quot;,
-    &quot;descr1&quot; : &quot;...&quot;,
-    &quot;sub&quot; : &quot;...&quot;,
-    &quot;company&quot; : &quot;...&quot;,
-    &quot;interco_exp_file&quot; : &quot;...&quot;,
-    &quot;rec_stat_code&quot; : &quot;...&quot;,
-    &quot;payor_name&quot; : &quot;...&quot;,
-    &quot;gl_posting_date&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;errorAdjustment&quot; : &quot;...&quot;,
-    &quot;inv_no&quot; : &quot;...&quot;,
-    &quot;ar_batch&quot; : &quot;...&quot;,
-    &quot;applyto&quot; : &quot;...&quot;,
-    &quot;inv_pc&quot; : &quot;...&quot;,
-    &quot;edi_date&quot; : &quot;...&quot;,
-    &quot;ar_source&quot; : &quot;...&quot;,
-    &quot;collection_office&quot; : &quot;...&quot;,
-    &quot;rate_exch&quot; : &quot;...&quot;,
-    &quot;t_payment_due_date&quot; : &quot;...&quot;,
-    &quot;bl_no&quot; : &quot;...&quot;,
-    &quot;disch&quot; : &quot;...&quot;,
-    &quot;ar_posting_date&quot; : &quot;...&quot;,
-    &quot;dest&quot; : &quot;...&quot;,
-    &quot;div&quot; : &quot;...&quot;,
-    &quot;c_invoice_status&quot; : &quot;...&quot;,
-    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
-    &quot;inv_date&quot; : &quot;...&quot;,
-    &quot;ves_voy&quot; : &quot;...&quot;,
-    &quot;forOrigInvAmt&quot; : &quot;...&quot;,
-    &quot;batch&quot; : &quot;...&quot;,
-    &quot;load&quot; : &quot;...&quot;,
-    &quot;container&quot; : &quot;...&quot;,
-    &quot;source_code&quot; : &quot;...&quot;,
-    &quot;glDescription&quot; : &quot;...&quot;,
-    &quot;sail_date&quot; : &quot;...&quot;,
-    &quot;house_ref_no&quot; : &quot;...&quot;,
-    &quot;c_reference_type&quot; : &quot;...&quot;,
-    &quot;c_webdescription2&quot; : &quot;...&quot;,
-    &quot;orig_inv_amt&quot; : &quot;...&quot;,
-    &quot;cons_code&quot; : &quot;...&quot;,
-    &quot;c_issued_username&quot; : &quot;...&quot;,
-    &quot;i_shipment_id&quot; : &quot;...&quot;,
-    &quot;c_webdescription1&quot; : &quot;...&quot;,
-    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
-    &quot;input_date&quot; : &quot;...&quot;,
-    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
-    &quot;payor_code&quot; : &quot;...&quot;,
-    &quot;dept&quot; : &quot;...&quot;,
-    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
-    &quot;gl_batch&quot; : &quot;...&quot;,
-    &quot;descr3&quot; : &quot;...&quot;,
-    &quot;c_issued_location&quot; : &quot;...&quot;,
-    &quot;local_curr&quot; : &quot;...&quot;,
-    &quot;lane_dest&quot; : &quot;...&quot;,
-    &quot;c_invoice_type&quot; : &quot;...&quot;,
-    &quot;shipper_code&quot; : &quot;...&quot;,
-    &quot;inet_upd&quot; : &quot;...&quot;,
-    &quot;corrector_no&quot; : &quot;...&quot;,
-    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
-    &quot;user_code&quot; : &quot;...&quot;,
-    &quot;c_edi_generated&quot; : &quot;...&quot;,
-    &quot;gl&quot; : &quot;...&quot;,
-    &quot;ar_type&quot; : &quot;...&quot;,
-    &quot;descr2&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;corr_inv_amt&quot; : &quot;...&quot;,
-    &quot;lane_orig&quot; : &quot;...&quot;,
-    &quot;periodtopost&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;t_invoice_due_date&quot; : &quot;...&quot;
-  } ] ],
-  &quot;recStatCode&quot; : &quot;...&quot;,
-  &quot;JSONifiedLoginBean&quot; : &quot;...&quot;,
-  &quot;issuedUsername&quot; : &quot;...&quot;,
-  &quot;fromDate&quot; : &quot;...&quot;,
-  &quot;salesCode&quot; : &quot;...&quot;,
   &quot;chargeCurrency&quot; : &quot;...&quot;,
-  &quot;organizationCode&quot; : &quot;...&quot;,
+  &quot;collectionOffice&quot; : &quot;...&quot;,
+  &quot;JSONifiedLoginBean&quot; : &quot;...&quot;,
+  &quot;recStatCode&quot; : &quot;...&quot;,
   &quot;openBalances&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;endTo&quot; : 12345
+  &quot;invoiceNumbers&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;openInvoiceCurrencyBalances&quot; : {
+    &quot;property1&quot; : &quot;...&quot;,
+    &quot;property2&quot; : &quot;...&quot;
+  },
+  &quot;endTo&quot; : 12345,
+  &quot;toDate&quot; : &quot;...&quot;,
+  &quot;groupedInvoiceNumber&quot; : &quot;...&quot;,
+  &quot;arWkHdrBeans&quot; : [ [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;orig_inv_amt&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;batch&quot; : &quot;...&quot;,
+    &quot;c_webdescription2&quot; : &quot;...&quot;,
+    &quot;interco_exp_file&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;gl_posting_date&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;c_edi_generated&quot; : &quot;...&quot;,
+    &quot;inv_pc&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;container&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;descr3&quot; : &quot;...&quot;,
+    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
+    &quot;disch&quot; : &quot;...&quot;,
+    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
+    &quot;div&quot; : &quot;...&quot;,
+    &quot;c_invoice_type&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;errorAdjustment&quot; : &quot;...&quot;,
+    &quot;inet_upd&quot; : &quot;...&quot;,
+    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
+    &quot;shipper_code&quot; : &quot;...&quot;,
+    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
+    &quot;ref1&quot; : &quot;...&quot;,
+    &quot;glDescription&quot; : &quot;...&quot;,
+    &quot;gl&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;corrector_no&quot; : &quot;...&quot;,
+    &quot;inv_no&quot; : &quot;...&quot;,
+    &quot;house_ref_no&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;lane_orig&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;i_shipment_id&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;cons_code&quot; : &quot;...&quot;,
+    &quot;corr_inv_amt&quot; : &quot;...&quot;,
+    &quot;c_webdescription1&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;payor_name&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;,
+    &quot;dept&quot; : &quot;...&quot;,
+    &quot;ar_posting_date&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;ves_voy&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;edi_date&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;user_code&quot; : &quot;...&quot;,
+    &quot;input_date&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;lane_dest&quot; : &quot;...&quot;,
+    &quot;c_reference_type&quot; : &quot;...&quot;,
+    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;sub&quot; : &quot;...&quot;,
+    &quot;invCurrCode&quot; : &quot;...&quot;,
+    &quot;payor_code&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;forOrigInvAmt&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;orig_inv_amt&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;batch&quot; : &quot;...&quot;,
+    &quot;c_webdescription2&quot; : &quot;...&quot;,
+    &quot;interco_exp_file&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;gl_posting_date&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;c_edi_generated&quot; : &quot;...&quot;,
+    &quot;inv_pc&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;container&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;descr3&quot; : &quot;...&quot;,
+    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
+    &quot;disch&quot; : &quot;...&quot;,
+    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
+    &quot;div&quot; : &quot;...&quot;,
+    &quot;c_invoice_type&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;errorAdjustment&quot; : &quot;...&quot;,
+    &quot;inet_upd&quot; : &quot;...&quot;,
+    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
+    &quot;shipper_code&quot; : &quot;...&quot;,
+    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
+    &quot;ref1&quot; : &quot;...&quot;,
+    &quot;glDescription&quot; : &quot;...&quot;,
+    &quot;gl&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;corrector_no&quot; : &quot;...&quot;,
+    &quot;inv_no&quot; : &quot;...&quot;,
+    &quot;house_ref_no&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;lane_orig&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;i_shipment_id&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;cons_code&quot; : &quot;...&quot;,
+    &quot;corr_inv_amt&quot; : &quot;...&quot;,
+    &quot;c_webdescription1&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;payor_name&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;,
+    &quot;dept&quot; : &quot;...&quot;,
+    &quot;ar_posting_date&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;ves_voy&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;edi_date&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;user_code&quot; : &quot;...&quot;,
+    &quot;input_date&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;lane_dest&quot; : &quot;...&quot;,
+    &quot;c_reference_type&quot; : &quot;...&quot;,
+    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;sub&quot; : &quot;...&quot;,
+    &quot;invCurrCode&quot; : &quot;...&quot;,
+    &quot;payor_code&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;forOrigInvAmt&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;orig_inv_amt&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;batch&quot; : &quot;...&quot;,
+    &quot;c_webdescription2&quot; : &quot;...&quot;,
+    &quot;interco_exp_file&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;gl_posting_date&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;c_edi_generated&quot; : &quot;...&quot;,
+    &quot;inv_pc&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;container&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;descr3&quot; : &quot;...&quot;,
+    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
+    &quot;disch&quot; : &quot;...&quot;,
+    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
+    &quot;div&quot; : &quot;...&quot;,
+    &quot;c_invoice_type&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;errorAdjustment&quot; : &quot;...&quot;,
+    &quot;inet_upd&quot; : &quot;...&quot;,
+    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
+    &quot;shipper_code&quot; : &quot;...&quot;,
+    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
+    &quot;ref1&quot; : &quot;...&quot;,
+    &quot;glDescription&quot; : &quot;...&quot;,
+    &quot;gl&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;corrector_no&quot; : &quot;...&quot;,
+    &quot;inv_no&quot; : &quot;...&quot;,
+    &quot;house_ref_no&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;lane_orig&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;i_shipment_id&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;cons_code&quot; : &quot;...&quot;,
+    &quot;corr_inv_amt&quot; : &quot;...&quot;,
+    &quot;c_webdescription1&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;payor_name&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;,
+    &quot;dept&quot; : &quot;...&quot;,
+    &quot;ar_posting_date&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;ves_voy&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;edi_date&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;user_code&quot; : &quot;...&quot;,
+    &quot;input_date&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;lane_dest&quot; : &quot;...&quot;,
+    &quot;c_reference_type&quot; : &quot;...&quot;,
+    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;sub&quot; : &quot;...&quot;,
+    &quot;invCurrCode&quot; : &quot;...&quot;,
+    &quot;payor_code&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;forOrigInvAmt&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;orig_inv_amt&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;batch&quot; : &quot;...&quot;,
+    &quot;c_webdescription2&quot; : &quot;...&quot;,
+    &quot;interco_exp_file&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;gl_posting_date&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;c_edi_generated&quot; : &quot;...&quot;,
+    &quot;inv_pc&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;container&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;descr3&quot; : &quot;...&quot;,
+    &quot;cumm_amt_paid&quot; : &quot;...&quot;,
+    &quot;disch&quot; : &quot;...&quot;,
+    &quot;fCorrInvAmt&quot; : &quot;...&quot;,
+    &quot;div&quot; : &quot;...&quot;,
+    &quot;c_invoice_type&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;errorAdjustment&quot; : &quot;...&quot;,
+    &quot;inet_upd&quot; : &quot;...&quot;,
+    &quot;fCummAmtPaid&quot; : &quot;...&quot;,
+    &quot;shipper_code&quot; : &quot;...&quot;,
+    &quot;localInvCurrExcRate&quot; : &quot;...&quot;,
+    &quot;ref1&quot; : &quot;...&quot;,
+    &quot;glDescription&quot; : &quot;...&quot;,
+    &quot;gl&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;corrector_no&quot; : &quot;...&quot;,
+    &quot;inv_no&quot; : &quot;...&quot;,
+    &quot;house_ref_no&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;lane_orig&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;i_shipment_id&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;cons_code&quot; : &quot;...&quot;,
+    &quot;corr_inv_amt&quot; : &quot;...&quot;,
+    &quot;c_webdescription1&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;payor_name&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;,
+    &quot;dept&quot; : &quot;...&quot;,
+    &quot;ar_posting_date&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;ves_voy&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;edi_date&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;user_code&quot; : &quot;...&quot;,
+    &quot;input_date&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;lane_dest&quot; : &quot;...&quot;,
+    &quot;c_reference_type&quot; : &quot;...&quot;,
+    &quot;c_whse_invc_prefix&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;sub&quot; : &quot;...&quot;,
+    &quot;invCurrCode&quot; : &quot;...&quot;,
+    &quot;payor_code&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;forOrigInvAmt&quot; : &quot;...&quot;
+  } ] ],
+  &quot;bankCode&quot; : &quot;...&quot;,
+  &quot;isVatAdded&quot; : &quot;...&quot;,
+  &quot;organizationName&quot; : &quot;...&quot;,
+  &quot;depositSlipNumber&quot; : &quot;...&quot;,
+  &quot;invoiceDate&quot; : &quot;...&quot;,
+  &quot;startFrom&quot; : 12345,
+  &quot;arDetailBeans&quot; : [ [ {
+    &quot;netting_amt&quot; : &quot;...&quot;,
+    &quot;curr&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;vatFlag&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;t_update_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;shipper&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;userid&quot; : &quot;...&quot;,
+    &quot;vessel&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;igb_batch&quot; : &quot;...&quot;,
+    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;sii_no&quot; : &quot;...&quot;,
+    &quot;ar_posted&quot; : &quot;...&quot;,
+    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;famount&quot; : &quot;...&quot;,
+    &quot;descr&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;file_no&quot; : &quot;...&quot;,
+    &quot;customer&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;igb_sent&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;t_input_date&quot; : &quot;...&quot;,
+    &quot;invoice&quot; : &quot;...&quot;,
+    &quot;cust_ref&quot; : &quot;...&quot;,
+    &quot;closedate&quot; : &quot;...&quot;,
+    &quot;netting_ref&quot; : &quot;...&quot;,
+    &quot;igb_confirm&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;
+  }, {
+    &quot;netting_amt&quot; : &quot;...&quot;,
+    &quot;curr&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;vatFlag&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;t_update_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;shipper&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;userid&quot; : &quot;...&quot;,
+    &quot;vessel&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;igb_batch&quot; : &quot;...&quot;,
+    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;sii_no&quot; : &quot;...&quot;,
+    &quot;ar_posted&quot; : &quot;...&quot;,
+    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;famount&quot; : &quot;...&quot;,
+    &quot;descr&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;file_no&quot; : &quot;...&quot;,
+    &quot;customer&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;igb_sent&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;t_input_date&quot; : &quot;...&quot;,
+    &quot;invoice&quot; : &quot;...&quot;,
+    &quot;cust_ref&quot; : &quot;...&quot;,
+    &quot;closedate&quot; : &quot;...&quot;,
+    &quot;netting_ref&quot; : &quot;...&quot;,
+    &quot;igb_confirm&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;netting_amt&quot; : &quot;...&quot;,
+    &quot;curr&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;vatFlag&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;t_update_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;shipper&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;userid&quot; : &quot;...&quot;,
+    &quot;vessel&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;igb_batch&quot; : &quot;...&quot;,
+    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;sii_no&quot; : &quot;...&quot;,
+    &quot;ar_posted&quot; : &quot;...&quot;,
+    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;famount&quot; : &quot;...&quot;,
+    &quot;descr&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;file_no&quot; : &quot;...&quot;,
+    &quot;customer&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;igb_sent&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;t_input_date&quot; : &quot;...&quot;,
+    &quot;invoice&quot; : &quot;...&quot;,
+    &quot;cust_ref&quot; : &quot;...&quot;,
+    &quot;closedate&quot; : &quot;...&quot;,
+    &quot;netting_ref&quot; : &quot;...&quot;,
+    &quot;igb_confirm&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;
+  }, {
+    &quot;netting_amt&quot; : &quot;...&quot;,
+    &quot;curr&quot; : &quot;...&quot;,
+    &quot;descr1&quot; : &quot;...&quot;,
+    &quot;vatFlag&quot; : &quot;...&quot;,
+    &quot;rate_exch&quot; : &quot;...&quot;,
+    &quot;t_update_date&quot; : &quot;...&quot;,
+    &quot;ar_batch&quot; : &quot;...&quot;,
+    &quot;collection_office&quot; : &quot;...&quot;,
+    &quot;t_invoice_due_date&quot; : &quot;...&quot;,
+    &quot;dest&quot; : &quot;...&quot;,
+    &quot;bl_no&quot; : &quot;...&quot;,
+    &quot;shipper&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;userid&quot; : &quot;...&quot;,
+    &quot;vessel&quot; : &quot;...&quot;,
+    &quot;source_code&quot; : &quot;...&quot;,
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;sail_date&quot; : &quot;...&quot;,
+    &quot;rec_stat_code&quot; : &quot;...&quot;,
+    &quot;igb_batch&quot; : &quot;...&quot;,
+    &quot;invoiceCurrencyCode&quot; : &quot;...&quot;,
+    &quot;c_issued_username&quot; : &quot;...&quot;,
+    &quot;sii_no&quot; : &quot;...&quot;,
+    &quot;ar_posted&quot; : &quot;...&quot;,
+    &quot;localToInvExchangeRate&quot; : &quot;...&quot;,
+    &quot;c_invoice_status&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;invoiceForeignAmount&quot; : &quot;...&quot;,
+    &quot;applyto&quot; : &quot;...&quot;,
+    &quot;famount&quot; : &quot;...&quot;,
+    &quot;descr&quot; : &quot;...&quot;,
+    &quot;ar_type&quot; : &quot;...&quot;,
+    &quot;file_no&quot; : &quot;...&quot;,
+    &quot;customer&quot; : &quot;...&quot;,
+    &quot;descr2&quot; : &quot;...&quot;,
+    &quot;company&quot; : &quot;...&quot;,
+    &quot;c_issued_location&quot; : &quot;...&quot;,
+    &quot;igb_sent&quot; : &quot;...&quot;,
+    &quot;periodtopost&quot; : &quot;...&quot;,
+    &quot;gl_batch&quot; : &quot;...&quot;,
+    &quot;t_payment_due_date&quot; : &quot;...&quot;,
+    &quot;ar_source&quot; : &quot;...&quot;,
+    &quot;t_input_date&quot; : &quot;...&quot;,
+    &quot;invoice&quot; : &quot;...&quot;,
+    &quot;cust_ref&quot; : &quot;...&quot;,
+    &quot;closedate&quot; : &quot;...&quot;,
+    &quot;netting_ref&quot; : &quot;...&quot;,
+    &quot;igb_confirm&quot; : &quot;...&quot;,
+    &quot;load&quot; : &quot;...&quot;,
+    &quot;local_curr&quot; : &quot;...&quot;,
+    &quot;inv_date&quot; : &quot;...&quot;
+  } ] ],
+  &quot;salesCode&quot; : &quot;...&quot;,
+  &quot;countOfDepositSlips&quot; : 12345.0,
+  &quot;issuedUsername&quot; : &quot;...&quot;,
+  &quot;fromDate&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

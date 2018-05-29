@@ -79,43 +79,7 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">truckerCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">pickupLocationName</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">pickupReferenceNumber</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">pickupId</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">pickupLocationContactEmail</span>
+          <td>  <span class="property-name">truckerReferenceNumber</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -133,7 +97,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">pickupLocationCode</span>
+          <td>  <span class="property-name">pickupLocationContactEmail</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -142,7 +106,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">truckerReferenceNumber</span>
+          <td>  <span class="property-name">pickupLocationName</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -151,7 +115,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">pickupLocationAddress</span>
+          <td>  <span class="property-name">pickupTotalPieces</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -169,7 +133,52 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">truckerPhone</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">pickupId</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">pickupReferenceNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">pickupLocationContactName</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">truckerCode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">pickupLocationAddress</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -187,7 +196,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">truckerPhone</span>
+          <td>  <span class="property-name">pickupLocationCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -204,36 +213,27 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
-        <tr>
-          <td>  <span class="property-name">pickupTotalPieces</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;truckerCode&quot; : &quot;...&quot;,
-  &quot;pickupLocationName&quot; : &quot;...&quot;,
-  &quot;pickupReferenceNumber&quot; : &quot;...&quot;,
-  &quot;pickupId&quot; : &quot;...&quot;,
-  &quot;pickupLocationContactEmail&quot; : &quot;...&quot;,
-  &quot;truckerAddress&quot; : &quot;...&quot;,
-  &quot;pickupLocationCode&quot; : &quot;...&quot;,
   &quot;truckerReferenceNumber&quot; : &quot;...&quot;,
-  &quot;pickupLocationAddress&quot; : &quot;...&quot;,
+  &quot;truckerAddress&quot; : &quot;...&quot;,
+  &quot;pickupLocationContactEmail&quot; : &quot;...&quot;,
+  &quot;pickupLocationName&quot; : &quot;...&quot;,
+  &quot;pickupTotalPieces&quot; : &quot;...&quot;,
   &quot;truckerName&quot; : &quot;...&quot;,
-  &quot;pickupLocationContactName&quot; : &quot;...&quot;,
-  &quot;truckerEmail&quot; : &quot;...&quot;,
   &quot;truckerPhone&quot; : &quot;...&quot;,
-  &quot;pickupLocationContactPhone&quot; : &quot;...&quot;,
-  &quot;pickupTotalPieces&quot; : &quot;...&quot;
+  &quot;pickupId&quot; : &quot;...&quot;,
+  &quot;pickupReferenceNumber&quot; : &quot;...&quot;,
+  &quot;pickupLocationContactName&quot; : &quot;...&quot;,
+  &quot;truckerCode&quot; : &quot;...&quot;,
+  &quot;pickupLocationAddress&quot; : &quot;...&quot;,
+  &quot;truckerEmail&quot; : &quot;...&quot;,
+  &quot;pickupLocationCode&quot; : &quot;...&quot;,
+  &quot;pickupLocationContactPhone&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

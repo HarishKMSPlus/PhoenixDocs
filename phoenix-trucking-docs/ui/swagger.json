@@ -5,7 +5,7 @@
     "version" : "1.0",
     "title" : "phoenix-trucking"
   },
-  "host" : "scan-it.phxcloud.io",
+  "host" : "shipco.phxcloud.io",
   "basePath" : "/phoenix/1.0",
   "schemes" : [],
   "tags" : [

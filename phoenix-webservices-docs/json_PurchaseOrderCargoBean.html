@@ -79,6 +79,15 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">cargoReferenceNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">descriptionOfGoods</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -97,7 +106,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">innerPackagePieces</span>
+          <td>  <span class="property-name">outerPackagingType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">totalWeightKg</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -106,7 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">outerPackagePieces</span>
+          <td>  <span class="property-name">innerPackagePieces</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -124,7 +142,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">totalWeightKg</span>
+          <td>  <span class="property-name">innerPackagingType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">totalWeightCbf</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -133,9 +160,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">cargoReferenceNumber</span>
+          <td>  <span class="property-name">marksAndNumbers</span>
 </td>
           <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">outerPackagePieces</span>
+</td>
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -160,42 +196,6 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">totalWeightCbf</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">outerPackagingType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">innerPackagingType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">marksAndNumbers</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">purchaseOrderCargoLineItemBeanList</span>
 </td>
           <td>  <span class="datatype-reference">array of array of <a href="json_PurchaseOrderCargoLineItemBean.html">PurchaseOrderCargoLineItemBean</a>
@@ -210,163 +210,163 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
+  &quot;cargoReferenceNumber&quot; : &quot;...&quot;,
   &quot;descriptionOfGoods&quot; : &quot;...&quot;,
   &quot;slipSheet&quot; : &quot;...&quot;,
-  &quot;innerPackagePieces&quot; : 12345,
-  &quot;outerPackagePieces&quot; : 12345,
-  &quot;modified&quot; : true,
+  &quot;outerPackagingType&quot; : &quot;...&quot;,
   &quot;totalWeightKg&quot; : 12345.0,
-  &quot;cargoReferenceNumber&quot; : &quot;...&quot;,
+  &quot;innerPackagePieces&quot; : 12345,
+  &quot;modified&quot; : true,
+  &quot;innerPackagingType&quot; : &quot;...&quot;,
+  &quot;totalWeightCbf&quot; : 12345.0,
+  &quot;marksAndNumbers&quot; : &quot;...&quot;,
+  &quot;outerPackagePieces&quot; : 12345,
   &quot;totalWeightLbs&quot; : 12345.0,
   &quot;totalWeightCbm&quot; : 12345.0,
-  &quot;totalWeightCbf&quot; : 12345.0,
-  &quot;outerPackagingType&quot; : &quot;...&quot;,
-  &quot;innerPackagingType&quot; : &quot;...&quot;,
-  &quot;marksAndNumbers&quot; : &quot;...&quot;,
   &quot;purchaseOrderCargoLineItemBeanList&quot; : [ [ {
-    &quot;commodity&quot; : &quot;...&quot;,
-    &quot;responsibleAgency&quot; : &quot;...&quot;,
-    &quot;cbmLabel&quot; : &quot;...&quot;,
-    &quot;cbm&quot; : 12345.0,
-    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
-    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
-    &quot;buyerProductNumber&quot; : &quot;...&quot;,
-    &quot;orderNumber&quot; : 12345,
-    &quot;outerPackages&quot; : 12345,
-    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;lbs&quot; : 12345.0,
-    &quot;innerPackageType&quot; : &quot;...&quot;,
-    &quot;originLine&quot; : 12345,
-    &quot;status&quot; : 12345,
-    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
-    &quot;locationQualifier&quot; : &quot;...&quot;,
     &quot;origin&quot; : &quot;...&quot;,
-    &quot;freeText1&quot; : &quot;...&quot;,
-    &quot;itemNumberType&quot; : &quot;...&quot;,
-    &quot;kgLabel&quot; : &quot;...&quot;,
-    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
-    &quot;kg&quot; : 12345.0,
-    &quot;lbsLabel&quot; : &quot;...&quot;,
-    &quot;cbf&quot; : 12345.0,
+    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+    &quot;orderNumber&quot; : 12345,
     &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
-    &quot;vendorProductNumber&quot; : &quot;...&quot;,
-    &quot;lastRecord&quot; : true,
+    &quot;cbf&quot; : 12345.0,
     &quot;cbfLabel&quot; : &quot;...&quot;,
     &quot;orderLine&quot; : 12345,
-    &quot;customerArticleNumber&quot; : 12345,
+    &quot;responsibleAgency&quot; : &quot;...&quot;,
     &quot;freeText2&quot; : &quot;...&quot;,
+    &quot;originLine&quot; : 12345,
+    &quot;locationQualifier&quot; : &quot;...&quot;,
+    &quot;commodity&quot; : &quot;...&quot;,
+    &quot;outerPackages&quot; : 12345,
+    &quot;lbs&quot; : 12345.0,
+    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
     &quot;innerPackages&quot; : 12345,
+    &quot;innerPackageType&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+    &quot;item&quot; : &quot;...&quot;,
+    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
     &quot;includeInBooking&quot; : 12345,
-    &quot;item&quot; : &quot;...&quot;
+    &quot;vendorProductNumber&quot; : &quot;...&quot;,
+    &quot;freeText1&quot; : &quot;...&quot;,
+    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+    &quot;kg&quot; : 12345.0,
+    &quot;customerArticleNumber&quot; : 12345,
+    &quot;itemNumberType&quot; : &quot;...&quot;,
+    &quot;cbm&quot; : 12345.0,
+    &quot;lastRecord&quot; : true,
+    &quot;buyerProductNumber&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345
   }, {
-    &quot;commodity&quot; : &quot;...&quot;,
-    &quot;responsibleAgency&quot; : &quot;...&quot;,
-    &quot;cbmLabel&quot; : &quot;...&quot;,
-    &quot;cbm&quot; : 12345.0,
-    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
-    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
-    &quot;buyerProductNumber&quot; : &quot;...&quot;,
-    &quot;orderNumber&quot; : 12345,
-    &quot;outerPackages&quot; : 12345,
-    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;lbs&quot; : 12345.0,
-    &quot;innerPackageType&quot; : &quot;...&quot;,
-    &quot;originLine&quot; : 12345,
-    &quot;status&quot; : 12345,
-    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
-    &quot;locationQualifier&quot; : &quot;...&quot;,
     &quot;origin&quot; : &quot;...&quot;,
-    &quot;freeText1&quot; : &quot;...&quot;,
-    &quot;itemNumberType&quot; : &quot;...&quot;,
-    &quot;kgLabel&quot; : &quot;...&quot;,
-    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
-    &quot;kg&quot; : 12345.0,
-    &quot;lbsLabel&quot; : &quot;...&quot;,
-    &quot;cbf&quot; : 12345.0,
+    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+    &quot;orderNumber&quot; : 12345,
     &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
-    &quot;vendorProductNumber&quot; : &quot;...&quot;,
-    &quot;lastRecord&quot; : true,
+    &quot;cbf&quot; : 12345.0,
     &quot;cbfLabel&quot; : &quot;...&quot;,
     &quot;orderLine&quot; : 12345,
-    &quot;customerArticleNumber&quot; : 12345,
+    &quot;responsibleAgency&quot; : &quot;...&quot;,
     &quot;freeText2&quot; : &quot;...&quot;,
+    &quot;originLine&quot; : 12345,
+    &quot;locationQualifier&quot; : &quot;...&quot;,
+    &quot;commodity&quot; : &quot;...&quot;,
+    &quot;outerPackages&quot; : 12345,
+    &quot;lbs&quot; : 12345.0,
+    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
     &quot;innerPackages&quot; : 12345,
+    &quot;innerPackageType&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+    &quot;item&quot; : &quot;...&quot;,
+    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
     &quot;includeInBooking&quot; : 12345,
-    &quot;item&quot; : &quot;...&quot;
+    &quot;vendorProductNumber&quot; : &quot;...&quot;,
+    &quot;freeText1&quot; : &quot;...&quot;,
+    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+    &quot;kg&quot; : 12345.0,
+    &quot;customerArticleNumber&quot; : 12345,
+    &quot;itemNumberType&quot; : &quot;...&quot;,
+    &quot;cbm&quot; : 12345.0,
+    &quot;lastRecord&quot; : true,
+    &quot;buyerProductNumber&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345
   } ], [ {
-    &quot;commodity&quot; : &quot;...&quot;,
-    &quot;responsibleAgency&quot; : &quot;...&quot;,
-    &quot;cbmLabel&quot; : &quot;...&quot;,
-    &quot;cbm&quot; : 12345.0,
-    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
-    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
-    &quot;buyerProductNumber&quot; : &quot;...&quot;,
-    &quot;orderNumber&quot; : 12345,
-    &quot;outerPackages&quot; : 12345,
-    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;lbs&quot; : 12345.0,
-    &quot;innerPackageType&quot; : &quot;...&quot;,
-    &quot;originLine&quot; : 12345,
-    &quot;status&quot; : 12345,
-    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
-    &quot;locationQualifier&quot; : &quot;...&quot;,
     &quot;origin&quot; : &quot;...&quot;,
-    &quot;freeText1&quot; : &quot;...&quot;,
-    &quot;itemNumberType&quot; : &quot;...&quot;,
-    &quot;kgLabel&quot; : &quot;...&quot;,
-    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
-    &quot;kg&quot; : 12345.0,
-    &quot;lbsLabel&quot; : &quot;...&quot;,
-    &quot;cbf&quot; : 12345.0,
+    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+    &quot;orderNumber&quot; : 12345,
     &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
-    &quot;vendorProductNumber&quot; : &quot;...&quot;,
-    &quot;lastRecord&quot; : true,
+    &quot;cbf&quot; : 12345.0,
     &quot;cbfLabel&quot; : &quot;...&quot;,
     &quot;orderLine&quot; : 12345,
-    &quot;customerArticleNumber&quot; : 12345,
+    &quot;responsibleAgency&quot; : &quot;...&quot;,
     &quot;freeText2&quot; : &quot;...&quot;,
+    &quot;originLine&quot; : 12345,
+    &quot;locationQualifier&quot; : &quot;...&quot;,
+    &quot;commodity&quot; : &quot;...&quot;,
+    &quot;outerPackages&quot; : 12345,
+    &quot;lbs&quot; : 12345.0,
+    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
     &quot;innerPackages&quot; : 12345,
+    &quot;innerPackageType&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+    &quot;item&quot; : &quot;...&quot;,
+    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
     &quot;includeInBooking&quot; : 12345,
-    &quot;item&quot; : &quot;...&quot;
+    &quot;vendorProductNumber&quot; : &quot;...&quot;,
+    &quot;freeText1&quot; : &quot;...&quot;,
+    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+    &quot;kg&quot; : 12345.0,
+    &quot;customerArticleNumber&quot; : 12345,
+    &quot;itemNumberType&quot; : &quot;...&quot;,
+    &quot;cbm&quot; : 12345.0,
+    &quot;lastRecord&quot; : true,
+    &quot;buyerProductNumber&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345
   }, {
-    &quot;commodity&quot; : &quot;...&quot;,
-    &quot;responsibleAgency&quot; : &quot;...&quot;,
-    &quot;cbmLabel&quot; : &quot;...&quot;,
-    &quot;cbm&quot; : 12345.0,
-    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
-    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
-    &quot;buyerProductNumber&quot; : &quot;...&quot;,
-    &quot;orderNumber&quot; : 12345,
-    &quot;outerPackages&quot; : 12345,
-    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;lbs&quot; : 12345.0,
-    &quot;innerPackageType&quot; : &quot;...&quot;,
-    &quot;originLine&quot; : 12345,
-    &quot;status&quot; : 12345,
-    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
-    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
-    &quot;locationQualifier&quot; : &quot;...&quot;,
     &quot;origin&quot; : &quot;...&quot;,
-    &quot;freeText1&quot; : &quot;...&quot;,
-    &quot;itemNumberType&quot; : &quot;...&quot;,
-    &quot;kgLabel&quot; : &quot;...&quot;,
-    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
-    &quot;kg&quot; : 12345.0,
-    &quot;lbsLabel&quot; : &quot;...&quot;,
-    &quot;cbf&quot; : 12345.0,
+    &quot;locationResponsibleAgency&quot; : &quot;...&quot;,
+    &quot;orderNumber&quot; : 12345,
     &quot;locationIdentificationCountry&quot; : &quot;...&quot;,
-    &quot;vendorProductNumber&quot; : &quot;...&quot;,
-    &quot;lastRecord&quot; : true,
+    &quot;cbf&quot; : 12345.0,
     &quot;cbfLabel&quot; : &quot;...&quot;,
     &quot;orderLine&quot; : 12345,
-    &quot;customerArticleNumber&quot; : 12345,
+    &quot;responsibleAgency&quot; : &quot;...&quot;,
     &quot;freeText2&quot; : &quot;...&quot;,
+    &quot;originLine&quot; : 12345,
+    &quot;locationQualifier&quot; : &quot;...&quot;,
+    &quot;commodity&quot; : &quot;...&quot;,
+    &quot;outerPackages&quot; : 12345,
+    &quot;lbs&quot; : 12345.0,
+    &quot;itemNumberIdentification&quot; : &quot;...&quot;,
+    &quot;kgLabel&quot; : &quot;...&quot;,
     &quot;innerPackages&quot; : 12345,
+    &quot;innerPackageType&quot; : &quot;...&quot;,
+    &quot;lbsLabel&quot; : &quot;...&quot;,
+    &quot;itemCodeListQualifier&quot; : &quot;...&quot;,
+    &quot;item&quot; : &quot;...&quot;,
+    &quot;itemResponsibleAgency&quot; : &quot;...&quot;,
     &quot;includeInBooking&quot; : 12345,
-    &quot;item&quot; : &quot;...&quot;
+    &quot;vendorProductNumber&quot; : &quot;...&quot;,
+    &quot;freeText1&quot; : &quot;...&quot;,
+    &quot;freeTextSubjectQualifier&quot; : &quot;...&quot;,
+    &quot;kg&quot; : 12345.0,
+    &quot;customerArticleNumber&quot; : 12345,
+    &quot;itemNumberType&quot; : &quot;...&quot;,
+    &quot;cbm&quot; : 12345.0,
+    &quot;lastRecord&quot; : true,
+    &quot;buyerProductNumber&quot; : &quot;...&quot;,
+    &quot;cbmLabel&quot; : &quot;...&quot;,
+    &quot;cargoItemReferenceNumber&quot; : &quot;...&quot;,
+    &quot;status&quot; : 12345
   } ] ]
 }</pre>
 

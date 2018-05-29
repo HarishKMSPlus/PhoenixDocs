@@ -79,18 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">commonBean</span>
+          <td>  <span class="property-name">apEntryBean</span>
 </td>
-          <td>  <span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">igbEntryBean</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_InterGroupMaintenanceForAPEntryBean.html">InterGroupMaintenanceForAPEntryBean</a>
+          <td>  <span class="datatype-reference"><a href="json_InterGroupMaintenanceForAPEntryBean.html">InterGroupMaintenanceForAPEntryBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -98,6 +89,15 @@
         </tr>
         <tr>
           <td>  <span class="property-name">destinationOffice</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">igbPayorCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -115,18 +115,18 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">igbPayorCode</span>
+          <td>  <span class="property-name">commonBean</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">apEntryBean</span>
+          <td>  <span class="property-name">igbEntryBean</span>
 </td>
-          <td>  <span class="datatype-reference"><a href="json_InterGroupMaintenanceForAPEntryBean.html">InterGroupMaintenanceForAPEntryBean</a>
+          <td>  <span class="datatype-reference">array of array of <a href="json_InterGroupMaintenanceForAPEntryBean.html">InterGroupMaintenanceForAPEntryBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -138,289 +138,289 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;commonBean&quot; : {
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
+  &quot;apEntryBean&quot; : {
+    &quot;companyCode&quot; : &quot;...&quot;,
+    &quot;destinationSystem&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;commonBean&quot; : {
+      &quot;userCompanyName&quot; : &quot;...&quot;,
+      &quot;alternateCityName&quot; : &quot;...&quot;,
+      &quot;schemaName&quot; : &quot;...&quot;,
+      &quot;updateUserFullname&quot; : &quot;...&quot;,
+      &quot;userOfficeID&quot; : 12345,
+      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+      &quot;password&quot; : &quot;...&quot;,
+      &quot;inputDate&quot; : &quot;...&quot;,
+      &quot;userLoginId&quot; : 12345,
+      &quot;inputUser&quot; : &quot;...&quot;,
+      &quot;username&quot; : &quot;...&quot;,
+      &quot;locale&quot; : &quot;...&quot;,
+      &quot;updateUser&quot; : &quot;...&quot;,
+      &quot;updateLdapUser&quot; : &quot;...&quot;,
+      &quot;officeTimezone&quot; : &quot;...&quot;,
+      &quot;officeCode&quot; : &quot;...&quot;,
+      &quot;updateDate&quot; : &quot;...&quot;,
+      &quot;config&quot; : &quot;...&quot;,
+      &quot;userCompany&quot; : &quot;...&quot;,
+      &quot;debugModeFlag&quot; : 12345,
+      &quot;ldapUsername&quot; : &quot;...&quot;,
+      &quot;userID&quot; : 12345,
+      &quot;userSchemaName&quot; : &quot;...&quot;,
+      &quot;userFullname&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;inputLdapUser&quot; : &quot;...&quot;,
+      &quot;inputUserFullname&quot; : &quot;...&quot;,
+      &quot;userRoleID&quot; : 12345,
+      &quot;userSchemaID&quot; : 12345
+    },
+    &quot;igbPayorCode&quot; : &quot;...&quot;,
+    &quot;destinationOffice&quot; : &quot;...&quot;,
+    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;orgCodeNameMap&quot; : {
+      &quot;property1&quot; : &quot;...&quot;,
+      &quot;property2&quot; : &quot;...&quot;
+    },
+    &quot;destinationCompany&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;responceCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;
   },
-  &quot;igbEntryBean&quot; : [ [ {
-    &quot;commonBean&quot; : {
-      &quot;localCurrency&quot; : &quot;...&quot;,
-      &quot;inputUser&quot; : &quot;...&quot;,
-      &quot;userCompany&quot; : &quot;...&quot;,
-      &quot;updateLdapUser&quot; : &quot;...&quot;,
-      &quot;inputUserFullname&quot; : &quot;...&quot;,
-      &quot;debugModeFlag&quot; : 12345,
-      &quot;userRoleID&quot; : 12345,
-      &quot;ldapUsername&quot; : &quot;...&quot;,
-      &quot;password&quot; : &quot;...&quot;,
-      &quot;schemaName&quot; : &quot;...&quot;,
-      &quot;userLoginId&quot; : 12345,
-      &quot;updateDate&quot; : &quot;...&quot;,
-      &quot;config&quot; : &quot;...&quot;,
-      &quot;officeCode&quot; : &quot;...&quot;,
-      &quot;userID&quot; : 12345,
-      &quot;officeTimezone&quot; : &quot;...&quot;,
-      &quot;alternateCityName&quot; : &quot;...&quot;,
-      &quot;userSchemaName&quot; : &quot;...&quot;,
-      &quot;inputDate&quot; : &quot;...&quot;,
-      &quot;updateUser&quot; : &quot;...&quot;,
-      &quot;updateUserFullname&quot; : &quot;...&quot;,
-      &quot;userSchemaID&quot; : 12345,
-      &quot;userCompanyName&quot; : &quot;...&quot;,
-      &quot;userOfficeID&quot; : 12345,
-      &quot;username&quot; : &quot;...&quot;,
-      &quot;locale&quot; : &quot;...&quot;,
-      &quot;userFullname&quot; : &quot;...&quot;,
-      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-      &quot;inputLdapUser&quot; : &quot;...&quot;
-    },
-    &quot;companyCode&quot; : &quot;...&quot;,
-    &quot;destinationSystem&quot; : &quot;...&quot;,
-    &quot;orgCodeNameMap&quot; : {
-      &quot;property1&quot; : &quot;...&quot;,
-      &quot;property2&quot; : &quot;...&quot;
-    },
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;responceCode&quot; : &quot;...&quot;,
-    &quot;destinationCompany&quot; : &quot;...&quot;,
-    &quot;destinationCurrency&quot; : &quot;...&quot;,
-    &quot;igbPayorCode&quot; : &quot;...&quot;,
-    &quot;destinationOffice&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;commonBean&quot; : {
-      &quot;localCurrency&quot; : &quot;...&quot;,
-      &quot;inputUser&quot; : &quot;...&quot;,
-      &quot;userCompany&quot; : &quot;...&quot;,
-      &quot;updateLdapUser&quot; : &quot;...&quot;,
-      &quot;inputUserFullname&quot; : &quot;...&quot;,
-      &quot;debugModeFlag&quot; : 12345,
-      &quot;userRoleID&quot; : 12345,
-      &quot;ldapUsername&quot; : &quot;...&quot;,
-      &quot;password&quot; : &quot;...&quot;,
-      &quot;schemaName&quot; : &quot;...&quot;,
-      &quot;userLoginId&quot; : 12345,
-      &quot;updateDate&quot; : &quot;...&quot;,
-      &quot;config&quot; : &quot;...&quot;,
-      &quot;officeCode&quot; : &quot;...&quot;,
-      &quot;userID&quot; : 12345,
-      &quot;officeTimezone&quot; : &quot;...&quot;,
-      &quot;alternateCityName&quot; : &quot;...&quot;,
-      &quot;userSchemaName&quot; : &quot;...&quot;,
-      &quot;inputDate&quot; : &quot;...&quot;,
-      &quot;updateUser&quot; : &quot;...&quot;,
-      &quot;updateUserFullname&quot; : &quot;...&quot;,
-      &quot;userSchemaID&quot; : 12345,
-      &quot;userCompanyName&quot; : &quot;...&quot;,
-      &quot;userOfficeID&quot; : 12345,
-      &quot;username&quot; : &quot;...&quot;,
-      &quot;locale&quot; : &quot;...&quot;,
-      &quot;userFullname&quot; : &quot;...&quot;,
-      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-      &quot;inputLdapUser&quot; : &quot;...&quot;
-    },
-    &quot;companyCode&quot; : &quot;...&quot;,
-    &quot;destinationSystem&quot; : &quot;...&quot;,
-    &quot;orgCodeNameMap&quot; : {
-      &quot;property1&quot; : &quot;...&quot;,
-      &quot;property2&quot; : &quot;...&quot;
-    },
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;responceCode&quot; : &quot;...&quot;,
-    &quot;destinationCompany&quot; : &quot;...&quot;,
-    &quot;destinationCurrency&quot; : &quot;...&quot;,
-    &quot;igbPayorCode&quot; : &quot;...&quot;,
-    &quot;destinationOffice&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;commonBean&quot; : {
-      &quot;localCurrency&quot; : &quot;...&quot;,
-      &quot;inputUser&quot; : &quot;...&quot;,
-      &quot;userCompany&quot; : &quot;...&quot;,
-      &quot;updateLdapUser&quot; : &quot;...&quot;,
-      &quot;inputUserFullname&quot; : &quot;...&quot;,
-      &quot;debugModeFlag&quot; : 12345,
-      &quot;userRoleID&quot; : 12345,
-      &quot;ldapUsername&quot; : &quot;...&quot;,
-      &quot;password&quot; : &quot;...&quot;,
-      &quot;schemaName&quot; : &quot;...&quot;,
-      &quot;userLoginId&quot; : 12345,
-      &quot;updateDate&quot; : &quot;...&quot;,
-      &quot;config&quot; : &quot;...&quot;,
-      &quot;officeCode&quot; : &quot;...&quot;,
-      &quot;userID&quot; : 12345,
-      &quot;officeTimezone&quot; : &quot;...&quot;,
-      &quot;alternateCityName&quot; : &quot;...&quot;,
-      &quot;userSchemaName&quot; : &quot;...&quot;,
-      &quot;inputDate&quot; : &quot;...&quot;,
-      &quot;updateUser&quot; : &quot;...&quot;,
-      &quot;updateUserFullname&quot; : &quot;...&quot;,
-      &quot;userSchemaID&quot; : 12345,
-      &quot;userCompanyName&quot; : &quot;...&quot;,
-      &quot;userOfficeID&quot; : 12345,
-      &quot;username&quot; : &quot;...&quot;,
-      &quot;locale&quot; : &quot;...&quot;,
-      &quot;userFullname&quot; : &quot;...&quot;,
-      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-      &quot;inputLdapUser&quot; : &quot;...&quot;
-    },
-    &quot;companyCode&quot; : &quot;...&quot;,
-    &quot;destinationSystem&quot; : &quot;...&quot;,
-    &quot;orgCodeNameMap&quot; : {
-      &quot;property1&quot; : &quot;...&quot;,
-      &quot;property2&quot; : &quot;...&quot;
-    },
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;responceCode&quot; : &quot;...&quot;,
-    &quot;destinationCompany&quot; : &quot;...&quot;,
-    &quot;destinationCurrency&quot; : &quot;...&quot;,
-    &quot;igbPayorCode&quot; : &quot;...&quot;,
-    &quot;destinationOffice&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;commonBean&quot; : {
-      &quot;localCurrency&quot; : &quot;...&quot;,
-      &quot;inputUser&quot; : &quot;...&quot;,
-      &quot;userCompany&quot; : &quot;...&quot;,
-      &quot;updateLdapUser&quot; : &quot;...&quot;,
-      &quot;inputUserFullname&quot; : &quot;...&quot;,
-      &quot;debugModeFlag&quot; : 12345,
-      &quot;userRoleID&quot; : 12345,
-      &quot;ldapUsername&quot; : &quot;...&quot;,
-      &quot;password&quot; : &quot;...&quot;,
-      &quot;schemaName&quot; : &quot;...&quot;,
-      &quot;userLoginId&quot; : 12345,
-      &quot;updateDate&quot; : &quot;...&quot;,
-      &quot;config&quot; : &quot;...&quot;,
-      &quot;officeCode&quot; : &quot;...&quot;,
-      &quot;userID&quot; : 12345,
-      &quot;officeTimezone&quot; : &quot;...&quot;,
-      &quot;alternateCityName&quot; : &quot;...&quot;,
-      &quot;userSchemaName&quot; : &quot;...&quot;,
-      &quot;inputDate&quot; : &quot;...&quot;,
-      &quot;updateUser&quot; : &quot;...&quot;,
-      &quot;updateUserFullname&quot; : &quot;...&quot;,
-      &quot;userSchemaID&quot; : 12345,
-      &quot;userCompanyName&quot; : &quot;...&quot;,
-      &quot;userOfficeID&quot; : 12345,
-      &quot;username&quot; : &quot;...&quot;,
-      &quot;locale&quot; : &quot;...&quot;,
-      &quot;userFullname&quot; : &quot;...&quot;,
-      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-      &quot;inputLdapUser&quot; : &quot;...&quot;
-    },
-    &quot;companyCode&quot; : &quot;...&quot;,
-    &quot;destinationSystem&quot; : &quot;...&quot;,
-    &quot;orgCodeNameMap&quot; : {
-      &quot;property1&quot; : &quot;...&quot;,
-      &quot;property2&quot; : &quot;...&quot;
-    },
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;responceCode&quot; : &quot;...&quot;,
-    &quot;destinationCompany&quot; : &quot;...&quot;,
-    &quot;destinationCurrency&quot; : &quot;...&quot;,
-    &quot;igbPayorCode&quot; : &quot;...&quot;,
-    &quot;destinationOffice&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;
-  } ] ],
   &quot;destinationOffice&quot; : &quot;...&quot;,
+  &quot;igbPayorCode&quot; : &quot;...&quot;,
   &quot;transmissionBean&quot; : {
-    &quot;transmissionSystem&quot; : &quot;...&quot;,
-    &quot;destinationCompanyName&quot; : &quot;...&quot;,
-    &quot;schemaId&quot; : &quot;...&quot;,
-    &quot;currentSchema&quot; : &quot;...&quot;,
+    &quot;uucpSystem&quot; : &quot;...&quot;,
     &quot;systemType&quot; : &quot;...&quot;,
     &quot;destinationSystem&quot; : &quot;...&quot;,
+    &quot;schemaId&quot; : &quot;...&quot;,
     &quot;destinationCompany&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;uucpSystem&quot; : &quot;...&quot;
+    &quot;transmissionSystem&quot; : &quot;...&quot;,
+    &quot;currentSchema&quot; : &quot;...&quot;,
+    &quot;destinationCompanyName&quot; : &quot;...&quot;
   },
-  &quot;igbPayorCode&quot; : &quot;...&quot;,
-  &quot;apEntryBean&quot; : {
-    &quot;commonBean&quot; : {
-      &quot;localCurrency&quot; : &quot;...&quot;,
-      &quot;inputUser&quot; : &quot;...&quot;,
-      &quot;userCompany&quot; : &quot;...&quot;,
-      &quot;updateLdapUser&quot; : &quot;...&quot;,
-      &quot;inputUserFullname&quot; : &quot;...&quot;,
-      &quot;debugModeFlag&quot; : 12345,
-      &quot;userRoleID&quot; : 12345,
-      &quot;ldapUsername&quot; : &quot;...&quot;,
-      &quot;password&quot; : &quot;...&quot;,
-      &quot;schemaName&quot; : &quot;...&quot;,
-      &quot;userLoginId&quot; : 12345,
-      &quot;updateDate&quot; : &quot;...&quot;,
-      &quot;config&quot; : &quot;...&quot;,
-      &quot;officeCode&quot; : &quot;...&quot;,
-      &quot;userID&quot; : 12345,
-      &quot;officeTimezone&quot; : &quot;...&quot;,
-      &quot;alternateCityName&quot; : &quot;...&quot;,
-      &quot;userSchemaName&quot; : &quot;...&quot;,
-      &quot;inputDate&quot; : &quot;...&quot;,
-      &quot;updateUser&quot; : &quot;...&quot;,
-      &quot;updateUserFullname&quot; : &quot;...&quot;,
-      &quot;userSchemaID&quot; : 12345,
-      &quot;userCompanyName&quot; : &quot;...&quot;,
-      &quot;userOfficeID&quot; : 12345,
-      &quot;username&quot; : &quot;...&quot;,
-      &quot;locale&quot; : &quot;...&quot;,
-      &quot;userFullname&quot; : &quot;...&quot;,
-      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-      &quot;inputLdapUser&quot; : &quot;...&quot;
-    },
+  &quot;commonBean&quot; : {
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  },
+  &quot;igbEntryBean&quot; : [ [ {
     &quot;companyCode&quot; : &quot;...&quot;,
     &quot;destinationSystem&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;commonBean&quot; : {
+      &quot;userCompanyName&quot; : &quot;...&quot;,
+      &quot;alternateCityName&quot; : &quot;...&quot;,
+      &quot;schemaName&quot; : &quot;...&quot;,
+      &quot;updateUserFullname&quot; : &quot;...&quot;,
+      &quot;userOfficeID&quot; : 12345,
+      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+      &quot;password&quot; : &quot;...&quot;,
+      &quot;inputDate&quot; : &quot;...&quot;,
+      &quot;userLoginId&quot; : 12345,
+      &quot;inputUser&quot; : &quot;...&quot;,
+      &quot;username&quot; : &quot;...&quot;,
+      &quot;locale&quot; : &quot;...&quot;,
+      &quot;updateUser&quot; : &quot;...&quot;,
+      &quot;updateLdapUser&quot; : &quot;...&quot;,
+      &quot;officeTimezone&quot; : &quot;...&quot;,
+      &quot;officeCode&quot; : &quot;...&quot;,
+      &quot;updateDate&quot; : &quot;...&quot;,
+      &quot;config&quot; : &quot;...&quot;,
+      &quot;userCompany&quot; : &quot;...&quot;,
+      &quot;debugModeFlag&quot; : 12345,
+      &quot;ldapUsername&quot; : &quot;...&quot;,
+      &quot;userID&quot; : 12345,
+      &quot;userSchemaName&quot; : &quot;...&quot;,
+      &quot;userFullname&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;inputLdapUser&quot; : &quot;...&quot;,
+      &quot;inputUserFullname&quot; : &quot;...&quot;,
+      &quot;userRoleID&quot; : 12345,
+      &quot;userSchemaID&quot; : 12345
+    },
+    &quot;igbPayorCode&quot; : &quot;...&quot;,
+    &quot;destinationOffice&quot; : &quot;...&quot;,
+    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
     &quot;orgCodeNameMap&quot; : {
       &quot;property1&quot; : &quot;...&quot;,
       &quot;property2&quot; : &quot;...&quot;
     },
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;responceCode&quot; : &quot;...&quot;,
     &quot;destinationCompany&quot; : &quot;...&quot;,
-    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;responceCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;
+  }, {
+    &quot;companyCode&quot; : &quot;...&quot;,
+    &quot;destinationSystem&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;commonBean&quot; : {
+      &quot;userCompanyName&quot; : &quot;...&quot;,
+      &quot;alternateCityName&quot; : &quot;...&quot;,
+      &quot;schemaName&quot; : &quot;...&quot;,
+      &quot;updateUserFullname&quot; : &quot;...&quot;,
+      &quot;userOfficeID&quot; : 12345,
+      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+      &quot;password&quot; : &quot;...&quot;,
+      &quot;inputDate&quot; : &quot;...&quot;,
+      &quot;userLoginId&quot; : 12345,
+      &quot;inputUser&quot; : &quot;...&quot;,
+      &quot;username&quot; : &quot;...&quot;,
+      &quot;locale&quot; : &quot;...&quot;,
+      &quot;updateUser&quot; : &quot;...&quot;,
+      &quot;updateLdapUser&quot; : &quot;...&quot;,
+      &quot;officeTimezone&quot; : &quot;...&quot;,
+      &quot;officeCode&quot; : &quot;...&quot;,
+      &quot;updateDate&quot; : &quot;...&quot;,
+      &quot;config&quot; : &quot;...&quot;,
+      &quot;userCompany&quot; : &quot;...&quot;,
+      &quot;debugModeFlag&quot; : 12345,
+      &quot;ldapUsername&quot; : &quot;...&quot;,
+      &quot;userID&quot; : 12345,
+      &quot;userSchemaName&quot; : &quot;...&quot;,
+      &quot;userFullname&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;inputLdapUser&quot; : &quot;...&quot;,
+      &quot;inputUserFullname&quot; : &quot;...&quot;,
+      &quot;userRoleID&quot; : 12345,
+      &quot;userSchemaID&quot; : 12345
+    },
     &quot;igbPayorCode&quot; : &quot;...&quot;,
     &quot;destinationOffice&quot; : &quot;...&quot;,
+    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;orgCodeNameMap&quot; : {
+      &quot;property1&quot; : &quot;...&quot;,
+      &quot;property2&quot; : &quot;...&quot;
+    },
+    &quot;destinationCompany&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;responceCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;companyCode&quot; : &quot;...&quot;,
+    &quot;destinationSystem&quot; : &quot;...&quot;,
     &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;
-  }
+    &quot;commonBean&quot; : {
+      &quot;userCompanyName&quot; : &quot;...&quot;,
+      &quot;alternateCityName&quot; : &quot;...&quot;,
+      &quot;schemaName&quot; : &quot;...&quot;,
+      &quot;updateUserFullname&quot; : &quot;...&quot;,
+      &quot;userOfficeID&quot; : 12345,
+      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+      &quot;password&quot; : &quot;...&quot;,
+      &quot;inputDate&quot; : &quot;...&quot;,
+      &quot;userLoginId&quot; : 12345,
+      &quot;inputUser&quot; : &quot;...&quot;,
+      &quot;username&quot; : &quot;...&quot;,
+      &quot;locale&quot; : &quot;...&quot;,
+      &quot;updateUser&quot; : &quot;...&quot;,
+      &quot;updateLdapUser&quot; : &quot;...&quot;,
+      &quot;officeTimezone&quot; : &quot;...&quot;,
+      &quot;officeCode&quot; : &quot;...&quot;,
+      &quot;updateDate&quot; : &quot;...&quot;,
+      &quot;config&quot; : &quot;...&quot;,
+      &quot;userCompany&quot; : &quot;...&quot;,
+      &quot;debugModeFlag&quot; : 12345,
+      &quot;ldapUsername&quot; : &quot;...&quot;,
+      &quot;userID&quot; : 12345,
+      &quot;userSchemaName&quot; : &quot;...&quot;,
+      &quot;userFullname&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;inputLdapUser&quot; : &quot;...&quot;,
+      &quot;inputUserFullname&quot; : &quot;...&quot;,
+      &quot;userRoleID&quot; : 12345,
+      &quot;userSchemaID&quot; : 12345
+    },
+    &quot;igbPayorCode&quot; : &quot;...&quot;,
+    &quot;destinationOffice&quot; : &quot;...&quot;,
+    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;orgCodeNameMap&quot; : {
+      &quot;property1&quot; : &quot;...&quot;,
+      &quot;property2&quot; : &quot;...&quot;
+    },
+    &quot;destinationCompany&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;responceCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;
+  }, {
+    &quot;companyCode&quot; : &quot;...&quot;,
+    &quot;destinationSystem&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;commonBean&quot; : {
+      &quot;userCompanyName&quot; : &quot;...&quot;,
+      &quot;alternateCityName&quot; : &quot;...&quot;,
+      &quot;schemaName&quot; : &quot;...&quot;,
+      &quot;updateUserFullname&quot; : &quot;...&quot;,
+      &quot;userOfficeID&quot; : 12345,
+      &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+      &quot;password&quot; : &quot;...&quot;,
+      &quot;inputDate&quot; : &quot;...&quot;,
+      &quot;userLoginId&quot; : 12345,
+      &quot;inputUser&quot; : &quot;...&quot;,
+      &quot;username&quot; : &quot;...&quot;,
+      &quot;locale&quot; : &quot;...&quot;,
+      &quot;updateUser&quot; : &quot;...&quot;,
+      &quot;updateLdapUser&quot; : &quot;...&quot;,
+      &quot;officeTimezone&quot; : &quot;...&quot;,
+      &quot;officeCode&quot; : &quot;...&quot;,
+      &quot;updateDate&quot; : &quot;...&quot;,
+      &quot;config&quot; : &quot;...&quot;,
+      &quot;userCompany&quot; : &quot;...&quot;,
+      &quot;debugModeFlag&quot; : 12345,
+      &quot;ldapUsername&quot; : &quot;...&quot;,
+      &quot;userID&quot; : 12345,
+      &quot;userSchemaName&quot; : &quot;...&quot;,
+      &quot;userFullname&quot; : &quot;...&quot;,
+      &quot;localCurrency&quot; : &quot;...&quot;,
+      &quot;inputLdapUser&quot; : &quot;...&quot;,
+      &quot;inputUserFullname&quot; : &quot;...&quot;,
+      &quot;userRoleID&quot; : 12345,
+      &quot;userSchemaID&quot; : 12345
+    },
+    &quot;igbPayorCode&quot; : &quot;...&quot;,
+    &quot;destinationOffice&quot; : &quot;...&quot;,
+    &quot;destinationCurrency&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;orgCodeNameMap&quot; : {
+      &quot;property1&quot; : &quot;...&quot;,
+      &quot;property2&quot; : &quot;...&quot;
+    },
+    &quot;destinationCompany&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;responceCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;
+  } ] ]
 }</pre>
 
         <footer class="footer">

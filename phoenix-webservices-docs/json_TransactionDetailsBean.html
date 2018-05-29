@@ -79,6 +79,33 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">totalReservationVouchers</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">totalAdjustmentRevenue</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">totalCorrectionJournalEntry</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">totalAdjustmentVouchers</span>
 </td>
           <td>  <span class="datatype-reference">number
@@ -89,60 +116,6 @@
         </tr>
         <tr>
           <td>  <span class="property-name">adjustmentVouchersList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_VoucherProfitAndLossBean.html">VoucherProfitAndLossBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">revenueBeanList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_RevenueBean.html">RevenueBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">correctionJournalEntryBeanList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_CorrectionJournalEntryBean.html">CorrectionJournalEntryBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">reservationVouchersList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_VoucherProfitAndLossBean.html">VoucherProfitAndLossBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">adjustmentRevenueBeanList</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_RevenueBean.html">RevenueBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">totalReservationVouchers</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">expensesList</span>
 </td>
           <td>  <span class="datatype-reference">array of array of <a href="json_VoucherProfitAndLossBean.html">VoucherProfitAndLossBean</a>
 </span>
@@ -169,18 +142,45 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">totalAdjustmentRevenue</span>
+          <td>  <span class="property-name">correctionJournalEntryBeanList</span>
 </td>
-          <td>  <span class="datatype-reference">number
+          <td>  <span class="datatype-reference">array of array of <a href="json_CorrectionJournalEntryBean.html">CorrectionJournalEntryBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">totalCorrectionJournalEntry</span>
+          <td>  <span class="property-name">adjustmentRevenueBeanList</span>
 </td>
-          <td>  <span class="datatype-reference">number
+          <td>  <span class="datatype-reference">array of array of <a href="json_RevenueBean.html">RevenueBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">revenueBeanList</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_RevenueBean.html">RevenueBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">expensesList</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_VoucherProfitAndLossBean.html">VoucherProfitAndLossBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">reservationVouchersList</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_VoucherProfitAndLossBean.html">VoucherProfitAndLossBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -192,414 +192,414 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
+  &quot;totalReservationVouchers&quot; : 12345.0,
+  &quot;totalAdjustmentRevenue&quot; : 12345.0,
+  &quot;totalCorrectionJournalEntry&quot; : 12345.0,
   &quot;totalAdjustmentVouchers&quot; : 12345.0,
   &quot;adjustmentVouchersList&quot; : [ [ {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
     &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
     &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
     &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
     &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
   }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
     &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
     &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
     &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
     &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
   } ], [ {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
     &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
     &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
     &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
     &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  } ] ],
-  &quot;revenueBeanList&quot; : [ [ {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  } ] ],
-  &quot;correctionJournalEntryBeanList&quot; : [ [ {
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;transactionDate&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;batchNumber&quot; : &quot;...&quot;,
-    &quot;userReference&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;
-  }, {
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;transactionDate&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;batchNumber&quot; : &quot;...&quot;,
-    &quot;userReference&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;transactionDate&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;batchNumber&quot; : &quot;...&quot;,
-    &quot;userReference&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;
-  }, {
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;transactionDate&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;batchNumber&quot; : &quot;...&quot;,
-    &quot;userReference&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;
-  } ] ],
-  &quot;reservationVouchersList&quot; : [ [ {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
     &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
     &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
     &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
     &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
   }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
     &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
     &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
     &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
     &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
     &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
     &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
     &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  } ] ],
-  &quot;adjustmentRevenueBeanList&quot; : [ [ {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;glAccount&quot; : &quot;...&quot;,
     &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  }, {
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-    &quot;organizationCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;invoiceType&quot; : &quot;...&quot;,
-    &quot;organizationName&quot; : &quot;...&quot;,
-    &quot;applyTo&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;
-  } ] ],
-  &quot;totalReservationVouchers&quot; : 12345.0,
-  &quot;expensesList&quot; : [ [ {
     &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
     &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
     &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
     &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
     &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
     &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
-  }, {
-    &quot;voucherLevelTotal&quot; : 12345.0,
-    &quot;referenceNumber&quot; : &quot;...&quot;,
-    &quot;localAmount&quot; : 12345.0,
-    &quot;originalReferenceType&quot; : &quot;...&quot;,
-    &quot;referenceType&quot; : &quot;...&quot;,
-    &quot;expectedVendorCode&quot; : &quot;...&quot;,
-    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;glAccountDescription&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
     &quot;status&quot; : &quot;...&quot;,
-    &quot;chargeCategory&quot; : &quot;...&quot;,
-    &quot;description&quot; : &quot;...&quot;,
-    &quot;glAccount&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;fileLevelTotal&quot; : 12345.0,
-    &quot;matchingIncome&quot; : &quot;...&quot;,
-    &quot;expectedVendorName&quot; : &quot;...&quot;
+    &quot;referenceNumber&quot; : &quot;...&quot;
   } ] ],
   &quot;totalExpenses&quot; : 12345.0,
   &quot;totalRevenue&quot; : 12345.0,
-  &quot;totalAdjustmentRevenue&quot; : 12345.0,
-  &quot;totalCorrectionJournalEntry&quot; : 12345.0
+  &quot;correctionJournalEntryBeanList&quot; : [ [ {
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;transactionDate&quot; : &quot;...&quot;,
+    &quot;userReference&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;batchNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;transactionDate&quot; : &quot;...&quot;,
+    &quot;userReference&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;batchNumber&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;transactionDate&quot; : &quot;...&quot;,
+    &quot;userReference&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;batchNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;transactionDate&quot; : &quot;...&quot;,
+    &quot;userReference&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;batchNumber&quot; : &quot;...&quot;
+  } ] ],
+  &quot;adjustmentRevenueBeanList&quot; : [ [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ] ],
+  &quot;revenueBeanList&quot; : [ [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;invoiceType&quot; : &quot;...&quot;,
+    &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;applyTo&quot; : &quot;...&quot;,
+    &quot;organizationCode&quot; : &quot;...&quot;,
+    &quot;organizationName&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ] ],
+  &quot;expensesList&quot; : [ [ {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ] ],
+  &quot;reservationVouchersList&quot; : [ [ {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  }, {
+    &quot;chargeCategory&quot; : &quot;...&quot;,
+    &quot;expectedVendorCode&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;description&quot; : &quot;...&quot;,
+    &quot;originalReferenceNumber&quot; : &quot;...&quot;,
+    &quot;originalReferenceType&quot; : &quot;...&quot;,
+    &quot;glAccountDescription&quot; : &quot;...&quot;,
+    &quot;localAmount&quot; : 12345.0,
+    &quot;fileLevelTotal&quot; : 12345.0,
+    &quot;glAccount&quot; : &quot;...&quot;,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;voucherLevelTotal&quot; : 12345.0,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;referenceType&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;matchingIncome&quot; : &quot;...&quot;,
+    &quot;expectedVendorName&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;...&quot;,
+    &quot;referenceNumber&quot; : &quot;...&quot;
+  } ] ]
 }</pre>
 
         <footer class="footer">

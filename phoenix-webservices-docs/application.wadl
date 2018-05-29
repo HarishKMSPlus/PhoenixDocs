@@ -6,11 +6,11 @@
   
   <wadl:grammars>
     <wadl:include href="ns0.xsd"/>
-    <wadl:include href="ns3.xsd"/>
-    <wadl:include href="ns6.xsd"/>
-    <wadl:include href="ns1.xsd"/>
-    <wadl:include href="ns7.xsd"/>
     <wadl:include href="ns4.xsd"/>
+    <wadl:include href="ns6.xsd"/>
+    <wadl:include href="ns3.xsd"/>
+    <wadl:include href="ns7.xsd"/>
+    <wadl:include href="ns1.xsd"/>
     <wadl:include href="ns2.xsd"/>
     <wadl:include href="ns5.xsd"/>
   </wadl:grammars>

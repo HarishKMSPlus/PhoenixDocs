@@ -79,27 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">userDefaultWarehouse</span>
+          <td>  <span class="property-name">ldapUsername</span>
 </td>
           <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">officeCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">userLoginId</span>
-</td>
-          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -124,6 +106,15 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">userOfficeID</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">alternateCityName</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -133,16 +124,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">ldapUsername</span>
+          <td>  <span class="property-name">userLoginId</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userFullname</span>
+          <td>  <span class="property-name">username</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -160,7 +151,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userRoleID</span>
+          <td>  <span class="property-name">userSchemaID</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -178,6 +169,33 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">userRoleID</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userFullname</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userDefaultWarehouse</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">localCurrency</span>
 </td>
           <td>  <span class="datatype-reference">string
@@ -187,25 +205,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">userSchemaID</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">userOfficeID</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">username</span>
+          <td>  <span class="property-name">officeCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -219,21 +219,21 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-  &quot;officeCode&quot; : &quot;...&quot;,
-  &quot;userLoginId&quot; : 12345,
+  &quot;ldapUsername&quot; : &quot;...&quot;,
   &quot;userID&quot; : 12345,
   &quot;officeTimezone&quot; : &quot;...&quot;,
-  &quot;alternateCityName&quot; : &quot;...&quot;,
-  &quot;ldapUsername&quot; : &quot;...&quot;,
-  &quot;userFullname&quot; : &quot;...&quot;,
-  &quot;config&quot; : &quot;...&quot;,
-  &quot;userRoleID&quot; : 12345,
-  &quot;userSchemaName&quot; : &quot;...&quot;,
-  &quot;localCurrency&quot; : &quot;...&quot;,
-  &quot;userSchemaID&quot; : 12345,
   &quot;userOfficeID&quot; : 12345,
-  &quot;username&quot; : &quot;...&quot;
+  &quot;alternateCityName&quot; : &quot;...&quot;,
+  &quot;userLoginId&quot; : 12345,
+  &quot;username&quot; : &quot;...&quot;,
+  &quot;config&quot; : &quot;...&quot;,
+  &quot;userSchemaID&quot; : 12345,
+  &quot;userSchemaName&quot; : &quot;...&quot;,
+  &quot;userRoleID&quot; : 12345,
+  &quot;userFullname&quot; : &quot;...&quot;,
+  &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+  &quot;localCurrency&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

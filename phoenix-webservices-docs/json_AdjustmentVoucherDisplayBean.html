@@ -79,16 +79,7 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">handlingOfficeSet</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">batchNoSet</span>
+          <td>  <span class="property-name">setForOriginalFile</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
 </span>
@@ -115,27 +106,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">setForApproveVouchers</span>
+          <td>  <span class="property-name">voucherForVoid</span>
 </td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_AdjustmentVoucherBean.html">AdjustmentVoucherBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">superUserForVoucherApproval</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">userIdSet</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
+          <td>  <span class="datatype-reference"><a href="json_AdjustmentVoucherBean.html">AdjustmentVoucherBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -143,33 +116,6 @@
         </tr>
         <tr>
           <td>  <span class="property-name">setForInvoiceNumber</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">netProfitMap</span>
-</td>
-          <td>  <span class="datatype-reference">object
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">ownOfficeAccessEnabled</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">vendorCode</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
 </span>
@@ -187,54 +133,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">serialversionuid</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">voucherForVoid</span>
-</td>
-          <td>  <span class="datatype-reference"><a href="json_AdjustmentVoucherBean.html">AdjustmentVoucherBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">voucherNumber</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">adjustmentVouchers</span>
 </td>
           <td>  <span class="datatype-reference">object
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">userschemaid</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">treeItemBeans</span>
-</td>
-          <td>  <span class="datatype-reference">array of array of <a href="json_HandlingOfficeTreeBean.html">HandlingOfficeTreeBean</a>
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -250,6 +151,33 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">netProfitMap</span>
+</td>
+          <td>  <span class="datatype-reference">object
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">serialversionuid</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">superUserForVoucherApproval</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">setForReason</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
@@ -259,7 +187,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">setForOriginalFile</span>
+          <td>  <span class="property-name">handlingOfficeSet</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
 </span>
@@ -277,9 +205,81 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">treeItemBeans</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_HandlingOfficeTreeBean.html">HandlingOfficeTreeBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">voucherNumber</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">vendorCode</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">setForApproveVouchers</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of <a href="json_AdjustmentVoucherBean.html">AdjustmentVoucherBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">setForOpenReservation</span>
 </td>
           <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userIdSet</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">ownOfficeAccessEnabled</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">batchNoSet</span>
+</td>
+          <td>  <span class="datatype-reference">array of array of string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">userschemaid</span>
+</td>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -291,91 +291,7 @@
         </tr>
         <tbody>
         <tr>
-          <td><span class="property-name">updateUserOffice</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">officeCode</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">inputUserFullname</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">officeTimezone</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">userSchemaID</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">inputDate</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">updateLdapUser</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">status</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
           <td><span class="property-name">updateDate</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">officeId</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">inputUserOffice</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">decimalAllowed</span></td>
-          <td><span class="datatype-reference">boolean
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">inputUser</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">id</span></td>
-          <td><span class="datatype-reference">number
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">updateUserFullname</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -387,26 +303,32 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">alternateCityName</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">schemaName</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">updateUser</span></td>
-          <td><span class="datatype-reference">string
-</span></td>
-          <td><span class="property-description"></span></td>
-        </tr>
-        <tr>
-          <td><span class="property-name">maxNumberOfRows</span></td>
+          <td><span class="property-name">companyId</span></td>
           <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">officeId</span></td>
+          <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">status</span></td>
+          <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">updateLdapUser</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">decimalAllowed</span></td>
+          <td><span class="datatype-reference">boolean
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
@@ -417,7 +339,13 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">locale</span></td>
+          <td><span class="property-name">updateUser</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">inputUser</span></td>
           <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
@@ -429,8 +357,80 @@
           <td><span class="property-description"></span></td>
         </tr>
         <tr>
-          <td><span class="property-name">companyId</span></td>
+          <td><span class="property-name">officeTimezone</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">maxNumberOfRows</span></td>
           <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">updateUserOffice</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">updateUserFullname</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">inputDate</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">inputUserFullname</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">officeCode</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">schemaName</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">locale</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">id</span></td>
+          <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">userSchemaID</span></td>
+          <td><span class="datatype-reference">number
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">inputUserOffice</span></td>
+          <td><span class="datatype-reference">string
+</span></td>
+          <td><span class="property-description"></span></td>
+        </tr>
+        <tr>
+          <td><span class="property-name">alternateCityName</span></td>
+          <td><span class="datatype-reference">string
 </span></td>
           <td><span class="property-description"></span></td>
         </tr>
@@ -440,345 +440,345 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;handlingOfficeSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;batchNoSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;setForOriginalFile&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
   &quot;schema&quot; : &quot;...&quot;,
   &quot;batchNo&quot; : &quot;...&quot;,
-  &quot;setForApproveVouchers&quot; : [ [ {
-    &quot;reasonDescription&quot; : &quot;...&quot;,
-    &quot;reasonCode&quot; : &quot;...&quot;,
-    &quot;netProfit&quot; : &quot;...&quot;,
-    &quot;yesNo&quot; : true,
-    &quot;handlingOffice&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;approved&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;userName&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;adjustmentFile&quot; : &quot;...&quot;,
-    &quot;openReservation&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
-  }, {
-    &quot;reasonDescription&quot; : &quot;...&quot;,
-    &quot;reasonCode&quot; : &quot;...&quot;,
-    &quot;netProfit&quot; : &quot;...&quot;,
-    &quot;yesNo&quot; : true,
-    &quot;handlingOffice&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;approved&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;userName&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;adjustmentFile&quot; : &quot;...&quot;,
-    &quot;openReservation&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;reasonDescription&quot; : &quot;...&quot;,
-    &quot;reasonCode&quot; : &quot;...&quot;,
-    &quot;netProfit&quot; : &quot;...&quot;,
-    &quot;yesNo&quot; : true,
-    &quot;handlingOffice&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;approved&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;userName&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;adjustmentFile&quot; : &quot;...&quot;,
-    &quot;openReservation&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
-  }, {
-    &quot;reasonDescription&quot; : &quot;...&quot;,
-    &quot;reasonCode&quot; : &quot;...&quot;,
-    &quot;netProfit&quot; : &quot;...&quot;,
-    &quot;yesNo&quot; : true,
-    &quot;handlingOffice&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
-    &quot;approved&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;userName&quot; : &quot;...&quot;,
-    &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;adjustmentFile&quot; : &quot;...&quot;,
-    &quot;openReservation&quot; : &quot;...&quot;,
-    &quot;vendorCode&quot; : &quot;...&quot;,
-    &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
-  } ] ],
-  &quot;superUserForVoucherApproval&quot; : true,
-  &quot;userIdSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;setForInvoiceNumber&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;netProfitMap&quot; : {
-    &quot;property1&quot; : &quot;...&quot;,
-    &quot;property2&quot; : &quot;...&quot;
-  },
-  &quot;ownOfficeAccessEnabled&quot; : true,
-  &quot;vendorCode&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;userID&quot; : &quot;...&quot;,
-  &quot;serialversionuid&quot; : 12345,
   &quot;voucherForVoid&quot; : {
-    &quot;reasonDescription&quot; : &quot;...&quot;,
-    &quot;reasonCode&quot; : &quot;...&quot;,
-    &quot;netProfit&quot; : &quot;...&quot;,
-    &quot;yesNo&quot; : true,
-    &quot;handlingOffice&quot; : &quot;...&quot;,
-    &quot;invoiceDate&quot; : &quot;...&quot;,
     &quot;approved&quot; : &quot;...&quot;,
-    &quot;vendorName&quot; : &quot;...&quot;,
-    &quot;amount&quot; : &quot;...&quot;,
-    &quot;invoiceNumber&quot; : &quot;...&quot;,
-    &quot;userName&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;reasonCode&quot; : &quot;...&quot;,
+    &quot;reasonDescription&quot; : &quot;...&quot;,
+    &quot;netProfit&quot; : &quot;...&quot;,
     &quot;voucherNumber&quot; : &quot;...&quot;,
-    &quot;adjustmentFile&quot; : &quot;...&quot;,
     &quot;openReservation&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
     &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;yesNo&quot; : true,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
     &quot;originalFile&quot; : &quot;...&quot;,
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
+    &quot;adjustmentFile&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;userName&quot; : &quot;...&quot;,
     &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
     &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
     &quot;username&quot; : &quot;...&quot;,
     &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
     &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
   },
-  &quot;voucherNumber&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;setForInvoiceNumber&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;userID&quot; : &quot;...&quot;,
   &quot;adjustmentVouchers&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;userschemaid&quot; : &quot;...&quot;,
-  &quot;treeItemBeans&quot; : [ [ {
-    &quot;parentName&quot; : &quot;...&quot;,
-    &quot;childId&quot; : &quot;...&quot;,
-    &quot;itemCode&quot; : &quot;...&quot;,
-    &quot;defaultMenuName&quot; : &quot;...&quot;,
-    &quot;tokenKey&quot; : &quot;...&quot;,
-    &quot;name&quot; : &quot;...&quot;,
-    &quot;childName&quot; : &quot;...&quot;,
-    &quot;customMenuId&quot; : 12345,
-    &quot;parent&quot; : true,
-    &quot;itemId&quot; : &quot;...&quot;,
-    &quot;checkBoxName&quot; : &quot;...&quot;,
-    &quot;iataCode&quot; : &quot;...&quot;,
-    &quot;parentId&quot; : &quot;...&quot;
-  }, {
-    &quot;parentName&quot; : &quot;...&quot;,
-    &quot;childId&quot; : &quot;...&quot;,
-    &quot;itemCode&quot; : &quot;...&quot;,
-    &quot;defaultMenuName&quot; : &quot;...&quot;,
-    &quot;tokenKey&quot; : &quot;...&quot;,
-    &quot;name&quot; : &quot;...&quot;,
-    &quot;childName&quot; : &quot;...&quot;,
-    &quot;customMenuId&quot; : 12345,
-    &quot;parent&quot; : true,
-    &quot;itemId&quot; : &quot;...&quot;,
-    &quot;checkBoxName&quot; : &quot;...&quot;,
-    &quot;iataCode&quot; : &quot;...&quot;,
-    &quot;parentId&quot; : &quot;...&quot;
-  } ], [ {
-    &quot;parentName&quot; : &quot;...&quot;,
-    &quot;childId&quot; : &quot;...&quot;,
-    &quot;itemCode&quot; : &quot;...&quot;,
-    &quot;defaultMenuName&quot; : &quot;...&quot;,
-    &quot;tokenKey&quot; : &quot;...&quot;,
-    &quot;name&quot; : &quot;...&quot;,
-    &quot;childName&quot; : &quot;...&quot;,
-    &quot;customMenuId&quot; : 12345,
-    &quot;parent&quot; : true,
-    &quot;itemId&quot; : &quot;...&quot;,
-    &quot;checkBoxName&quot; : &quot;...&quot;,
-    &quot;iataCode&quot; : &quot;...&quot;,
-    &quot;parentId&quot; : &quot;...&quot;
-  }, {
-    &quot;parentName&quot; : &quot;...&quot;,
-    &quot;childId&quot; : &quot;...&quot;,
-    &quot;itemCode&quot; : &quot;...&quot;,
-    &quot;defaultMenuName&quot; : &quot;...&quot;,
-    &quot;tokenKey&quot; : &quot;...&quot;,
-    &quot;name&quot; : &quot;...&quot;,
-    &quot;childName&quot; : &quot;...&quot;,
-    &quot;customMenuId&quot; : 12345,
-    &quot;parent&quot; : true,
-    &quot;itemId&quot; : &quot;...&quot;,
-    &quot;checkBoxName&quot; : &quot;...&quot;,
-    &quot;iataCode&quot; : &quot;...&quot;,
-    &quot;parentId&quot; : &quot;...&quot;
-  } ] ],
   &quot;setForApprovedOptions&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;netProfitMap&quot; : {
+    &quot;property1&quot; : &quot;...&quot;,
+    &quot;property2&quot; : &quot;...&quot;
+  },
+  &quot;serialversionuid&quot; : 12345,
+  &quot;superUserForVoucherApproval&quot; : true,
   &quot;setForReason&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;setForOriginalFile&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;handlingOfficeSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
   &quot;setForAdjustmentFile&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;treeItemBeans&quot; : [ [ {
+    &quot;checkBoxName&quot; : &quot;...&quot;,
+    &quot;childName&quot; : &quot;...&quot;,
+    &quot;itemCode&quot; : &quot;...&quot;,
+    &quot;iataCode&quot; : &quot;...&quot;,
+    &quot;itemId&quot; : &quot;...&quot;,
+    &quot;parent&quot; : true,
+    &quot;parentId&quot; : &quot;...&quot;,
+    &quot;defaultMenuName&quot; : &quot;...&quot;,
+    &quot;childId&quot; : &quot;...&quot;,
+    &quot;tokenKey&quot; : &quot;...&quot;,
+    &quot;parentName&quot; : &quot;...&quot;,
+    &quot;customMenuId&quot; : 12345,
+    &quot;name&quot; : &quot;...&quot;
+  }, {
+    &quot;checkBoxName&quot; : &quot;...&quot;,
+    &quot;childName&quot; : &quot;...&quot;,
+    &quot;itemCode&quot; : &quot;...&quot;,
+    &quot;iataCode&quot; : &quot;...&quot;,
+    &quot;itemId&quot; : &quot;...&quot;,
+    &quot;parent&quot; : true,
+    &quot;parentId&quot; : &quot;...&quot;,
+    &quot;defaultMenuName&quot; : &quot;...&quot;,
+    &quot;childId&quot; : &quot;...&quot;,
+    &quot;tokenKey&quot; : &quot;...&quot;,
+    &quot;parentName&quot; : &quot;...&quot;,
+    &quot;customMenuId&quot; : 12345,
+    &quot;name&quot; : &quot;...&quot;
+  } ], [ {
+    &quot;checkBoxName&quot; : &quot;...&quot;,
+    &quot;childName&quot; : &quot;...&quot;,
+    &quot;itemCode&quot; : &quot;...&quot;,
+    &quot;iataCode&quot; : &quot;...&quot;,
+    &quot;itemId&quot; : &quot;...&quot;,
+    &quot;parent&quot; : true,
+    &quot;parentId&quot; : &quot;...&quot;,
+    &quot;defaultMenuName&quot; : &quot;...&quot;,
+    &quot;childId&quot; : &quot;...&quot;,
+    &quot;tokenKey&quot; : &quot;...&quot;,
+    &quot;parentName&quot; : &quot;...&quot;,
+    &quot;customMenuId&quot; : 12345,
+    &quot;name&quot; : &quot;...&quot;
+  }, {
+    &quot;checkBoxName&quot; : &quot;...&quot;,
+    &quot;childName&quot; : &quot;...&quot;,
+    &quot;itemCode&quot; : &quot;...&quot;,
+    &quot;iataCode&quot; : &quot;...&quot;,
+    &quot;itemId&quot; : &quot;...&quot;,
+    &quot;parent&quot; : true,
+    &quot;parentId&quot; : &quot;...&quot;,
+    &quot;defaultMenuName&quot; : &quot;...&quot;,
+    &quot;childId&quot; : &quot;...&quot;,
+    &quot;tokenKey&quot; : &quot;...&quot;,
+    &quot;parentName&quot; : &quot;...&quot;,
+    &quot;customMenuId&quot; : 12345,
+    &quot;name&quot; : &quot;...&quot;
+  } ] ],
+  &quot;voucherNumber&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;vendorCode&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;setForApproveVouchers&quot; : [ [ {
+    &quot;approved&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;reasonCode&quot; : &quot;...&quot;,
+    &quot;reasonDescription&quot; : &quot;...&quot;,
+    &quot;netProfit&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;openReservation&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;yesNo&quot; : true,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;adjustmentFile&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;userName&quot; : &quot;...&quot;,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  }, {
+    &quot;approved&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;reasonCode&quot; : &quot;...&quot;,
+    &quot;reasonDescription&quot; : &quot;...&quot;,
+    &quot;netProfit&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;openReservation&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;yesNo&quot; : true,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;adjustmentFile&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;userName&quot; : &quot;...&quot;,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  } ], [ {
+    &quot;approved&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;reasonCode&quot; : &quot;...&quot;,
+    &quot;reasonDescription&quot; : &quot;...&quot;,
+    &quot;netProfit&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;openReservation&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;yesNo&quot; : true,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;adjustmentFile&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;userName&quot; : &quot;...&quot;,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  }, {
+    &quot;approved&quot; : &quot;...&quot;,
+    &quot;handlingOffice&quot; : &quot;...&quot;,
+    &quot;reasonCode&quot; : &quot;...&quot;,
+    &quot;reasonDescription&quot; : &quot;...&quot;,
+    &quot;netProfit&quot; : &quot;...&quot;,
+    &quot;voucherNumber&quot; : &quot;...&quot;,
+    &quot;openReservation&quot; : &quot;...&quot;,
+    &quot;amount&quot; : &quot;...&quot;,
+    &quot;vendorName&quot; : &quot;...&quot;,
+    &quot;vendorCode&quot; : &quot;...&quot;,
+    &quot;yesNo&quot; : true,
+    &quot;invoiceNumber&quot; : &quot;...&quot;,
+    &quot;originalFile&quot; : &quot;...&quot;,
+    &quot;adjustmentFile&quot; : &quot;...&quot;,
+    &quot;invoiceDate&quot; : &quot;...&quot;,
+    &quot;userName&quot; : &quot;...&quot;,
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  } ] ],
   &quot;setForOpenReservation&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
-  &quot;updateUserOffice&quot; : &quot;...&quot;,
-  &quot;officeCode&quot; : &quot;...&quot;,
-  &quot;inputUserFullname&quot; : &quot;...&quot;,
-  &quot;officeTimezone&quot; : &quot;...&quot;,
-  &quot;userSchemaID&quot; : 12345,
-  &quot;inputDate&quot; : &quot;...&quot;,
-  &quot;updateLdapUser&quot; : &quot;...&quot;,
-  &quot;status&quot; : 12345,
+  &quot;userIdSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;ownOfficeAccessEnabled&quot; : true,
+  &quot;batchNoSet&quot; : [ [ &quot;...&quot;, &quot;...&quot; ], [ &quot;...&quot;, &quot;...&quot; ] ],
+  &quot;userschemaid&quot; : &quot;...&quot;,
   &quot;updateDate&quot; : &quot;...&quot;,
-  &quot;officeId&quot; : 12345,
-  &quot;inputUserOffice&quot; : &quot;...&quot;,
-  &quot;decimalAllowed&quot; : true,
-  &quot;inputUser&quot; : &quot;...&quot;,
-  &quot;id&quot; : 12345,
-  &quot;updateUserFullname&quot; : &quot;...&quot;,
   &quot;inputLdapUser&quot; : &quot;...&quot;,
-  &quot;alternateCityName&quot; : &quot;...&quot;,
-  &quot;schemaName&quot; : &quot;...&quot;,
-  &quot;updateUser&quot; : &quot;...&quot;,
-  &quot;maxNumberOfRows&quot; : 12345,
+  &quot;companyId&quot; : 12345,
+  &quot;officeId&quot; : 12345,
+  &quot;status&quot; : 12345,
+  &quot;updateLdapUser&quot; : &quot;...&quot;,
+  &quot;decimalAllowed&quot; : true,
   &quot;recordOverflow&quot; : true,
-  &quot;locale&quot; : &quot;...&quot;,
+  &quot;updateUser&quot; : &quot;...&quot;,
+  &quot;inputUser&quot; : &quot;...&quot;,
   &quot;company&quot; : &quot;...&quot;,
-  &quot;companyId&quot; : 12345
+  &quot;officeTimezone&quot; : &quot;...&quot;,
+  &quot;maxNumberOfRows&quot; : 12345,
+  &quot;updateUserOffice&quot; : &quot;...&quot;,
+  &quot;updateUserFullname&quot; : &quot;...&quot;,
+  &quot;inputDate&quot; : &quot;...&quot;,
+  &quot;inputUserFullname&quot; : &quot;...&quot;,
+  &quot;officeCode&quot; : &quot;...&quot;,
+  &quot;schemaName&quot; : &quot;...&quot;,
+  &quot;locale&quot; : &quot;...&quot;,
+  &quot;id&quot; : 12345,
+  &quot;userSchemaID&quot; : 12345,
+  &quot;inputUserOffice&quot; : &quot;...&quot;,
+  &quot;alternateCityName&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

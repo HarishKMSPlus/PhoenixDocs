@@ -79,70 +79,7 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">cadHoldAftergraceDay</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">jobId</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chaserType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">emailRecipient</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">activeChaser</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">scheduleTime</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chaserTemplateOverlimitDay</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chaserTemplateOverDay</span>
+          <td>  <span class="property-name">defaultGraceAmount</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -169,6 +106,15 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">chaserType</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">rollDays</span>
 </td>
           <td>  <span class="datatype-reference">number
@@ -178,9 +124,45 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">defaultGraceAmount</span>
+          <td>  <span class="property-name">chaserTemplateOverDay</span>
 </td>
           <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">jobId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">scheduleTime</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">chaserTemplateOverlimitDay</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">emailRecipient</span>
+</td>
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -214,9 +196,27 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">activeChaser</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">defaultGraceDay</span>
 </td>
           <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">cadHoldAftergraceDay</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -228,22 +228,22 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;cadHoldAftergraceDay&quot; : true,
-  &quot;jobId&quot; : 12345,
-  &quot;chaserType&quot; : &quot;...&quot;,
-  &quot;emailRecipient&quot; : &quot;...&quot;,
-  &quot;activeChaser&quot; : true,
-  &quot;scheduleTime&quot; : &quot;...&quot;,
-  &quot;chaserTemplateOverlimitDay&quot; : 12345,
-  &quot;chaserTemplateOverDay&quot; : 12345,
+  &quot;defaultGraceAmount&quot; : 12345,
   &quot;chaserTemplateOverLimit&quot; : 12345,
   &quot;sendChaserEmailAccountSetup&quot; : true,
+  &quot;chaserType&quot; : &quot;...&quot;,
   &quot;rollDays&quot; : 12345,
-  &quot;defaultGraceAmount&quot; : 12345,
+  &quot;chaserTemplateOverDay&quot; : 12345,
+  &quot;jobId&quot; : 12345,
+  &quot;scheduleTime&quot; : &quot;...&quot;,
+  &quot;chaserTemplateOverlimitDay&quot; : 12345,
+  &quot;emailRecipient&quot; : &quot;...&quot;,
   &quot;sendChaserStiSalesPerson&quot; : true,
   &quot;defaultGraceAmountInP&quot; : 12345.0,
   &quot;scheduleTimezone&quot; : &quot;...&quot;,
-  &quot;defaultGraceDay&quot; : 12345
+  &quot;activeChaser&quot; : true,
+  &quot;defaultGraceDay&quot; : 12345,
+  &quot;cadHoldAftergraceDay&quot; : true
 }</pre>
 
         <footer class="footer">

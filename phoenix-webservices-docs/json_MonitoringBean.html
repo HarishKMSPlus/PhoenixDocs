@@ -79,43 +79,7 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">appType</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">reference</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">statusMessage</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">commonBean</span>
-</td>
-          <td>  <span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">programUnit</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -133,7 +97,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">inputData</span>
+          <td>  <span class="property-name">reference</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -160,7 +124,25 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">outputData</span>
+          <td>  <span class="property-name">monitoringId</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">updateDate</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">appType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -178,27 +160,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">updateDate</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">startTime</span>
 </td>
           <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">monitoringId</span>
-</td>
-          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -213,57 +177,93 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">commonBean</span>
+</td>
+          <td>  <span class="datatype-reference"><a href="json_CommonBean.html">CommonBean</a>
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">programUnit</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">inputData</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">outputData</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;appType&quot; : &quot;...&quot;,
-  &quot;reference&quot; : &quot;...&quot;,
   &quot;statusMessage&quot; : &quot;...&quot;,
-  &quot;commonBean&quot; : {
-    &quot;localCurrency&quot; : &quot;...&quot;,
-    &quot;inputUser&quot; : &quot;...&quot;,
-    &quot;userCompany&quot; : &quot;...&quot;,
-    &quot;updateLdapUser&quot; : &quot;...&quot;,
-    &quot;inputUserFullname&quot; : &quot;...&quot;,
-    &quot;debugModeFlag&quot; : 12345,
-    &quot;userRoleID&quot; : 12345,
-    &quot;ldapUsername&quot; : &quot;...&quot;,
-    &quot;password&quot; : &quot;...&quot;,
-    &quot;schemaName&quot; : &quot;...&quot;,
-    &quot;userLoginId&quot; : 12345,
-    &quot;updateDate&quot; : &quot;...&quot;,
-    &quot;config&quot; : &quot;...&quot;,
-    &quot;officeCode&quot; : &quot;...&quot;,
-    &quot;userID&quot; : 12345,
-    &quot;officeTimezone&quot; : &quot;...&quot;,
-    &quot;alternateCityName&quot; : &quot;...&quot;,
-    &quot;userSchemaName&quot; : &quot;...&quot;,
-    &quot;inputDate&quot; : &quot;...&quot;,
-    &quot;updateUser&quot; : &quot;...&quot;,
-    &quot;updateUserFullname&quot; : &quot;...&quot;,
-    &quot;userSchemaID&quot; : 12345,
-    &quot;userCompanyName&quot; : &quot;...&quot;,
-    &quot;userOfficeID&quot; : 12345,
-    &quot;username&quot; : &quot;...&quot;,
-    &quot;locale&quot; : &quot;...&quot;,
-    &quot;userFullname&quot; : &quot;...&quot;,
-    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
-    &quot;inputLdapUser&quot; : &quot;...&quot;
-  },
-  &quot;programUnit&quot; : &quot;...&quot;,
   &quot;inputDate&quot; : &quot;...&quot;,
-  &quot;inputData&quot; : &quot;...&quot;,
+  &quot;reference&quot; : &quot;...&quot;,
   &quot;endTime&quot; : &quot;...&quot;,
   &quot;programName&quot; : &quot;...&quot;,
-  &quot;outputData&quot; : &quot;...&quot;,
-  &quot;status&quot; : &quot;...&quot;,
-  &quot;updateDate&quot; : &quot;...&quot;,
-  &quot;startTime&quot; : &quot;...&quot;,
   &quot;monitoringId&quot; : 12345,
-  &quot;moduleCode&quot; : &quot;...&quot;
+  &quot;updateDate&quot; : &quot;...&quot;,
+  &quot;appType&quot; : &quot;...&quot;,
+  &quot;status&quot; : &quot;...&quot;,
+  &quot;startTime&quot; : &quot;...&quot;,
+  &quot;moduleCode&quot; : &quot;...&quot;,
+  &quot;commonBean&quot; : {
+    &quot;userCompanyName&quot; : &quot;...&quot;,
+    &quot;alternateCityName&quot; : &quot;...&quot;,
+    &quot;schemaName&quot; : &quot;...&quot;,
+    &quot;updateUserFullname&quot; : &quot;...&quot;,
+    &quot;userOfficeID&quot; : 12345,
+    &quot;userDefaultWarehouse&quot; : &quot;...&quot;,
+    &quot;password&quot; : &quot;...&quot;,
+    &quot;inputDate&quot; : &quot;...&quot;,
+    &quot;userLoginId&quot; : 12345,
+    &quot;inputUser&quot; : &quot;...&quot;,
+    &quot;username&quot; : &quot;...&quot;,
+    &quot;locale&quot; : &quot;...&quot;,
+    &quot;updateUser&quot; : &quot;...&quot;,
+    &quot;updateLdapUser&quot; : &quot;...&quot;,
+    &quot;officeTimezone&quot; : &quot;...&quot;,
+    &quot;officeCode&quot; : &quot;...&quot;,
+    &quot;updateDate&quot; : &quot;...&quot;,
+    &quot;config&quot; : &quot;...&quot;,
+    &quot;userCompany&quot; : &quot;...&quot;,
+    &quot;debugModeFlag&quot; : 12345,
+    &quot;ldapUsername&quot; : &quot;...&quot;,
+    &quot;userID&quot; : 12345,
+    &quot;userSchemaName&quot; : &quot;...&quot;,
+    &quot;userFullname&quot; : &quot;...&quot;,
+    &quot;localCurrency&quot; : &quot;...&quot;,
+    &quot;inputLdapUser&quot; : &quot;...&quot;,
+    &quot;inputUserFullname&quot; : &quot;...&quot;,
+    &quot;userRoleID&quot; : 12345,
+    &quot;userSchemaID&quot; : 12345
+  },
+  &quot;programUnit&quot; : &quot;...&quot;,
+  &quot;inputData&quot; : &quot;...&quot;,
+  &quot;outputData&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

@@ -40895,64 +40895,6 @@ contained within this class.
 </xs:complexType>
 
   </xs:element>
-  <xs:element name="reasonForAcknowledgement" type="xs:string"/>
-  <xs:element name="streetAddress" type="xs:string"/>
-  <xs:element name="contactNumber" type="xs:string"/>
-  <xs:element name="weight" type="xs:string"/>
-  <xs:element name="supplementaryCustomsInformation" type="xs:string"/>
-  <xs:element name="slac" type="xs:string"/>
-  <xs:element name="airportCityCodeOrigin" type="xs:string"/>
-  <xs:element name="airportCityCodeOfDeparture" type="xs:string"/>
-  <xs:element name="freeText" type="xs:string"/>
-  <xs:element name="airportCityCodeOfDestination" type="xs:string"/>
-  <xs:element name="declaredValueForCustoms" type="xs:string"/>
-  <xs:element name="isoCountryCode" type="xs:string"/>
-  <xs:element name="declaredValueForCarriage" type="xs:string"/>
-  <xs:element name="contactIdentifier" type="IATA122Type"/>
-  <xs:element name="name" type="xs:string"/>
-  <xs:element name="stateProvince" type="xs:string"/>
-  <xs:element name="customsInformationIdentifier" type="IATA941Type"/>
-  <xs:element name="place" type="xs:string"/>
-  <xs:element name="informationIdentifier" type="IATA103Type"/>
-  <xs:element name="isoCurrencyCode" type="xs:string"/>
-  <xs:element name="airlinePrefix" type="xs:string"/>
-  <xs:element name="prepaidCollectIndicatorOtherCharges" type="IATA403Type"/>
-  <xs:element name="manifestDescriptionOfGoods" type="xs:string"/>
-  <xs:element name="postCode" type="xs:string"/>
-  <xs:element name="hwbSerialNumber" type="xs:string"/>
-  <xs:element name="numberOfPieces" type="xs:string"/>
-  <xs:element name="shipmentDescriptionCode" type="IATA703Type"/>
-  <xs:element name="airportCityCodeDestination" type="xs:string"/>
-  <xs:element name="harmonisedCommodityCode" type="xs:string"/>
-  <xs:element name="prepaidCollectIndicatorWeightValuation" type="IATA403Type"/>
-  <xs:element name="specialHandlingCode" type="IATA705Type"/>
-  <xs:element name="declaredValueForInsurance" type="xs:string"/>
-  <xs:element name="awbSerialNumber" type="xs:string"/>
-  <xs:element name="weightCode" type="IATA601Type"/>
-  <xs:element name="NotifyReference" type="xs:string"/>
-  <xs:element name="ConsigneeReference" type="xs:string"/>
-  <xs:element name="ShipperReference" type="xs:string"/>
-  <xs:element name="ForwarderReference" type="xs:string"/>
-  <xs:element name="CustomsReference" type="xs:string"/>
-  <xs:element name="PackingGroup" type="xs:string"/>
-  <xs:element name="HazardousContent" type="xs:string"/>
-  <xs:element name="PackageCount" type="xs:string"/>
-  <xs:element name="PackageType" type="xs:string"/>
-  <xs:element name="EmergencyPhoneNumber" type="xs:string"/>
-  <xs:element name="NetWeight" type="xs:decimal"/>
-  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
-  <xs:element name="NCM" type="xs:string"/>
-  <xs:element name="CustomerAlias" type="xs:string"/>
-  <xs:element name="ImageLink" type="xs:string"/>
-  <xs:element name="Image" type="xs:string"/>
-  <xs:element name="ContentType" type="xs:string"/>
-  <xs:element name="HouseBillOfLadingNumber" type="xs:string"/>
-  <xs:element name="CarrierSCAC" type="xs:string"/>
-  <xs:element name="PickupReference" type="xs:string"/>
-  <xs:element name="NCM" type="xs:string"/>
-  <xs:element name="CustomerAlias" type="xs:string"/>
-  <xs:element name="NCM" type="xs:string"/>
-  <xs:element name="CustomerAlias" type="xs:string"/>
   <xs:element name="airportCityCode" type="xs:string"/>
   <xs:element name="companyDesignator" type="xs:string"/>
   <xs:element name="contactNumber" type="xs:string"/>
@@ -41032,13 +40974,26 @@ contained within this class.
   <xs:element name="chargeCode" type="IATA503Type"/>
   <xs:element name="awbSerialNumber" type="xs:string"/>
   <xs:element name="weightCode" type="IATA601Type"/>
-  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
-  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
-  <xs:element name="CustomsContact" type="xs:string"/>
-  <xs:element name="WWAShipmentReference" type="xs:string"/>
-  <xs:element name="CTCCode" type="xs:string"/>
-  <xs:element name="CTCDescription" type="xs:string"/>
-  <xs:element name="CustomsPhone" type="xs:string"/>
+  <xs:element name="NCM" type="xs:string"/>
+  <xs:element name="CustomerAlias" type="xs:string"/>
+  <xs:element name="NotifyReference" type="xs:string"/>
+  <xs:element name="ConsigneeReference" type="xs:string"/>
+  <xs:element name="ShipperReference" type="xs:string"/>
+  <xs:element name="ForwarderReference" type="xs:string"/>
+  <xs:element name="CustomsReference" type="xs:string"/>
+  <xs:element name="PackingGroup" type="xs:string"/>
+  <xs:element name="HazardousContent" type="xs:string"/>
+  <xs:element name="PackageCount" type="xs:string"/>
+  <xs:element name="PackageType" type="xs:string"/>
+  <xs:element name="EmergencyPhoneNumber" type="xs:string"/>
+  <xs:element name="NetWeight" type="xs:decimal"/>
+  <xs:element name="ImageLink" type="xs:string"/>
+  <xs:element name="Image" type="xs:string"/>
+  <xs:element name="ContentType" type="xs:string"/>
+  <xs:element name="HouseBillOfLadingNumber" type="xs:string"/>
+  <xs:element name="CarrierSCAC" type="xs:string"/>
+  <xs:element name="PickupReference" type="xs:string"/>
+  <xs:element name="reasonForAcknowledgement" type="xs:string"/>
   <xs:element name="dayOfTransfer" type="xs:string"/>
   <xs:element name="monthOfDiscrepancy" type="IATA201Type"/>
   <xs:element name="monthOfDelivery" type="IATA201Type"/>
@@ -41105,65 +41060,110 @@ contained within this class.
   <xs:element name="airportCodeOfClearance" type="xs:string"/>
   <xs:element name="weightCode" type="IATA601Type"/>
   <xs:element name="awbSerialNumber" type="xs:string"/>
-  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
+  <xs:element name="NCM" type="xs:string"/>
+  <xs:element name="CustomerAlias" type="xs:string"/>
+  <xs:element name="streetAddress" type="xs:string"/>
+  <xs:element name="contactNumber" type="xs:string"/>
+  <xs:element name="weight" type="xs:string"/>
+  <xs:element name="supplementaryCustomsInformation" type="xs:string"/>
+  <xs:element name="slac" type="xs:string"/>
+  <xs:element name="airportCityCodeOrigin" type="xs:string"/>
+  <xs:element name="airportCityCodeOfDeparture" type="xs:string"/>
+  <xs:element name="freeText" type="xs:string"/>
+  <xs:element name="airportCityCodeOfDestination" type="xs:string"/>
+  <xs:element name="declaredValueForCustoms" type="xs:string"/>
+  <xs:element name="isoCountryCode" type="xs:string"/>
+  <xs:element name="declaredValueForCarriage" type="xs:string"/>
+  <xs:element name="contactIdentifier" type="IATA122Type"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="stateProvince" type="xs:string"/>
+  <xs:element name="customsInformationIdentifier" type="IATA941Type"/>
+  <xs:element name="place" type="xs:string"/>
+  <xs:element name="informationIdentifier" type="IATA103Type"/>
+  <xs:element name="isoCurrencyCode" type="xs:string"/>
+  <xs:element name="airlinePrefix" type="xs:string"/>
+  <xs:element name="prepaidCollectIndicatorOtherCharges" type="IATA403Type"/>
+  <xs:element name="manifestDescriptionOfGoods" type="xs:string"/>
+  <xs:element name="postCode" type="xs:string"/>
+  <xs:element name="hwbSerialNumber" type="xs:string"/>
+  <xs:element name="numberOfPieces" type="xs:string"/>
+  <xs:element name="shipmentDescriptionCode" type="IATA703Type"/>
+  <xs:element name="airportCityCodeDestination" type="xs:string"/>
+  <xs:element name="harmonisedCommodityCode" type="xs:string"/>
+  <xs:element name="prepaidCollectIndicatorWeightValuation" type="IATA403Type"/>
+  <xs:element name="specialHandlingCode" type="IATA705Type"/>
+  <xs:element name="declaredValueForInsurance" type="xs:string"/>
+  <xs:element name="awbSerialNumber" type="xs:string"/>
+  <xs:element name="weightCode" type="IATA601Type"/>
+  <xs:element name="CustomsContact" type="xs:string"/>
+  <xs:element name="WWAShipmentReference" type="xs:string"/>
+  <xs:element name="CTCCode" type="xs:string"/>
+  <xs:element name="CTCDescription" type="xs:string"/>
+  <xs:element name="CustomsPhone" type="xs:string"/>
   <xs:element name="reasonForAcknowledgement" type="xs:string"/>
+  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
+  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
+  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
+  <xs:element name="NCM" type="xs:string"/>
+  <xs:element name="CustomerAlias" type="xs:string"/>
+  <xs:element name="reasonForRejectionOrError" type="xs:string"/>
 <xs:complexType name="commonBean">
        <xs:sequence>
-              <xs:element name="userSchemaID" type="xs:int" minOccurs="1">
-              </xs:element>
-              <xs:element name="localCurrency" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="updateUserFullname" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="userOfficeID" type="xs:int" minOccurs="1">
-              </xs:element>
               <xs:element name="updateUser" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="inputUserFullname" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="debugModeFlag" type="xs:int" minOccurs="1">
-              </xs:element>
-              <xs:element name="officeTimezone" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="userRoleID" type="xs:int" minOccurs="1">
-              </xs:element>
-              <xs:element name="userID" type="xs:long" minOccurs="1">
-              </xs:element>
-              <xs:element name="password" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="ldapUsername" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="updateLdapUser" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="inputUser" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="userDefaultWarehouse" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="userLoginId" type="xs:long" minOccurs="1">
-              </xs:element>
-              <xs:element name="inputLdapUser" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="userCompanyName" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="officeCode" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="locale" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="inputDate" type="xs:string" minOccurs="0">
-              </xs:element>
-              <xs:element name="schemaName" type="xs:string" minOccurs="0">
               </xs:element>
               <xs:element name="updateDate" type="xs:string" minOccurs="0">
               </xs:element>
-              <xs:element name="alternateCityName" type="xs:string" minOccurs="0">
+              <xs:element name="userSchemaID" type="xs:int" minOccurs="1">
               </xs:element>
-              <xs:element name="username" type="xs:string" minOccurs="0">
+              <xs:element name="inputUserFullname" type="xs:string" minOccurs="0">
               </xs:element>
-              <xs:element name="userSchemaName" type="xs:string" minOccurs="0">
+              <xs:element name="inputLdapUser" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="officeTimezone" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="userID" type="xs:long" minOccurs="1">
+              </xs:element>
+              <xs:element name="locale" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="userLoginId" type="xs:long" minOccurs="1">
               </xs:element>
               <xs:element name="userCompany" type="xs:string" minOccurs="0">
               </xs:element>
+              <xs:element name="userOfficeID" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="officeCode" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="inputDate" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="password" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="alternateCityName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="userDefaultWarehouse" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="ldapUsername" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="inputUser" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="updateLdapUser" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="localCurrency" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="userCompanyName" type="xs:string" minOccurs="0">
+              </xs:element>
               <xs:element name="userFullname" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="userSchemaName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="schemaName" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="updateUserFullname" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="debugModeFlag" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="userRoleID" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="username" type="xs:string" minOccurs="0">
               </xs:element>
               <xs:element name="config" type="xs:string" minOccurs="0">
               </xs:element>

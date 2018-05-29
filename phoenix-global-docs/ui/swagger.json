@@ -5,7 +5,7 @@
     "version" : "1.0",
     "title" : "phoenix-global Maven Webapp"
   },
-  "host" : "scan-it.phxcloud.io",
+  "host" : "shipco.phxcloud.io",
   "basePath" : "/phoenix/globalPages/webservice",
   "schemes" : [],
   "tags" : [

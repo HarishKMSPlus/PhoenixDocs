@@ -79,18 +79,18 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">reportName</span>
+          <td>  <span class="property-name">monthly</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">boolean
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">customerDetailMap</span>
+          <td>  <span class="property-name">reportName</span>
 </td>
-          <td>  <span class="datatype-reference">object
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -106,25 +106,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">yearComparative</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">emailTo</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">weight</span>
+          <td>  <span class="property-name">reportType</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -142,7 +124,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">emailFrom</span>
+          <td>  <span class="property-name">weight</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">emailTo</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -160,7 +151,43 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">reportType</span>
+          <td>  <span class="property-name">yearComparative</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">mode</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">customerDetailMap</span>
+</td>
+          <td>  <span class="datatype-reference">object
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">deliveryMethod</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">emailFrom</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -177,56 +204,29 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
-        <tr>
-          <td>  <span class="property-name">deliveryMethod</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">mode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">monthly</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
+  &quot;monthly&quot; : true,
   &quot;reportName&quot; : &quot;...&quot;,
+  &quot;monthlyComparative&quot; : true,
+  &quot;reportType&quot; : &quot;...&quot;,
+  &quot;accumulatedYear&quot; : true,
+  &quot;weight&quot; : &quot;...&quot;,
+  &quot;emailTo&quot; : &quot;...&quot;,
+  &quot;reportOutputType&quot; : &quot;...&quot;,
+  &quot;yearComparative&quot; : true,
+  &quot;mode&quot; : &quot;...&quot;,
   &quot;customerDetailMap&quot; : {
     &quot;property1&quot; : &quot;...&quot;,
     &quot;property2&quot; : &quot;...&quot;
   },
-  &quot;monthlyComparative&quot; : true,
-  &quot;yearComparative&quot; : true,
-  &quot;emailTo&quot; : &quot;...&quot;,
-  &quot;weight&quot; : &quot;...&quot;,
-  &quot;accumulatedYear&quot; : true,
-  &quot;emailFrom&quot; : &quot;...&quot;,
-  &quot;reportOutputType&quot; : &quot;...&quot;,
-  &quot;reportType&quot; : &quot;...&quot;,
-  &quot;jobType&quot; : &quot;...&quot;,
   &quot;deliveryMethod&quot; : &quot;...&quot;,
-  &quot;mode&quot; : &quot;...&quot;,
-  &quot;monthly&quot; : true
+  &quot;emailFrom&quot; : &quot;...&quot;,
+  &quot;jobType&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

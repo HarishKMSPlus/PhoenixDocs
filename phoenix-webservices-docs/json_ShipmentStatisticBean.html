@@ -79,16 +79,16 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">volumeIndicator</span>
+          <td>  <span class="property-name">pastWeight</span>
 </td>
-          <td>  <span class="datatype-reference">boolean
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">docType</span>
+          <td>  <span class="property-name">docCategory</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -106,24 +106,6 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">countIndicator</span>
-</td>
-          <td>  <span class="datatype-reference">boolean
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">currentCount</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">pastVolume</span>
 </td>
           <td>  <span class="datatype-reference">number
@@ -133,9 +115,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">weightIndicator</span>
+          <td>  <span class="property-name">docType</span>
 </td>
-          <td>  <span class="datatype-reference">boolean
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -151,27 +133,27 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">pastWeight</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">pastCount</span>
-</td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
           <td>  <span class="property-name">currentVolume</span>
 </td>
           <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">currentCount</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">countIndicator</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -187,6 +169,24 @@
 </td>
         </tr>
         <tr>
+          <td>  <span class="property-name">volumeIndicator</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">weightIndicator</span>
+</td>
+          <td>  <span class="datatype-reference">boolean
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">volumePercent</span>
 </td>
           <td>  <span class="datatype-reference">number
@@ -196,9 +196,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">docCategory</span>
+          <td>  <span class="property-name">pastCount</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -219,20 +219,20 @@
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;volumeIndicator&quot; : true,
-  &quot;docType&quot; : &quot;...&quot;,
-  &quot;weightPercent&quot; : 12345.0,
-  &quot;countIndicator&quot; : true,
-  &quot;currentCount&quot; : 12345,
-  &quot;pastVolume&quot; : 12345.0,
-  &quot;weightIndicator&quot; : true,
-  &quot;organizationCode&quot; : &quot;...&quot;,
   &quot;pastWeight&quot; : 12345.0,
-  &quot;pastCount&quot; : 12345,
-  &quot;currentVolume&quot; : 12345.0,
-  &quot;countPercent&quot; : 12345.0,
-  &quot;volumePercent&quot; : 12345.0,
   &quot;docCategory&quot; : &quot;...&quot;,
+  &quot;weightPercent&quot; : 12345.0,
+  &quot;pastVolume&quot; : 12345.0,
+  &quot;docType&quot; : &quot;...&quot;,
+  &quot;organizationCode&quot; : &quot;...&quot;,
+  &quot;currentVolume&quot; : 12345.0,
+  &quot;currentCount&quot; : 12345,
+  &quot;countIndicator&quot; : true,
+  &quot;countPercent&quot; : 12345.0,
+  &quot;volumeIndicator&quot; : true,
+  &quot;weightIndicator&quot; : true,
+  &quot;volumePercent&quot; : 12345.0,
+  &quot;pastCount&quot; : 12345,
   &quot;currentWeight&quot; : 12345.0
 }</pre>
 

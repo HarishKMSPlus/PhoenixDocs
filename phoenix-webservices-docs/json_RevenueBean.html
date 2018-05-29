@@ -79,18 +79,9 @@
         </thead>
         <tbody>
         <tr>
-          <td>  <span class="property-name">status</span>
+          <td>  <span class="property-name">invoiceType</span>
 </td>
           <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">localAmount</span>
-</td>
-          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -98,24 +89,6 @@
         </tr>
         <tr>
           <td>  <span class="property-name">dualInvoiceNumber</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">organizationCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">invoiceNumber</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -133,7 +106,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">referenceNumber</span>
+          <td>  <span class="property-name">applyTo</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -142,7 +115,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">invoiceType</span>
+          <td>  <span class="property-name">organizationCode</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -160,7 +133,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">applyTo</span>
+          <td>  <span class="property-name">localAmount</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">invoiceNumber</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -177,23 +159,41 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">status</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">referenceNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;status&quot; : &quot;...&quot;,
-  &quot;localAmount&quot; : 12345.0,
-  &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
-  &quot;organizationCode&quot; : &quot;...&quot;,
-  &quot;invoiceNumber&quot; : &quot;...&quot;,
-  &quot;invoiceDate&quot; : &quot;...&quot;,
-  &quot;referenceNumber&quot; : &quot;...&quot;,
   &quot;invoiceType&quot; : &quot;...&quot;,
-  &quot;organizationName&quot; : &quot;...&quot;,
+  &quot;dualInvoiceNumber&quot; : &quot;...&quot;,
+  &quot;invoiceDate&quot; : &quot;...&quot;,
   &quot;applyTo&quot; : &quot;...&quot;,
-  &quot;referenceType&quot; : &quot;...&quot;
+  &quot;organizationCode&quot; : &quot;...&quot;,
+  &quot;organizationName&quot; : &quot;...&quot;,
+  &quot;localAmount&quot; : 12345.0,
+  &quot;invoiceNumber&quot; : &quot;...&quot;,
+  &quot;referenceType&quot; : &quot;...&quot;,
+  &quot;status&quot; : &quot;...&quot;,
+  &quot;referenceNumber&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

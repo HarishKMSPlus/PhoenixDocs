@@ -79,25 +79,16 @@
         </thead>
         <tbody>
         <tr>
+          <td>  <span class="property-name">foreignAmount</span>
+</td>
+          <td>  <span class="datatype-reference">number
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
           <td>  <span class="property-name">organizationCode</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chargeDescription</span>
-</td>
-          <td>  <span class="datatype-reference">string
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">chargeCurrency</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -115,18 +106,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">localAmount</span>
+          <td>  <span class="property-name">chargeDescription</span>
 </td>
-          <td>  <span class="datatype-reference">number
-</span>
-</td>
-          <td>  <span class="property-description"></span>
-</td>
-        </tr>
-        <tr>
-          <td>  <span class="property-name">foreignAmount</span>
-</td>
-          <td>  <span class="datatype-reference">number
+          <td>  <span class="datatype-reference">string
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -142,7 +124,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">invoiceNumber</span>
+          <td>  <span class="property-name">localCurrency</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -151,9 +133,9 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">foreignCurrency</span>
+          <td>  <span class="property-name">exchangeRate</span>
 </td>
-          <td>  <span class="datatype-reference">string
+          <td>  <span class="datatype-reference">number
 </span>
 </td>
           <td>  <span class="property-description"></span>
@@ -178,7 +160,16 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">exchangeRate</span>
+          <td>  <span class="property-name">invoiceNumber</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
+        <tr>
+          <td>  <span class="property-name">localAmount</span>
 </td>
           <td>  <span class="datatype-reference">number
 </span>
@@ -187,7 +178,7 @@
 </td>
         </tr>
         <tr>
-          <td>  <span class="property-name">localCurrency</span>
+          <td>  <span class="property-name">foreignCurrency</span>
 </td>
           <td>  <span class="datatype-reference">string
 </span>
@@ -204,26 +195,35 @@
           <td>  <span class="property-description"></span>
 </td>
         </tr>
+        <tr>
+          <td>  <span class="property-name">chargeCurrency</span>
+</td>
+          <td>  <span class="datatype-reference">string
+</span>
+</td>
+          <td>  <span class="property-description"></span>
+</td>
+        </tr>
         </tbody>
       </table>
 
       <p class="lead">Example</p>
 
       <pre class="prettyprint language-js example">{
-  &quot;organizationCode&quot; : &quot;...&quot;,
-  &quot;chargeDescription&quot; : &quot;...&quot;,
-  &quot;chargeCurrency&quot; : &quot;...&quot;,
-  &quot;basis&quot; : &quot;...&quot;,
-  &quot;localAmount&quot; : 12345.0,
   &quot;foreignAmount&quot; : 12345.0,
+  &quot;organizationCode&quot; : &quot;...&quot;,
+  &quot;basis&quot; : &quot;...&quot;,
+  &quot;chargeDescription&quot; : &quot;...&quot;,
   &quot;chargeCode&quot; : &quot;...&quot;,
-  &quot;invoiceNumber&quot; : &quot;...&quot;,
-  &quot;foreignCurrency&quot; : &quot;...&quot;,
+  &quot;localCurrency&quot; : &quot;...&quot;,
+  &quot;exchangeRate&quot; : 12345.0,
   &quot;rate&quot; : 12345.0,
   &quot;basisDescription&quot; : &quot;...&quot;,
-  &quot;exchangeRate&quot; : 12345.0,
-  &quot;localCurrency&quot; : &quot;...&quot;,
-  &quot;taxCode&quot; : &quot;...&quot;
+  &quot;invoiceNumber&quot; : &quot;...&quot;,
+  &quot;localAmount&quot; : 12345.0,
+  &quot;foreignCurrency&quot; : &quot;...&quot;,
+  &quot;taxCode&quot; : &quot;...&quot;,
+  &quot;chargeCurrency&quot; : &quot;...&quot;
 }</pre>
 
         <footer class="footer">

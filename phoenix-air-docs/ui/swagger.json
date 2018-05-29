@@ -5,7 +5,7 @@
     "version" : "1.0",
     "title" : "phoenix-air"
   },
-  "host" : "scan-it.phxcloud.io",
+  "host" : "shipco.phxcloud.io",
   "basePath" : "/phoenix/1.0",
   "schemes" : [],
   "tags" : [
@@ -72,11 +72,7 @@
       "type" : "object",
       "title" : "BookingClassificationParamBean",
           "properties" : {
-            "yearComparative" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "deliveryMethod" : {
+            "emailFrom" : {
 "description" : "",
 "type" : "string"
             },
@@ -84,9 +80,13 @@
 "description" : "",
 "type" : "string"
             },
-            "monthly" : {
+            "emailTo" : {
 "description" : "",
-"type" : "boolean"
+"type" : "string"
+            },
+            "customerDetailMap" : {
+"description" : "",
+"type" : "object"
             },
             "reportOutputType" : {
 "description" : "",
@@ -96,7 +96,11 @@
 "description" : "",
 "type" : "string"
             },
-            "jobType" : {
+            "reportName" : {
+"description" : "",
+"type" : "string"
+            },
+            "weight" : {
 "description" : "",
 "type" : "string"
             },
@@ -104,19 +108,7 @@
 "description" : "",
 "type" : "boolean"
             },
-            "weight" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerDetailMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "reportName" : {
-"description" : "",
-"type" : "string"
-            },
-            "emailFrom" : {
+            "jobType" : {
 "description" : "",
 "type" : "string"
             },
@@ -124,7 +116,15 @@
 "description" : "",
 "type" : "boolean"
             },
-            "emailTo" : {
+            "yearComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "monthly" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "deliveryMethod" : {
 "description" : "",
 "type" : "string"
             }
@@ -152,14 +152,6 @@
       "type" : "object",
       "title" : "ExecuteReportRequestBean",
           "properties" : {
-            "userSchemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userID" : {
-"description" : "",
-"type" : "number"
-            },
             "perlReportBeans" : {
 "description" : "",
 "type" : "array",
@@ -170,9 +162,17 @@
 }
 }
             },
+            "userID" : {
+"description" : "",
+"type" : "number"
+            },
             "userOfficeID" : {
 "description" : "",
 "type" : "number"
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -182,71 +182,7 @@
       "type" : "object",
       "title" : "GenDefinesBean",
           "properties" : {
-            "configuration" : {
-"description" : "",
-"type" : "string"
-            },
-            "formHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommerceUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "jasperUrlPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpBaseurl" : {
-"description" : "",
-"type" : "string"
-            },
-            "oracleEnv" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommerceUserName" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpShellPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "definesID" : {
-"description" : "",
-"type" : "number"
-            },
-            "jspBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "biBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "formBaseUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "dataSource" : {
+            "globalUrl" : {
 "description" : "",
 "type" : "string"
             },
@@ -254,15 +190,79 @@
 "description" : "",
 "type" : "string"
             },
+            "tempDirPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlHome" : {
+"description" : "",
+"type" : "string"
+            },
             "ecommercePassword" : {
 "description" : "",
 "type" : "string"
             },
-            "globalUrl" : {
+            "definesID" : {
+"description" : "",
+"type" : "number"
+            },
+            "phpHome" : {
 "description" : "",
 "type" : "string"
             },
-            "tempDirPath" : {
+            "formBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "biBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "ecommerceUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "jspBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "oracleEnv" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlBaseUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "formHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpBaseurl" : {
+"description" : "",
+"type" : "string"
+            },
+            "dataSource" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpShellPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "configuration" : {
 "description" : "",
 "type" : "string"
             }
@@ -278,9 +278,27 @@
 "description" : "",
 "type" : "string"
             },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
             "schemaName" : {
 "description" : "",
 "type" : "string"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
+            },
+            "contactDetailBeans" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_OrganizationContactDetailBean"
+}
+}
             },
             "customerCode" : {
 "description" : "",
@@ -289,10 +307,6 @@
             "contactReference" : {
 "description" : "",
 "type" : "string"
-            },
-            "officeId" : {
-"description" : "",
-"type" : "number"
             },
             "contactDocumentBeans" : {
 "description" : "",
@@ -307,20 +321,6 @@
             "customerId" : {
 "description" : "",
 "type" : "number"
-            },
-            "contactDetailBeans" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "$ref" : "#/definitions/json_OrganizationContactDetailBean"
-}
-}
-            },
-            "contactName" : {
-"description" : "",
-"type" : "string"
             }
           },
       "description" : ""
@@ -330,17 +330,13 @@
       "type" : "object",
       "title" : "OrganizationContactDetailBean",
           "properties" : {
+            "contactValue" : {
+"description" : "",
+"type" : "string"
+            },
             "status" : {
 "description" : "",
 "type" : "boolean"
-            },
-            "schemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "contactType" : {
-"description" : "",
-"type" : "string"
             },
             "officeId" : {
 "description" : "",
@@ -350,11 +346,15 @@
 "description" : "",
 "type" : "string"
             },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
             "customerContactId" : {
 "description" : "",
 "type" : "number"
             },
-            "contactValue" : {
+            "contactType" : {
 "description" : "",
 "type" : "string"
             }
@@ -366,11 +366,11 @@
       "type" : "object",
       "title" : "OrganizationContactDocumentBean",
           "properties" : {
-            "documentID" : {
+            "documentContactId" : {
 "description" : "",
 "type" : "number"
             },
-            "documentContactId" : {
+            "documentID" : {
 "description" : "",
 "type" : "number"
             },
@@ -394,13 +394,13 @@
 "description" : "",
 "type" : "string"
             },
-            "customerCode" : {
-"description" : "",
-"type" : "string"
-            },
             "officeId" : {
 "description" : "",
 "type" : "number"
+            },
+            "customerCode" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -410,23 +410,15 @@
       "type" : "object",
       "title" : "PerlReportBean",
           "properties" : {
-            "passkey20" : {
+            "passkey11" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey18" : {
+            "executeVia" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey5" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey6" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey4" : {
+            "passkey23" : {
 "description" : "",
 "type" : "string"
             },
@@ -438,43 +430,11 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey16" : {
+            "tag" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlscriptName" : {
-"description" : "",
-"type" : "string"
-            },
-            "counter" : {
-"description" : "",
-"type" : "number"
-            },
-            "phoenixSystemUserBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_PhoenixSystemUserBean"
-            },
-            "passkey2" : {
-"description" : "",
-"type" : "string"
-            },
-            "executeVia" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey14" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey21" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey19" : {
+            "passkey12" : {
 "description" : "",
 "type" : "string"
             },
@@ -482,23 +442,11 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey23" : {
+            "passkey20" : {
 "description" : "",
 "type" : "string"
             },
-            "printerName" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey7" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey3" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey17" : {
+            "passkey10" : {
 "description" : "",
 "type" : "string"
             },
@@ -510,11 +458,63 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey12" : {
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "passkey2" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey8" : {
+            "passkey19" : {
+"description" : "",
+"type" : "string"
+            },
+            "perlscriptName" : {
+"description" : "",
+"type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "printerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey17" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey7" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey6" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey18" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey21" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey3" : {
 "description" : "",
 "type" : "string"
             },
@@ -522,27 +522,27 @@
 "description" : "",
 "type" : "string"
             },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey8" : {
+"description" : "",
+"type" : "string"
+            },
             "userId" : {
 "description" : "",
 "type" : "string"
             },
-            "tag" : {
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
+            "passkey5" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey11" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey22" : {
-"description" : "",
-"type" : "string"
-            },
-            "argumentListMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey10" : {
+            "passkey4" : {
 "description" : "",
 "type" : "string"
             }
@@ -554,59 +554,7 @@
       "type" : "object",
       "title" : "PhoenixSystemUserBean",
           "properties" : {
-            "officeCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "officeId" : {
-"description" : "",
-"type" : "number"
-            },
-            "companyGroupName" : {
-"description" : "",
-"type" : "string"
-            },
-            "customer" : {
-"description" : "",
-"type" : "string"
-            },
-            "ldapUserName" : {
-"description" : "",
-"type" : "string"
-            },
             "timezone" : {
-"description" : "",
-"type" : "string"
-            },
-            "alternateCityName" : {
-"description" : "",
-"type" : "string"
-            },
-            "debugMode" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "officeSettingMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "genDefinesBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_GenDefinesBean"
-            },
-            "schemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userFullName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userName" : {
 "description" : "",
 "type" : "string"
             },
@@ -614,7 +562,31 @@
 "description" : "",
 "type" : "string"
             },
-            "userEmail" : {
+            "userFullName" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "ldapUserName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "alternateCityName" : {
 "description" : "",
 "type" : "string"
             },
@@ -622,9 +594,37 @@
 "description" : "",
 "type" : "number"
             },
+            "userEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "debugMode" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyGroupName" : {
+"description" : "",
+"type" : "string"
+            },
+            "officeCode" : {
+"description" : "",
+"type" : "string"
+            },
             "userId" : {
 "description" : "",
 "type" : "number"
+            },
+            "userName" : {
+"description" : "",
+"type" : "string"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
             }
           },
       "description" : ""
@@ -634,21 +634,21 @@
       "type" : "object",
       "title" : "ResultJson",
           "properties" : {
-            "errorCode" : {
-"description" : "",
-"type" : "string"
-            },
             "message" : {
 "description" : "",
 "type" : "string"
             },
-            "success" : {
+            "errorCode" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             },
             "result" : {
 "description" : "",
 "type" : "object"
+            },
+            "success" : {
+"description" : "",
+"type" : "number"
             }
           },
       "description" : ""
@@ -662,6 +662,10 @@
 "description" : "",
 "type" : "string"
             },
+            "result" : {
+"description" : "",
+"type" : "object"
+            },
             "message" : {
 "description" : "",
 "type" : "string"
@@ -669,10 +673,6 @@
             "success" : {
 "description" : "",
 "type" : "number"
-            },
-            "result" : {
-"description" : "",
-"type" : "object"
             }
           },
       "description" : ""
@@ -682,17 +682,17 @@
       "type" : "object",
       "title" : "ShipmentStatusEventBean",
           "properties" : {
-            "commentParams" : {
+            "comment" : {
 "description" : "",
-"type" : "object"
+"type" : "string"
             },
             "eventName" : {
 "description" : "",
 "type" : "string"
             },
-            "comment" : {
+            "commentParams" : {
 "description" : "",
-"type" : "string"
+"type" : "object"
             }
           },
       "description" : ""
@@ -702,11 +702,11 @@
       "type" : "object",
       "title" : "ShipmentStatusUpdateBean",
           "properties" : {
-            "objectCode" : {
+            "clausesText" : {
 "description" : "",
 "type" : "string"
             },
-            "documentHistoryId" : {
+            "userSchemaId" : {
 "description" : "",
 "type" : "number"
             },
@@ -720,23 +720,9 @@
 }
 }
             },
-            "publicPrivateType" : {
-"description" : "",
-"type" : "string"
-            },
             "officeId" : {
 "description" : "",
 "type" : "number"
-            },
-            "deletedReference" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
             },
             "deletedType" : {
 "description" : "",
@@ -748,17 +734,45 @@
 }
 }
             },
-            "userSchemaId" : {
+            "notesShownOnCodes" : {
 "description" : "",
-"type" : "number"
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             },
-            "shipmentType" : {
+            "objectCode" : {
 "description" : "",
 "type" : "string"
             },
             "referenceNumber" : {
 "description" : "",
 "type" : "string"
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
             },
             "relatedType" : {
 "description" : "",
@@ -780,20 +794,6 @@
 }
 }
             },
-            "notesShownOnCodes" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "clausesText" : {
-"description" : "",
-"type" : "string"
-            },
             "shipmentId" : {
 "description" : "",
 "type" : "string"
@@ -806,15 +806,7 @@
       "type" : "object",
       "title" : "WarehouseInventoryBean",
           "properties" : {
-            "deliveryMethod" : {
-"description" : "",
-"type" : "string"
-            },
-            "ccEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "consigneeCode" : {
+            "reportOption" : {
 "description" : "",
 "type" : "string"
             },
@@ -822,47 +814,11 @@
 "description" : "",
 "type" : "string"
             },
-            "referenceNo" : {
-"description" : "",
-"type" : "string"
-            },
-            "subject" : {
-"description" : "",
-"type" : "string"
-            },
-            "fromActivityDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipperCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "dischargePortCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "emailBody" : {
-"description" : "",
-"type" : "string"
-            },
-            "reportOption" : {
-"description" : "",
-"type" : "string"
-            },
-            "bccEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
+            "siteId" : {
 "description" : "",
 "type" : "number"
             },
-            "shipperAliasCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "fromEmail" : {
+            "toActivityDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -876,11 +832,7 @@
 }
 }
             },
-            "toEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "currentSchema" : {
+            "referenceNo" : {
 "description" : "",
 "type" : "string"
             },
@@ -888,15 +840,63 @@
 "description" : "",
 "type" : "string"
             },
+            "subject" : {
+"description" : "",
+"type" : "string"
+            },
             "mesurement" : {
 "description" : "",
 "type" : "string"
             },
-            "siteId" : {
+            "emailBody" : {
+"description" : "",
+"type" : "string"
+            },
+            "toEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "ccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "dischargePortCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "userId" : {
 "description" : "",
 "type" : "number"
             },
-            "toActivityDate" : {
+            "bccEmail" : {
+"description" : "",
+"type" : "string"
+            },
+            "currentSchema" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromActivityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipperCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeCode" : {
 "description" : "",
 "type" : "string"
             }
@@ -908,27 +908,19 @@
       "type" : "object",
       "title" : "BookingClassificationParamBean",
           "properties" : {
+            "monthly" : {
+"description" : "",
+"type" : "boolean"
+            },
             "reportName" : {
 "description" : "",
 "type" : "string"
-            },
-            "customerDetailMap" : {
-"description" : "",
-"type" : "object"
             },
             "monthlyComparative" : {
 "description" : "",
 "type" : "boolean"
             },
-            "yearComparative" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "emailTo" : {
-"description" : "",
-"type" : "string"
-            },
-            "weight" : {
+            "reportType" : {
 "description" : "",
 "type" : "string"
             },
@@ -936,7 +928,11 @@
 "description" : "",
 "type" : "boolean"
             },
-            "emailFrom" : {
+            "weight" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailTo" : {
 "description" : "",
 "type" : "string"
             },
@@ -944,25 +940,29 @@
 "description" : "",
 "type" : "string"
             },
-            "reportType" : {
+            "yearComparative" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "mode" : {
+"description" : "",
+"type" : "string"
+            },
+            "customerDetailMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "deliveryMethod" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailFrom" : {
 "description" : "",
 "type" : "string"
             },
             "jobType" : {
 "description" : "",
 "type" : "string"
-            },
-            "deliveryMethod" : {
-"description" : "",
-"type" : "string"
-            },
-            "mode" : {
-"description" : "",
-"type" : "string"
-            },
-            "monthly" : {
-"description" : "",
-"type" : "boolean"
             }
           },
       "description" : ""
@@ -988,18 +988,6 @@
       "type" : "object",
       "title" : "ExecuteReportRequestBean",
           "properties" : {
-            "userSchemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "userOfficeID" : {
-"description" : "",
-"type" : "number"
-            },
-            "userID" : {
-"description" : "",
-"type" : "number"
-            },
             "perlReportBeans" : {
 "description" : "",
 "type" : "array",
@@ -1009,6 +997,18 @@
   "$ref" : "#/definitions/json_PerlReportBean"
 }
 }
+            },
+            "userOfficeID" : {
+"description" : "",
+"type" : "number"
+            },
+            "userSchemaName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userID" : {
+"description" : "",
+"type" : "number"
             }
           },
       "description" : ""
@@ -1018,15 +1018,23 @@
       "type" : "object",
       "title" : "GenDefinesBean",
           "properties" : {
-            "urlPath" : {
+            "phpBaseurl" : {
 "description" : "",
 "type" : "string"
             },
-            "formHome" : {
+            "jspBaseUrl" : {
 "description" : "",
 "type" : "string"
             },
-            "phpShellPath" : {
+            "jasperUrlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpHome" : {
+"description" : "",
+"type" : "string"
+            },
+            "tempDirPath" : {
 "description" : "",
 "type" : "string"
             },
@@ -1034,11 +1042,31 @@
 "description" : "",
 "type" : "string"
             },
-            "definesID" : {
+            "dataSource" : {
 "description" : "",
-"type" : "number"
+"type" : "string"
             },
-            "jspBaseUrl" : {
+            "ecommerceUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "urlPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "configuration" : {
+"description" : "",
+"type" : "string"
+            },
+            "phpShellPath" : {
+"description" : "",
+"type" : "string"
+            },
+            "globalUrl" : {
+"description" : "",
+"type" : "string"
+            },
+            "oracleEnv" : {
 "description" : "",
 "type" : "string"
             },
@@ -1050,35 +1078,11 @@
 "description" : "",
 "type" : "string"
             },
-            "tempDirPath" : {
+            "definesID" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
-            "configuration" : {
-"description" : "",
-"type" : "string"
-            },
-            "globalUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "jasperUrlPath" : {
-"description" : "",
-"type" : "string"
-            },
-            "ecommerceUrl" : {
-"description" : "",
-"type" : "string"
-            },
-            "dataSource" : {
-"description" : "",
-"type" : "string"
-            },
-            "phpHome" : {
-"description" : "",
-"type" : "string"
-            },
-            "perlBaseUrl" : {
+            "perlHome" : {
 "description" : "",
 "type" : "string"
             },
@@ -1086,19 +1090,15 @@
 "description" : "",
 "type" : "string"
             },
-            "perlHome" : {
-"description" : "",
-"type" : "string"
-            },
             "ecommerceUserName" : {
 "description" : "",
 "type" : "string"
             },
-            "oracleEnv" : {
+            "perlBaseUrl" : {
 "description" : "",
 "type" : "string"
             },
-            "phpBaseurl" : {
+            "formHome" : {
 "description" : "",
 "type" : "string"
             }
@@ -1111,14 +1111,6 @@
       "title" : "OrganizationContactBean",
           "properties" : {
             "customerName" : {
-"description" : "",
-"type" : "string"
-            },
-            "schemaName" : {
-"description" : "",
-"type" : "string"
-            },
-            "customerCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -1136,17 +1128,17 @@
 "description" : "",
 "type" : "number"
             },
-            "contactName" : {
+            "customerCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "schemaName" : {
 "description" : "",
 "type" : "string"
             },
             "contactReference" : {
 "description" : "",
 "type" : "string"
-            },
-            "officeId" : {
-"description" : "",
-"type" : "number"
             },
             "contactDetailBeans" : {
 "description" : "",
@@ -1157,6 +1149,14 @@
   "$ref" : "#/definitions/json_OrganizationContactDetailBean"
 }
 }
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "contactName" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -1166,33 +1166,33 @@
       "type" : "object",
       "title" : "OrganizationContactDetailBean",
           "properties" : {
-            "customerContactId" : {
+            "status" : {
 "description" : "",
-"type" : "number"
+"type" : "boolean"
+            },
+            "contactType" : {
+"description" : "",
+"type" : "string"
             },
             "userCreate" : {
 "description" : "",
 "type" : "string"
             },
-            "status" : {
-"description" : "",
-"type" : "boolean"
-            },
-            "officeId" : {
+            "customerContactId" : {
 "description" : "",
 "type" : "number"
-            },
-            "contactValue" : {
-"description" : "",
-"type" : "string"
             },
             "schemaName" : {
 "description" : "",
 "type" : "string"
             },
-            "contactType" : {
+            "contactValue" : {
 "description" : "",
 "type" : "string"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
             }
           },
       "description" : ""
@@ -1202,10 +1202,6 @@
       "type" : "object",
       "title" : "OrganizationContactDocumentBean",
           "properties" : {
-            "documentID" : {
-"description" : "",
-"type" : "number"
-            },
             "documentContactId" : {
 "description" : "",
 "type" : "number"
@@ -1213,6 +1209,10 @@
             "documentCode" : {
 "description" : "",
 "type" : "string"
+            },
+            "documentID" : {
+"description" : "",
+"type" : "number"
             }
           },
       "description" : ""
@@ -1230,13 +1230,13 @@
 "description" : "",
 "type" : "string"
             },
-            "customerName" : {
-"description" : "",
-"type" : "string"
-            },
             "officeId" : {
 "description" : "",
 "type" : "number"
+            },
+            "customerName" : {
+"description" : "",
+"type" : "string"
             }
           },
       "description" : ""
@@ -1246,31 +1246,7 @@
       "type" : "object",
       "title" : "PerlReportBean",
           "properties" : {
-            "passkey19" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey13" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey3" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey16" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey22" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey17" : {
+            "passkey5" : {
 "description" : "",
 "type" : "string"
             },
@@ -1282,63 +1258,7 @@
 "description" : "",
 "type" : "string"
             },
-            "passkey2" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey11" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey23" : {
-"description" : "",
-"type" : "string"
-            },
             "passkey15" : {
-"description" : "",
-"type" : "string"
-            },
-            "executeVia" : {
-"description" : "",
-"type" : "string"
-            },
-            "phoenixSystemUserBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_PhoenixSystemUserBean"
-            },
-            "passkey9" : {
-"description" : "",
-"type" : "string"
-            },
-            "key" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey21" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey10" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey8" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey1" : {
-"description" : "",
-"type" : "string"
-            },
-            "passkey5" : {
-"description" : "",
-"type" : "string"
-            },
-            "counter" : {
-"description" : "",
-"type" : "number"
-            },
-            "printerName" : {
 "description" : "",
 "type" : "string"
             },
@@ -1346,15 +1266,83 @@
 "description" : "",
 "type" : "string"
             },
+            "printerName" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey16" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey13" : {
+"description" : "",
+"type" : "string"
+            },
+            "phoenixSystemUserBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_PhoenixSystemUserBean"
+            },
+            "passkey21" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey" : {
+"description" : "",
+"type" : "string"
+            },
+            "counter" : {
+"description" : "",
+"type" : "number"
+            },
             "argumentMap" : {
 "description" : "",
 "type" : "object"
             },
-            "passkey12" : {
+            "key" : {
 "description" : "",
 "type" : "string"
             },
+            "argumentListMap" : {
+"description" : "",
+"type" : "object"
+            },
             "passkey4" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey2" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey14" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey9" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey20" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey10" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey19" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey22" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey3" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey1" : {
 "description" : "",
 "type" : "string"
             },
@@ -1366,19 +1354,31 @@
 "description" : "",
 "type" : "string"
             },
-            "argumentListMap" : {
-"description" : "",
-"type" : "object"
-            },
-            "passkey14" : {
+            "passkey11" : {
 "description" : "",
 "type" : "string"
             },
-            "passkey20" : {
+            "passkey17" : {
+"description" : "",
+"type" : "string"
+            },
+            "executeVia" : {
 "description" : "",
 "type" : "string"
             },
             "userId" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey8" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey23" : {
+"description" : "",
+"type" : "string"
+            },
+            "passkey12" : {
 "description" : "",
 "type" : "string"
             }
@@ -1390,19 +1390,15 @@
       "type" : "object",
       "title" : "PhoenixSystemUserBean",
           "properties" : {
-            "userEmail" : {
+            "debugMode" : {
 "description" : "",
 "type" : "string"
             },
-            "companyGroupName" : {
+            "userId" : {
 "description" : "",
-"type" : "string"
+"type" : "number"
             },
-            "userPassword" : {
-"description" : "",
-"type" : "string"
-            },
-            "userName" : {
+            "companyCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -1410,27 +1406,7 @@
 "description" : "",
 "type" : "string"
             },
-            "debugMode" : {
-"description" : "",
-"type" : "string"
-            },
-            "genDefinesBean" : {
-"description" : "",
-"$ref" : "#/definitions/json_GenDefinesBean"
-            },
-            "userId" : {
-"description" : "",
-"type" : "number"
-            },
-            "alternateCityName" : {
-"description" : "",
-"type" : "string"
-            },
-            "companyCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "userFullName" : {
+            "userName" : {
 "description" : "",
 "type" : "string"
             },
@@ -1442,23 +1418,47 @@
 "description" : "",
 "type" : "string"
             },
-            "officeSettingMap" : {
+            "userFullName" : {
 "description" : "",
-"type" : "object"
+"type" : "string"
+            },
+            "customer" : {
+"description" : "",
+"type" : "string"
+            },
+            "companyGroupName" : {
+"description" : "",
+"type" : "string"
+            },
+            "userEmail" : {
+"description" : "",
+"type" : "string"
             },
             "schemaName" : {
 "description" : "",
 "type" : "string"
             },
-            "officeId" : {
-"description" : "",
-"type" : "number"
-            },
             "timezone" : {
 "description" : "",
 "type" : "string"
             },
-            "customer" : {
+            "officeSettingMap" : {
+"description" : "",
+"type" : "object"
+            },
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "alternateCityName" : {
+"description" : "",
+"type" : "string"
+            },
+            "genDefinesBean" : {
+"description" : "",
+"$ref" : "#/definitions/json_GenDefinesBean"
+            },
+            "userPassword" : {
 "description" : "",
 "type" : "string"
             }
@@ -1498,6 +1498,10 @@
 "description" : "",
 "type" : "object"
             },
+            "errorCode" : {
+"description" : "",
+"type" : "string"
+            },
             "message" : {
 "description" : "",
 "type" : "string"
@@ -1505,10 +1509,6 @@
             "success" : {
 "description" : "",
 "type" : "number"
-            },
-            "errorCode" : {
-"description" : "",
-"type" : "string"
             }
           },
       "description" : ""
@@ -1538,6 +1538,68 @@
       "type" : "object",
       "title" : "ShipmentStatusUpdateBean",
           "properties" : {
+            "officeId" : {
+"description" : "",
+"type" : "number"
+            },
+            "publicPrivateType" : {
+"description" : "",
+"type" : "string"
+            },
+            "relatedRerefence" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "clausesText" : {
+"description" : "",
+"type" : "string"
+            },
+            "documentHistoryId" : {
+"description" : "",
+"type" : "number"
+            },
+            "objectCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "deletedReference" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "shipmentType" : {
+"description" : "",
+"type" : "string"
+            },
+            "shipmentId" : {
+"description" : "",
+"type" : "string"
+            },
+            "notesShownOnCodes" : {
+"description" : "",
+"type" : "array",
+"items" : {
+"type" : "array",
+"items" : {
+  "type" : "string"
+}
+}
+            },
+            "userSchemaId" : {
+"description" : "",
+"type" : "number"
+            },
             "eventList" : {
 "description" : "",
 "type" : "array",
@@ -1558,19 +1620,7 @@
 }
 }
             },
-            "officeId" : {
-"description" : "",
-"type" : "number"
-            },
-            "objectCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "publicPrivateType" : {
-"description" : "",
-"type" : "string"
-            },
-            "notesShownOnCodes" : {
+            "relatedType" : {
 "description" : "",
 "type" : "array",
 "items" : {
@@ -1583,56 +1633,6 @@
             "referenceNumber" : {
 "description" : "",
 "type" : "string"
-            },
-            "documentHistoryId" : {
-"description" : "",
-"type" : "number"
-            },
-            "deletedReference" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "relatedType" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "clausesText" : {
-"description" : "",
-"type" : "string"
-            },
-            "shipmentType" : {
-"description" : "",
-"type" : "string"
-            },
-            "relatedRerefence" : {
-"description" : "",
-"type" : "array",
-"items" : {
-"type" : "array",
-"items" : {
-  "type" : "string"
-}
-}
-            },
-            "shipmentId" : {
-"description" : "",
-"type" : "string"
-            },
-            "userSchemaId" : {
-"description" : "",
-"type" : "number"
             }
           },
       "description" : ""
@@ -1646,19 +1646,7 @@
 "description" : "",
 "type" : "number"
             },
-            "subject" : {
-"description" : "",
-"type" : "string"
-            },
-            "toActivityDate" : {
-"description" : "",
-"type" : "string"
-            },
-            "userId" : {
-"description" : "",
-"type" : "number"
-            },
-            "shipperAliasCode" : {
+            "bccEmail" : {
 "description" : "",
 "type" : "string"
             },
@@ -1666,11 +1654,7 @@
 "description" : "",
 "type" : "string"
             },
-            "fromEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "referenceNo" : {
+            "fromActivityDate" : {
 "description" : "",
 "type" : "string"
             },
@@ -1678,15 +1662,15 @@
 "description" : "",
 "type" : "string"
             },
-            "bccEmail" : {
+            "shipperAliasCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "emailBody" : {
 "description" : "",
 "type" : "string"
             },
             "dischargePortCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "destinationCode" : {
 "description" : "",
 "type" : "string"
             },
@@ -1698,11 +1682,15 @@
 "description" : "",
 "type" : "string"
             },
-            "currentSchema" : {
+            "userId" : {
+"description" : "",
+"type" : "number"
+            },
+            "ccEmail" : {
 "description" : "",
 "type" : "string"
             },
-            "emailBody" : {
+            "referenceNo" : {
 "description" : "",
 "type" : "string"
             },
@@ -1716,23 +1704,35 @@
 }
 }
             },
+            "destinationCode" : {
+"description" : "",
+"type" : "string"
+            },
+            "subject" : {
+"description" : "",
+"type" : "string"
+            },
+            "currentSchema" : {
+"description" : "",
+"type" : "string"
+            },
+            "fromEmail" : {
+"description" : "",
+"type" : "string"
+            },
             "shipperCode" : {
 "description" : "",
 "type" : "string"
             },
-            "consigneeCode" : {
-"description" : "",
-"type" : "string"
-            },
-            "ccEmail" : {
-"description" : "",
-"type" : "string"
-            },
-            "fromActivityDate" : {
-"description" : "",
-"type" : "string"
-            },
             "reportOptionString" : {
+"description" : "",
+"type" : "string"
+            },
+            "toActivityDate" : {
+"description" : "",
+"type" : "string"
+            },
+            "consigneeCode" : {
 "description" : "",
 "type" : "string"
             }
